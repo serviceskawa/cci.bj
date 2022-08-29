@@ -1,0 +1,8 @@
+How to deploy this projet
+Before, dowload the last version of node on his official website 
+
+After cloning the project, 
+1- Go to the folder
+2- npm install 
+3- Npm run dev
+
