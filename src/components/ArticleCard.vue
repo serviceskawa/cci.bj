@@ -1,0 +1,40 @@
+<template>
+  <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+    <div class="flex-shrink-0">
+      <img
+        class="h-48 w-full object-cover"
+        src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+        alt=""
+      />
+    </div>
+    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+      <div class="flex-1">
+        <p class="text-sm font-medium text-indigo-600">
+          <a href="" class="hover:underline">
+            Publié le {{ branch.news_publication_date }}
+          </a>
+        </p>
+        <a href="" class="block mt-2">
+          <p class="text-xl font-semibold text-gray-900">
+            {{ branch.title }}
+          </p>
+          <p class="mt-3 text-base text-gray-500">
+            {{ branch.short_content }}
+          </p>
+        </a>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+import { computed } from "vue";
+import { useStore } from "vuex";
+
+const NEWS_CAT = `http://localhost/cciwebsite/public/api/news`;
+
+export default {
+  name: "ArticleCard",
+  props: ["branch"],
+};
+</script>

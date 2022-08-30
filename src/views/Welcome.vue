@@ -268,34 +268,11 @@
         <div
           class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
         >
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
-            <div class="flex-shrink-0">
-              <img
-                class="h-48 w-full object-cover"
-                src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
-                alt=""
-              />
-            </div>
-            <div class="flex-1 bg-white p-6 flex flex-col justify-between">
-              <div class="flex-1">
-                <p class="text-sm font-medium text-indigo-600">
-                  <a href="" class="hover:underline"> Publié le 20/02/2022 </a>
-                </p>
-                <a href="" class="block mt-2">
-                  <p class="text-xl font-semibold text-gray-900">
-                    6 eme édition du world Cooperation Industries Forum (WCI
-                    FORUM)
-                  </p>
-                  <p class="mt-3 text-base text-gray-500">
-                    Il se tient depuis ce mercredi 16 mars 2022 à Ankara en
-                    Turquie, la 6ème édition du World Cooperation Industries
-                    Forum Lorem ipsum dolor sit amet consectetur, adipisicing
-                    elit. Ipsa libero labore natus atque, ducimus sed.
-                  </p>
-                </a>
-              </div>
-            </div>
-          </div>
+          <ArticleCard
+            v-for="branch in commits"
+            :key="branch.id"
+            :branch="branch"
+          />
         </div>
       </div>
     </div>
@@ -429,48 +406,7 @@
         </p>
         <div class="mt-12">
           <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="pt-6">
-              <div class="flow-root border bg-blanc rounded-lg">
-                <div class="mt-6">
-                  <div class="px-6">
-                    <span
-                      class="inline-flex items-start justify-start text-left rounded-md bg-primary p-3 shadow-lg"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="white"
-                        class="w-6 h-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                        />
-                      </svg>
-                    </span>
-                    <span class="inline-flex rounded-md ml-36">
-                      <img
-                        class="h-4 w-auto sm:h-4"
-                        src="../assets/Vector.svg"
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <h3
-                    class="mt-4 text-lg px-6 font-medium tracking-tight text-gray-900"
-                  >
-                    name
-                  </h3>
-                  <p class="mt-5 text-base px-6 text-gray-500">
-                    Vérification d’existence et de fiabilité des entreprises,
-                    pour la facilitation des affaires
-                  </p>
-                </div>
-              </div>
-            </div>
+            <ServiceCard />
           </div>
           <div class="tracking-tight mt-6 text-left text-dark">
             <span class="block sm:ml-2 sm:inline-block">
@@ -556,6 +492,27 @@
     <!-- end agenda -->
 
     <!-- appels d'offres -->
+    <div class="relative bg-white py-16 sm:py-24 lg:py-32">
+      <div
+        class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
+      >
+        <p
+          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+        >
+          Appels d’offres et appels à projets
+        </p>
+        <p class="mx-auto mt-5 text-xl text-gray-500">
+          La CCIB vous informe des opportunités d’affaires localisées au Bénin.
+          Retrouvez tous les appels à concurrence, communiqués et appels à
+          candidatures.
+        </p>
+        <div class="mt-12">
+          <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <OffreCard />
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- end appels d'offres -->
 
     <!-- devenir partenaires -->
@@ -647,20 +604,32 @@ import {
   QuestionMarkCircleIcon,
   XIcon,
 } from "@heroicons/vue/outline";
+import ServiceCard from "../components/ServiceCard.vue";
+import OffreCard from "../components/OffreCard.vue";
+import ArticleCard from "../components/ArticleCard.vue";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
-const API_URL = `http://localhost/cciwebsite/public/api/services`;
+import axiosClient from "../axios";
+
+const NEWS_CAT = `http://localhost/cciwebsite/public/api/news`;
+const services_api = `http://localhost/cciwebsite/public/api/services`;
+
 export default {
+  components: {
+    ServiceCard,
+    OffreCard,
+    ArticleCard,
+  },
   data: () => ({
     branches: ["main", "v2-compat"],
     currentBranch: "main",
     commits: null,
+    services: null,
   }),
 
   created() {
     // fetch on init
     this.fetchData();
   },
-
   watch: {
     // re-fetch whenever currentBranch changes
     currentBranch: "fetchData",
@@ -668,15 +637,14 @@ export default {
 
   methods: {
     async fetchData() {
-      const url = `${API_URL}`;
+      const url = `${NEWS_CAT}`;
       this.commits = await (await fetch(url)).json();
+      console.log(this.commits);
     },
-    truncate(v) {
-      const newline = v.indexOf("\n");
-      return newline > 0 ? v.slice(0, newline) : v;
-    },
-    formatDate(v) {
-      return v.replace(/T|Z/g, " ");
+    async fetchServices() {
+      const url = `${services_api}`;
+      this.services = await (await fetch(url)).json();
+      console.log(this.services);
     },
   },
 };
