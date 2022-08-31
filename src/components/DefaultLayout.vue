@@ -8,7 +8,7 @@
         >
           <div class="flex justify-start lg:w-0 lg:flex-1">
             <a href="#">
-              <span class="sr-only">Workflow</span>
+              <span class="sr-only">CCIB</span>
               <img class="h-8 w-auto sm:h-10" src="../assets/logo.png" alt="" />
             </a>
           </div>
@@ -22,6 +22,12 @@
             </PopoverButton>
           </div>
           <PopoverGroup as="nav" class="hidden md:flex space-x-10">
+            <a
+              href="#"
+              class="text-base font-medium text-gray-500 hover:text-gray-900"
+            >
+              Ma CCI
+            </a>
             <Popover class="relative" v-slot="{ open }">
               <PopoverButton
                 :class="[
@@ -57,26 +63,18 @@
                       class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2"
                     >
                       <a
-                        v-for="item in solutions"
-                        :key="item.name"
-                        :href="item.href"
+                        href="#"
                         class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
                       >
                         <div
                           class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white sm:h-12 sm:w-12"
-                        >
-                          <component
-                            :is="item.icon"
-                            class="h-6 w-6"
-                            aria-hidden="true"
-                          />
-                        </div>
+                        ></div>
                         <div class="ml-4">
                           <p class="text-base font-medium text-gray-900">
-                            {{ item.name }}
+                            Titre
                           </p>
                           <p class="mt-1 text-sm text-gray-500">
-                            {{ item.description }}
+                            tire description
                           </p>
                         </div>
                       </a>
@@ -211,14 +209,17 @@
                 </PopoverPanel>
               </transition>
             </Popover>
-
             <a
-              v-for="item in navigation"
-              :key="item.name"
-              :href="item.href"
+              href="#"
               class="text-base font-medium text-gray-500 hover:text-gray-900"
             >
-              {{ item.name }}
+              Blog
+            </a>
+            <a
+              href="#"
+              class="text-base font-medium text-gray-500 hover:text-gray-900"
+            >
+              Travailler avec nous
             </a>
           </PopoverGroup>
           <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
@@ -310,12 +311,9 @@
               <div class="py-6 px-5">
                 <div class="grid grid-cols-2 gap-4">
                   <a
-                    v-for="item in navigation"
-                    :key="item.name"
-                    :href="item.href"
+                    href="#"
                     class="text-base font-medium text-gray-900 hover:text-gray-700"
-                  >
-                    {{ item.name }}
+                    >sss
                   </a>
                 </div>
                 <div class="mt-6">
@@ -325,12 +323,11 @@
                   >
                     Nous contacter
                   </a>
-                  <p
+                  <!-- <p
                     class="mt-6 text-center text-base font-medium text-gray-500"
                   >
-                    Existing customer?
                     <a href="#" class="text-gray-900"> Sign in </a>
-                  </p>
+                  </p> -->
                 </div>
               </div>
             </div>
@@ -340,18 +337,17 @@
     </header>
 
     <!-- Alert -->
-    <div class="relative bg-primaryInfo">
-      <div class="max-w-7xl mx-auto py-3 px-3 sm:px-6 lg:px-8">
+    <div class="relative bg-primaryInfo py-3">
+      <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
         <div class="pr-16 sm:text-center sm:px-16">
           <p class="font-medium text-primary">
-            <span class="md:hidden"> We announced a new product! </span>
-            <span class="hidden md:inline">
+            <span class="md:inline">
               Vous êtes invités à prendre part au FORUM ECONOMIQUE POLOGNE –
               AFRIQUE
             </span>
             <span class="block sm:ml-2 sm:inline-block">
               <a href="#" class="text-primary font-bold underline">
-                Learn more <span aria-hidden="true">&rarr;</span></a
+                En savoir plus <span aria-hidden="true">&rarr;</span></a
               >
             </span>
           </p>
@@ -790,5 +786,4 @@ const posts = [
     },
   },
 ];
-
 </script>

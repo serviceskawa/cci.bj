@@ -7,7 +7,9 @@
         alt=""
       />
     </div>
-    <div class="flex-1 bg-white p-6 flex flex-col justify-between">
+    <div
+      class="flex-1 bg-white p-6 flex flex-col justify-between group hover:bg-primaryInfo"
+    >
       <div class="flex-1">
         <p class="text-sm font-medium text-indigo-600">
           <a href="" class="hover:underline">
