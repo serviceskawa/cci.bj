@@ -203,6 +203,64 @@
             </div>
           </div>
         </div>
+        <div class="mt-12 flex space-x-5">
+          <div
+            class="flex flex-col items-start p-0 border rounded-2xl box-border"
+          >
+            <div class="pt-16 px-8">
+              <h2 class="font-inter pb-4 font-medium text-xl">
+                Chef d’entreprise
+              </h2>
+              <p class="text-base font-inter">
+                Homme d’affaires, entrepreneur, investisseur souhaitant
+                comprendre le marché béninois et ces opportunités, faites-vous
+                accompagner par nos spécialistes en analyses et investissement.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start p-0 border rounded-2xl box-border"
+          >
+            <div class="pt-16 px-8">
+              <h2 class="font-inter pb-4 font-medium text-xl">
+                Chef d’entreprise
+              </h2>
+              <p class="text-base font-inter">
+                Directeur Général, PDG ou Gérant de société souhaitant optimiser
+                les résultats de vos entreprises, faites-vous accompagner par
+                nos spécialistes en développement d’entreprise
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start p-0 border rounded-2xl box-border"
+          >
+            <div class="pt-16 px-8">
+              <h2 class="font-inter pb-4 font-medium text-xl">
+                Chef d’entreprise
+              </h2>
+              <p class="text-base font-inter">
+                Homme d’affaires, entrepreneur, investisseur souhaitant
+                comprendre le marché béninois et ces opportunités, faites-vous
+                accompagner par nos spécialistes en analyses et investissement.
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col items-start p-0 border rounded-2xl box-border"
+          >
+            <div class="pt-16 px-8">
+              <h2 class="font-inter pb-4 font-medium text-xl">
+                Chef d’entreprise
+              </h2>
+              <p class="text-base font-inter">
+                Représentant d’organisation internationnale souhaitant
+                recueillir des données sur les entreprises, consultez nos
+                rapports et diverses données prises lors de nos collectes
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <!-- end offres sections -->
