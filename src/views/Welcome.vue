@@ -4,249 +4,26 @@
     <div>
       <!-- Hero card -->
       <div class="relative">
-        <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
-        <div class="">
-          <div class="relative sm:overflow-hidden">
-            <carousel :items-to-show="1">
-              <slide v-for="slide in 10" :key="slide">
-                <div class="absolute inset-0">
-                  <img
-                    class="h-full w-full object-cover"
-                    src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                    alt="People working on laptops"
-                  />
-                  <div class="absolute inset-0 bg-back mix-blend-multiply" />
-                </div>
-                <div
-                  class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-32 lg:px-8"
-                >
-                  <h1
-                    class="text-left text-4xl font-bold tracking-tight w-50 sm:text-5xl lg:text-6xl"
-                  >
-                    <span class="block text-white"
-                      >Benin Investment Forum 2022</span
-                    >
-                    <span class="block text-primary">customer support</span>
-                  </h1>
-                  <p
-                    class="mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-                  >
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                    occaecat fugiat aliqua.
-                  </p>
-                  <div
-                    class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
-                  >
-                    <div class="rounded-md shadow">
-                      <a
-                        href="#"
-                        class="w-full flex items-center justify-center px-8 py-3 text-lg font-medium rounded-md text-white bg-primary hover:bg-white hover:text-primary md:py-4 md:text-lg md:px-10"
-                      >
-                        Get starteds
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          fill="none"
-                          viewBox="0 0 24 24"
-                          stroke-width="1.5"
-                          stroke="currentColor"
-                          class="w-6 h-6 ml-4"
-                        >
-                          <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                          />
-                        </svg>
-                      </a>
-                    </div>
-                    <div class="mt-3 sm:mt-0 sm:ml-3">
-                      <a
-                        href="#"
-                        class="w-full flex items-center justify-center px-8 py-3 text-lg font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white md:py-4 md:text-lg md:px-10"
-                      >
-                        Live demo {{ slide }}
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </slide>
-
-              <template #addons>
-                <navigation />
-                <pagination />
-              </template>
-            </carousel>
-          </div>
-        </div>
+        <carousel
+          :slides="slides"
+          :interval="3000"
+          controls
+          indicators
+        ></carousel>
       </div>
-    </div>
-
-    <div id="indicators-carousel" class="relative" data-carousel="static">
-      <!-- Carousel wrapper -->
-      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
-        <!-- Item 1 -->
-        <div
-          class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
-          data-carousel-item="1"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 2 -->
-        <div
-          class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
-          data-carousel-item="2"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 3 -->
-        <div
-          class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
-          data-carousel-item="3"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 4 -->
-        <div
-          class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
-          data-carousel-item="4"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-        <!-- Item 5 -->
-        <div
-          class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
-          data-carousel-item="5"
-        >
-          <img
-            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
-            alt="..."
-          />
-        </div>
-      </div>
-      <!-- Slider indicators -->
-      <div
-        class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
-      >
-        <button
-          type="button"
-          class="w-3 h-3 rounded-full bg-white dark:bg-gray-800"
-          aria-current="true"
-          aria-label="Slide 1"
-          data-carousel-slide-to="0"
-        ></button>
-        <button
-          type="button"
-          class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
-          aria-current="false"
-          aria-label="Slide 2"
-          data-carousel-slide-to="1"
-        ></button>
-        <button
-          type="button"
-          class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
-          aria-current="false"
-          aria-label="Slide 3"
-          data-carousel-slide-to="2"
-        ></button>
-        <button
-          type="button"
-          class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
-          aria-current="false"
-          aria-label="Slide 4"
-          data-carousel-slide-to="3"
-        ></button>
-        <button
-          type="button"
-          class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
-          aria-current="false"
-          aria-label="Slide 5"
-          data-carousel-slide-to="4"
-        ></button>
-      </div>
-      <!-- Slider controls -->
-      <button
-        type="button"
-        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-prev=""
-      >
-        <span
-          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-          <svg
-            aria-hidden="true"
-            class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 19l-7-7 7-7"
-            ></path>
-          </svg>
-          <span class="sr-only">Previous</span>
-        </span>
-      </button>
-      <button
-        type="button"
-        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-        data-carousel-next=""
-      >
-        <span
-          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
-        >
-          <svg
-            aria-hidden="true"
-            class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
-            fill="none"
-            stroke="currentColor"
-            viewBox="0 0 24 24"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"
-            ></path>
-          </svg>
-          <span class="sr-only">Next</span>
-        </span>
-      </button>
     </div>
 
     <!-- offres sections -->
-    <div class="relative bg-white py-16 sm:py-24 lg:py-32">
+    <div class="relative bg-white py-16 sm:py-24 lg:py-20">
       <div
         class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
       >
         <p
-          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+          class="mt-2 text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl"
         >
           Des offres adaptées à votre profil
         </p>
-        <p class="mx-auto mt-5 text-xl text-gray-500">
+        <p class="mx-auto mt-5 font-normal sp text-xl text-gray-500">
           Quel que soit votre besoin, la CCI-Bénin vous accompagne à chaque
           étape du processus vers l’atteinte de vos objectifs. Nous vous
           simplifions les démarches pour votre satisfaction complète.
@@ -254,7 +31,7 @@
         <div class="mt-12">
           <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
             <div class="pt-6">
-              <div class="flow-root border rounded-lg">
+              <div class="flow-root border border-borederSimple rounded-[16px]">
                 <div class="-mt-6">
                   <div class="px-6">
                     <span
@@ -277,11 +54,13 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg px-6 font-medium tracking-tight text-gray-900"
+                    class="mt-8 text-xl px-6 pb-4 font-medium tracking-tight text-gray-900"
                   >
                     Créateur d’entreprise
                   </h3>
-                  <p class="mt-5 text-base px-6 pb-4 text-gray-500">
+                  <p
+                    class="self-stretch font-normal text-xl borderSimple px-6 pb-4"
+                  >
                     Aspirant entrepreneur ou commerçant désirant créer une
                     entreprise au Bénin, faites-vous accompagner, aider et
                     guider par nos spécialistes en création et gestion
@@ -296,7 +75,7 @@
               </div>
             </div>
             <div class="pt-6">
-              <div class="flow-root border rounded-lg">
+              <div class="flow-root border border-borederSimple rounded-[16px]">
                 <div class="-mt-6">
                   <div class="px-6">
                     <span
@@ -318,10 +97,14 @@
                       </svg>
                     </span>
                   </div>
-                  <h3 class="mt-8 text-lg px-6 font-medium tracking-tight">
+                  <h3
+                    class="mt-8 text-xl px-6 pb-4 font-medium tracking-tight text-gray-900"
+                  >
                     Chef d’entreprise
                   </h3>
-                  <p class="mt-5 text-base px-6 pb-4 text-gray-500">
+                  <p
+                    class="self-stretch font-normal text-xl borderSimple px-6 pb-4"
+                  >
                     Directeur Général, PDG ou Gérant de société souhaitant
                     optimiser les résultats de vos entreprises, faites-vous
                     accompagner par nos spécialistes en développement
@@ -336,7 +119,7 @@
               </div>
             </div>
             <div class="pt-6">
-              <div class="flow-root border rounded-lg">
+              <div class="flow-root border border-borederSimple rounded-[16px]">
                 <div class="-mt-6">
                   <div class="px-6">
                     <span
@@ -378,7 +161,7 @@
               </div>
             </div>
             <div class="pt-6">
-              <div class="flow-root border rounded-lg">
+              <div class="flow-root border border-borederSimple rounded-[16px]">
                 <div class="-mt-6">
                   <div class="px-6">
                     <span
@@ -871,7 +654,6 @@
 
 <script>
 import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import {
   Popover,
   PopoverButton,
@@ -891,6 +673,7 @@ import OffreCard from "../components/OffreCard.vue";
 import ArticleCard from "../components/ArticleCard.vue";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
 import axiosClient from "../axios";
+import Carousel from "../components/carousel/Carousel.vue";
 
 const NEWS_CAT = `http://localhost/cciwebsite/public/api/news`;
 const services_api = `http://localhost/cciwebsite/public/api/services`;
@@ -903,9 +686,6 @@ export default {
     OffreCard,
     ArticleCard,
     Carousel,
-    Slide,
-    Pagination,
-    Navigation,
   },
   data: () => ({
     branches: ["main", "v2-compat"],
@@ -914,6 +694,13 @@ export default {
     services: null,
     events: null,
     setting: null,
+    slides: [
+      "https://picsum.photos/id/1032/900/400",
+      "https://picsum.photos/id/1033/900/400",
+      "https://picsum.photos/id/1037/900/400",
+      "https://picsum.photos/id/1035/900/400",
+      "https://picsum.photos/id/1036/900/400",
+    ],
   }),
 
   created() {
@@ -957,31 +744,5 @@ export default {
     rgba(0, 0, 0, 0.6),
     rgba(0, 0, 0, 0.6)
   ) !important;
-}
-.carousel__item {
-  min-height: 200px;
-  width: 100%;
-  background-color: var(--vc-clr-primary);
-  color: var(--vc-clr-white);
-  font-size: 20px;
-  border-radius: 8px;
-  /* display: flex; */
-  justify-content: left;
-  align-items: left;
-}
-
-.carousel__slide {
-  padding: 10px;
-  display: block;
-}
-
-.carousel__prev,
-.carousel__next {
-  box-sizing: content-box;
-  border: 5px solid white;
-}
-.carousel__pagination-button {
-  background-color: black !important;
-  margin-top: -32px;
 }
 </style>

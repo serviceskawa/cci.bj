@@ -1,27 +1,29 @@
 <template>
-  <div class="carousel">
-    <div class="carousel-inner">
-      <carousel-indicators
-        v-if="indicators"
-        :total="slides.length"
-        :current-index="currentSlide"
-        @switch="switchSlide($event)"
-      ></carousel-indicators>
-      <carousel-item
-        v-for="(slide, index) in slides"
-        :slide="slide"
-        :key="`item-${index}`"
-        :current-slide="currentSlide"
-        :index="index"
-        :direction="direction"
-        @mouseenter="stopSlideTimer"
-        @mouseout="startSlideTimer"
-      ></carousel-item>
-      <carousel-controls
-        v-if="controls"
-        @prev="prev"
-        @next="next"
-      ></carousel-controls>
+  <div class="inset-x-0 bottom-0 h-1/2 bg-gray-100">
+    <div class="carousel">
+      <div class="relative sm:overflow-hidden carousel-inner">
+        <carousel-indicators
+          v-if="indicators"
+          :total="slides.length"
+          :current-index="currentSlide"
+          @switch="switchSlide($event)"
+        ></carousel-indicators>
+        <carousel-item
+          v-for="(slide, index) in slides"
+          :slide="slide"
+          :key="`item-${index}`"
+          :current-slide="currentSlide"
+          :index="index"
+          :direction="direction"
+          @mouseenter="stopSlideTimer"
+          @mouseout="startSlideTimer"
+        ></carousel-item>
+        <carousel-controls
+          v-if="controls"
+          @prev="prev"
+          @next="next"
+        ></carousel-controls>
+      </div>
     </div>
   </div>
 </template>
@@ -110,13 +112,13 @@ export default {
 
 <style scoped>
 .carousel {
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  justify-content: left !important;
 }
 .carousel-inner {
   position: relative;
-  width: 900px;
-  height: 400px;
+  /* width: 900px; */
+  height: 707px;
   overflow: hidden;
 }
 </style>

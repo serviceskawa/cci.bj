@@ -18,6 +18,9 @@ module.exports = {
       gris: "#FAFAFA",
       blanc: "#FBFBFB",
       bgHeader: "#FBFBFB",
+      gray900: "#111928",
+      borderSimple: "#111827",
+      sp: "#6B7280", //sous paragraphe
     },
   },
   plugins: [require("@tailwindcss/forms")],
