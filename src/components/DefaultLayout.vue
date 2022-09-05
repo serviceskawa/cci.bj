@@ -368,8 +368,8 @@
     <router-view></router-view>
 
     <!-- newsletter -->
-    <div class="bg-white py-16 sm:py-24">
-      <div class="relative sm:py-16 bg-gray">
+    <div class="bg-white pt-16 sm:pt-16">
+      <div class="relative bg-gray">
         <div aria-hidden="true" class="hidden sm:block">
           <div class="absolute inset-y-0 left-0 w-1/2 rounded-r-3xl" />
         </div>

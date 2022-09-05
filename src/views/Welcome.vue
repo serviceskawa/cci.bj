@@ -6,7 +6,7 @@
       <div class="relative">
         <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
         <div class="">
-          <div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
+          <div class="relative sm:overflow-hidden">
             <carousel :items-to-show="1">
               <slide v-for="slide in 10" :key="slide">
                 <div class="absolute inset-0">
@@ -15,10 +15,10 @@
                     src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
                     alt="People working on laptops"
                   />
-                  <div class="absolute inset-0 bg-primary mix-blend-multiply" />
+                  <div class="absolute inset-0 bg-back mix-blend-multiply" />
                 </div>
                 <div
-                  class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
+                  class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-32 lg:px-8"
                 >
                   <h1
                     class="text-left text-4xl font-bold tracking-tight w-50 sm:text-5xl lg:text-6xl"
@@ -43,7 +43,7 @@
                         href="#"
                         class="w-full flex items-center justify-center px-8 py-3 text-lg font-medium rounded-md text-white bg-primary hover:bg-white hover:text-primary md:py-4 md:text-lg md:px-10"
                       >
-                        Get started
+                        Get starteds
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           fill="none"
@@ -80,6 +80,160 @@
           </div>
         </div>
       </div>
+    </div>
+
+    <div id="indicators-carousel" class="relative" data-carousel="static">
+      <!-- Carousel wrapper -->
+      <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+        <!-- Item 1 -->
+        <div
+          class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-0 z-20"
+          data-carousel-item="1"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 2 -->
+        <div
+          class="duration-700 ease-in-out absolute inset-0 transition-all transform translate-x-full z-10"
+          data-carousel-item="2"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 3 -->
+        <div
+          class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
+          data-carousel-item="3"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 4 -->
+        <div
+          class="hidden duration-700 ease-in-out absolute inset-0 transition-all transform"
+          data-carousel-item="4"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+        <!-- Item 5 -->
+        <div
+          class="duration-700 ease-in-out absolute inset-0 transition-all transform -translate-x-full z-10"
+          data-carousel-item="5"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+            class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+            alt="..."
+          />
+        </div>
+      </div>
+      <!-- Slider indicators -->
+      <div
+        class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2"
+      >
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full bg-white dark:bg-gray-800"
+          aria-current="true"
+          aria-label="Slide 1"
+          data-carousel-slide-to="0"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+          aria-current="false"
+          aria-label="Slide 2"
+          data-carousel-slide-to="1"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+          aria-current="false"
+          aria-label="Slide 3"
+          data-carousel-slide-to="2"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+          aria-current="false"
+          aria-label="Slide 4"
+          data-carousel-slide-to="3"
+        ></button>
+        <button
+          type="button"
+          class="w-3 h-3 rounded-full bg-white/50 dark:bg-gray-800/50 hover:bg-white dark:hover:bg-gray-800"
+          aria-current="false"
+          aria-label="Slide 5"
+          data-carousel-slide-to="4"
+        ></button>
+      </div>
+      <!-- Slider controls -->
+      <button
+        type="button"
+        class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-prev=""
+      >
+        <span
+          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg
+            aria-hidden="true"
+            class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            ></path>
+          </svg>
+          <span class="sr-only">Previous</span>
+        </span>
+      </button>
+      <button
+        type="button"
+        class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+        data-carousel-next=""
+      >
+        <span
+          class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+        >
+          <svg
+            aria-hidden="true"
+            class="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          </svg>
+          <span class="sr-only">Next</span>
+        </span>
+      </button>
     </div>
 
     <!-- offres sections -->
@@ -621,7 +775,7 @@
                     class="inline-flex items-center rounded-full bg-primaryInfo px-2.5 py-0.5 text-xs font-medium text-primary"
                     >Appel d'offre</span
                   >
-                                              <p class="text-dark font-semibold">
+                  <p class="text-dark font-semibold">
                     Publié le 23 Mars 2022 - Prend fin le 05 Avril 2022
                   </p>
 
@@ -797,6 +951,13 @@ export default {
 </script>
 
 <style>
+.bg-back {
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.6)
+  ) !important;
+}
 .carousel__item {
   min-height: 200px;
   width: 100%;
