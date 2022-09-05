@@ -6,66 +6,77 @@
       <div class="relative">
         <div class="absolute inset-x-0 bottom-0 h-1/2 bg-gray-100" />
         <div class="">
-          <div class="relative shadow-xl sm:overflow-hidden">
-            <div class="absolute inset-0">
-              <img
-                class="h-full w-full object-cover"
-                src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
-                alt="People working on laptops"
-              />
-              <div class="absolute inset-0 bg-stone-600 mix-blend-multiply" />
-            </div>
-            <div
-              class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
-            >
-              <h1
-                class="text-left text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl"
-              >
-                <span class="block text-white">Take control of your</span>
-                <span class="block text-primary">customer support</span>
-              </h1>
-              <p
-                class="mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
-              >
-                Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-                lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-                fugiat aliqua.
-              </p>
-              <div
-                class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
-              >
-                <div class="rounded-md shadow">
-                  <a
-                    href="#"
-                    class="w-full flex items-center justify-center px-8 py-3 text-lg font-medium rounded-md text-white bg-primary hover:bg-white hover:text-primary md:py-4 md:text-lg md:px-10"
+          <div class="relative shadow-xl sm:overflow-hidden sm:rounded-2xl">
+            <carousel :items-to-show="1">
+              <slide v-for="slide in 10" :key="slide">
+                <div class="absolute inset-0">
+                  <img
+                    class="h-full w-full object-cover"
+                    src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
+                    alt="People working on laptops"
+                  />
+                  <div class="absolute inset-0 bg-primary mix-blend-multiply" />
+                </div>
+                <div
+                  class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
+                >
+                  <h1
+                    class="text-left text-4xl font-bold tracking-tight w-50 sm:text-5xl lg:text-6xl"
                   >
-                    Get started
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke-width="1.5"
-                      stroke="currentColor"
-                      class="w-6 h-6 ml-4"
+                    <span class="block text-white"
+                      >Benin Investment Forum 2022</span
                     >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                      />
-                    </svg>
-                  </a>
-                </div>
-                <div class="mt-3 sm:mt-0 sm:ml-3">
-                  <a
-                    href="#"
-                    class="w-full flex items-center justify-center px-8 py-3 text-lg font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white md:py-4 md:text-lg md:px-10"
+                    <span class="block text-primary">customer support</span>
+                  </h1>
+                  <p
+                    class="mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0"
                   >
-                    Live demo
-                  </a>
+                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
+                    qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
+                    occaecat fugiat aliqua.
+                  </p>
+                  <div
+                    class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start"
+                  >
+                    <div class="rounded-md shadow">
+                      <a
+                        href="#"
+                        class="w-full flex items-center justify-center px-8 py-3 text-lg font-medium rounded-md text-white bg-primary hover:bg-white hover:text-primary md:py-4 md:text-lg md:px-10"
+                      >
+                        Get started
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="w-6 h-6 ml-4"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                          />
+                        </svg>
+                      </a>
+                    </div>
+                    <div class="mt-3 sm:mt-0 sm:ml-3">
+                      <a
+                        href="#"
+                        class="w-full flex items-center justify-center px-8 py-3 text-lg font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white md:py-4 md:text-lg md:px-10"
+                      >
+                        Live demo {{ slide }}
+                      </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
+              </slide>
+
+              <template #addons>
+                <navigation />
+                <pagination />
+              </template>
+            </carousel>
           </div>
         </div>
       </div>
@@ -116,13 +127,13 @@
                   >
                     Créateur d’entreprise
                   </h3>
-                  <p class="mt-5 text-base px-6 text-gray-500">
+                  <p class="mt-5 text-base px-6 pb-4 text-gray-500">
                     Aspirant entrepreneur ou commerçant désirant créer une
                     entreprise au Bénin, faites-vous accompagner, aider et
                     guider par nos spécialistes en création et gestion
                     d’entreprise.
                   </p>
-                  <div class="bg-gray pb-8 px-6">
+                  <div class="bg-gray pb-8 pt-4 px-6">
                     <a href="" class="text-primary">
                       Lire plus <span aria-hidden="true">&rarr;</span></a
                     >
@@ -131,9 +142,9 @@
               </div>
             </div>
             <div class="pt-6">
-              <div class="flow-root border rounded-lg px-6 pb-8">
+              <div class="flow-root border rounded-lg">
                 <div class="-mt-6">
-                  <div>
+                  <div class="px-6">
                     <span
                       class="inline-flex items-start justify-start text-left rounded-md bg-primary p-3 shadow-lg"
                     >
@@ -153,24 +164,27 @@
                       </svg>
                     </span>
                   </div>
-                  <h3
-                    class="mt-8 text-lg font-medium tracking-tight text-gray-900"
-                  >
+                  <h3 class="mt-8 text-lg px-6 font-medium tracking-tight">
                     Chef d’entreprise
                   </h3>
-                  <p class="mt-5 text-base text-gray-500">
+                  <p class="mt-5 text-base px-6 pb-4 text-gray-500">
                     Directeur Général, PDG ou Gérant de société souhaitant
                     optimiser les résultats de vos entreprises, faites-vous
                     accompagner par nos spécialistes en développement
                     d’entreprise
                   </p>
+                  <div class="bg-gray pb-8 pt-4 px-6">
+                    <a href="" class="text-primary">
+                      Lire plus <span aria-hidden="true">&rarr;</span></a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
             <div class="pt-6">
-              <div class="flow-root border rounded-lg px-6 pb-8">
+              <div class="flow-root border rounded-lg">
                 <div class="-mt-6">
-                  <div>
+                  <div class="px-6">
                     <span
                       class="inline-flex items-start justify-start text-left rounded-md bg-primary p-3 shadow-lg"
                     >
@@ -191,23 +205,28 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium tracking-tight text-gray-900"
+                    class="mt-8 px-6 text-lg font-medium tracking-tight text-gray-900"
                   >
                     Investisseur
                   </h3>
-                  <p class="mt-5 text-base text-gray-500">
+                  <p class="mt-5 px-6 text-base text-gray-500">
                     Homme d’affaires, entrepreneur, investisseur souhaitant
                     comprendre le marché béninois et ces opportunités,
                     faites-vous accompagner par nos spécialistes en analyses et
                     investissement.
                   </p>
+                  <div class="bg-gray pb-8 pt-4 px-6">
+                    <a href="" class="text-primary">
+                      Lire plus <span aria-hidden="true">&rarr;</span></a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
             <div class="pt-6">
-              <div class="flow-root border rounded-lg px-6 pb-8">
+              <div class="flow-root border rounded-lg">
                 <div class="-mt-6">
-                  <div>
+                  <div class="px-6">
                     <span
                       class="inline-flex items-start justify-start text-left rounded-md bg-primary p-3 shadow-lg"
                     >
@@ -228,15 +247,20 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-lg font-medium tracking-tight text-gray-900"
+                    class="mt-8 px-6 text-lg font-medium tracking-tight text-gray-900"
                   >
                     Institutionnel
                   </h3>
-                  <p class="mt-5 text-base text-gray-500">
+                  <p class="mt-5 px-6 text-base text-gray-500">
                     Représentant d’organisation internationnale souhaitant
                     recueillir des données sur les entreprises, consultez nos
                     rapports et diverses données prises lors de nos collectes
                   </p>
+                  <div class="bg-gray px-6 pb-8 pt-4 px-6">
+                    <a href="" class="text-primary">
+                      Lire plus <span aria-hidden="true">&rarr;</span></a
+                    >
+                  </div>
                 </div>
               </div>
             </div>
@@ -305,20 +329,11 @@
                 <div
                   class="flex items-center justify-center bg-white h-12 w-12 rounded-md text-white"
                 >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="#DD7A4B"
-                    class="w-6 h-6"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M2.25 18L9 11.25l4.306 4.307a11.95 11.95 0 015.814-5.519l2.74-1.22m0 0l-5.94-2.28m5.94 2.28l-2.28 5.941"
-                    />
-                  </svg>
+                  <img
+                    class="h-8 w-auto sm:h-10 hover:animate-ping"
+                    src="../assets/160-trenging-up-solid.svg"
+                    alt=""
+                  />
                 </div>
                 <p class="mt-5 text-lg leading-6 font-medium text-gray-900">
                   3,8%
@@ -334,7 +349,7 @@
                   class="flex items-center justify-center bg-white h-12 w-12 rounded-md text-white"
                 >
                   <img
-                    class="h-8 w-auto sm:h-10"
+                    class="h-8 w-auto sm:h-10 hover:animate-ping"
                     src="../assets/16-assessment-solid.svg"
                     alt=""
                   />
@@ -353,7 +368,7 @@
                   class="flex items-center justify-center bg-white h-12 w-12 rounded-md text-white"
                 >
                   <img
-                    class="h-8 w-auto sm:h-10"
+                    class="h-8 w-auto sm:h-10 hover:animate-ping"
                     src="../assets/work-solid.svg"
                     alt=""
                   />
@@ -372,7 +387,7 @@
                   class="flex items-center justify-center bg-white h-12 w-12 rounded-md text-white"
                 >
                   <img
-                    class="h-8 w-auto sm:h-10"
+                    class="h-8 w-auto sm:h-10 hover:animate-ping"
                     src="../assets/199-attribution-solid.svg"
                     alt=""
                   />
@@ -406,7 +421,7 @@
         </p>
         <div class="mt-12">
           <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="pt-6">
+            <div class="pt-6" v-for="service in services" :key="service.id">
               <div
                 class="flow-root bg-blanc rounded-lg group hover:bg-primaryInfo hover:border-primary"
               >
@@ -486,7 +501,12 @@
         <div
           class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
         >
-          <div class="flex flex-col rounded-lg shadow-lg overflow-hidden">
+          <div
+            v-for="event in events"
+            :key="event.id"
+            :event="event"
+            class="flex flex-col rounded-lg shadow-lg overflow-hidden"
+          >
             <div class="flex-shrink-0">
               <img
                 class="h-48 w-full object-cover"
@@ -537,7 +557,7 @@
     <!-- end agenda -->
 
     <!-- appels d'offres -->
-    <div class="relative bg-white py-16 sm:py-24 lg:py-32">
+    <!-- <div class="relative bg-white py-16 sm:py-24 lg:py-32">
       <div
         class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
       >
@@ -566,6 +586,54 @@
                 View all posts
                 <span aria-hidden="true"> &rarr;</span>
               </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <div class="py-16 bg-gradient-to-br from-green-50 to-cyan-100">
+      <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+        <p
+          class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
+        >
+          Appels d’offres et appels à projets
+        </p>
+        <p class="mx-auto mt-5 text-xl text-gray-500">
+          La CCIB vous informe des opportunités d’affaires localisées au Bénin.
+          Retrouvez tous les appels à concurrence, communiqués et appels à
+          candidatures.
+        </p>
+        <div class="grid gap-12 lg:grid-cols-2 mt-12">
+          <div class="p-1 group sm:flex space-x-6 bg-white bg-opacity-50">
+            <img
+              src="https://tailus.io/sources/blocks/twocards/preview/images/woman.jpg"
+              alt="art cover"
+              loading="lazy"
+              width="1000"
+              height="667"
+              class="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top transition duration-500"
+            />
+            <div class="sm:w-7/12 pl-0">
+              <div class="space-y-2">
+                <div class="space-y-4">
+                  <span
+                    class="inline-flex items-center rounded-full bg-primaryInfo px-2.5 py-0.5 text-xs font-medium text-primary"
+                    >Appel d'offre</span
+                  >
+                                              <p class="text-dark font-semibold">
+                    Publié le 23 Mars 2022 - Prend fin le 05 Avril 2022
+                  </p>
+
+                  <h4 class="text-lg font-semibold text-cyan-900">
+                    Concours de recrutement de 662 aspirants pour la formation
+                    d'enseignants au profit des Lycées techniques agricoles
+                  </h4>
+                </div>
+                <a href="#" class="block font-semibold w-max text-primary"
+                  >En savoir plus →</a
+                >
+              </div>
             </div>
           </div>
         </div>
@@ -648,6 +716,8 @@
 </template>
 
 <script>
+import "vue3-carousel/dist/carousel.css";
+import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import {
   Popover,
   PopoverButton,
@@ -670,18 +740,26 @@ import axiosClient from "../axios";
 
 const NEWS_CAT = `http://localhost/cciwebsite/public/api/news`;
 const services_api = `http://localhost/cciwebsite/public/api/services`;
+const events = `http://localhost/cciwebsite/public/api/events`;
+const setting = `http://localhost/cciwebsite/public/api/setting`;
 
 export default {
   components: {
     ServiceCard,
     OffreCard,
     ArticleCard,
+    Carousel,
+    Slide,
+    Pagination,
+    Navigation,
   },
   data: () => ({
     branches: ["main", "v2-compat"],
     currentBranch: "main",
     commits: null,
     services: null,
+    events: null,
+    setting: null,
   }),
 
   created() {
@@ -704,6 +782,45 @@ export default {
       this.services = await (await fetch(url)).json();
       console.log(this.services);
     },
+    async fetchEvents() {
+      const url = `${events}`;
+      this.events = await (await fetch(url)).json();
+      console.log(this.events);
+    },
+    async fetchSetting() {
+      const url = `${setting}`;
+      this.setting = await (await fetch(url)).json();
+      console.log(this.setting);
+    },
   },
 };
 </script>
+
+<style>
+.carousel__item {
+  min-height: 200px;
+  width: 100%;
+  background-color: var(--vc-clr-primary);
+  color: var(--vc-clr-white);
+  font-size: 20px;
+  border-radius: 8px;
+  /* display: flex; */
+  justify-content: left;
+  align-items: left;
+}
+
+.carousel__slide {
+  padding: 10px;
+  display: block;
+}
+
+.carousel__prev,
+.carousel__next {
+  box-sizing: content-box;
+  border: 5px solid white;
+}
+.carousel__pagination-button {
+  background-color: black !important;
+  margin-top: -32px;
+}
+</style>

@@ -37,6 +37,6 @@ const NEWS_CAT = `http://localhost/cciwebsite/public/api/news`;
 
 export default {
   name: "ArticleCard",
-  props: ["branch"],
+  props: ["branch", ""],
 };
 </script>
