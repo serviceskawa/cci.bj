@@ -1,12 +1,15 @@
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
     "./index.html",
-    "./src/**/*.{vue,js,ts,jsx,tsx}",
-    "./node_modules/flowbite/**/*.js",
+    "./src/**/*.{vue,js,ts,jsx,tsx}"
   ],
   theme: {
     extend: {},
+    fontFamily: {
+      'Inter': ['Inter', 'sans-serif'] 
+    },
     colors: {
       primary: "#DD7A4B",
       green: "#487F50",
@@ -20,7 +23,11 @@ module.exports = {
       bgHeader: "#FBFBFB",
       gray900: "#111928",
       borderSimple: "#111827",
-      sp: "#6B7280", //sous paragraphe
+      grayCard:"#F9FAFB",
+      sp: "#6B7280",
+      borderInput:"#D1D5DB",
+      subtitlegray: "#6B7280"
+      //sous paragraphe
     },
   },
   plugins: [require("@tailwindcss/forms")],

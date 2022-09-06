@@ -1,7 +1,8 @@
 <template>
   <!-- in vue 2.x you need wrap these buttons in a div -->
-  <button class="carousel-control left" @click="$emit('prev')">Prev</button>
-  <button class="carousel-control right" @click="$emit('next')">Next</button>
+  <!-- <button class="carousel-control left" @click="$emit('prev')">Prev</button>
+  <button class="carousel-control right" @click="$emit('next')">Next</button> -->
+  <span></span>
 </template>
 
 <script>

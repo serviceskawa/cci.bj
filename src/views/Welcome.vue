@@ -15,21 +15,17 @@
 
     <!-- offres sections -->
     <div class="relative bg-white py-16 sm:py-24 lg:py-20">
-      <div
-        class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
-      >
+      <div class="mx-auto max-w-md sm:max-w-3xl lg:max-w-7xl ">
         <p
           class="mt-2 text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl"
         >
           Des offres adaptées à votre profil
         </p>
-        <p class="mx-auto mt-5 font-normal sp text-xl text-gray-500">
-          Quel que soit votre besoin, la CCI-Bénin vous accompagne à chaque
-          étape du processus vers l’atteinte de vos objectifs. Nous vous
-          simplifions les démarches pour votre satisfaction complète.
+        <p class="mx-auto mt-5 font-normal sp text-xl text-subtitlegray">
+          Quelque soit votre besoin,  la CCIB vous accompagne à chaque étape afin que vous soyez satisfait.
         </p>
         <div class="mt-12">
-          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             <div class="pt-6">
               <div class="flow-root border border-borederSimple rounded-[16px]">
                 <div class="-mt-6">
@@ -54,19 +50,19 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-xl px-6 pb-4 font-medium tracking-tight text-gray-900"
+                    class="mt-8 text-xl px-6 pb-4 font-medium  tracking-tight text-gray-900"
                   >
                     Créateur d’entreprise
                   </h3>
                   <p
-                    class="self-stretch font-normal text-xl borderSimple px-6 pb-4"
+                    class="self-stretch text-base borderSimple px-6 pb-8"
                   >
                     Aspirant entrepreneur ou commerçant désirant créer une
                     entreprise au Bénin, faites-vous accompagner, aider et
                     guider par nos spécialistes en création et gestion
                     d’entreprise.
                   </p>
-                  <div class="bg-gray pb-8 pt-4 px-6">
+                  <div class="rounded-b-[16px] bg-grayCard py-6 px-6">
                     <a href="" class="text-primary">
                       Lire plus <span aria-hidden="true">&rarr;</span></a
                     >
@@ -98,19 +94,19 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 text-xl px-6 pb-4 font-medium tracking-tight text-gray-900"
+                    class="mt-8 text-xl px-6 pb-4 font-medium  tracking-tight text-gray-900"
                   >
                     Chef d’entreprise
                   </h3>
                   <p
-                    class="self-stretch font-normal text-xl borderSimple px-6 pb-4"
+                    class="self-stretch font-normal text-base borderSimple px-6 pb-8"
                   >
                     Directeur Général, PDG ou Gérant de société souhaitant
                     optimiser les résultats de vos entreprises, faites-vous
                     accompagner par nos spécialistes en développement
                     d’entreprise
                   </p>
-                  <div class="bg-gray pb-8 pt-4 px-6">
+                  <div class="rounded-b-[16px] bg-grayCard py-6 px-6">
                     <a href="" class="text-primary">
                       Lire plus <span aria-hidden="true">&rarr;</span></a
                     >
@@ -142,17 +138,19 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 px-6 text-lg font-medium tracking-tight text-gray-900"
+                    class="mt-8 text-xl px-6 pb-4 font-medium  tracking-tight text-gray-900"
                   >
                     Investisseur
                   </h3>
-                  <p class="mt-5 px-6 text-base text-gray-500">
+                  <p
+                    class="self-stretch font-normal text-base borderSimple px-6 pb-8"
+                  >
                     Homme d’affaires, entrepreneur, investisseur souhaitant
                     comprendre le marché béninois et ces opportunités,
                     faites-vous accompagner par nos spécialistes en analyses et
                     investissement.
                   </p>
-                  <div class="bg-gray pb-8 pt-4 px-6">
+                  <div class="rounded-b-[16px] bg-grayCard py-6 px-6">
                     <a href="" class="text-primary">
                       Lire plus <span aria-hidden="true">&rarr;</span></a
                     >
@@ -184,80 +182,24 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-8 px-6 text-lg font-medium tracking-tight text-gray-900"
+                    class="mt-8 text-xl px-6 pb-4 font-medium  tracking-tight text-gray-900"
                   >
                     Institutionnel
                   </h3>
-                  <p class="mt-5 px-6 text-base text-gray-500">
+                  <p
+                    class="self-stretch font-normal text-base borderSimple px-6 pb-8"
+                  >
                     Représentant d’organisation internationnale souhaitant
                     recueillir des données sur les entreprises, consultez nos
-                    rapports et diverses données prises lors de nos collectes
+                    rapports et diverses données prises lors de nos collectes.
                   </p>
-                  <div class="bg-gray px-6 pb-8 pt-4 px-6">
+                  <div class="rounded-b-[16px] bg-grayCard py-6 px-6">
                     <a href="" class="text-primary">
                       Lire plus <span aria-hidden="true">&rarr;</span></a
                     >
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="mt-12 flex space-x-5">
-          <div
-            class="flex flex-col items-start p-0 border rounded-2xl box-border"
-          >
-            <div class="pt-16 px-8">
-              <h2 class="font-inter pb-4 font-medium text-xl">
-                Chef d’entreprise
-              </h2>
-              <p class="text-base font-inter">
-                Homme d’affaires, entrepreneur, investisseur souhaitant
-                comprendre le marché béninois et ces opportunités, faites-vous
-                accompagner par nos spécialistes en analyses et investissement.
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex flex-col items-start p-0 border rounded-2xl box-border"
-          >
-            <div class="pt-16 px-8">
-              <h2 class="font-inter pb-4 font-medium text-xl">
-                Chef d’entreprise
-              </h2>
-              <p class="text-base font-inter">
-                Directeur Général, PDG ou Gérant de société souhaitant optimiser
-                les résultats de vos entreprises, faites-vous accompagner par
-                nos spécialistes en développement d’entreprise
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex flex-col items-start p-0 border rounded-2xl box-border"
-          >
-            <div class="pt-16 px-8">
-              <h2 class="font-inter pb-4 font-medium text-xl">
-                Chef d’entreprise
-              </h2>
-              <p class="text-base font-inter">
-                Homme d’affaires, entrepreneur, investisseur souhaitant
-                comprendre le marché béninois et ces opportunités, faites-vous
-                accompagner par nos spécialistes en analyses et investissement.
-              </p>
-            </div>
-          </div>
-          <div
-            class="flex flex-col items-start p-0 border rounded-2xl box-border"
-          >
-            <div class="pt-16 px-8">
-              <h2 class="font-inter pb-4 font-medium text-xl">
-                Chef d’entreprise
-              </h2>
-              <p class="text-base font-inter">
-                Représentant d’organisation internationnale souhaitant
-                recueillir des données sur les entreprises, consultez nos
-                rapports et diverses données prises lors de nos collectes
-              </p>
             </div>
           </div>
         </div>
@@ -271,7 +213,7 @@
         <div class="h-1/3 sm:h-2/3" />
       </div>
       <div
-        class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
+        class="relative max-w-7xl mx-auto py-12  lg:py-16 "
       >
         <div class="text-center">
           <h2
@@ -279,7 +221,7 @@
           >
             Nos actualités
           </h2>
-          <p class="mt-3 max-w-2xl mx-auto text-lg text-gray-500 sm:mt-4">
+          <p class="mt-3 max-w-2xl mx-auto text-lg text-subtitlegray sm:mt-4">
             Ne ratez aucune opportunité - Ne manquez aucun événement de la
             Chambre de Commerce et d’Industrie du Bénin
           </p>
@@ -292,6 +234,7 @@
             :key="branch.id"
             :branch="branch"
           />
+          
         </div>
       </div>
     </div>
@@ -299,10 +242,10 @@
 
     <!-- indicateur -->
     <div class="bg-white overflow-hidden">
-      <div class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div class="relative max-w-7xl mx-auto py-12 ">
         <div class="relative lg:grid lg:grid-cols-4 lg:gap-x-8">
-          <div class="lg:col-span-2 xl:mt-20">
-            <p class="mt-2 text-base font-bold tracking-tight text-primary">
+          <div class="lg:col-span-2 xl:mt-20 space-y-4">
+            <p class="mt-2 text-base font-medium tracking-tight text-primary">
               Indicateurs clés
             </p>
             <h2
@@ -310,7 +253,7 @@
             >
               Une communauté d’affaires forte, résiliente et diversifiée
             </h2>
-            <p>
+            <p class="text-subtitlegray">
               Nous connectons divers acteurs autour d’une vision stratégique
               commune afin susciter des leviers d’innovation et de croissance
               pour les entreprises.
@@ -330,12 +273,12 @@
                     alt=""
                   />
                 </div>
-                <p class="mt-5 text-lg leading-6 font-medium text-gray-900">
+                <p class="mt-5 text-2xl leading-6 font-bold text-gray-900">
                   3,8%
                 </p>
               </dt>
-              <dd class="mt-2 text-base text-gray-500">
-                Taux de croissance du PIB au Bénin en 2020
+              <dd class="mt-2 text-base text-sp">
+                Taux de croissance du <br> PIB au Bénin en 2020
               </dd>
             </div>
             <div>
@@ -349,12 +292,12 @@
                     alt=""
                   />
                 </div>
-                <p class="mt-5 text-lg leading-6 font-medium text-gray-900">
+                <p class="mt-5 text-2xl leading-6 font-bold text-gray-900">
                   52.378
                 </p>
               </dt>
-              <dd class="mt-2 text-base text-gray-500">
-                Entreprises créées au Bénin en 2021
+              <dd class="mt-2 text-base text-sp">
+                Entreprises créées <br> au Bénin en 2021
               </dd>
             </div>
             <div>
@@ -368,12 +311,12 @@
                     alt=""
                   />
                 </div>
-                <p class="mt-5 text-lg leading-6 font-medium text-gray-900">
+                <p class="mt-5 text-2xl leading-6 font-bold text-gray-900">
                   114 ANS
                 </p>
               </dt>
-              <dd class="mt-2 text-base text-gray-500">
-                D’activités de la CCI-Bénin au service du secteur privé
+              <dd class="mt-2 text-base text-sp">
+                D’activités de la CCI-Bénin <br> au service du secteur privé
               </dd>
             </div>
             <div>
@@ -387,11 +330,13 @@
                     alt=""
                   />
                 </div>
-                <p class="mt-5 text-lg leading-6 font-medium text-gray-900">
+                <p class="mt-5 text-2xl leading-6 font-bold text-gray-900">
                   60
                 </p>
               </dt>
-              <dd class="mt-2 text-base text-gray-500">Elus consulaires</dd>
+              <dd class="mt-2 text-base text-sp">
+                Elus consulaires
+              </dd>
             </div>
           </dl>
         </div>
@@ -402,26 +347,26 @@
     <!-- services -->
     <div class="relative bg-white py-16 sm:py-24 lg:py-32">
       <div
-        class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8"
+        class="mx-auto max-w-md  sm:max-w-3xl  lg:max-w-7xl "
       >
         <p
           class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
         >
           Des services aussi accessibles que divers
         </p>
-        <p class="mx-auto mt-5 text-xl text-gray-500">
+        <p class="mx-auto mt-5 text-xl text-subtitlegray">
           Spécialistes de l’accompagnement et du conseil aux entreprises, nous
           fournissons une gamme variée de solutions innovantes pour accompagner
           les sociétés béninoises dans leur croissance.
         </p>
         <div class="mt-12">
-          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="pt-6" v-for="service in services" :key="service.id">
+          <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            <div class="pt-6" v-for="i in 4" :key="i">
               <div
-                class="flow-root bg-blanc rounded-lg group hover:bg-primaryInfo hover:border-primary"
+                class="flow-root bg-blanc rounded-lg group hover:border hover:bg-primaryInfo hover:border-primary"
               >
                 <div class="mt-6 pb-6">
-                  <div class="px-6">
+                  <div class="flex justify-between px-6">
                     <span
                       class="inline-flex items-start justify-start text-left rounded-md bg-primary p-3 shadow-lg"
                     >
@@ -449,9 +394,9 @@
                     </span>
                   </div>
                   <h3
-                    class="mt-4 text-lg px-6 font-medium tracking-tight text-gray-900"
+                    class="mt-4 text-lg px-6 font-bold tracking-tight text-gray-900"
                   >
-                    name
+                   Services spécifiques
                   </h3>
                   <p class="mt-5 text-base px-6 text-gray-500">
                     Vérification d’existence et de fiabilité des entreprises,
@@ -462,7 +407,7 @@
             </div>
             <!-- <ServiceCard /> -->
           </div>
-          <div class="tracking-tight mt-6 text-left text-dark">
+          <div class="tracking-tight mt-12 text-left text-dark">
             <span class="block sm:ml-2 sm:inline-block">
               <a href="" class="text-primary">
                 Voir tous les services <span aria-hidden="true">&rarr;</span></a
@@ -481,7 +426,7 @@
         <div class="h-1/3 sm:h-2/3" />
       </div>
       <div
-        class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8"
+        class="relative max-w-7xl mx-auto "
       >
         <div class="text-center">
           <h2
@@ -489,7 +434,7 @@
           >
             Agenda
           </h2>
-          <p class="mt-3 max-w-2xl mx-auto text-lg text-gray-500 sm:mt-4">
+          <p class="mt-3 max-w-2xl mx-auto text-lg text-sp sm:mt-4">
             Retrouvez nos futurs évènements
           </p>
         </div>
@@ -497,10 +442,10 @@
           class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none"
         >
           <div
-            v-for="event in events"
-            :key="event.id"
+            v-for="i in 3"
+            :key="i"
             :event="event"
-            class="flex flex-col rounded-lg shadow-lg overflow-hidden"
+            class="flex flex-col rounded-lg shadow overflow-hidden"
           >
             <div class="flex-shrink-0">
               <img
@@ -510,28 +455,28 @@
               />
             </div>
             <div
-              class="flex-1 bg-white pt-6 px-6 pb-3 flex flex-col justify-between"
+              class="flex-1 bg-white pt-6 px-6 flex flex-col justify-between"
             >
               <div class="flex-1">
                 <span
-                  class="inline-flex items-center px-2.5 py-0.5 rounded-md text-sm font-medium bg-primaryInfo text-primary"
+                  class="inline-flex items-center px-6 py-1 rounded-full text-sm bg-primaryInfo text-primary"
                 >
                   Présentiel
                 </span>
-                <a href="" class="block mt-2">
-                  <p class="text-xl font-semibold text-gray-900">
+                <a href="" class="block mt-2 spaxe-y-2">
+                  <p class="text-base font-semibold text-gray-900">
                     Titre de l’évenement
                   </p>
-                  <p class="text-sm font-medium text-indigo-600">
+                  <p class="text-base font-medium text-indigo-600">
                     <a href="" class="hover:underline"> 20 - 24 Sept 2022 </a>
                   </p>
-                  <p class="mt-3 text-base text-gray-500">
+                  <p class="mt-1.5 text-base text-gray-500">
                     Palais de la Marina, Cotonou, Bénin
                   </p>
                 </a>
               </div>
             </div>
-            <div class="tracking-tight bg-white px-6 py-3 text-left text-dark">
+            <div class="tracking-tight bg-white px-6 py-9 text-left text-dark">
               <span class="block sm:inline-block">
                 <a href="" class="text-primary">
                   Participer <span aria-hidden="true">&rarr;</span></a
@@ -540,7 +485,7 @@
             </div>
           </div>
         </div>
-        <div class="tracking-tight mt-6 text-left text-dark">
+        <div class="tracking-tight mt-12 text-left text-dark">
           <span class="block sm:ml-2 sm:inline-block">
             <a href="" class="text-primary">
               Voir tous les évènements <span aria-hidden="true">&rarr;</span></a
@@ -588,49 +533,81 @@
     </div> -->
 
     <div class="py-16 bg-gradient-to-br from-green-50 to-cyan-100">
-      <div class="container m-auto px-6 text-gray-600 md:px-12 xl:px-6">
+      <div class="container m-auto text-gray-600 ">
         <p
           class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
         >
           Appels d’offres et appels à projets
         </p>
-        <p class="mx-auto mt-5 text-xl text-gray-500">
+        <p class="mx-auto mt-5 text-xl text-subtitlegray">
           La CCIB vous informe des opportunités d’affaires localisées au Bénin.
           Retrouvez tous les appels à concurrence, communiqués et appels à
           candidatures.
         </p>
-        <div class="grid gap-12 lg:grid-cols-2 mt-12">
+        <div class="border-[#ededed] border mt-5"></div>
+        <div class="grid gap-5 lg:grid-cols-2 mt-12">
           <div class="p-1 group sm:flex space-x-6 bg-white bg-opacity-50">
             <img
               src="https://tailus.io/sources/blocks/twocards/preview/images/woman.jpg"
               alt="art cover"
               loading="lazy"
-              width="1000"
-              height="667"
-              class="h-56 sm:h-full w-full sm:w-5/12 object-cover object-top transition duration-500"
+              class="h-56 sm:h-[208px] w-full sm:w-[200px] object-cover object-top transition duration-500"
             />
-            <div class="sm:w-7/12 pl-0">
+            <div class=" pl-0">
               <div class="space-y-2">
                 <div class="space-y-4">
                   <span
                     class="inline-flex items-center rounded-full bg-primaryInfo px-2.5 py-0.5 text-xs font-medium text-primary"
-                    >Appel d'offre</span
+                    >Appel d'offres</span
                   >
-                  <p class="text-dark font-semibold">
+                  <p class="text-dark text-sm ">
                     Publié le 23 Mars 2022 - Prend fin le 05 Avril 2022
                   </p>
 
-                  <h4 class="text-lg font-semibold text-cyan-900">
+                  <h4 class="text-xl font-semibold text-cyan-900">
                     Concours de recrutement de 662 aspirants pour la formation
                     d'enseignants au profit des Lycées techniques agricoles
                   </h4>
                 </div>
-                <a href="#" class="block font-semibold w-max text-primary"
+                <a href="#" class="block text-base w-max text-primary"
                   >En savoir plus →</a
                 >
               </div>
+              
             </div>
           </div>
+          <div class="p-1 group sm:flex space-x-6 bg-white bg-opacity-50">
+            <img
+              src="https://tailus.io/sources/blocks/twocards/preview/images/woman.jpg"
+              alt="art cover"
+              loading="lazy"
+              class="h-56 sm:h-[208px] w-full sm:w-[200px] object-cover object-top transition duration-500"
+            />
+            <div class=" pl-0">
+              <div class="space-y-2">
+                <div class="space-y-4">
+                  <span
+                    class="inline-flex items-center rounded-full bg-primaryInfo px-2.5 py-0.5 text-xs font-medium text-primary"
+                    >Appel d'offres</span
+                  >
+                  <p class="text-dark text-sm ">
+                    Publié le 23 Mars 2022 - Prend fin le 05 Avril 2022
+                  </p>
+
+                  <h4 class="text-xl font-semibold text-cyan-900">
+                    Concours de recrutement de 662 aspirants pour la formation
+                    d'enseignants au profit des Lycées techniques agricoles
+                  </h4>
+                </div>
+                <a href="#" class="block text-base w-max text-primary"
+                  >En savoir plus →</a
+                >
+              </div>
+              
+            </div>
+          </div>
+
+          
         </div>
       </div>
     </div>
@@ -638,7 +615,7 @@
 
     <!-- devenir partenaires -->
     <div class="bg-white">
-      <div class="max-w-7xl mx-auto py-16 px-4 sm:py-20 sm:px-6 lg:px-8">
+      <div class="max-w-7xl mx-auto py-16  sm:py-20 ">
         <h2 class="text-3xl tracking-tight font-bold text-blue">
           Nos partenaires, plus dévoués que jamais pour votre succès
         </h2>
@@ -692,7 +669,7 @@
           </div>
         </div>
 
-        <div class="tracking-tight text-right text-dark">
+        <div class="tracking-tight text-right text-dark mt-16 ">
           <span class="block sm:ml-2 sm:inline-block">
             <a href="" class="text-primary">
               Devenir partenaire <span aria-hidden="true">&rarr;</span></a
@@ -733,10 +710,10 @@ import { ChevronDownIcon } from "@heroicons/vue/solid";
 import axiosClient from "../axios";
 import Carousel from "../components/carousel/Carousel.vue";
 
-const NEWS_CAT = `http://localhost/cciwebsite/public/api/news`;
-const services_api = `http://localhost/cciwebsite/public/api/services`;
-const events = `http://localhost/cciwebsite/public/api/events`;
-const setting = `http://localhost/cciwebsite/public/api/setting`;
+const NEWS_CAT = `https://6cc4-41-138-89-246.ngrok.io/api/news`;
+const services_api = `https://6cc4-41-138-89-246.ngrok.io/api/services`;
+const events = `https://6cc4-41-138-89-246.ngrok.io/api/events`;
+const setting = `https://6cc4-41-138-89-246.ngrok.io/api/setting`;
 
 export default {
   components: {

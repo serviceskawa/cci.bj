@@ -11,7 +11,7 @@
       class="flex-1 bg-white p-6 flex flex-col justify-between group hover:bg-primaryInfo"
     >
       <div class="flex-1">
-        <p class="text-sm font-medium text-indigo-600">
+        <p class="text-sm text-primary text-indigo-600">
           <a href="" class="hover:underline">
             Publié le {{ branch.news_publication_date }}
           </a>
@@ -20,7 +20,7 @@
           <p class="text-xl font-semibold text-gray-900">
             {{ branch.title }}
           </p>
-          <p class="mt-3 text-base text-gray-500">
+          <p class="mt-3 text-sp text-base">
             {{ branch.short_content }}
           </p>
         </a>
@@ -33,7 +33,7 @@
 import { computed } from "vue";
 import { useStore } from "vuex";
 
-const NEWS_CAT = `http://localhost/cciwebsite/public/api/news`;
+const NEWS_CAT = `https://6cc4-41-138-89-246.ngrok.io/api/news`;
 
 export default {
   name: "ArticleCard",

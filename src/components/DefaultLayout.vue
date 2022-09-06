@@ -2,14 +2,14 @@
 <template>
   <div class="bg-white">
     <header>
-      <Popover class="relative bg-white">
+      <Popover class="relative bg-white shadow">
         <div
-          class="flex justify-between items-center max-w-7xl mx-auto px-4 py-6 sm:px-6 md:justify-start md:space-x-10 lg:px-8"
+          class="flex justify-between items-center max-w-7xl mx-auto  py-2 md:justify-start md:space-x-4 "
         >
-          <div class="flex justify-start lg:w-0 lg:flex-1">
+          <div class="flex justify-start ">
             <a href="#">
               <span class="sr-only">CCIB</span>
-              <img class="h-8 w-auto sm:h-10" src="../assets/logo.png" alt="" />
+              <img class="w-28 h-14" src="../assets/logo.png" alt="" />
             </a>
           </div>
 
@@ -222,29 +222,21 @@
               Travailler avec nous
             </a>
           </PopoverGroup>
-          <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+          <div class="h-full hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a
               href="#"
               class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-6 h-6"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-                />
+              <svg width="52" height="53" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#a)"><rect x="2" y="1.5" width="48" height="48" rx="6" fill="#fff"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M24 19.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-6 4a6 6 0 1 1 10.89 3.477l4.817 4.816a1 1 0 0 1-1.414 1.414l-4.816-4.816A6 6 0 0 1 18 23.5Z" fill="#111827"/>
+              <rect x="2.5" y="2" width="47" height="47" rx="5.5" stroke="#111827"/></g><defs><filter id="a" x="0" y=".5" width="52" height="52" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/><feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/><feOffset dy="1"/><feGaussianBlur stdDeviation="1"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"/><feBlend in2="BackgroundImageFix" result="effect1_dropShadow_5092_3872"/><feBlend in="SourceGraphic" in2="effect1_dropShadow_5092_3872" result="shape"/></filter></defs>
               </svg>
             </a>
             <a
               href="#"
-              class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-dark bg-indigo-600 hover:bg-indigo-700"
+              class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2.5 border border-transparent rounded-md shadow-sm text-base font-medium text-dark bg-indigo-600 hover:bg-indigo-700"
             >
               Nous contacter
             </a>
@@ -345,7 +337,7 @@
               Vous êtes invités à prendre part au FORUM ECONOMIQUE POLOGNE –
               AFRIQUE
             </span>
-            <span class="block sm:ml-2 sm:inline-block">
+            <span class="block sm:ml-12 sm:inline-block">
               <a href="#" class="text-primary font-bold underline">
                 En savoir plus <span aria-hidden="true">&rarr;</span></a
               >
@@ -360,7 +352,7 @@
             class="flex p-2 rounded-md hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-white"
           >
             <span class="sr-only">Dismiss</span>
-            <XIcon class="h-6 w-6 text-white" aria-hidden="true" />
+            <XIcon class="h-6 w-6 text-black" aria-hidden="true" />
           </button>
         </div>
       </div>
@@ -395,20 +387,23 @@
                   informé(e) de nos dernières actualités.
                 </p>
               </div>
-              <form action="#" class="mt-12 sm:mx-auto sm:max-w-lg sm:flex">
-                <div class="min-w-0 flex-1">
+              <form action="#" class="justify-center mt-12 sm:flex">
+                <div class="">
                   <label for="cta-email" class="sr-only">Email address</label>
-                  <input
+                  <div class="w-[420px]">
+                      <input
                     id="cta-email"
                     type="email"
-                    class="block w-full border border-white rounded-md px-5 py-3 text-base text-dark placeholder-dark shadow-sm focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
+                    class="block w-full border border-borderInput rounded-md px-5 py-3 text-base text-dark placeholder-dark focus:outline-none focus:border-transparent focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600"
                     placeholder="Entrez votre adresse mail"
                   />
+                  </div>
+                  
                 </div>
                 <div class="mt-4 sm:mt-0 sm:ml-3">
                   <button
                     type="submit"
-                    class="block w-full rounded-md px-5 py-3 bg-white text-base font-medium text-primary shadow hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 sm:px-10"
+                    class="block w-full rounded-md px-5 py-3 bg-white text-base font-medium text-primary  hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 sm:px-10"
                   >
                     Restez informé
                   </button>

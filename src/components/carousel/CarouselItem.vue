@@ -16,22 +16,21 @@
         <div class="absolute inset-0 bg-back mix-blend-multiply" />
       </div>
       <div
-        class="relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-32 lg:px-8"
-      >
-        <h1
-          class="text-left text-4xl font-extrabold sp tracking-tight w-50 sm:text-5xl lg:text-6xl"
-        >
-          <span class="block text-white"
-            >Benin Investment <br />
-            Forum 2022
-          </span>
-        </h1>
-        <p
-          class="mt-3 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:text-xl lg:mx-0"
-        >
-          Le Benin Investment Forum (BIF) se tiendra du 23 au 24 Juin 2022 sous
-          le thème : « Bénin Nouvelle Frontière des marchés émergeants ».
-        </p>
+        class="top-20 relative max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-32 lg:px-8">
+          <h1
+            class="lg:text-left text-4xl font-extrabold sp tracking-tight w-50 sm:text-5xl lg:text-6xl"
+          >
+            <span class="block tracking-normal	text-white"
+              >Benin Investment <br />
+              <span class="text-primary">Forum 2022 BIF</span> 
+            </span>
+          </h1>
+          <p
+            class="mt-3 text-left tracking-normal	 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:text-xl lg:mx-0"
+          >
+            Le Benin Investment Forum (BIF) se tiendra du 23 au 24 Juin 2022 sous
+            le thème : « Bénin Nouvelle Frontière des marchés émergeants ».
+          </p>
         <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div class="rounded-md shadow">
             <a
