@@ -1,9 +1,11 @@
 <template>
   <div class="min-h-screen relative">
     <Header class="fixed top-0 w-full z-10" />
-    <Alert class="alert-box" />
-    <router-view />
-    <Footer />
+    <div class="content">
+      <Alert />
+      <router-view />
+      <Footer />
+    </div>
   </div>
 </template>
 <script>
@@ -16,14 +18,13 @@ export default {
     Header,
     Footer,
     NewsLettersBox,
-    Alert
-},
-  methods: {
-  }
+    Alert,
+  },
+  methods: {},
 };
 </script>
 <style>
-  .alert-box {
-    margin-top: 72px !important;
-  }
+.content {
+  margin-top: 72px !important;
+}
 </style>

@@ -8,21 +8,21 @@
         <h2 class="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
           Agenda
         </h2>
-        <p class="mt-3 max-w-2xl mx-auto text-lg text-sp sm:mt-4">
+        <p class="text-lg text-center tracking-tight leading-7 text-subtitlegray mt-6">
           Retrouvez nos futurs évènements
         </p>
       </div>
-      <div class="mt-12 max-w-lg mx-auto grid gap-5 lg:grid-cols-3 lg:max-w-none">
+      <div class="mt-12 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
         <div
-          v-for="i in 3"
+          v-for="i in agenda_data"
           :key="i"
           :event="event"
-          class="flex flex-col rounded-lg shadow overflow-hidden"
+          class="flex flex-col rounded-lg shadow overflow-hidden mb-4"
         >
           <div class="flex-shrink-0">
             <img
               class="h-48 w-full object-cover"
-              src="https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80"
+              src="@/assets/images/agenda.jpeg"
               alt=""
             />
           </div>
@@ -53,7 +53,7 @@
           </div>
         </div>
       </div>
-      <div class="tracking-tight mt-12 text-left text-dark">
+      <div class="tracking-tight mt-12 text-left text-dark" v-if="isNotFull == true">
         <span class="block sm:ml-2 sm:inline-block">
           <a href="" class="text-primary">
             Voir tous les évènements <span aria-hidden="true">&rarr;</span></a
@@ -63,3 +63,17 @@
     </div>
   </div>
 </template>
+<script>
+ export default {
+  props: {
+    agenda_data: {
+      type: [Array, Number],
+      dafault: 3
+    },
+    isNotFull: {
+      type: Boolean,
+      default: false
+    }
+  }
+ }
+</script>

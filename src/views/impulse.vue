@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <main>
-    <div class="barner flex items-center p-6 md:px-20">
+    <div class="barner flex items-center p-4 md:px-10 lg:px-20">
       <div class="uppercase">
         <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight">
           <span class="text-blue">Impulse</span><br />
@@ -94,7 +94,10 @@
                 />
               </svg>
             </div>
-            <p>imPULSE identifiera le bon conseiller d'entreprise sur votre région économique;</p>
+            <p>
+              imPULSE identifiera le bon conseiller d'entreprise sur votre région
+              économique;
+            </p>
           </div>
           <div
             class="mb-3 leading-7 text-lg text-subtitlegray flex items-center grid grid-flow-col auto-cols-max gap-2"
@@ -115,38 +118,42 @@
                 />
               </svg>
             </div>
-            <p>Le conseiller d'entreprise vous contacte directement pour vous aider sous 5 jours.</p>
-          </div>
-          
-        </div>
-      </div>
-      <div class="pt-16">
-      <div class="md:pt-16 md:pb-8 pt-16 pb-8">
-        <div class="md:px-16 px-0">
-          <div
-            class="w-full rounded-lg p-8 bg-gray flex flex-wrap justify-between items-center"
-          >
-            <div class="w-3/4 pr-4 mb-4">
-              <h2 class="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
-                Voulez vous en savoir plus ?
-              </h2>
-              <p class="mt-3 text-lg text-subtitlegray sm:mt-4">
-                Connectez-vous sur notre plateforme imPULSE pour avoir plus de détails et
-                éventuellement prendre contact avec un de nos conseillers
-              </p>
-            </div>
-            <div class="w-auto">
-              <a
-                href="#"
-                class="flex items-center justify-center px-4 py-2 text-lg font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white md:py-2.5 md:text-lg md:px-5"
-              >
-                Aller sur impulse.bj
-              </a>
-            </div>
+            <p>
+              Le conseiller d'entreprise vous contacte directement pour vous aider sous 5
+              jours.
+            </p>
           </div>
         </div>
       </div>
-    </div>
+      <div class="py-4 md:py-16">
+        <div class="px-4 md:px-20 md:pt-16 md:pb-8">
+          <div class="md:px-20 px-0">
+            <div
+              class="w-full rounded-lg p-4 md:p-8 bg-gray flex flex-wrap justify-between items-center"
+            >
+              <div class="w-3/4 pr-4 mb-4">
+                <h2
+                  class="text-2xl md:text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl"
+                >
+                  Voulez vous en savoir plus ?
+                </h2>
+                <p class="mt-3 text-lg text-subtitlegray sm:mt-4">
+                  Connectez-vous sur notre plateforme imPULSE pour avoir plus de détails
+                  et éventuellement prendre contact avec un de nos conseillers
+                </p>
+              </div>
+              <div class="w-auto">
+                <a
+                  href="#"
+                  class="flex items-center justify-center px-4 py-2 text-lg font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white md:py-2.5 md:text-lg md:px-5"
+                >
+                  Aller sur impulse.bj
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
 </template>
@@ -174,25 +181,5 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid";
     0px 10px 10px -5px rgba(0, 0, 0, 0.04);
   border-radius: 12px;
 }
-input,
-.but {
-  height: 42px !important;
-}
-input {
-  min-width: 280px !important;
-}
-.but {
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05) !important;
-  border-radius: 6px !important;
-}
-.puce {
-  height: 4px;
-  width: 4px;
-  border-radius: 50%;
-}
-.badge {
-  background: rgba(72, 127, 80, 0.1);
-  border-radius: 16px;
-  padding: 4px 24px !important;
-}
+
 </style>

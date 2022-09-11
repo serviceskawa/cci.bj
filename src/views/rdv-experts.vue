@@ -4,26 +4,25 @@
     <div class="barner flex items-center p-4 md:px-10 lg:px-20">
       <div>
         <h1 class="text-primary text-4xl lg:text-6xl leading-none font-extrabold tracking-tight">
-          Journée Pays
+          <span class="text-white">Les rendez-vous</span> <br />
+          mensuel des experts
         </h1>
         <p class="text-white text-xl leading-7 font-normal mt-4">
-          Rencontrez des conseillers et experts pays pour découvrir les opportunités
-          <br />
-          de développement et les marchés porteurs dans les pays qui vous <br />
-          intéressent. Évaluez avec des spécialistes le potentiel et vos stratégies <br />
-          d’approche des marchés étrangers.
+          Programme de la CCIB destiné à assurer un accompagnement technique par <br />
+          l’organisation de sessions de rencontre entre promoteurs et experts ou <br />
+          consultants spécialisés dans les domaines touchant à la vie de l’entreprise.
         </p>
       </div>
     </div>
     <div class="p-6 md:p-20">
       <div
-        class="flex items-top flex-wrap grid grid-cols-1 md:grid-cols-2 gap-16 pb-8 md:pb-16"
+        class="flex items-center flex-wrap grid grid-cols-1 lg:grid-cols-2 gap-16 pb-8 md:pb-16"
       >
         <div>
           <h2
             class="text-2xl tracking-tight font-extrabold leading-9 text-gray-900 sm:text-3xl"
           >
-            Journée pays
+            Le rendez-vous mensuel des experts
           </h2>
           <h2
             class="text-2xl text-primary tracking-tight font-extrabold leading-9 sm:text-3xl"
@@ -31,25 +30,23 @@
             Qu'est ce que c'est
           </h2>
           <p class="my-3 leading-7 text-lg text-subtitlegray sm:my-4">
-            La CCI-Bénin déploie différentes actions au profit des entreprises afin de
-            leur faire découvrir les opportunités de développement offertes par diVers
-            pays. Il s’agit de susciter l’intérêt des entreprises béninoises pour
-            certaines destinations en vue de créer des relations commerciales avec les
-            pays choisis. Les « Journées Pays » offrent aux entreprises l’occasion de
-            découvrir les clefs pour aborder les marchés étrangers dans les meilleures
-            conditions et d’identifier des opportunités commerciales pertinentes.
+            La Chambre de Commerce et d’Industrie du Bénin (CCI-Bénin), organise chaque
+            mois au profit des chefs d’entreprises « LE RENDEZ-VOUS MENSUEL DES EXPERTS ».
+            Il s’agit de consultations gratuites d’experts dans divers domaines où les
+            chefs d’entreprises peuvent exprimer des besoins de conseils, pour le
+            développement de leurs affaires.
           </p>
-          <a href="#" class="text-primary">S’inscrire aux prochaines journées pays</a>
+          <a href="#" class="text-primary">S’inscrire au prochain rdv des experts</a>
         </div>
-        <div class="asset-session hidden md:flex" />
+        <div class="asset-session hidden lg:flex" />
       </div>
       <div class="pt-16 pb-8">
         <h3 class="text-4xl leading-10 font-extrabold tracking-tight mb-4">
-          Qui peut participer aux «Journées Pays» ?
+          Qui peut participer aux rendez-vous mensuels des experts ?
         </h3>
         <p class="text-sm leading-5 text-subtitlegray">
-          Nos experts pays répondent à vos besoins en information, financement ou
-          prospection sur les marchés étrangers, quel que soit votre profil.
+          Le programme «Rendez-vous des experts» est ouvert à toutes les entreprises
+          béninoises, quelle que soit leur taille et leurs objectifs stratégiques.
         </p>
       </div>
       <div class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 gap-16">
@@ -72,12 +69,11 @@
           </svg>
           <div class="mt-6">
             <h4 class="text-lg leading-7 font-medium text-borderSimple">
-              Les entreprises intéressées à l’international
+              Petites et Moyennes Entreprises (PME)
             </h4>
             <p class="text-sm leading-5 text-subtitlegray">
-              Vous êtes une entreprise béninoise avec des projets de développement de vos
-              activités ldans des pays étrangers ? Nous vous fournissons les informations
-              sur le marché et les opportunités existantes.
+              Bénéficiez des conseils de nos experts sur la fiscalité, la formalisation
+              d’entreprise, la comptabilité et les finances.
             </p>
           </div>
         </div>
@@ -100,24 +96,23 @@
           </svg>
           <div class="mt-6">
             <h4 class="text-lg leading-7 font-medium text-borderSimple">
-              Les organisations professionnelles du commerce, des services et de
-              l’industrie
+              Petites et Moyennes Industries (PMI)
             </h4>
             <p class="text-sm leading-5 text-subtitlegray">
-              Profitez de notre réseau de Chambres de Commerce à l’internationnal pour
-              Identifier les secteurs porteurs.
+              Profitez de séances de consulations gratuites en Protection de Propriété
+              Intelectuelle et normalisation des produits.
             </p>
           </div>
         </div>
       </div>
       <div class="py-16">
         <h3 class="text-4xl leading-10 font-extrabold tracking-tight mb-4">
-          Calendrier des prochains « Journées Pays »
+          Calendrier des prochains rendez-vous
         </h3>
         <div class="flex flex-wrap justify-between">
           <p class="text-sm leading-5 text-subtitlegray mb-2 md:mb-0">
-            Inscrivez-vous et recevez dans votre boite mail toutes <br />
-            les informations utiles sur les prochains rendez-vous <br />
+            Inscrivez-vous afin de recevoir dans votre boite mail <br />
+            toutes les informations utiles sur les prochains rendez-vous <br />
             des experts
           </p>
           <div class="flex items-center flex-wrap">
@@ -251,10 +246,10 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid";
 
 <style scoped>
 .barner {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("../assets/images/journee.jpeg");
-    height: 600px !important;
-
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url("../assets/images/rdv-cover.jpg");
+  height: 600px !important;
+  background-position: center !important;
 }
 .asset-session {
   background: url("../assets/images/ass.jpeg");

@@ -21,6 +21,30 @@ const routes = [
     path: '/impulse',
     component: page('impulse')
   },
+  {
+    path: '/etude-marche',
+    component: page('etude-marches')
+  },
+  {
+    path: '/aide-montage',
+    component: page('aide-montage')
+  },
+  {
+    path: '/rdv-experts',
+    component: page('rdv-experts')
+  },
+  {
+    path: '/contact',
+    component: page('contact')
+  },
+  {
+    path: '/agenda',
+    component: page('agenda')
+  },
+  {
+    path: '/arbitrage-mediation',
+    component: page('arbitrage-mediation')
+  },
 ];
 
 const router = createRouter({

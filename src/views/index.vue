@@ -10,7 +10,7 @@
     <Blog />
     <Indicateur />
     <Services />
-    <Agenda />
+    <Agenda :agenda_data="3" isNotFull />
     <AppelsOffresBox />
     <!-- end appels d'offres -->
 
@@ -46,12 +46,6 @@ import Agenda from "@/components/home/Agenda.vue";
 import Partenaires from "@/components/home/Partenaires.vue";
 import AppelsOffresBox from "@/components/home/AppelsOffresBox.vue";
 import NewsLettersBox from "@/components/NewsLettersBox.vue";
-
-const NEWS_CAT = `https://6cc4-41-138-89-246.ngrok.io/api/news`;
-const services_api = `https://6cc4-41-138-89-246.ngrok.io/api/services`;
-const events = `https://6cc4-41-138-89-246.ngrok.io/api/events`;
-const setting = `https://6cc4-41-138-89-246.ngrok.io/api/setting`;
-
 export default {
   components: {
     ServiceCard,
@@ -65,11 +59,9 @@ export default {
     Agenda,
     Partenaires,
     AppelsOffresBox,
-    NewsLettersBox
-},
+    NewsLettersBox,
+  },
   data: () => ({
-    branches: ["main", "v2-compat"],
-    currentBranch: "main",
     commits: null,
     services: null,
     events: null,
@@ -84,35 +76,11 @@ export default {
   }),
 
   created() {
-    // fetch on init
-    this.fetchData();
   },
   watch: {
-    // re-fetch whenever currentBranch changes
-    currentBranch: "fetchData",
   },
 
   methods: {
-    async fetchData() {
-      const url = `${NEWS_CAT}`;
-      this.commits = await (await fetch(url)).json();
-      console.log(this.commits);
-    },
-    async fetchServices() {
-      const url = `${services_api}`;
-      this.services = await (await fetch(url)).json();
-      console.log(this.services);
-    },
-    async fetchEvents() {
-      const url = `${events}`;
-      this.events = await (await fetch(url)).json();
-      console.log(this.events);
-    },
-    async fetchSetting() {
-      const url = `${setting}`;
-      this.setting = await (await fetch(url)).json();
-      console.log(this.setting);
-    },
   },
 };
 </script>
