@@ -14,7 +14,7 @@
         </p>
       </div>
     </div>
-    <div class="p-6 md:p-20">
+    <div class="p-6 md:p-10 lg:p-20">
       <div
         class="flex items-center flex-wrap grid grid-cols-1 lg:grid-cols-2 gap-16 pb-8 md:pb-16"
       >

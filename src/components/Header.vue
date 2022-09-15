@@ -2,7 +2,7 @@
   <header>
     <Popover class="relative bg-white shadow">
       <div
-        class="flex justify-between items-center max-w-7xl mx-auto py-2 md:justify-start md:space-x-4"
+        class="px-4 flex justify-between items-center mx-auto py-2 xl:justify-start xl:space-x-4"
       >
         <div class="flex justify-start">
           <a href="/">
@@ -11,7 +11,7 @@
           </a>
         </div>
 
-        <div class="-mr-2 -my-2 md:hidden">
+        <div class="-mr-2 -my-2 xl:hidden">
           <PopoverButton
             class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
           >
@@ -19,7 +19,7 @@
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
         </div>
-        <PopoverGroup as="nav" class="hidden md:flex space-x-10">
+        <PopoverGroup as="nav" class="hidden xl:flex space-x-10">
           <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
             Ma CCI
           </a>
@@ -49,13 +49,13 @@
               leave-to-class="opacity-0 translate-y-1"
             >
               <PopoverPanel
-                class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+                class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md xl:max-w-2xl xl:ml-0 xl:left-1/2 xl:-translate-x-1/2"
               >
                 <div
                   class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden"
                 >
                   <div
-                    class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2"
+                    class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 xl:grid-cols-2"
                   >
                     <a
                       href="#"
@@ -100,13 +100,13 @@
               leave-to-class="opacity-0 translate-y-1"
             >
               <PopoverPanel
-                class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+                class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md xl:max-w-2xl xl:ml-0 xl:left-1/2 xl:-translate-x-1/2"
               >
                 <div
                   class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden"
                 >
                   <div
-                    class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2"
+                    class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 xl:grid-cols-2"
                   >
                     <a
                       v-for="item in solutions"
@@ -159,13 +159,13 @@
               leave-to-class="opacity-0 translate-y-1"
             >
               <PopoverPanel
-                class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md lg:max-w-2xl lg:ml-0 lg:left-1/2 lg:-translate-x-1/2"
+                class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md xl:max-w-2xl xl:ml-0 xl:left-1/2 xl:-translate-x-1/2"
               >
                 <div
                   class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden"
                 >
                   <div
-                    class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2"
+                    class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 xl:grid-cols-2"
                   >
                     <a
                       v-for="item in solutions"
@@ -199,7 +199,7 @@
             Travailler avec nous
           </a>
         </PopoverGroup>
-        <div class="h-full hidden md:flex items-center justify-end md:flex-1 lg:w-0">
+        <div class="h-full hidden xl:flex items-center justify-end xl:flex-1 xl:w-0">
           <a
             href="#"
             class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
@@ -249,7 +249,7 @@
           </a>
           <a
             href="#"
-            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2.5 border border-transparent rounded-md shadow-sm text-base font-medium text-dark bg-indigo-600 hover:bg-indigo-700"
+            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2.5 border border-transparent rounded-md shadow-sm text-base font-medium text-dark"
           >
             Nous contacter
           </a>
@@ -266,19 +266,13 @@
       >
         <PopoverPanel
           focus
-          class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden"
+          class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right xl:hidden"
         >
-          <div
-            class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50"
-          >
-            <div class="pt-5 pb-6 px-5">
+          <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white">
+            <div class="px-8 py-6">
               <div class="flex items-center justify-between">
                 <div>
-                  <img
-                    class="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark.svg?color=indigo&shade=600"
-                    alt="Workflow"
-                  />
+                  <img class="w-28 h-14" src="@/assets/logo.png" alt="" />
                 </div>
                 <div class="-mr-2">
                   <PopoverButton
@@ -297,12 +291,7 @@
                     :href="item.href"
                     class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
                   >
-                    <div
-                      class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white"
-                    >
-                      <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-                    </div>
-                    <div class="ml-4 text-base font-medium text-gray-900">
+                    <div class="text-base font-medium text-gray-900">
                       {{ item.name }}
                     </div>
                   </a>
@@ -310,17 +299,10 @@
               </div>
             </div>
             <div class="py-6 px-5">
-              <div class="grid grid-cols-2 gap-4">
+              <div class="">
                 <a
                   href="#"
-                  class="text-base font-medium text-gray-900 hover:text-gray-700"
-                  >sss
-                </a>
-              </div>
-              <div class="mt-6">
-                <a
-                  href="#"
-                  class="w-full flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
+                  class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2.5 border border-transparent rounded-md shadow-sm text-base font-medium text-dark"
                 >
                   Nous contacter
                 </a>
@@ -493,8 +475,7 @@ const posts = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
-    imageUrl:
-      "@/assets/images/agenda.jpeg",
+    imageUrl: "@/assets/images/agenda.jpeg",
     readingTime: "6 min",
     author: {
       name: "Roel Aufderehar",

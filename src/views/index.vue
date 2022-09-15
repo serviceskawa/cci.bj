@@ -67,11 +67,11 @@ export default {
     events: null,
     setting: null,
     slides: [
-      "https://picsum.photos/id/1032/900/400",
-      "https://picsum.photos/id/1033/900/400",
-      "https://picsum.photos/id/1037/900/400",
-      "https://picsum.photos/id/1035/900/400",
-      "https://picsum.photos/id/1036/900/400",
+      "src/assets/agenda.jpeg",
+      "src/assets/actu_one.jpeg",
+      "src/assets/actu_two.jpeg",
+      "src/assets/actu_three.jpeg",
+      "src/assets/images/financement.jpeg",
     ],
   }),
 

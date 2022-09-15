@@ -45,6 +45,30 @@ const routes = [
     path: '/arbitrage-mediation',
     component: page('arbitrage-mediation')
   },
+  {
+    path: '/formations',
+    component: page('formations')
+  },
+  {
+    path: '/partenaires',
+    component: page('partenaires')
+  },
+  {
+    path: '/blog-articles',
+    component: page('blog-articles')
+  },
+  {
+    path: '/appels-offres',
+    component: page('appels-offres')
+  },
+  {
+    path: '/pere',
+    component: page('pere')
+  },
+  {
+    path: '/institutionnelle',
+    component: page('institutionnelle')
+  },
 ];
 
 const router = createRouter({
