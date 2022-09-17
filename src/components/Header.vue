@@ -49,25 +49,51 @@
               leave-to-class="opacity-0 translate-y-1"
             >
               <PopoverPanel
-                class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md xl:max-w-2xl xl:ml-0 xl:left-1/2 xl:-translate-x-1/2"
+                class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2"
               >
                 <div
-                  class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden"
+                  class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5"
                 >
                   <div
-                    class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 xl:grid-cols-2"
+                    class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2"
                   >
                     <a
-                      href="#"
-                      class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
+                      v-for="solution in solutions"
+                      :key="solution.name"
+                      :href="solution.href"
+                      class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                     >
                       <div
-                        class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white sm:h-12 sm:w-12"
-                      ></div>
-                      <div class="ml-4">
-                        <p class="text-base font-medium text-gray-900">Titre</p>
-                        <p class="mt-1 text-sm text-gray-500">tire description</p>
+                        class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12"
+                      >
+                        <component
+                          :is="solution.icon"
+                          class="h-6 w-6"
+                          aria-hidden="true"
+                        />
                       </div>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">
+                          {{ solution.name }}
+                        </p>
+                        <p class="mt-1 text-sm text-gray-500">
+                          {{ solution.description }}
+                        </p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="bg-gray-50 p-5 sm:p-8">
+                    <a href="#" class="-m-3 flow-root rounded-md p-3 hover:bg-gray-100">
+                      <div class="flex items-center">
+                        <div class="text-base font-medium text-gray-900">Enterprise</div>
+                        <span
+                          class="ml-3 inline-flex items-center rounded-full bg-indigo-100 px-3 py-0.5 text-xs font-medium leading-5 text-indigo-800"
+                          >New</span
+                        >
+                      </div>
+                      <p class="mt-1 text-sm text-gray-500">
+                        Empower your entire team with even more advanced tools.
+                      </p>
                     </a>
                   </div>
                 </div>
