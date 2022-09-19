@@ -5,27 +5,41 @@
         <div class="grid grid-cols-2 gap-8 xl:col-span-2">
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-base font-medium text-white uppercase">Réseaux sociaux</h3>
+              <h3 class="text-base font-medium text-white uppercase">
+                Réseaux sociaux
+              </h3>
               <ul role="list" class="mt-4 space-y-4 capitalize">
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"> Facebook </a>
+                  <a href="" class="text-base text-white hover:text-white">
+                    Facebook
+                  </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"> Youtube </a>
+                  <a href="" class="text-base text-white hover:text-white">
+                    Youtube
+                  </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"> Linkedin </a>
+                  <a href="" class="text-base text-white hover:text-white">
+                    Linkedin
+                  </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"> instagram </a>
+                  <a href="" class="text-base text-white hover:text-white">
+                    instagram
+                  </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"> Twitter </a>
+                  <a href="" class="text-base text-white hover:text-white">
+                    Twitter
+                  </a>
                 </li>
               </ul>
             </div>
             <div class="mt-12 md:mt-0">
-              <h3 class="text-base font-medium text-white uppercase">liens utiles</h3>
+              <h3 class="text-base font-medium text-white uppercase">
+                liens utiles
+              </h3>
               <ul role="list" class="mt-4 space-y-4">
                 <li>
                   <a href="" class="text-base text-white hover:text-white">
@@ -43,34 +57,50 @@
                   </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"> Apiex.bj </a>
+                  <a href="" class="text-base text-white hover:text-white">
+                    Apiex.bj
+                  </a>
                 </li>
               </ul>
             </div>
           </div>
           <div class="md:grid md:grid-cols-2 md:gap-8">
             <div>
-              <h3 class="text-base font-medium text-white uppercase">partenaires</h3>
+              <h3 class="text-base font-medium text-white uppercase">
+                partenaires
+              </h3>
               <ul role="list" class="mt-4 space-y-4">
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">APIEX </a>
+                  <a href="" class="text-base text-white hover:text-white"
+                    >APIEX
+                  </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">PARASEP </a>
+                  <a href="" class="text-base text-white hover:text-white"
+                    >PARASEP
+                  </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">CPCAF </a>
+                  <a href="" class="text-base text-white hover:text-white"
+                    >CPCAF
+                  </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">DGI Bénin </a>
+                  <a href="" class="text-base text-white hover:text-white"
+                    >DGI Bénin
+                  </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">Partners </a>
+                  <a href="" class="text-base text-white hover:text-white"
+                    >Partners
+                  </a>
                 </li>
               </ul>
             </div>
             <div class="mt-12 md:mt-0">
-              <h3 class="text-base font-medium text-white uppercase">contacts</h3>
+              <h3 class="text-base font-medium text-white uppercase">
+                contacts
+              </h3>
               <ul role="list" class="mt-4 space-y-4">
                 <li>
                   <a href="" class="text-base text-white hover:text-white"
@@ -94,7 +124,8 @@
         <div class="mt-8 xl:mt-0">
           <h3 class="text-base font-medium text-white uppercase">google map</h3>
           <div class="mt-4 space-y-4">
-            <svg class="w-full"
+            <svg
+              class="w-full"
               height="180"
               viewBox="0 0 419 180"
               fill="none"
@@ -134,9 +165,9 @@
   </footer>
 </template>
 <style lang="scss" scoped>
-// footer {
-//     position: absolute !important;
-//     bottom: 0 !important;
-//     width: 100vw !important;
-// }
+  // footer {
+  //     position: absolute !important;
+  //     bottom: 0 !important;
+  //     width: 100vw !important;
+  // }
 </style>
