@@ -1,4 +1,4 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
+          <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <main>
     <div class="flex items-center p-4 md:px-10 lg:px-20">

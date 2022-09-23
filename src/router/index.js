@@ -77,6 +77,18 @@ const routes = [
     path: '/faq',
     component: page('faq'),
   },
+  {
+    path: '/chef-entreprise',
+    component: page('chef-entreprise'),
+  },
+  {
+    path: '/cci',
+    component: page('cci'),
+  },
+  {
+    path: '/createur-entreprise',
+    component: page('createur-entreprise'),
+  },
 ];
 
 const router = createRouter({
