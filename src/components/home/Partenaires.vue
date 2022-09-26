@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <div class="max-w-7xl mx-auto pt-16 sm:pt-20">
+    <div class="mx-auto pt-16 sm:pt-20">
       <h2 class="text-3xl tracking-tight font-bold text-blue">
         Nos partenaires, plus dévoués que jamais pour votre succès
       </h2>

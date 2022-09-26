@@ -1,9 +1,9 @@
 <template>
-  <div class="relative bg-gris">
+  <div class="relative bg-gris md:px-10 lg:px-20">
     <div class="absolute inset-0">
       <div class="h-1/3 sm:h-2/3" />
     </div>
-    <div class="relative max-w-7xl mx-auto py-12 lg:py-16">
+    <div class="relative mx-auto py-12 lg:py-16">
       <div class="text-center">
         <h2 class="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
           Nos actualités

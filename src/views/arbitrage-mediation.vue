@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <main>
-    <div class="barner sm:h-96 lg:h-auto flex items-center p-4 md:px-10 lg:px-20 w-full">
+    <div class="barner sm:h-96 lg:h-auto flex items-center p-8 md:px-10 lg:px-20 w-full">
       <div class="flex items-center w-full">
         <h1 class="text-primary text-4xl lg:text-6xl leading-none font-extrabold tracking-tight">
           <span class="text-blue">CAMeC-CCI</span> <br />
@@ -13,7 +13,7 @@
         </div>
       </div>
     </div>
-    <div class="p-6 md:p-10 lg:p-20">
+    <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
       <div class="text-center">
         <h2 class="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
           CAMeC-CCI

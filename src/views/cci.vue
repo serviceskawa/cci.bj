@@ -14,7 +14,7 @@
           w-full
         ">
       </div>
-      <div class="p-6 md:p-10 lg:p-20">
+      <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
         <div class="grid flex flex-wrap grid grid-cols-1 lg:grid-cols-4 gap-16">
           <div class="">
             <div class="
@@ -375,7 +375,7 @@
 
       </div>
     </div>
-    <div class="py-20 bg-gray flex justify-center">
+    <div class="py-20 bg-gray flex justify-center px-3">
       <div class="text-center">
         <h1 class="leading-tight text-4xl font-extrabold mb-6">
           Boostez votre productivité <br />
@@ -388,13 +388,17 @@
                 text-subtitlegray mb-6">
 
         </p>
-        <div class="flex flex-wrap mr-0 md:mr-4">
-          <button type="button" class="btn btn-primary bg-primary text-white hover:text-primary hover:bg-white mr-0 md:mr-6">
+        <div class="sm:block md:flex justify-center flex-wrap mr-0 md:mr-4">
+          <div>
+            <button type="button" class="btn btn-primary bg-primary text-white hover:text-primary hover:bg-white mr-0 md:mr-4 mb-4 ">
             Télécharger maintenant
           </button>
-          <button type="button" class="btn btn-light text-primary hover:text-white hover:bg-primary">
+          </div>
+          <div>
+            <button type="button" class="btn btn-light text-primary hover:text-white hover:bg-primary mb-4">
             Voir tous les documents
           </button>
+          </div>
         </div>
       </div>
     </div>

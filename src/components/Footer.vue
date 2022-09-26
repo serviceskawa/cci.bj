@@ -10,27 +10,26 @@
               </h3>
               <ul role="list" class="mt-4 space-y-4 capitalize">
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">
+                  <a href="https://www.facebook.com/ccibenin" target="_blank"
+                    class="text-base text-white hover:text-white">
                     Facebook
                   </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">
+                  <a href="https://www.youtube.com/c/CCIBENIN" target="_blank"
+                    class="text-base text-white hover:text-white">
                     Youtube
                   </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">
+                  <a href="https://www.linkedin.com/company/ccibenin" target="_blank"
+                    class="text-base text-white hover:text-white">
                     Linkedin
                   </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">
-                    instagram
-                  </a>
-                </li>
-                <li>
-                  <a href="" class="text-base text-white hover:text-white">
+                  <a href="https://www.twitter.com/ccibenin" target="_blank"
+                    class="text-base text-white hover:text-white">
                     Twitter
                   </a>
                 </li>
@@ -42,23 +41,23 @@
               </h3>
               <ul role="list" class="mt-4 space-y-4">
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">
-                    Monentreprise.bj
+                  <a href="https://monentreprise.bj/" target="_blank" class="text-base text-white hover:text-white">
+                    monentreprise.bj
                   </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">
-                    Formationsccib.bj
+                  <a href="https://www.formationccib.bj/" target="_blank" class="text-base text-white hover:text-white">
+                    formationsccib.bj
                   </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">
-                    Ahilido.bj
+                  <a href="https://ahilido.bj/" target="_blank" class="text-base text-white hover:text-white">
+                    ahilido.bj
                   </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white">
-                    Apiex.bj
+                  <a href="https://apiex.bj/" target="_blank" class="text-base text-white hover:text-white">
+                    apiex.bj
                   </a>
                 </li>
               </ul>
@@ -71,29 +70,24 @@
               </h3>
               <ul role="list" class="mt-4 space-y-4">
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"
-                    >APIEX
-                  </a>
+                  <span class="text-base text-white hover:text-white">APIEX
+                  </span>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"
-                    >PARASEP
-                  </a>
+                  <span class="text-base text-white hover:text-white">PARASEP
+                  </span>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"
-                    >CPCAF
-                  </a>
+                  <span class="text-base text-white hover:text-white">CPCAF
+                  </span>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"
-                    >DGI Bénin
-                  </a>
+                  <span class="text-base text-white hover:text-white">DGI Bénin
+                  </span>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"
-                    >Partners
-                  </a>
+                  <span class="text-base text-white hover:text-white">Partners
+                  </span>
                 </li>
               </ul>
             </div>
@@ -103,18 +97,17 @@
               </h3>
               <ul role="list" class="mt-4 space-y-4">
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"
-                    >+229 91 43 43 43
+                  <a href="https://api.whatsapp.com/send?phone=22991434343&text=Contactez-nous" target="_blank"
+                    class="text-base text-white hover:text-white">+229 91 43 43 43
                   </a>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"
-                    >+229 21 31 12 38
-                  </a>
+                  <span class="text-base text-white hover:text-white">+229 21 31 12 38
+                  </span>
                 </li>
                 <li>
-                  <a href="" class="text-base text-white hover:text-white"
-                    >ccibj@exemple.com
+                  <a href="mailto:info@ccib.bj" target="_blank"
+                    class="text-base text-white hover:text-white">info@ccib.bj
                   </a>
                 </li>
               </ul>
@@ -136,10 +129,3 @@
     </div>
   </footer>
 </template>
-<style lang="scss" scoped>
-  // footer {
-  //     position: absolute !important;
-  //     bottom: 0 !important;
-  //     width: 100vw !important;
-  // }
-</style>

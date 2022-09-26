@@ -3,4 +3,9 @@
  *                            AUTHENTICATION
  * ************************************************************************
  */
-export const AUTH_LOGIN = `/api/login_check`
+export const HOME = `/`
+export const SETTINGS = `/setting`
+export const CONTACT_US = `/contact/send-email`
+export const LIST_FAQ = `/faqs`
+export const ACTUALITES = `/news`
+export const SERVICES = `/services`

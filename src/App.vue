@@ -9,6 +9,8 @@
   </div>
 </template>
 <script>
+import { services } from '@/api'
+import store from '@/store'
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import NewsLettersBox from "@/components/NewsLettersBox.vue";
@@ -20,7 +22,17 @@ export default {
     NewsLettersBox,
     Alert,
   },
-  methods: {},
+  async mounted () {
+    await services.get_settings().then((response) => {
+      if (response.status == 200) {
+        this.$store.state.configs = response.data
+        console.log('response off ==', this.$store.state.configs)
+      }
+    })
+  },  
+  methods: {
+
+  },
 };
 </script>
 <style>

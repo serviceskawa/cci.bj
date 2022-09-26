@@ -49,7 +49,7 @@
     </div>
 
     <div id="panels">
-      <div class="tab-content p-20" v-if="current_tab == 'appels'">
+      <div class="tab-content p-3 md:p-16" v-if="current_tab == 'appels'">
         <div class="mb-8" v-for="(line, index) in 8" :key="index">
           <div class="flex items-center justify-between flex-wrap">
             <div class="py-3 mb-4">
@@ -77,7 +77,7 @@
           <hr class="divider">
         </div>
       </div>
-      <div class="tab-content p-20" v-if="current_tab == 'resultats'">
+      <div class="tab-content p-3 md:p-16" v-if="current_tab == 'resultats'">
         <div class="document-box pt-16" v-for="(document, index) in 6" :key="index">
           <div class="text-base text-primary">Publié le 17.06.2022</div>
           <h4 class="text-xl font-semibold mt-2 mb-3">

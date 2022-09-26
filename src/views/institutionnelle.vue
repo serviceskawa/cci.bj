@@ -3,7 +3,7 @@
   <main>
     <div class="barner sm:h-96 lg:h-auto flex items-center w-full">
       <div class="flex items-center w-full h-full">
-        <div class="w-full lg:w-3/5 p-6 md:p-10 lg:p-20">
+        <div class="w-full lg:w-3/5 p-6 md:p-10 lg:p-12  xl:p-20 ">
           <h1
             class="text-blue text-4xl lg:text-6xl leading-none font-extrabold tracking-tight0"
           >
@@ -19,7 +19,7 @@
         <div class="right-section hidden lg:flex w-2/5"></div>
       </div>
     </div>
-    <div class="p-6 md:p-10 lg:p-20">
+    <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
       <div
         class="flex flex-wrap justify-center grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-3"
       >

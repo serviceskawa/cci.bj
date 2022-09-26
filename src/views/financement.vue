@@ -26,9 +26,9 @@
         <div class="asset-session hidden md:flex" />
       </div>
     </div>
-    <div class="py-4 md:py-16">
-      <div class="px-4 md:px-20 md:pt-16 md:pb-8">
-        <div class="md:px-20 px-0">
+    <div class="py-16">
+      <div class="px-4 lg:px-20 md:pt-16 md:pb-8">
+        <div class="lg:px-20 px-0">
           <div
             class="w-full rounded-lg p-4 md:p-8 bg-gray flex flex-wrap justify-between items-center"
           >
@@ -66,7 +66,7 @@ export default {
 
 <style scoped>
 .asset-session {
-  background: url("../assets/images/financement.jpeg");
+  background: url("../assets/images/financement.jpeg") center;
   background-size: cover !important;
   height: 400px;
   width: 100%;

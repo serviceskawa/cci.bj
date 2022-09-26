@@ -4,7 +4,7 @@
       <div aria-hidden="true" class="hidden sm:block">
         <div class="absolute inset-y-0 left-0 w-1/2 rounded-r-3xl" />
       </div>
-      <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:max-w-7xl lg:px-8">
+      <div class="px-10 md:px-20">
         <div class="relative px-6 py-10 bg-indigo-600 overflow-hidden sm:px-12 sm:py-20">
           <div aria-hidden="true" class="absolute inset-0 -mt-72 sm:-mt-32 md:mt-0"></div>
           <div class="relative">
@@ -17,8 +17,8 @@
                 dernières actualités.
               </p>
             </div>
-            <form action="#" class="justify-center mt-12 sm:flex">
-              <div class="">
+            <form action="#" class="sm:justfy-start md:justify-center mt-8 flex flex-wrap">
+              <div class="mt-4 mr-0 md:mr-4">
                 <label for="cta-email" class="sr-only">Email address</label>
                 <div class="w-[420px]">
                   <input
@@ -29,7 +29,7 @@
                   />
                 </div>
               </div>
-              <div class="mt-4 sm:mt-0 sm:ml-3">
+              <div class="mt-4">
                 <button
                   type="submit"
                   class="block w-full rounded-md px-5 py-3 bg-white text-base font-medium text-primary hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-indigo-600 sm:px-10"

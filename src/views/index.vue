@@ -6,16 +6,26 @@
         <carousel :slides="slides" :interval="5000" controls indicators></carousel>
       </div>
     </div>
-    <Offres />
+    <div class="px-10 lg:px-20">
+      <Offres />
+
+    </div>
     <Blog />
-    <Indicateur />
-    <Services />
-    <Agenda :agenda_data="3" isNotFull />
-    <AppelsOffresBox />
+
+    <div class="px-10 lg:px-20">
+      <Indicateur />
+      <Services />
+    </div>
+    <div class="px-10 lg:px-20">
+      <Agenda :agenda_data="3" isNotFull />
+      <AppelsOffresBox />
+      <Partenaires />
+    </div>
+
     <!-- end appels d'offres -->
 
     <!-- devenir partenaires -->
-    <Partenaires />
+
     <!-- en partenaires -->
     <NewsLettersBox />
   </main>

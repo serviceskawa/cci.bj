@@ -1,10 +1,10 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <main class="pb-20">
-    <div class="barner sm:h-96 lg:h-auto flex items-center w-full">
+    <div class="barner sm:h-96 lg:h-auto p-8 md:px-10 lg:px-20 flex items-center w-full">
       <div class="flex items-center w-full">
         <div class="right-section hidden lg:flex w-5/12"></div>
-        <div class="w-full lg:w-7/12 p-6 md:p-10 lg:p-20">
+        <div class="w-full lg:w-7/12 p-6 md:p-10 lg:p-12  xl:p-20 ">
           <h1
             class="text-primary text-4xl uppercase lg:text-6xl leading-none font-extrabold tracking-tight"
           >
@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <div class="p-6 md:p-10 lg:p-20">
+    <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
       <div class="pt-6 md:pt-20 mb-6">
         <h1 class="text-3xl lg:text-4xl leading-10 font-extrabold tracking-tight">
           Objectif du P.E.R.E

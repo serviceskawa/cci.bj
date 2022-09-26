@@ -531,7 +531,7 @@
                   </li>
                   <li>
                     <a href="" class="text-base text-white hover:text-white"
-                      >ccibj@exemple.com
+                      >info@ccib.bj
                     </a>
                   </li>
                 </ul>

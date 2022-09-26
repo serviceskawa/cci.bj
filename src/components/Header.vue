@@ -1,99 +1,159 @@
 <template>
   <header>
     <Popover class="relative bg-white shadow">
-      <div
-        class="px-4 flex justify-between items-center mx-auto py-2 xl:justify-start xl:space-x-4"
-      >
+      <div class="px-4 flex justify-between items-center mx-auto py-2 xl:justify-start xl:space-x-4">
         <div class="flex justify-start">
-          <a href="/">
+          <a href="/" class="mr-8">
             <span class="sr-only">CCIB</span>
             <img class="w-28 h-14" src="@/assets/logo.png" alt="" />
           </a>
         </div>
-
         <div class="-mr-2 -my-2 xl:hidden">
           <PopoverButton
-            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-          >
-            <span class="sr-only">Open menu</span>
+            class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-subtitlegray tracking-tight hover:bg-gray-100 focus:outline-none  ">
+            <span class="sr-only">Menu</span>
             <MenuIcon class="h-6 w-6" aria-hidden="true" />
           </PopoverButton>
         </div>
         <PopoverGroup as="nav" class="hidden xl:flex space-x-10">
-          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          <a @click="$router.push({name: 'cci'})"
+            class="text-base font-medium tracking-tight hover:text-primary cursor-pointer">
             Ma CCI
           </a>
           <Popover class="relative" v-slot="{ open }">
-            <PopoverButton
-              :class="[
-                open ? 'text-gray-900' : 'text-gray-500',
-                'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
-              ]"
-            >
+            <PopoverButton :class="[
+              open ? 'text-gray-900' : 'text-subtitlegray tracking-tight',
+              'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-primary focus:outline-none',
+            ]">
               <span>Vous êtes</span>
-              <ChevronDownIcon
-                :class="[
-                  open ? 'text-gray-600' : 'text-gray-400',
-                  'ml-2 h-5 w-5 group-hover:text-gray-500',
-                ]"
-                aria-hidden="true"
-              />
+              <ChevronDownIcon :class="[
+                open ? 'text-gray-600' : 'text-gray-400',
+                'ml-2 h-5 w-5 group-hover:text-subtitlegray tracking-tight',
+              ]" aria-hidden="true" />
             </PopoverButton>
-
-            <transition
-              enter-active-class="transition ease-out duration-200"
-              enter-from-class="opacity-0 translate-y-1"
-              enter-to-class="opacity-100 translate-y-0"
-              leave-active-class="transition ease-in duration-150"
-              leave-from-class="opacity-100 translate-y-0"
-              leave-to-class="opacity-0 translate-y-1"
-            >
+            <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 translate-y-1"
+              enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150"
+              leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 translate-y-1">
               <PopoverPanel
-                class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform lg:left-1/2 lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2"
-              >
-                <div
-                  class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5"
-                >
-                  <div
-                    class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2"
-                  >
-                    <a
-                      v-for="solution in solutions"
-                      :key="solution.name"
-                      :href="solution.href"
-                      class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
-                    >
+                class="absolute z-10 mt-6 w-screen max-w-md transform lg:left-full lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
+                <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-primary ring-opacity-5">
+                  <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
+                    <a @click="$router.push({name: 'createur-entreprise'})"
+                      class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50 cursor-pointer">
                       <div
-                        class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12"
-                      >
-                        <component
-                          :is="solution.icon"
-                          class="h-6 w-6"
-                          aria-hidden="true"
-                        />
+                        class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="48" height="48" rx="6" fill="#DD7A4B" />
+                          <path
+                            d="M21 31V25C21 23.8954 20.1046 23 19 23H17C15.8954 23 15 23.8954 15 25V31C15 32.1046 15.8954 33 17 33H19C20.1046 33 21 32.1046 21 31ZM21 31V21C21 19.8954 21.8954 19 23 19H25C26.1046 19 27 19.8954 27 21V31M21 31C21 32.1046 21.8954 33 23 33H25C26.1046 33 27 32.1046 27 31M27 31V17C27 15.8954 27.8954 15 29 15H31C32.1046 15 33 15.8954 33 17V31C33 32.1046 32.1046 33 31 33H29C27.8954 33 27 32.1046 27 31Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
                       </div>
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">
-                          {{ solution.name }}
+                          Créateur d’entreprise
                         </p>
-                        <p class="mt-1 text-sm text-gray-500">
-                          {{ solution.description }}
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">
+                          Get a better understanding of where your traffic is coming from.
                         </p>
                       </div>
                     </a>
-                  </div>
-                  <div class="bg-gray-50 p-5 sm:p-8">
-                    <a href="#" class="-m-3 flow-root rounded-md p-3 hover:bg-gray-100">
-                      <div class="flex items-center">
-                        <div class="text-base font-medium text-gray-900">Enterprise</div>
-                        <span
-                          class="ml-3 inline-flex items-center rounded-full bg-indigo-100 px-3 py-0.5 text-xs font-medium leading-5 text-indigo-800"
-                          >New</span
-                        >
+                    <a @click="$router.push({name: 'chef-entreprise'})"
+                      class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50 cursor-pointer">
+                      <div
+                        class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="48" height="48" rx="6" fill="#DD7A4B" />
+                          <path
+                            d="M26.9998 26.9998L24.9998 31.9998L20.9998 20.9998L31.9998 24.9998L26.9998 26.9998ZM26.9998 26.9998L31.9998 31.9998M19.1881 14.2383L19.9645 17.1361M17.1361 19.9645L14.2383 19.188M25.9495 16.05L23.8282 18.1714M18.1715 23.8281L16.0501 25.9494"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
                       </div>
-                      <p class="mt-1 text-sm text-gray-500">
-                        Empower your entire team with even more advanced tools.
-                      </p>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">
+                          Chef d'entreprise
+                        </p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">
+                          Speak directly to your customers in a more meaningful way.
+                        </p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'financement'})"
+                      class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50 cursor-pointer">
+                      <div
+                        class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="48" height="48" rx="6" fill="#DD7A4B" />
+                          <path
+                            d="M26.9998 26.9998L24.9998 31.9998L20.9998 20.9998L31.9998 24.9998L26.9998 26.9998ZM26.9998 26.9998L31.9998 31.9998M19.1881 14.2383L19.9645 17.1361M17.1361 19.9645L14.2383 19.188M25.9495 16.05L23.8282 18.1714M18.1715 23.8281L16.0501 25.9494"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
+                      </div>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">
+                          Investisseur
+                        </p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">
+                          Your customers' data will be safe and secure.
+                        </p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'institutionnelle'})"
+                      class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50 cursor-pointer">
+                      <div
+                        class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="48" height="48" rx="6" fill="#DD7A4B" />
+                          <path
+                            d="M16 18C16 16.8954 16.8954 16 18 16H20C21.1046 16 22 16.8954 22 18V20C22 21.1046 21.1046 22 20 22H18C16.8954 22 16 21.1046 16 20V18Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M26 18C26 16.8954 26.8954 16 28 16H30C31.1046 16 32 16.8954 32 18V20C32 21.1046 31.1046 22 30 22H28C26.8954 22 26 21.1046 26 20V18Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M16 28C16 26.8954 16.8954 26 18 26H20C21.1046 26 22 26.8954 22 28V30C22 31.1046 21.1046 32 20 32H18C16.8954 32 16 31.1046 16 30V28Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                          <path
+                            d="M26 28C26 26.8954 26.8954 26 28 26H30C31.1046 26 32 26.8954 32 28V30C32 31.1046 31.1046 32 30 32H28C26.8954 32 26 31.1046 26 30V28Z"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">
+                          Institutionnel
+                        </p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">
+                          Connect with third-party tools that you're already using. </p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'institutionnelle'})"
+                      class="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50 cursor-pointer">
+                      <div
+                        class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <rect width="48" height="48" rx="6" fill="#DD7A4B" />
+                          <path
+                            d="M16 16V21H16.5815M31.9381 23C31.446 19.0537 28.0796 16 24 16C20.6426 16 17.7683 18.0682 16.5815 21M16.5815 21H21M32 32V27H31.4185M31.4185 27C30.2317 29.9318 27.3574 32 24 32C19.9204 32 16.554 28.9463 16.0619 25M31.4185 27H27"
+                            stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+
+
+
+
+                      </div>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">
+                          Commerçant ou industriel
+                        </p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">
+                          Build strategic funnels that will drive your customers to convert.
+                        </p>
+                      </div>
                     </a>
                   </div>
                 </div>
@@ -101,57 +161,127 @@
             </transition>
           </Popover>
           <Popover class="relative" v-slot="{ open }">
-            <PopoverButton
-              :class="[
-                open ? 'text-gray-900' : 'text-gray-500',
-                'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
-              ]"
-            >
+            <PopoverButton :class="[
+              open ? 'text-gray-900' : '',
+              'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-primary focus:outline-none',
+            ]">
               <span>Nos Services</span>
-              <ChevronDownIcon
-                :class="[
-                  open ? 'text-gray-600' : 'text-gray-400',
-                  'ml-2 h-5 w-5 group-hover:text-gray-500',
-                ]"
-                aria-hidden="true"
-              />
+              <ChevronDownIcon :class="[
+                open ? 'text-gray-600' : 'text-gray-400',
+                'ml-2 h-5 w-5 group-hover:text-subtitlegray tracking-tight',
+              ]" aria-hidden="true" />
             </PopoverButton>
 
-            <transition
-              enter-active-class="transition ease-out duration-200"
-              enter-from-class="opacity-0 translate-y-1"
-              enter-to-class="opacity-100 translate-y-0"
-              leave-active-class="transition ease-in duration-150"
-              leave-from-class="opacity-100 translate-y-0"
-              leave-to-class="opacity-0 translate-y-1"
-            >
+            <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 translate-y-1"
+              enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150"
+              leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 translate-y-1">
               <PopoverPanel
-                class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md xl:max-w-2xl xl:ml-0 xl:left-1/2 xl:-translate-x-1/2"
-              >
-                <div
-                  class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden"
-                >
-                  <div
-                    class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 xl:grid-cols-2"
-                  >
-                    <a
-                      v-for="item in solutions"
-                      :key="item.name"
-                      :href="item.href"
-                      class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                    >
-                      <div
-                        class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white sm:h-12 sm:w-12"
-                      >
-                        <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-                      </div>
+                class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
+                <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-primary ring-opacity-5">
+                  <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                    <a @click="$router.push({name: 'services'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9 19V13C9 11.8954 8.10457 11 7 11H5C3.89543 11 3 11.8954 3 13V19C3 20.1046 3.89543 21 5 21H7C8.10457 21 9 20.1046 9 19ZM9 19V9C9 7.89543 9.89543 7 11 7H13C14.1046 7 15 7.89543 15 9V19M9 19C9 20.1046 9.89543 21 11 21H13C14.1046 21 15 20.1046 15 19M15 19V5C15 3.89543 15.8954 3 17 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H17C15.8954 21 15 20.1046 15 19Z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
                       <div class="ml-4">
-                        <p class="text-base font-medium text-gray-900">
-                          {{ item.name }}
-                        </p>
-                        <p class="mt-1 text-sm text-gray-500">
-                          {{ item.description }}
-                        </p>
+                        <p class="text-base font-medium text-gray-900">Services spécifiques</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Get a better understanding of where
+                          your traffic is coming from.</p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'faq'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.9998 14.9998L12.9998 19.9998L8.99983 8.99976L19.9998 12.9998L14.9998 14.9998ZM14.9998 14.9998L19.9998 19.9998M7.18806 2.23828L7.96452 5.13606M5.13606 7.96448L2.23828 7.18802M13.9495 4.05005L11.8282 6.17137M6.17146 11.8281L4.05014 13.9494"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Informations et orientation</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Speak directly to your customers in a
+                          more meaningful way.</p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'formations'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9 11.999L11 13.999L15 9.99903M20.6179 5.98336C20.4132 5.99374 20.2072 5.999 20 5.999C16.9265 5.999 14.123 4.84356 11.9999 2.94336C9.87691 4.84348 7.07339 5.99887 4 5.99887C3.79277 5.99887 3.58678 5.99362 3.38213 5.98324C3.1327 6.94685 3 7.95745 3 8.99903C3 14.5906 6.82432 19.2889 12 20.621C17.1757 19.2889 21 14.5906 21 8.99903C21 7.95749 20.8673 6.94694 20.6179 5.98336Z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Formation, assistance et appui-conseil</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Your customers' data will be safe and
+                          secure.</p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'blogs-articles'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4 6C4 4.89543 4.89543 4 6 4H8C9.10457 4 10 4.89543 10 6V8C10 9.10457 9.10457 10 8 10H6C4.89543 10 4 9.10457 4 8V6Z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M14 6C14 4.89543 14.8954 4 16 4H18C19.1046 4 20 4.89543 20 6V8C20 9.10457 19.1046 10 18 10H16C14.8954 10 14 9.10457 14 8V6Z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M4 16C4 14.8954 4.89543 14 6 14H8C9.10457 14 10 14.8954 10 16V18C10 19.1046 9.10457 20 8 20H6C4.89543 20 4 19.1046 4 18V16Z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M14 16C14 14.8954 14.8954 14 16 14H18C19.1046 14 20 14.8954 20 16V18C20 19.1046 19.1046 20 18 20H16C14.8954 20 14 19.1046 14 18V16Z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Blog et artiles</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Lire le blog et des articles</p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'formations'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4 4V9H4.58152M19.9381 11C19.446 7.05369 16.0796 4 12 4C8.64262 4 5.76829 6.06817 4.58152 9M4.58152 9H9M20 20V15H19.4185M19.4185 15C18.2317 17.9318 15.3574 20 12 20C7.92038 20 4.55399 16.9463 4.06189 13M19.4185 15H15"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Formation, assistance et appui-conseil</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Your customers' data will be safe and
+                          secure.</p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'faq'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.9998 14.9998L12.9998 19.9998L8.99983 8.99976L19.9998 12.9998L14.9998 14.9998ZM14.9998 14.9998L19.9998 19.9998M7.18806 2.23828L7.96452 5.13606M5.13606 7.96448L2.23828 7.18802M13.9495 4.05005L11.8282 6.17137M6.17146 11.8281L4.05014 13.9494"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Informations et orientation</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Speak directly to your customers in a
+                          more meaningful way.</p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'agenda'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.9998 14.9998L12.9998 19.9998L8.99983 8.99976L19.9998 12.9998L14.9998 14.9998ZM14.9998 14.9998L19.9998 19.9998M7.18806 2.23828L7.96452 5.13606M5.13606 7.96448L2.23828 7.18802M13.9495 4.05005L11.8282 6.17137M6.17146 11.8281L4.05014 13.9494"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Agenda</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Voir notre agenda</p>
                       </div>
                     </a>
                   </div>
@@ -160,57 +290,126 @@
             </transition>
           </Popover>
           <Popover class="relative" v-slot="{ open }">
-            <PopoverButton
-              :class="[
-                open ? 'text-gray-900' : 'text-gray-500',
-                'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500',
-              ]"
-            >
+            <PopoverButton :class="[
+              open ? 'text-gray-900' : '',
+              'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-primary focus:outline-none',
+            ]">
               <span>Nos Formations</span>
-              <ChevronDownIcon
-                :class="[
-                  open ? 'text-gray-600' : 'text-gray-400',
-                  'ml-2 h-5 w-5 group-hover:text-gray-500',
-                ]"
-                aria-hidden="true"
-              />
+              <ChevronDownIcon :class="[
+                open ? 'text-gray-600' : 'text-gray-400',
+                'ml-2 h-5 w-5 group-hover:text-subtitlegray tracking-tight',
+              ]" aria-hidden="true" />
             </PopoverButton>
-
-            <transition
-              enter-active-class="transition ease-out duration-200"
-              enter-from-class="opacity-0 translate-y-1"
-              enter-to-class="opacity-100 translate-y-0"
-              leave-active-class="transition ease-in duration-150"
-              leave-from-class="opacity-100 translate-y-0"
-              leave-to-class="opacity-0 translate-y-1"
-            >
+            <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 translate-y-1"
+              enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150"
+              leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 translate-y-1">
               <PopoverPanel
-                class="absolute z-10 -ml-4 mt-3 transform w-screen max-w-md xl:max-w-2xl xl:ml-0 xl:left-1/2 xl:-translate-x-1/2"
-              >
-                <div
-                  class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-hidden"
-                >
-                  <div
-                    class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 xl:grid-cols-2"
-                  >
-                    <a
-                      v-for="item in solutions"
-                      :key="item.name"
-                      :href="item.href"
-                      class="-m-3 p-3 flex items-start rounded-lg hover:bg-gray-50"
-                    >
-                      <div
-                        class="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-indigo-600 text-white sm:h-12 sm:w-12"
-                      >
-                        <component :is="item.icon" class="h-6 w-6" aria-hidden="true" />
-                      </div>
+                class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
+                <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-primary ring-opacity-5">
+                  <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                    <a @click="$router.push({name: 'services'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9 19V13C9 11.8954 8.10457 11 7 11H5C3.89543 11 3 11.8954 3 13V19C3 20.1046 3.89543 21 5 21H7C8.10457 21 9 20.1046 9 19ZM9 19V9C9 7.89543 9.89543 7 11 7H13C14.1046 7 15 7.89543 15 9V19M9 19C9 20.1046 9.89543 21 11 21H13C14.1046 21 15 20.1046 15 19M15 19V5C15 3.89543 15.8954 3 17 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H17C15.8954 21 15 20.1046 15 19Z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
                       <div class="ml-4">
-                        <p class="text-base font-medium text-gray-900">
-                          {{ item.name }}
-                        </p>
-                        <p class="mt-1 text-sm text-gray-500">
-                          {{ item.description }}
-                        </p>
+                        <p class="text-base font-medium text-gray-900">Services spécifiques</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Get a better understanding of where
+                          your traffic is coming from.</p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'faq'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.9998 14.9998L12.9998 19.9998L8.99983 8.99976L19.9998 12.9998L14.9998 14.9998ZM14.9998 14.9998L19.9998 19.9998M7.18806 2.23828L7.96452 5.13606M5.13606 7.96448L2.23828 7.18802M13.9495 4.05005L11.8282 6.17137M6.17146 11.8281L4.05014 13.9494"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Informations et orientation</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Speak directly to your customers in a
+                          more meaningful way.</p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'formations'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9 11.999L11 13.999L15 9.99903M20.6179 5.98336C20.4132 5.99374 20.2072 5.999 20 5.999C16.9265 5.999 14.123 4.84356 11.9999 2.94336C9.87691 4.84348 7.07339 5.99887 4 5.99887C3.79277 5.99887 3.58678 5.99362 3.38213 5.98324C3.1327 6.94685 3 7.95745 3 8.99903C3 14.5906 6.82432 19.2889 12 20.621C17.1757 19.2889 21 14.5906 21 8.99903C21 7.95749 20.8673 6.94694 20.6179 5.98336Z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Formation, assistance et appui-conseil</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Your customers' data will be safe and
+                          secure.</p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'blogs-articles'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4 6C4 4.89543 4.89543 4 6 4H8C9.10457 4 10 4.89543 10 6V8C10 9.10457 9.10457 10 8 10H6C4.89543 10 4 9.10457 4 8V6Z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M14 6C14 4.89543 14.8954 4 16 4H18C19.1046 4 20 4.89543 20 6V8C20 9.10457 19.1046 10 18 10H16C14.8954 10 14 9.10457 14 8V6Z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M4 16C4 14.8954 4.89543 14 6 14H8C9.10457 14 10 14.8954 10 16V18C10 19.1046 9.10457 20 8 20H6C4.89543 20 4 19.1046 4 18V16Z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                          d="M14 16C14 14.8954 14.8954 14 16 14H18C19.1046 14 20 14.8954 20 16V18C20 19.1046 19.1046 20 18 20H16C14.8954 20 14 19.1046 14 18V16Z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Blog et artiles</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Lire le blog et des articles</p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'formations'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M4 4V9H4.58152M19.9381 11C19.446 7.05369 16.0796 4 12 4C8.64262 4 5.76829 6.06817 4.58152 9M4.58152 9H9M20 20V15H19.4185M19.4185 15C18.2317 17.9318 15.3574 20 12 20C7.92038 20 4.55399 16.9463 4.06189 13M19.4185 15H15"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Formation, assistance et appui-conseil</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Your customers' data will be safe and
+                          secure.</p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'faq'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.9998 14.9998L12.9998 19.9998L8.99983 8.99976L19.9998 12.9998L14.9998 14.9998ZM14.9998 14.9998L19.9998 19.9998M7.18806 2.23828L7.96452 5.13606M5.13606 7.96448L2.23828 7.18802M13.9495 4.05005L11.8282 6.17137M6.17146 11.8281L4.05014 13.9494"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Informations et orientation</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Speak directly to your customers in a
+                          more meaningful way.</p>
+                      </div>
+                    </a>
+                    <a @click="$router.push({name: 'agenda'})"
+                      class="cursor-pointer -m-3 flex items-start rounded-lg p-3 hover:bg-gray-50">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.9998 14.9998L12.9998 19.9998L8.99983 8.99976L19.9998 12.9998L14.9998 14.9998ZM14.9998 14.9998L19.9998 19.9998M7.18806 2.23828L7.96452 5.13606M5.13606 7.96448L2.23828 7.18802M13.9495 4.05005L11.8282 6.17137M6.17146 11.8281L4.05014 13.9494"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">Agenda</p>
+                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Voir notre agenda</p>
                       </div>
                     </a>
                   </div>
@@ -218,83 +417,51 @@
               </PopoverPanel>
             </transition>
           </Popover>
-          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          <a @click="$router.push({ name: 'blog-articles' })"
+            class="text-base font-medium hover:text-primary cursor-pointer">
             Blog
           </a>
-          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+          <a @click="$router.push({ name: 'appels-offres' })"
+            class="text-base font-medium hover:text-primary cursor-pointer">
             Travailler avec nous
           </a>
         </PopoverGroup>
         <div class="h-full hidden xl:flex items-center justify-end xl:flex-1 xl:w-0">
-          <a
-            href="#"
-            class="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
-          >
+          <!-- <a href="#" class="whitespace-nowrap text-base font-medium text-subtitlegray tracking-tight hover:text-primary">
             <svg width="52" height="53" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#a)">
                 <rect x="2" y="1.5" width="48" height="48" rx="6" fill="#fff" />
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
+                <path fill-rule="evenodd" clip-rule="evenodd"
                   d="M24 19.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-6 4a6 6 0 1 1 10.89 3.477l4.817 4.816a1 1 0 0 1-1.414 1.414l-4.816-4.816A6 6 0 0 1 18 23.5Z"
-                  fill="#111827"
-                />
+                  fill="#111827" />
                 <rect x="2.5" y="2" width="47" height="47" rx="5.5" stroke="#111827" />
               </g>
               <defs>
-                <filter
-                  id="a"
-                  x="0"
-                  y=".5"
-                  width="52"
-                  height="52"
-                  filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB"
-                >
+                <filter id="a" x="0" y=".5" width="52" height="52" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
                   <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix
-                    in="SourceAlpha"
-                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha"
-                  />
+                  <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
                   <feOffset dy="1" />
                   <feGaussianBlur stdDeviation="1" />
                   <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
-                  <feBlend
-                    in2="BackgroundImageFix"
-                    result="effect1_dropShadow_5092_3872"
-                  />
-                  <feBlend
-                    in="SourceGraphic"
-                    in2="effect1_dropShadow_5092_3872"
-                    result="shape"
-                  />
+                  <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_5092_3872" />
+                  <feBlend in="SourceGraphic" in2="effect1_dropShadow_5092_3872" result="shape" />
                 </filter>
               </defs>
             </svg>
-          </a>
-          <a
-            href="#"
-            class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2.5 border border-transparent rounded-md shadow-sm text-base font-medium text-dark"
-          >
+          </a> -->
+          <a @click="$router.push({ name: 'contact' })"
+            class="cursor-pointer ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2.5 border border-transparent rounded-md shadow-sm text-base font-medium text-dark">
             Nous contacter
           </a>
         </div>
       </div>
-
-      <transition
-        enter-active-class="duration-200 ease-out"
-        enter-from-class="opacity-0 scale-95"
-        enter-to-class="opacity-100 scale-100"
-        leave-active-class="duration-100 ease-in"
-        leave-from-class="opacity-100 scale-100"
-        leave-to-class="opacity-0 scale-95"
-      >
-        <PopoverPanel
-          focus
-          class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right xl:hidden"
-        >
-          <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white">
+      <transition enter-active-class="duration-200 ease-out" enter-from-class="opacity-0 scale-95"
+        enter-to-class="opacity-100 scale-100" leave-active-class="duration-100 ease-in"
+        leave-from-class="opacity-100 scale-100" leave-to-class="opacity-0 scale-95">
+        <PopoverPanel focus class="absolute z-30 top-0 inset-x-0 p-2 transition transform origin-top-right xl:hidden">
+          <div class="rounded-lg shadow-lg ring-1 ring-primary ring-opacity-5 bg-white">
             <div class="px-8 py-6">
               <div class="flex items-center justify-between">
                 <div>
@@ -302,8 +469,7 @@
                 </div>
                 <div class="-mr-2">
                   <PopoverButton
-                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
-                  >
+                    class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-subtitlegray tracking-tight hover:bg-gray-100">
                     <span class="sr-only">Close menu</span>
                     <XIcon class="h-6 w-6" aria-hidden="true" />
                   </PopoverButton>
@@ -311,12 +477,8 @@
               </div>
               <div class="mt-6">
                 <nav class="grid grid-cols-1 gap-7">
-                  <a
-                    v-for="item in solutions"
-                    :key="item.name"
-                    :href="item.href"
-                    class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50"
-                  >
+                  <a v-for="item in solutions" :key="item.name" @click="$router.push({name: item.route_name})"
+                    class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
                     <div class="text-base font-medium text-gray-900">
                       {{ item.name }}
                     </div>
@@ -326,17 +488,10 @@
             </div>
             <div class="py-6 px-5">
               <div class="">
-                <a
-                  href="#"
-                  class="whitespace-nowrap inline-flex items-center justify-center px-4 py-2.5 border border-transparent rounded-md shadow-sm text-base font-medium text-dark"
-                >
+                <a @click="$router.push({ name: 'contact' })"
+                  class="cursor-pointer whitespace-nowrap inline-flex items-center justify-center px-4 py-2.5 border border-transparent rounded-md shadow-sm text-base font-medium text-dark">
                   Nous contacter
                 </a>
-                <!-- <p
-                    class="mt-6 text-center text-base font-medium text-gray-500"
-                  >
-                    <a href="#" class="text-gray-900"> Sign in </a>
-                  </p> -->
               </div>
             </div>
           </div>
@@ -346,7 +501,7 @@
   </header>
 </template>
 
-<script setup>
+<script>
 import { Popover, PopoverButton, PopoverGroup, PopoverPanel } from "@headlessui/vue";
 import {
   AnnotationIcon,
@@ -358,193 +513,122 @@ import {
   SearchIcon,
 } from "@heroicons/vue/outline";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
-import { defineComponent, h } from "vue";
-
-const solutions = [
-  {
-    name: "Inbox",
-    description: "Get a better understanding of where your traffic is coming from.",
-    href: "#",
-    icon: InboxIcon,
+import { defineComponent, h } from "vue"
+export default {
+  components: {
+    AnnotationIcon,
+    ChatAlt2Icon,
+    InboxIcon,
+    MenuIcon,
+    QuestionMarkCircleIcon,
+    XIcon,
+    SearchIcon,
+    Popover, PopoverButton, PopoverGroup, PopoverPanel,
+    ChevronDownIcon
   },
-  {
-    name: "Messaging",
-    description: "Speak directly to your customers in a more meaningful way.",
-    href: "#",
-    icon: AnnotationIcon,
-  },
-  {
-    name: "Live Chat",
-    description: "Your customers' data will be safe and secure.",
-    href: "#",
-    icon: ChatAlt2Icon,
-  },
-  {
-    name: "Knowledge Base",
-    description: "Connect with third-party tools that you're already using.",
-    href: "#",
-    icon: QuestionMarkCircleIcon,
-  },
-];
-const navigation = [
-  { name: "Ma CCI", href: "#" },
-  { name: "Bloc", href: "#" },
-  { name: "Travailler avec nous", href: "#" },
-];
-const navi = {
-  solutions: [
-    { name: "Marketing", href: "#" },
-    { name: "Analytics", href: "#" },
-    { name: "Commerce", href: "#" },
-    { name: "Insights", href: "#" },
-  ],
-  support: [
-    { name: "Pricing", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-    { name: "API Status", href: "#" },
-  ],
-  company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Partners", href: "#" },
-  ],
-  legal: [
-    { name: "Claim", href: "#" },
-    { name: "Privacy", href: "#" },
-    { name: "Terms", href: "#" },
-  ],
-  social: [
-    {
-      name: "Facebook",
-      href: "#",
-      icon: defineComponent({
-        render: () =>
-          h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
-            h("path", {
-              "fill-rule": "evenodd",
-              d:
-                "M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z",
-              "clip-rule": "evenodd",
-            }),
-          ]),
-      }),
-    },
-    {
-      name: "Instagram",
-      href: "#",
-      icon: defineComponent({
-        render: () =>
-          h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
-            h("path", {
-              "fill-rule": "evenodd",
-              d:
-                "M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z",
-              "clip-rule": "evenodd",
-            }),
-          ]),
-      }),
-    },
-    {
-      name: "Twitter",
-      href: "#",
-      icon: defineComponent({
-        render: () =>
-          h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
-            h("path", {
-              d:
-                "M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84",
-            }),
-          ]),
-      }),
-    },
-    {
-      name: "GitHub",
-      href: "#",
-      icon: defineComponent({
-        render: () =>
-          h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
-            h("path", {
-              "fill-rule": "evenodd",
-              d:
-                "M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z",
-              "clip-rule": "evenodd",
-            }),
-          ]),
-      }),
-    },
-    {
-      name: "Dribbble",
-      href: "#",
-      icon: defineComponent({
-        render: () =>
-          h("svg", { fill: "currentColor", viewBox: "0 0 24 24" }, [
-            h("path", {
-              "fill-rule": "evenodd",
-              d:
-                "M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z",
-              "clip-rule": "evenodd",
-            }),
-          ]),
-      }),
-    },
-  ],
-};
-const posts = [
-  {
-    title: "Boost your conversion rate",
-    href: "#",
-    category: { name: "Article", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-    date: "Mar 16, 2020",
-    datetime: "2020-03-16",
-    imageUrl: "@/assets/images/agenda.jpeg",
-    readingTime: "6 min",
-    author: {
-      name: "Roel Aufderehar",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    title: "How to use search engine optimization to drive sales",
-    href: "#",
-    category: { name: "Video", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
-    date: "Mar 10, 2020",
-    datetime: "2020-03-10",
-    imageUrl:
-      "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "4 min",
-    author: {
-      name: "Brenna Goyette",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-  {
-    title: "Improve your customer experience",
-    href: "#",
-    category: { name: "Case Study", href: "#" },
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
-    date: "Feb 12, 2020",
-    datetime: "2020-02-12",
-    imageUrl:
-      "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-    readingTime: "11 min",
-    author: {
-      name: "Daniela Metz",
-      href: "#",
-      imageUrl:
-        "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-    },
-  },
-];
+  data() {
+    return {
+      solutions: [
+        {
+          name: "Opportunités d'affaires",
+          description: "Un élément déterminant et important pour la croissance des entreprises",
+          route_name: "#",
+          icon: InboxIcon,
+        },
+        {
+          name: "Accompagnement",
+          description: "ImPULSE, le cadre d'accélération de la croissance de toutes les entreprises",
+          route_name: "impulse",
+          icon: AnnotationIcon,
+        },
+        {
+          name: "Etude de marché",
+          description: "L'étude de marché est un passage obligatoire pour tout projet d'entreprise",
+          route_name: "etude-marche",
+          icon: ChatAlt2Icon,
+        },
+        {
+          name: "Arbitrage et mediation",
+          description: "CAMeC-CCIB, l’organe facilitant le règlement des litiges dans les d’affaires",
+          route_name: "arbitrage-mediation",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "E-learning",
+          description: "Se faire former dans divers domaines à votre rythme sans pression de temps",
+          route_name: "formations",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "Institutionnelle",
+          description: "Accedez à des données fiables",
+          route_name: "institutionnelle",
+          icon: QuestionMarkCircleIcon,
+        },
+      ],
+      posts: [
+        {
+          title: "Boost your conversion rate",
+          href: "#",
+          category: { name: "Article", href: "#" },
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
+          date: "Mar 16, 2020",
+          datetime: "2020-03-16",
+          imageUrl: "@/assets/images/agenda.jpeg",
+          readingTime: "6 min",
+          author: {
+            name: "Roel Aufderehar",
+            href: "#",
+            imageUrl:
+              "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          },
+        },
+        {
+          title: "How to use search engine optimization to drive sales",
+          href: "#",
+          category: { name: "Video", href: "#" },
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
+          date: "Mar 10, 2020",
+          datetime: "2020-03-10",
+          imageUrl:
+            "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+          readingTime: "4 min",
+          author: {
+            name: "Brenna Goyette",
+            href: "#",
+            imageUrl:
+              "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          },
+        },
+        {
+          title: "Improve your customer experience",
+          href: "#",
+          category: { name: "Case Study", href: "#" },
+          description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
+          date: "Feb 12, 2020",
+          datetime: "2020-02-12",
+          imageUrl:
+            "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+          readingTime: "11 min",
+          author: {
+            name: "Daniela Metz",
+            href: "#",
+            imageUrl:
+              "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          },
+        },
+      ]
+    }
+  }
+}
 </script>
+<style lang="scss" scoped>
+::v-deep button:active,
+button:focus {
+  outline: none !important;
+  border: none !important;
+}
+</style>

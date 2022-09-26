@@ -1,6 +1,6 @@
 <template>
     <div class="bg-white overflow-hidden">
-      <div class="relative max-w-7xl mx-auto py-12 ">
+      <div class="py-12 ">
         <div class="relative lg:grid lg:grid-cols-4 lg:gap-x-8">
           <div class="lg:col-span-2 xl:mt-20 space-y-4">
             <p class="mt-2 text-base font-medium tracking-tight text-primary">

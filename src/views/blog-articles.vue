@@ -19,7 +19,7 @@
         </p>
       </div>
     </div>
-    <div class="p-6 md:p-10 lg:p-20">
+    <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
       <div class="mx-auto pb-10 flex justify-center flex-wrap items-center">
         <div class="relative mr-2 sm:mr-5 mb-3">
           <input

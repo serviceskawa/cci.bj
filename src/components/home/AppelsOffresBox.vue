@@ -1,6 +1,6 @@
 <template>
   <div class="py-16 bg-gradient-to-br from-green-50 to-cyan-100">
-    <div class="container m-auto max-w-7xl mx-auto text-gray-600">
+    <div class="container m-auto text-gray-600">
       <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         Appels d’offres et appels à projets
       </p>

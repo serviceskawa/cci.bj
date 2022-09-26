@@ -1,6 +1,6 @@
 <template>
   <div class="relative bg-white py-16 sm:py-24 lg:py-20">
-    <div class="mx-auto max-w-md sm:max-w-3xl lg:max-w-7xl">
+    <div class="mx-auto">
       <p class="mt-2 text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl">
         Des offres adaptées à votre profil
       </p>

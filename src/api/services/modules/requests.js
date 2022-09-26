@@ -1,0 +1,39 @@
+import client from '@/api/client'
+import {
+  SETTINGS,
+  HOME,
+  CONTACT_US,
+  LIST_FAQ,
+  ACTUALITES,
+  SERVICES
+} from '@/api/routes'
+
+export async function home_elements () {
+  const response = await client.get(HOME)
+  return response
+}
+
+export async function get_settings () {
+  const response = await client.get(SETTINGS)
+  return response
+}
+
+export async function contact_us (data) {
+  const response = await client.post(CONTACT_US, data)
+  return response
+}
+
+export async function get_faq () {
+  const response = await client.get(LIST_FAQ)
+  return response
+}
+
+export async function get_actualites () {
+  const response = await client.get(ACTUALITES)
+  return response
+}
+
+export async function get_all_services () {
+  const response = await client.get(SERVICES)
+  return response
+}

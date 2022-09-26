@@ -37,7 +37,7 @@
                 </div>
             </div>
         </div>
-        <div class="p-6 md:p-10 lg:p-20">
+        <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
             <h1 class="text-4xl text-center leading-10 font-extrabold tracking-tight mb-20"> Que souhaitez vous faire ?
             </h1>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

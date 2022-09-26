@@ -40,7 +40,7 @@
         </div>
       </div>
     </div>
-    <div class="p-6 md:p-10 lg:p-20">
+    <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
       <div class="grid flex flex-wrap grid grid-cols-1 lg:grid-cols-4 gap-16">
         <div class="">
           <div class="
