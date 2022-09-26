@@ -69,8 +69,6 @@
                             d="M26.9998 26.9998L24.9998 31.9998L20.9998 20.9998L31.9998 24.9998L26.9998 26.9998ZM26.9998 26.9998L31.9998 31.9998M19.1881 14.2383L19.9645 17.1361M17.1361 19.9645L14.2383 19.188M25.9495 16.05L23.8282 18.1714M18.1715 23.8281L16.0501 25.9494"
                             stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-
-
                       </div>
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">

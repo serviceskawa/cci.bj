@@ -97,7 +97,7 @@ const routes = [
   },
   {
     path: '/chef-entreprise',
-    nanme: 'chef-entreprise',
+    name: 'chef-entreprise',
     component: page('chef-entreprise'),
   },
   {
