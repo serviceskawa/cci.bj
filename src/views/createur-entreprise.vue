@@ -668,13 +668,17 @@
             </div>
         </div>
         <div class="px-6 md:px-10 lg:px-20 py-10 bg-gray">
-            <div class="bg-green end-box pt-12 pl-12 pb-0 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-white">
+            <div
+                class="bg-green end-box pt-12 pl-12 pb-0 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-white">
                 <div class="py-6">
-                    <h1 class="text-4xl leading-10 font-extrabold mb-4">Recevez nos appels d’offres via whatsapp/sms ou par mails </h1>
-                    <p class="text-lg leading-6 font-normal mb-6">Les meilleures opportunités d’affaires, plus proches de vous, en instantané.</p>
+                    <h1 class="text-4xl leading-10 font-extrabold mb-4">Recevez nos appels d’offres via whatsapp/sms ou
+                        par mails </h1>
+                    <p class="text-lg leading-6 font-normal mb-6">Les meilleures opportunités d’affaires, plus proches
+                        de vous, en instantané.</p>
                     <div class="flex items-center w-full">
                         <form class="w-full">
-                            <input type="text" class=" mb-3 md:w-full lg:w-3/5 mr-4" placeholder="Email ou numéro de téléphone" />
+                            <input type="text" class=" mb-3 md:w-full lg:w-3/5 mr-4"
+                                placeholder="Email ou numéro de téléphone" />
                             <button class="btn btn-middle-primary mb-3">Souscrire</button>
                         </form>
                     </div>
@@ -733,8 +737,8 @@ ul {
 }
 
 .end-box {
-box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
-border-radius: 8px;
+    box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1), 0px 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-radius: 8px;
 
 }
 
@@ -745,7 +749,6 @@ border-radius: 8px;
 input {
     height: 48px !important
 }
-
 </style>
   
   

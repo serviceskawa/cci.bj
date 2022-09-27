@@ -1,6 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <main>
+    <Notifications :notif="notif" v-if="notif.type !== ''" @close="notif.type = ''" />
     <div>
       <div class="relative">
         <carousel :slides="slides" :interval="5000" controls indicators></carousel>
@@ -21,13 +22,7 @@
       <AppelsOffresBox />
       <Partenaires />
     </div>
-
-    <!-- end appels d'offres -->
-
-    <!-- devenir partenaires -->
-
-    <!-- en partenaires -->
-    <NewsLettersBox />
+    <NewsLettersBox @sucess="update_notif('success')" @error="update_notif('error')" />
   </main>
 </template>
 
@@ -56,6 +51,7 @@ import Agenda from "@/components/home/Agenda.vue";
 import Partenaires from "@/components/home/Partenaires.vue";
 import AppelsOffresBox from "@/components/home/AppelsOffresBox.vue";
 import NewsLettersBox from "@/components/NewsLettersBox.vue";
+import Notifications from "@/components/Notifications.vue";
 export default {
   components: {
     ServiceCard,
@@ -70,6 +66,7 @@ export default {
     Partenaires,
     AppelsOffresBox,
     NewsLettersBox,
+    Notifications
   },
   data: () => ({
     commits: null,
@@ -83,6 +80,11 @@ export default {
       "src/assets/actu_three.jpeg",
       "src/assets/images/financement.jpeg",
     ],
+    notif: {
+      type: '',
+      title: '',
+      description: ''
+    }
   }),
 
   created() {
@@ -91,6 +93,20 @@ export default {
   },
 
   methods: {
+    update_notif(type) {
+      if (type == 'success') {
+        this.notif.type = 'success'
+        this.notif.title = "Effectuée"
+        this.notif.description = "Votre requête a été transmise avec succès."
+      } else {
+        this.notif.type = 'error'
+        this.notif.title = "Erreur"
+        this.notif.description = "Une erreur s'est produite. Veuillez réessayer."
+      }
+      setTimeout(() => {
+        this.notif.type = ''
+      }, 6000)
+    }
   },
 };
 </script>

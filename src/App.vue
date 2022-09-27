@@ -13,20 +13,17 @@ import { services } from '@/api'
 import store from '@/store'
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import NewsLettersBox from "@/components/NewsLettersBox.vue";
 import Alert from "@/components/Alert.vue";
 export default {
   components: {
     Header,
     Footer,
-    NewsLettersBox,
     Alert,
   },
   async mounted () {
     await services.get_settings().then((response) => {
       if (response.status == 200) {
-        this.$store.state.configs = response.data
-        console.log('response off ==', this.$store.state.configs)
+        sessionStorage.setItem('configs', JSON.stringify(response.data))
       }
     })
   },  

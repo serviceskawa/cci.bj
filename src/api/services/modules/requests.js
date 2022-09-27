@@ -3,9 +3,11 @@ import {
   SETTINGS,
   HOME,
   CONTACT_US,
-  LIST_FAQ,
+  FAQS,
   ACTUALITES,
-  SERVICES
+  SERVICES,
+  CLIENTS,
+  SUBSCRIBE_NEWSLETTERS
 } from '@/api/routes'
 
 export async function home_elements () {
@@ -24,7 +26,12 @@ export async function contact_us (data) {
 }
 
 export async function get_faq () {
-  const response = await client.get(LIST_FAQ)
+  const response = await client.get(FAQS)
+  return response
+}
+
+export async function send_faq_request (data) {
+  const response = await client.post(FAQS, data)
   return response
 }
 
@@ -35,5 +42,10 @@ export async function get_actualites () {
 
 export async function get_all_services () {
   const response = await client.get(SERVICES)
+  return response
+}
+
+export async function subscribe_newsletter (email) {
+  const response = await client.post(SUBSCRIBE_NEWSLETTERS, email)
   return response
 }

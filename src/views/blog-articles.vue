@@ -1,6 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <main>
+    <Notifications :notif="notif" v-if="notif.type !== ''" @close="notif.type = ''" />
     <div class="barner flex items-center p-4 md:px-10 lg:px-20">
       <div>
         <h6
@@ -70,7 +71,7 @@
         </div>
       </div>
     </div>
-    <NewsLettersBox />
+    <NewsLettersBox @sucess="update_notif('success')" @error="update_notif('error')" />
   </main>
 </template>
 
@@ -80,12 +81,20 @@ import ArticleCard from "@/components/ArticleCard.vue";
 import ActuOne from "@/assets/actu_one.jpeg";
 import ActuTwo from "@/assets/actu_two.jpeg";
 import ActuThree from "@/assets/actu_three.jpeg";
+import Notifications from "@/components/Notifications.vue";
 export default {
   components: {
     NewsLettersBox,
     ArticleCard,
+    NewsLettersBox,
+    Notifications
   },
   data: () => ({
+    notif: {
+      type: '',
+      title: '',
+      description: ''
+    },
     commits: [
       {
         cover: ActuTwo,
@@ -131,6 +140,23 @@ export default {
       },
     ],
   }),
+  
+  methods: {
+    update_notif(type) {
+      if (type == 'success') {
+        this.notif.type = 'success'
+        this.notif.title = "Effectuée"
+        this.notif.description = "Votre requête a été transmise avec succès."
+      } else {
+        this.notif.type = 'error'
+        this.notif.title = "Erreur"
+        this.notif.description = "Une erreur s'est produite. Veuillez réessayer."
+      }
+      setTimeout(() => {
+        this.notif.type = ''
+      }, 6000)
+    }
+  },
 };
 </script>
 
