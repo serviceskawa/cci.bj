@@ -107,7 +107,6 @@ export default {
     if (configs !== undefined && configs !== null) {
       configs = JSON.parse(configs)
     }
-    console.log('les confs  =>', configs)
     await services.get_all_clients().then((response) => {
       if (response.status == 200) {
         this.partnairs_list = response.data
@@ -120,7 +119,6 @@ export default {
         })
       }
     })
-    console.log('la liste des partenaires =>', this.partnairs_list)
   }
 }
 </script>
