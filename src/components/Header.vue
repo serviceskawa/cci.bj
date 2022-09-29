@@ -54,9 +54,9 @@
                         <p class="text-base font-medium text-gray-900">
                           Créateur d’entreprise
                         </p>
-                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">
+                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">
                           Get a better understanding of where your traffic is coming from.
-                        </p>
+                        </p> -->
                       </div>
                     </a>
                     <a @click="$router.push({name: 'chef-entreprise'})"
@@ -74,9 +74,9 @@
                         <p class="text-base font-medium text-gray-900">
                           Chef d'entreprise
                         </p>
-                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">
+                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">
                           Speak directly to your customers in a more meaningful way.
-                        </p>
+                        </p> -->
                       </div>
                     </a>
                     <a @click="$router.push({name: 'financement'})"
@@ -96,9 +96,9 @@
                         <p class="text-base font-medium text-gray-900">
                           Investisseur
                         </p>
-                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">
+                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">
                           Your customers' data will be safe and secure.
-                        </p>
+                        </p> -->
                       </div>
                     </a>
                     <a @click="$router.push({name: 'institutionnelle'})"
@@ -125,8 +125,8 @@
                         <p class="text-base font-medium text-gray-900">
                           Institutionnel
                         </p>
-                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">
-                          Connect with third-party tools that you're already using. </p>
+                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">
+                          Connect with third-party tools that you're already using. </p> -->
                       </div>
                     </a>
                     <a @click="$router.push({name: 'institutionnelle'})"
@@ -148,9 +148,9 @@
                         <p class="text-base font-medium text-gray-900">
                           Commerçant ou industriel
                         </p>
-                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">
+                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">
                           Build strategic funnels that will drive your customers to convert.
-                        </p>
+                        </p> -->
                       </div>
                     </a>
                   </div>
@@ -187,8 +187,8 @@
 
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">Services spécifiques</p>
-                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Get a better understanding of where
-                          your traffic is coming from.</p>
+                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Get a better understanding of where
+                          your traffic is coming from.</p> -->
                       </div>
                     </a>
                     <a @click="$router.push({name: 'faq'})"
@@ -200,8 +200,8 @@
                       </svg>
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">Informations et orientation</p>
-                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Speak directly to your customers in a
-                          more meaningful way.</p>
+                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Speak directly to your customers in a
+                          more meaningful way.</p> -->
                       </div>
                     </a>
                     <a @click="$router.push({name: 'formations'})"
@@ -214,8 +214,8 @@
 
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">Formation, assistance et appui-conseil</p>
-                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Your customers' data will be safe and
-                          secure.</p>
+                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Your customers' data will be safe and
+                          secure.</p> -->
                       </div>
                     </a>
                     <a @click="$router.push({name: 'blogs-articles'})"
@@ -252,8 +252,8 @@
 
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">Formation, assistance et appui-conseil</p>
-                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Your customers' data will be safe and
-                          secure.</p>
+                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Your customers' data will be safe and
+                          secure.</p> -->
                       </div>
                     </a>
                     <a @click="$router.push({name: 'faq'})"
@@ -265,8 +265,8 @@
                       </svg>
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">Informations et orientation</p>
-                        <p class="mt-1 text-sm text-subtitlegray tracking-tight">Speak directly to your customers in a
-                          more meaningful way.</p>
+                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Speak directly to your customers in a
+                          more meaningful way.</p> -->
                       </div>
                     </a>
                     <a @click="$router.push({name: 'agenda'})"

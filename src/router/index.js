@@ -91,6 +91,11 @@ const routes = [
     component: page('institutionnelle'),
   },
   {
+    path: '/industriel-commercant',
+    name: 'industriel-commercant',
+    component: page('industriel-commercant'),
+  },
+  {
     path: '/faq',
     name: 'faq',
     component: page('faq'),
@@ -114,6 +119,11 @@ const routes = [
     path: '/services',
     name: 'services',
     component: page('services'),
+  },
+  {
+    path: '/investissement',
+    name: 'investissement',
+    component: page('investissement'),
   },
 ];
 

@@ -125,7 +125,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid";
   .badge {
     border-radius: 16px !important;
     background: rgba(72, 127, 80, 0.1) !important;
-    padding: 2px 16px !important;
+    padding: 4px 16px !important;
   }
 }
 </style>

@@ -24,12 +24,7 @@
           />
         </svg>
       </div>
-      <div class="pt-12 pb-8 text-center">
-        <h2 class="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
-          Documents & rapports de publication
-        </h2>
-      </div>
-      <div class="tabs-block flex justify-center">
+      <div class="tabs-block flex justify-center pt-12">
         <nav class="space-x-8 tabs inline-flex m-auto flex-col sm:flex-row">
           <button
             @click="select_tab('appels')"

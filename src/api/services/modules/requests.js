@@ -35,6 +35,12 @@ export async function send_faq_request (data) {
   return response
 }
 
+
+export async function get_all_clients () {
+  const response = await client.get(CLIENTS)
+  return response
+}
+
 export async function get_actualites () {
   const response = await client.get(ACTUALITES)
   return response
