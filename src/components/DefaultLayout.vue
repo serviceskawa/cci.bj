@@ -8,7 +8,7 @@
         >
           <div class="flex justify-start ">
             <a href="#">
-              <span class="sr-only">CCIB</span>
+              <span class="sr-only">CCI Bénin</span>
               <img class="w-28 h-14" src="@/assets/logo.png" alt="" />
             </a>
           </div>

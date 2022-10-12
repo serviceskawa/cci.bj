@@ -142,7 +142,7 @@
             </div>
             <div v-if="current_tab == 'barem'">
               <h3 class="pb-10 leading-tight text-4xl font-extrabold text-subtitlegray">
-                Barème des cotisations applicable aux entreprises membre de la CCIB
+                Barème des cotisations applicable aux entreprises membre de la CCI Bénin
               </h3>
               <p class="text-md
               md:text-lg
@@ -163,10 +163,10 @@
               leading-7
               text-subtitlegray">
                 Le Centre d’Arbitrage, de Médiation et de Conciliation de la Chambre de Commerce et d’Industrie du Bénin
-                (CAMeC-CCIB) est un organe de la Chambre de Commerce et d’Industrie du Bénin mis à la disposition des
+                (CAMeC-CCI Bénin) est un organe de la Chambre de Commerce et d’Industrie du Bénin mis à la disposition des
                 femmes et hommes d’affaires pour faciliter le règlement des litiges nés de leurs relations d’affaires.
                 Les
-                modes alternatifs de règlement des litiges mis en œuvre par le CAMeC-CCIB sont : <br />
+                modes alternatifs de règlement des litiges mis en œuvre par le CAMeC-CCI Bénin sont : <br />
               <ul class="text-md
               md:text-lg
               tracking-tight

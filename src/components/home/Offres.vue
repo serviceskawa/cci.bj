@@ -5,7 +5,7 @@
         Des offres adaptées à votre profil
       </p>
       <p class="mx-auto mt-5 font-normal sp text-xl text-subtitlegray">
-        Quelque soit votre besoin, la CCIB vous accompagne à chaque étape afin que vous
+        Quelque soit votre besoin, la CCI Bénin vous accompagne à chaque étape afin que vous
         soyez satisfait.
       </p>
       <div class="mt-12">

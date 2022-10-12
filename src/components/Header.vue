@@ -4,8 +4,8 @@
       <div class="px-4 flex justify-between items-center mx-auto py-2 xl:justify-start xl:space-x-4">
         <div class="flex justify-start">
           <a href="/" class="mr-8">
-            <span class="sr-only">CCIB</span>
-            <img class="w-28 h-14" src="@/assets/logo.png" alt="" />
+            <span class="sr-only">CCI Bénin</span>
+            <img class="w-28" src="@/assets/logo.png" alt="CCI Bénin" />
           </a>
         </div>
         <div class="-mr-2 -my-2 xl:hidden">
@@ -359,7 +359,7 @@ export default {
         },
         {
           name: "Arbitrage et mediation",
-          description: "CAMeC-CCIB, l’organe facilitant le règlement des litiges dans les d’affaires",
+          description: "CAMeC-CCI Bénin, l’organe facilitant le règlement des litiges dans les d’affaires",
           route_name: "arbitrage-mediation",
           icon: QuestionMarkCircleIcon,
         },

@@ -5,7 +5,7 @@
         Appels d’offres et appels à projets
       </p>
       <p class="mx-auto mt-5 text-xl text-subtitlegray">
-        La CCIB vous informe des opportunités d’affaires localisées au Bénin. Retrouvez
+        La CCI Bénin vous informe des opportunités d’affaires localisées au Bénin. Retrouvez
         tous les appels à concurrence, communiqués et appels à candidatures.
       </p>
       <hr class="separation mt-5">

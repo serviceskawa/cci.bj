@@ -48,9 +48,9 @@
                 text-subtitlegray
                 text-center px-10 lg:px-20">
                 Le Centre d’Arbitrage, de Médiation et de Conciliation de la Chambre de Commerce et d’Industrie du Bénin
-                (CAMeC - CCIB) est un organe de la Chambre de Commerce et d’Industrie du Bénin mis à la disposition des
+                (CAMeC - CCI Bénin) est un organe de la Chambre de Commerce et d’Industrie du Bénin mis à la disposition des
                 commerçants, industiels et hommes d’affaires pour faciliter le règlement des litiges nés de leurs
-                relations d’affaires. Les modes alternatifs de règlement des litiges mis en œuvre par le CAMeC-CCIB sont
+                relations d’affaires. Les modes alternatifs de règlement des litiges mis en œuvre par le CAMeC-CCI Bénin sont
                 l’arbitrage, la conciliation, la médiation.
             </p>
             <div class="py-16 flex flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">

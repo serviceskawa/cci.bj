@@ -85,7 +85,7 @@
                 tracking-tight
                 leading-7
                 text-subtitlegray">
-                  La Chambre de Commerce et d’Industrie du Bénin (CCIB) a été créée le 12 avril 1908. Au cours de son
+                  La Chambre de Commerce et d’Industrie du Bénin (CCI Bénin) a été créée le 12 avril 1908. Au cours de son
                   évolution, elle a subi plusieurs mutations institutionnelles qui lui ont permis d’affiner ses
                   missions.
                   Au départ, les volets Commerce, Industrie et Agriculture étaient constitués en un seul bloc. C’est à
@@ -93,7 +93,7 @@
                   faveur de l’indépendance du pays et précisément le 03 avril 1962, qu’un acte a été pris pour
                   l’éclatement de la Chambre de Commerce, d’Agriculture et d’Industrie à travers la prise d’un décret
                   portant statuts de la Chambre de Commerce et d’Industrie.
-                  La Chambre de Commerce et d’Industrie du Bénin (CCIB) par son organisation actuelle, est un
+                  La Chambre de Commerce et d’Industrie du Bénin (CCI Bénin) par son organisation actuelle, est un
                   Etablissement Public qui jouit de la Personnalité civile et de l’autonomie financière. Elle est placée
                   sous la tutelle du Ministère chargé du Commerce et sa compétence couvre l’ensemble du territoire
                   national.
@@ -101,7 +101,7 @@
                   Les prestations offertes par la CCI-Bénin couvrent plusieurs domaines d’intérêt. Elles sont fournies à
                   travers les activités menées quotidiennement par les services et départements opérationnels rattachés
                   au
-                  Secrétariat Général et au Président de la CCIB.
+                  Secrétariat Général et au Président de la CCI Bénin.
                 </p>
               </div>
               <div v-if="current_tab == 'historic'">
@@ -112,7 +112,7 @@
                 md:text-lg
                 leading-7
                 text-subtitlegray">
-                  La Chambre de Commerce et d’Industrie du Bénin (CCIB) a été créée le 12 avril 1908. La CCIB est un
+                  La Chambre de Commerce et d’Industrie du Bénin (CCI Bénin) a été créée le 12 avril 1908. La CCI Bénin est un
                   établissement public jouissant de la Personnalité juridique et de l’autonomie financière. Elle est
                   placée sous la tutelle du Ministre en charge du commerce et sa compétence couvre l’ensemble du
                   territoire national béninois. Son président actuel est Arnauld AKAKPO, élu pour le compte de la
@@ -125,17 +125,17 @@
                 md:text-lg
                 leading-7
                 text-subtitlegray">
-                  Dans son fonctionnement, la CCIB regroupe tous les opérateurs économiques de la République du Bénin et
+                  Dans son fonctionnement, la CCI Bénin regroupe tous les opérateurs économiques de la République du Bénin et
                   autres personnes ou entités exerçant dans les secteurs du commerce, de l’industrie, des prestations de
                   services et inscrits au Registre du Commerce et du Crédit Mobilier.
-                  Les organes statutaires de la CCIB sont composés de :
+                  Les organes statutaires de la CCI Bénin sont composés de :
                 <ul class="text-md
                 md:text-lg
                 tracking-tight
                 leading-7
                 text-subtitlegray">
                   <li>
-                    L’assemblée Consulaire, l’organe d’administration de la CCIB
+                    L’assemblée Consulaire, l’organe d’administration de la CCI Bénin
 
                   </li>
                   <li>
