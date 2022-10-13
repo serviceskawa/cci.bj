@@ -84,20 +84,35 @@ export default {
     events: null,
     setting: null,
     slides: [
-    AgendaAss,
-    ActuOne,
-    ActuTwo,
-    ActuThree,
-    Financement
+      AgendaAss,
+      ActuOne,
+      ActuTwo,
+      ActuThree,
+      Financement
     ],
     notif: {
       type: '',
       title: '',
       description: ''
-    }
+    },
   }),
 
-  created() {
+  mounted() {
+    let configs = sessionStorage.getItem('configs')
+    if (configs !== undefined && configs !== null) {
+      configs = JSON.parse(configs)
+    }
+    this.slides = this.$store.state.home_elements
+    this.slides = this.slides.sliders
+    if (this.slides !== undefined) {
+      this.slides = this.slides.map((element) => {
+        return {
+          ...element,
+          slide: configs.image_url + '/' + element.photo
+        }
+      })
+    }
+
   },
   watch: {
   },

@@ -3,11 +3,11 @@
     <div class="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
       <div class="pr-16 sm:text-center sm:px-16">
         <p class="text-primary text-base leading-6 font-medium">
-          <span class="md:inline">
-            Vous êtes invités à prendre part au FORUM ECONOMIQUE POLOGNE – AFRIQUE
+          <span class="md:inline text-truncate">
+            {{alert.title}}
           </span>
           <span class="block sm:ml-12 sm:inline-block">
-            <a href="#" class="font-bold underline">
+            <a :href="alert.url" class="font-bold underline">
               En savoir plus <span aria-hidden="true">&rarr;</span></a
             >
           </span>
@@ -46,6 +46,12 @@
 <script>
 import { XMarkIcon } from "@heroicons/vue/solid/XIcon";
 export default {
+  props: {
+    alert: {
+      type: Object,
+      default: {}
+    }
+  },
   components: {},
   methods: {
     closeAlert() {

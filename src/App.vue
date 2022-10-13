@@ -2,7 +2,7 @@
   <div class="min-h-screen relative">
     <Header class="fixed top-0 w-full z-10" />
     <div class="content">
-      <Alert />
+      <Alert :alert="alert" />
       <router-view />
       <Footer />
     </div>
@@ -20,15 +20,41 @@ export default {
     Footer,
     Alert,
   },
-  async mounted () {
+  data() {
+    return {
+      alert: ''
+    }
+  },
+  async created() {
+    this.getNotifications(
+      setInterval(() => {
+        this.getNotifications()
+      }, 180000)
+    )
+    await services.home_elements().then((response) => {
+      if (response.status == 200) {
+        this.$store.state.home_elements = response.data
+      }
+    })
+  },
+  async mounted() {
     await services.get_settings().then((response) => {
       if (response.status == 200) {
         sessionStorage.setItem('configs', JSON.stringify(response.data))
       }
     })
-  },  
+    
+  },
   methods: {
-
+    async getNotifications() {
+      await services.get_notifcations().then((response) => {
+        if (response.status == 200) {
+          if (response.status == 200) {
+            this.alert = response.data
+          }
+        }
+      })
+    }
   },
 };
 </script>

@@ -10,7 +10,7 @@
         ></carousel-indicators>
         <carousel-item
           v-for="(slide, index) in slides"
-          :slide="slide"
+          :slide="slide.slide"
           :key="`item-${index}`"
           :current-slide="currentSlide"
           :index="index"

@@ -1,17 +1,16 @@
 import client from '@/api/client'
 import {
   SETTINGS,
-  HOME,
   CONTACT_US,
   FAQS,
   ACTUALITES,
   SERVICES,
   CLIENTS,
-  SUBSCRIBE_NEWSLETTERS
+  SUBSCRIBE_NEWSLETTERS,
 } from '@/api/routes'
 
 export async function home_elements () {
-  const response = await client.get(HOME)
+  const response = await client.get()
   return response
 }
 
@@ -54,4 +53,8 @@ export async function get_all_services () {
 export async function subscribe_newsletter (email) {
   const response = await client.post(SUBSCRIBE_NEWSLETTERS, email)
   return response
+}
+
+export async function get_notifcations () {
+  return await client.get(NOTIFICATIONS)
 }

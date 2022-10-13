@@ -11,3 +11,4 @@ export const ACTUALITES = `/news`
 export const SERVICES = `/services`
 export const CLIENTS = `/partners`
 export const SUBSCRIBE_NEWSLETTERS = `/subscriber`
+export const NOTIFICATIONS = `/notification`

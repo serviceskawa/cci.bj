@@ -6,7 +6,8 @@ const store = createStore({
     news: [],
     show_alert: true,
     configs: {},
-    faqs: []
+    faqs: [],
+    home_elements: {}
   },
   getters: {},
   actions: {
