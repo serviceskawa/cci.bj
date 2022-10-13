@@ -14,56 +14,48 @@
           les sociétés béninoises dans leur croissance.
         </p>
         <div class="mt-12">
-          <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            <div class="pt-6" v-for="i in 4" :key="i">
-              <div
-                class="flow-root bg-blanc rounded-lg group hover:border hover:bg-primaryInfo hover:border-primary"
-              >
-                <div class="mt-6 pb-6">
-                  <div class="flex justify-between px-6">
-                    <span
-                      class="inline-flex items-start justify-start text-left rounded-md bg-primary p-3 shadow-lg"
-                    >
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="white"
-                        class="w-6 h-6"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
-                        />
-                      </svg>
-                    </span>
-                    <span class="inline-flex rounded-md ml-36">
-                      <img
-                        class="h-4 w-auto sm:h-4"
-                        src="@/assets/Vector.svg"
-                        alt=""
-                      />
-                    </span>
-                  </div>
-                  <h3
-                    class="mt-4 text-lg px-6 font-bold tracking-tight text-gray-900"
-                  >
-                   Services spécifiques
-                  </h3>
-                  <p class="mt-5 text-base px-6 text-gray-500">
-                    Vérification d’existence et de fiabilité des entreprises,
-                    pour la facilitation des affaires
-                  </p>
+          <div class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+                    <div class="p-6 rounded-lg bg-gris mb-2 md:mb-0 cursor-pointer" v-for="(service, index) in services"
+                        :key="'service' + index" @click="$router.push({name: service.route})">
+                        <div class="flex justify-between">
+                            <span class="p-2.5 rounded-xl bg-primary">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z"
+                                        stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_5735_1034)">
+                                    <path d="M9 5V7H15.59L4 18.59L5.41 20L17 8.41V15H19V5H9Z" fill="#DD7A4B" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_5735_1034">
+                                        <rect width="24" height="24" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                        </div>
+                        <div class="mt-6">
+                            <h4 class="text-lg leading-none font-bold text-blue">
+                                {{service.name}}
+                            </h4>
+                            <p class="text-sm leading-5 text-blue mt-4">
+                                {{service.short_description}}
+                            </p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <!-- <ServiceCard /> -->
-          </div>
           <div class="tracking-tight mt-12 text-left text-dark">
             <span class="block sm:ml-2 sm:inline-block">
-              <a href="" class="text-primary">
+              <a @click="$router.push({name: 'services'})" class="text-primary">
                 Voir tous les services <span aria-hidden="true">&rarr;</span></a
               >
             </span>
@@ -72,3 +64,41 @@
       </div>
     </div>
 </template>
+<script>
+import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid";
+export default {
+    components: {
+        ArrowLeftIcon,
+        ArrowRightIcon
+    },
+    data() {
+        return {
+            loader: false,
+            services: []
+        }
+    },
+    async mounted() {
+        setTimeout(() => {
+            this.services = [
+                {
+                    name: 'Services spécifiques',
+                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    route: 'services-specs'
+                },
+                {
+                    name: 'Information et orientation',
+                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    route: 'services-infos'
+                },
+                {
+                    name: 'Formation, assistance et appui-conseil',
+                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    route: 'services-formations'
+                },
+            ]
+            this.loader = false
+        }, 2500)
+    }
+}
+</script>
+  
