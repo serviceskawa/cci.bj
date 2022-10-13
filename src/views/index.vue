@@ -84,11 +84,6 @@ export default {
     events: null,
     setting: null,
     slides: [
-      AgendaAss,
-      ActuOne,
-      ActuTwo,
-      ActuThree,
-      Financement
     ],
     notif: {
       type: '',
