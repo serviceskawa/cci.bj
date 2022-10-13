@@ -14,7 +14,7 @@
           les sociétés béninoises dans leur croissance.
         </p>
         <div class="mt-12">
-          <div class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+          <div class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     <div class="p-6 rounded-lg bg-gris mb-2 md:mb-0 cursor-pointer" v-for="(service, index) in services"
                         :key="'service' + index" @click="$router.push({name: service.route})">
                         <div class="flex justify-between">
@@ -47,9 +47,9 @@
                             <h4 class="text-lg leading-none font-bold text-blue">
                                 {{service.name}}
                             </h4>
-                            <p class="text-sm leading-5 text-blue mt-4">
+                            <!--<p class="text-sm leading-5 text-blue mt-4">
                                 {{service.short_description}}
-                            </p>
+                            </p> -->
                         </div>
                     </div>
                 </div>
