@@ -178,7 +178,7 @@
                 class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
                 <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-primary ring-opacity-5">
                   <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                    <a @click="$router.push({name: 'services'})"
+                    <a @click="$router.push({name: 'services-specs'})"
                       class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -191,7 +191,7 @@
                           your traffic is coming from.</p> -->
                       </div>
                     </a>
-                    <a @click="$router.push({name: 'faq'})"
+                    <a @click="$router.push({name: 'services-infos'})"
                       class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -204,7 +204,7 @@
                           more meaningful way.</p> -->
                       </div>
                     </a>
-                    <a @click="$router.push({name: 'formations'})"
+                    <a @click="$router.push({name: 'services-formations'})"
                       class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path

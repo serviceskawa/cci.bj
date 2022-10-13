@@ -44,7 +44,7 @@
                   création et gestion d’entreprise.
                 </p>
                 <div class="rounded-b-[16px] bg-grayCard py-6 px-6">
-                  <a href="" class="text-primary">
+                  <a @click="$router.push({name: 'createur-entreprise'})" class="text-primary">
                     Lire plus <span aria-hidden="true">&rarr;</span></a
                   >
                 </div>
@@ -85,7 +85,7 @@
                   spécialistes en développement d’entreprise
                 </p>
                 <div class="rounded-b-[16px] bg-grayCard py-6 px-6">
-                  <a href="" class="text-primary">
+                  <a @click="$router.push({name: 'chef-entreprise'})" class="text-primary">
                     Lire plus <span aria-hidden="true">&rarr;</span></a
                   >
                 </div>
@@ -126,7 +126,7 @@
                   spécialistes en analyses et investissement.
                 </p>
                 <div class="rounded-b-[16px] bg-grayCard py-6 px-6">
-                  <a href="" class="text-primary">
+                  <a @click="$router.push({name: 'investissement'})" class="text-primary">
                     Lire plus <span aria-hidden="true">&rarr;</span></a
                   >
                 </div>
@@ -167,7 +167,7 @@
                   prises lors de nos collectes.
                 </p>
                 <div class="rounded-b-[16px] bg-grayCard py-6 px-6">
-                  <a href="" class="text-primary">
+                  <a @click="$router.push({name: 'institutionnelle'})" class="text-primary">
                     Lire plus <span aria-hidden="true">&rarr;</span></a
                   >
                 </div>
