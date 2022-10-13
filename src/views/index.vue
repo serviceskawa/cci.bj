@@ -52,6 +52,11 @@ import Partenaires from "@/components/home/Partenaires.vue";
 import AppelsOffresBox from "@/components/home/AppelsOffresBox.vue";
 import NewsLettersBox from "@/components/NewsLettersBox.vue";
 import Notifications from "@/components/Notifications.vue";
+import AgendaAss from '@/assets/agenda.jpeg'
+import ActuOne from '@/assets/actu_one.jpeg'
+import ActuTwo from '@/assets/actu_two.jpeg'
+import ActuThree from '@/assets/actu_three.jpeg'
+import Financement from '@/assets/images/financement.jpeg'
 export default {
   components: {
     ServiceCard,
@@ -66,7 +71,12 @@ export default {
     Partenaires,
     AppelsOffresBox,
     NewsLettersBox,
-    Notifications
+    Notifications,
+    AgendaAss,
+    ActuOne,
+    ActuTwo,
+    ActuThree,
+    Financement
   },
   data: () => ({
     commits: null,
@@ -74,11 +84,11 @@ export default {
     events: null,
     setting: null,
     slides: [
-      "src/assets/agenda.jpeg",
-      "src/assets/actu_one.jpeg",
-      "src/assets/actu_two.jpeg",
-      "src/assets/actu_three.jpeg",
-      "src/assets/images/financement.jpeg",
+    AgendaAss,
+    ActuOne,
+    ActuTwo,
+    ActuThree,
+    Financement
     ],
     notif: {
       type: '',
