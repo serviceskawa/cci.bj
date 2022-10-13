@@ -7,6 +7,7 @@ import {
   SERVICES,
   CLIENTS,
   SUBSCRIBE_NEWSLETTERS,
+  NOTIFICATIONS
 } from '@/api/routes'
 
 export async function home_elements () {
