@@ -8,7 +8,7 @@
           mensuel des experts
         </h1>
         <p class="text-white text-xl leading-7 font-normal mt-4">
-          Programme de la CCIB destiné à assurer un accompagnement technique par <br />
+          Programme de la CCI Bénin destiné à assurer un accompagnement technique par <br />
           l’organisation de sessions de rencontre entre promoteurs et experts ou <br />
           consultants spécialisés dans les domaines touchant à la vie de l’entreprise.
         </p>

@@ -4,8 +4,8 @@
       <div class="px-4 flex justify-between items-center mx-auto py-2 xl:justify-start xl:space-x-4">
         <div class="flex justify-start">
           <a href="/" class="mr-8">
-            <span class="sr-only">CCIB</span>
-            <img class="w-28 h-14" src="@/assets/logo.png" alt="" />
+            <span class="sr-only">CCI Bénin</span>
+            <img class="w-28" src="@/assets/logo.png" alt="CCI Bénin" />
           </a>
         </div>
         <div class="-mr-2 -my-2 xl:hidden">
@@ -158,6 +158,7 @@
               </PopoverPanel>
             </transition>
           </Popover>
+          <!-- Services -->
           <Popover class="relative" v-slot="{ open }">
             <PopoverButton :class="[
               open ? 'text-gray-900' : '',
@@ -222,14 +223,18 @@
               </PopoverPanel>
             </transition>
           </Popover>
-          <a href="https://formationccib.bj/" target="_blank"
+
+          <a @click="$router.push({ name: 'formations' })"
             class="text-base font-medium hover:text-primary cursor-pointer">
-            Nos formations
+            Formations
           </a>
+
           <a @click="$router.push({ name: 'blog-articles' })"
             class="text-base font-medium hover:text-primary cursor-pointer">
             Blog
           </a>
+
+          <!-- Travailler avec nous -->
           <Popover class="relative" v-slot="{ open }">
             <PopoverButton :class="[
               open ? 'text-gray-900' : '',
@@ -249,7 +254,9 @@
                 class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
                 <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-primary ring-opacity-5">
                   <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-                    <a @click="$router.push({name: 'appels-offres'})"
+
+                    <!-- Appel d'offre-->
+                    <a @click="$router.push({ name: 'appels-offres' })"
                       class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -258,12 +265,14 @@
                       </svg>
 
                       <div class="ml-4">
-                        <p class="text-base font-medium text-gray-900">Appels d'offres</p>
+                        <p class="text-base font-medium text-gray-900">Appels d’offres</p>
                         <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Get a better understanding of where
                           your traffic is coming from.</p> -->
                       </div>
                     </a>
-                    <a @click="$router.push({name: 'appels-offres'})"
+
+                    <!-- Appel a projets-->
+                    <a @click="$router.push({ name: 'appels-offres' })"
                       class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -271,7 +280,7 @@
                           stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                       <div class="ml-4">
-                        <p class="text-base font-medium text-gray-900">Appels à projet</p>
+                        <p class="text-base font-medium text-gray-900">Appels à projets</p>
                         <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Speak directly to your customers in a
                           more meaningful way.</p> -->
                       </div>
@@ -423,7 +432,7 @@ export default {
         },
         {
           name: "Arbitrage et mediation",
-          description: "CAMeC-CCIB, l’organe facilitant le règlement des litiges dans les d’affaires",
+          description: "CAMeC-CCI Bénin, l’organe facilitant le règlement des litiges dans les d’affaires",
           route_name: "arbitrage-mediation",
           icon: QuestionMarkCircleIcon,
         },
