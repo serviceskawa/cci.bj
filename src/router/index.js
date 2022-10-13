@@ -123,12 +123,22 @@ const routes = [
   {
     path: '/services',
     name: 'services',
-    component: page('services/index'),
+    component: page('services'),
   },
   {
     path: '/services/specifiques',
-    name: 'services',
-    component: page('services/index'),
+    name: 'services-specs',
+    component: page('services-specs'),
+  },
+  {
+    path: '/services/informations-orientations',
+    name: 'services-infos',
+    component: page('services-infos'),
+  },
+  {
+    path: '/services/formations',
+    name: 'services-formations',
+    component: page('services-formations'),
   },
   {
     path: '/investissement',

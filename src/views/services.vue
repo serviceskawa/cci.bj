@@ -8,9 +8,8 @@
                         Nos services aussi accessibles que divers
                     </h1>
                     <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray mt-6">
-                        Deliver great service experiences fast - without the complexity of traditional ITSM
-                        solutions.Accelerate critical development work, eliminate toil, and deploy changes with
-                        ease.
+                        Vérification d’existence et de fiabilité des entreprises, <br>
+                        pour la facilitation des affaires.
                     </p>
                 </div>
                 <div></div>
@@ -37,8 +36,8 @@
                     <h1 class="">Aucun service disponible</h1>
                 </div>
                 <div class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 pb-10" v-else>
-                    <div class="p-6 rounded-lg bg-gris mb-2 md:mb-0 cusor-pointer" v-for="(service, index) in services"
-                        :key="'service' + index" @click="$router.push(service.route)">
+                    <div class="p-6 rounded-lg bg-gris mb-2 md:mb-0 cursor-pointer" v-for="(service, index) in services"
+                        :key="'service' + index" @click="$router.push({name: service.route})">
                         <div class="flex justify-between">
                             <span class="p-2.5 rounded-xl bg-primary">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -83,7 +82,6 @@
   
 <script>
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid";
-import { services } from "../../../api";
 export default {
     components: {
         ArrowLeftIcon,
@@ -109,17 +107,17 @@ export default {
                 {
                     name: 'Services spécifiques',
                     short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
-                    route: 'service-specs'
+                    route: 'services-specs'
                 },
                 {
                     name: 'Information et orientation',
                     short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
-                    route: 'service-infos'
+                    route: 'services-infos'
                 },
                 {
                     name: 'Formation, assistance et appui-conseil',
                     short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
-                    route: 'service-formations'
+                    route: 'services-formations'
                 },
             ]
             this.loader = false
