@@ -23,7 +23,7 @@
 
       <div class="tracking-tight text-right text-dark mt-16">
         <span class="block sm:ml-2 sm:inline-block">
-          <a href="" class="text-primary">
+          <a @click="$router.push({name: 'devenir-partenaire'})" class="text-primary">
             Devenir partenaire <span aria-hidden="true">&rarr;</span></a
           >
         </span>

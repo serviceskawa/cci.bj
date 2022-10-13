@@ -71,6 +71,11 @@ const routes = [
     component: page('partenaires'),
   },
   {
+    path: '/devenir-partenaire',
+    name: 'devenir-partenaire',
+    component: page('devenir-partenaire'),
+  },
+  {
     path: '/blog-articles',
     name: 'blog-articles',
     component: page('blog-articles'),
@@ -118,7 +123,12 @@ const routes = [
   {
     path: '/services',
     name: 'services',
-    component: page('services'),
+    component: page('services/index'),
+  },
+  {
+    path: '/services/specifiques',
+    name: 'services',
+    component: page('services/index'),
   },
   {
     path: '/investissement',

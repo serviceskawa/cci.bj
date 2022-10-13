@@ -37,8 +37,8 @@
                     <h1 class="">Aucun service disponible</h1>
                 </div>
                 <div class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 pb-10" v-else>
-                    <div class="p-6 rounded-lg bg-gris mb-2 md:mb-0" v-for="(service, index) in services"
-                        :key="'service' + index">
+                    <div class="p-6 rounded-lg bg-gris mb-2 md:mb-0 cusor-pointer" v-for="(service, index) in services"
+                        :key="'service' + index" @click="$router.push(service.route)">
                         <div class="flex justify-between">
                             <span class="p-2.5 rounded-xl bg-primary">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -83,7 +83,7 @@
   
 <script>
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid";
-import { services } from "../api";
+import { services } from "../../../api";
 export default {
     components: {
         ArrowLeftIcon,
@@ -97,12 +97,33 @@ export default {
     },
     async mounted() {
         this.loader = true
-        await services.get_all_services().then((response) => {
+        // await services.get_all_services().then((response) => {
+        //     this.loader = false
+        //     if (response.status == 200) {
+        //         const services = 
+        //         this.services = response.data
+        //     }
+        // })
+        setTimeout(() => {
+            this.services = [
+                {
+                    name: 'Services spécifiques',
+                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    route: 'service-specs'
+                },
+                {
+                    name: 'Information et orientation',
+                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    route: 'service-infos'
+                },
+                {
+                    name: 'Formation, assistance et appui-conseil',
+                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    route: 'service-formations'
+                },
+            ]
             this.loader = false
-            if (response.status == 200) {
-                this.services = response.data
-            }
-        })
+        }, 2500)
     }
 }
 </script>

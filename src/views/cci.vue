@@ -207,7 +207,7 @@
                   dans les secteurs du commerce, de l’industrie et des prestations des services.
                 </p>
               </div>
-              <div v-if="current_tab == 'oorganisation'">
+              <div v-if="current_tab == 'organisation'">
                 <h3 class="pb-10 leading-tight text-4xl font-extrabold">
                   Organisation de la CCI-Bénin
                 </h3>

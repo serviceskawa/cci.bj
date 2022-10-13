@@ -1,4 +1,3 @@
-<!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <main>
     <div class="barner sm:h-96 lg:h-auto flex items-center md:px-10 lg:px-20 w-full">
