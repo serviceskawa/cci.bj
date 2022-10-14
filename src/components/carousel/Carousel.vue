@@ -4,7 +4,7 @@
       <div class="relative sm:overflow-hidden carousel-inner">
         <carousel-indicators
           v-if="indicators"
-          :total="slides.length"
+          :total="slidesTotal"
           :current-index="currentSlide"
           @switch="switchSlide($event)"
         ></carousel-indicators>
@@ -59,6 +59,11 @@ export default {
     slideInterval: null,
     direction: "right",
   }),
+  computed: {
+    slidesTotal () {
+      return this.slides.length
+    }
+  },
   methods: {
     setCurrentSlide(index) {
       this.currentSlide = index;

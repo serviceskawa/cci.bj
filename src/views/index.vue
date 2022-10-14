@@ -116,7 +116,6 @@ export default {
         }
       })
     }
-
     this.agenda_datas = this.$store.state.home_elements
     if (this.agenda_datas.events !== undefined && this.agenda_datas.events !== null) {
       this.agenda_datas = this.agenda_datas.events
@@ -127,7 +126,6 @@ export default {
         }
       }))
     }
-
     this.appels_offres = this.$store.state.home_elements
     if (this.appels_offres.appels !== undefined && this.appels_offres.appels !== null) {
       this.appels_offres = this.appels_offres.appels

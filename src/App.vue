@@ -26,6 +26,11 @@ export default {
     }
   },
   async created() {
+    await services.get_settings().then((response) => {
+      if (response.status == 200) {
+        sessionStorage.setItem('configs', JSON.stringify(response.data))
+      }
+    })
     this.getNotifications(
       setInterval(() => {
         this.getNotifications()
@@ -36,14 +41,6 @@ export default {
         this.$store.state.home_elements = response.data
       }
     })
-  },
-  async mounted() {
-    await services.get_settings().then((response) => {
-      if (response.status == 200) {
-        sessionStorage.setItem('configs', JSON.stringify(response.data))
-      }
-    })
-    
   },
   methods: {
     async getNotifications() {
