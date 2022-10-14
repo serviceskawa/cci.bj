@@ -39,7 +39,6 @@ import ServiceCard from "@/components/ServiceCard.vue";
 import OffreCard from "@/components/OffreCard.vue";
 import ArticleCard from "@/components/ArticleCard.vue";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
-import axiosClient from "@/axios";
 import Carousel from "@/components/carousel/Carousel.vue";
 import Offres from "@/components/home/Offres.vue";
 import Blog from "@/components/home/Blog.vue";

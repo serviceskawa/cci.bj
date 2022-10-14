@@ -4,6 +4,8 @@ import {
   createWebHistory,
 } from 'vue-router';
 import { page } from '@/helpers/routeLoader';
+import { services } from '@/api'
+import store from '@/store';
 const routes = [
   {
     path: '/',
@@ -151,5 +153,17 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes,
 });
-
+router.beforeEach(async (to, from, next) => {
+  await services.get_settings().then((response) => {
+    if (response.status == 200) {
+      sessionStorage.setItem('configs', JSON.stringify(response.data))
+    }
+  })
+  await services.home_elements().then((response) => {
+    if (response.status == 200) {
+      store.state.home_elements = response.data
+    }
+  })
+  next()
+})
 export default router;

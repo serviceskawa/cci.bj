@@ -26,21 +26,11 @@ export default {
     }
   },
   async created() {
-    await services.get_settings().then((response) => {
-      if (response.status == 200) {
-        sessionStorage.setItem('configs', JSON.stringify(response.data))
-      }
-    })
     this.getNotifications(
       setInterval(() => {
         this.getNotifications()
       }, 180000)
     )
-    await services.home_elements().then((response) => {
-      if (response.status == 200) {
-        this.$store.state.home_elements = response.data
-      }
-    })
   },
   methods: {
     async getNotifications() {
