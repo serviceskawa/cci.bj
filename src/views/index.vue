@@ -9,18 +9,16 @@
     </div>
     <div class="px-10 lg:px-20">
       <Offres />
-
     </div>
     <Blog />
-
     <div class="px-10 lg:px-20">
       <Indicateur />
       <Services />
     </div>
     <div class="px-10 lg:px-20">
-      <Agenda :agenda_data="3" isNotFull />
-      <AppelsOffresBox />
-      <Partenaires />
+      <Agenda :agenda_data="agenda_datas" isNotFull />
+      <AppelsOffresBox :appels_offres="appels_offres" />
+      <Partenaires :partners="partners" />
     </div>
     <NewsLettersBox @sucess="update_notif('success')" @error="update_notif('error')" />
   </main>
@@ -90,6 +88,9 @@ export default {
       title: '',
       description: ''
     },
+    agenda_datas: [],
+    appels_offres: [],
+    partners: []
   }),
 
   mounted() {
@@ -103,11 +104,50 @@ export default {
       this.slides = this.slides.map((element) => {
         return {
           ...element,
-          slide: configs.image_url + '/' + element.photo
+          slide: configs.image_url + '/' + element.photo,
+          slide_content: {
+            heading: element.heading,
+            content: element.content,
+            button1_text: element.button1_text,
+            button1_url: element.button1_url,
+            button2_text: element.button2_text,
+            button2_url: element.button2_url
+          }
         }
       })
     }
-    console.log(' =>', this.slides)
+
+    this.agenda_datas = this.$store.state.home_elements
+    if (this.agenda_datas.events !== undefined && this.agenda_datas.events !== null) {
+      this.agenda_datas = this.agenda_datas.events
+      this.agenda_datas = this.agenda_datas.data.map((element => {
+        return {
+          ...element,
+          photo: configs.image_url + '/' + element.photo,
+        }
+      }))
+    }
+
+    this.appels_offres = this.$store.state.home_elements
+    if (this.appels_offres.appels !== undefined && this.appels_offres.appels !== null) {
+      this.appels_offres = this.appels_offres.appels
+      this.appels_offres = this.appels_offres.map((element => {
+        return {
+          ...element,
+          photo: configs.image_url + '/' + element.photo,
+        }
+      }))
+    }
+    this.partners = this.$store.state.home_elements
+    if (this.partners.partners !== undefined && this.partners.partners !== null) {
+      this.partners = this.partners.partners
+      this.partners = this.partners.map((element => {
+        return {
+          ...element,
+          photo: configs.image_url + '/' + element.photo,
+        }
+      })).slice(0, 4)
+    }
   },
   watch: {
   },

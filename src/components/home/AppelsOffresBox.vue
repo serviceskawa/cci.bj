@@ -10,27 +10,26 @@
       </p>
       <hr class="separation mt-5">
       <div class="grid gap-5 lg:grid-cols-2 mt-12">
-        <div class="p-1 group sm:flex space-x-6 bg-white bg-opacity-50 mb-5" v-for="(el, index) in 4" :key="index">
+        <div class="p-1 group sm:flex space-x-6 bg-white bg-opacity-50 mb-5" v-for="(el, index) in appels_offres" :key="index">
           <img
-            src="https://tailus.io/sources/blocks/twocards/preview/images/woman.jpg"
+          :src="el.photo"
             alt="art cover"
             loading="lazy"
-            class="h-56 sm:h-[208px] w-full sm:w-[200px] object-cover object-top transition duration-500"
+            class="h-56 rounded sm:h-[208px] w-full sm:w-[200px] object-cover object-top transition duration-500"
           />
           <div class="pl-0">
             <div class="space-y-2">
               <div class="space-y-4">
                 <span
                   class="inline-flex items-center rounded-full bg-primaryInfo px-2.5 py-0.5 text-xs font-medium text-primary"
-                  >Appel d'offres</span
+                  >{{el.title}}</span
                 >
                 <p class="text-dark text-sm">
-                  Publié le 23 Mars 2022 - Prend fin le 05 Avril 2022
+                  Publié le {{el.start_date}} - Prend fin le {{el.end_date}}
                 </p>
 
                 <h4 class="text-xl font-semibold text-cyan-900">
-                  Concours de recrutement de 662 aspirants pour la formation d'enseignants
-                  au profit des Lycées techniques agricoles
+                  {{el.short_content}}
                 </h4>
               </div>
               <a href="#" class="block text-base w-max text-primary">En savoir plus →</a>
@@ -41,6 +40,16 @@
     </div>
   </div>
 </template>
+<script>
+ export default {
+  props: {
+    appels_offres: {
+      type: [Array, Number],
+      dafault: () => []
+    },
+  }
+ }
+</script>
 <style>
   .separation {
     border: 1px solid #E5E5E5 !important;

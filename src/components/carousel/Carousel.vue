@@ -15,6 +15,7 @@
           :current-slide="currentSlide"
           :index="index"
           :direction="direction"
+          :slide_content="slide.slide_content"
           @mouseenter="stopSlideTimer"
           @mouseout="startSlideTimer"
         ></carousel-item>

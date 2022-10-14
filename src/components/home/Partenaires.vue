@@ -6,17 +6,8 @@
       </h2>
       <div class="flow-root mt-8 lg:mt-10">
         <div class="-mt-4 -ml-8 flex flex-wrap justify-between lg:-ml-4">
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-            <img src="@/assets/svg/apiex.svg" alt="Apiex" />
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-            <img src="@/assets/svg/parasep.svg" alt="Parasep" />
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-            <img src="@/assets/svg/cpcaf.svg" alt="Cpcaf" />
-          </div>
-          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4">
-            <img src="@/assets/svg/parasep.svg" alt="Parasep" />
+          <div class="mt-4 ml-8 flex flex-grow flex-shrink-0 lg:flex-grow-0 lg:ml-4" v-for="(part, index) in partners" :key="index">
+            <img :src="part.photo" :alt="part.responsable_name" />
           </div>
         </div>
       </div>
@@ -31,3 +22,13 @@
     </div>
   </div>
 </template>
+<script>
+ export default {
+  props: {
+    partners: {
+      type: [Array, Number],
+      dafault: () => []
+    },
+  }
+ }
+</script>

@@ -20,24 +20,23 @@
           <h1
             class="lg:text-left text-4xl font-extrabold sp tracking-tight w-50 sm:text-5xl lg:text-6xl"
           >
+            
             <span class="block tracking-normal	text-white"
-              >Benin Investment <br />
-              <span class="text-primary">Forum 2022 BIF</span> 
+              >
+              {{slide_content.heading}}
             </span>
           </h1>
           <p
             class="mt-3 text-left tracking-normal	 text-base text-white sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:text-xl lg:mx-0"
-          >
-            Le Benin Investment Forum (BIF) se tiendra du 23 au 24 Juin 2022 sous
-            le thème : « Bénin Nouvelle Frontière des marchés émergeants ».
+          v-html="slide_content.content" >
           </p>
         <div class="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
           <div class="rounded-md shadow">
             <a
-              href="#"
+              :href="slide_content.button1_url"
               class="w-full flex items-center justify-center px-8 py-3 text-lg font-medium rounded-md text-white bg-primary hover:bg-white hover:text-primary md:py-4 md:text-lg md:px-10"
             >
-              Participé
+            {{slide_content.button1_text}}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -56,10 +55,10 @@
           </div>
           <div class="mt-3 sm:mt-0 sm:ml-3">
             <a
-              href="#"
+            :href="slide_content.button2_url"
               class="w-full flex items-center justify-center px-8 py-3 text-lg font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white md:py-4 md:text-lg md:px-10"
             >
-              En savoir plus
+            {{slide_content.button2_text}}
             </a>
           </div>
         </div>
@@ -71,7 +70,7 @@
 <script>
 export default {
   emits: ["mouseenter", "mouseout"],
-  props: ["slide", "currentSlide", "index", "direction"],
+  props: ["slide", "slide_content", "currentSlide", "index", "direction"],
   computed: {
     transitionEffect() {
       return this.direction === "right" ? "slide-out" : "slide-in";

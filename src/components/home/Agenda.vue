@@ -14,7 +14,7 @@
       </div>
       <div class="mt-12 grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full">
         <div
-          v-for="i in agenda_data"
+          v-for="(agen, i) in agenda_data"
           :key="i"
           :event="event"
           class="flex flex-col rounded-lg shadow overflow-hidden mb-4"
@@ -22,7 +22,7 @@
           <div class="flex-shrink-0">
             <img
               class="h-48 w-full object-cover"
-              src="@/assets/images/agenda.jpeg"
+              :src="agen.photo"
               alt=""
             />
           </div>
@@ -31,15 +31,15 @@
               <span
                 class="inline-flex items-center px-6 py-1 rounded-full text-sm bg-primaryInfo text-primary"
               >
-                Présentiel
+                {{agen.type.name}}
               </span>
               <a href="" class="block mt-2 spaxe-y-2">
-                <p class="text-base font-semibold text-gray-900">Titre de l’évenement</p>
+                <p class="text-base font-semibold text-gray-900">{{ agen.title }}</p>
                 <p class="text-base font-medium text-indigo-600">
-                  <a href="" class="hover:underline"> 20 - 24 Sept 2022 </a>
+                  <a href="#" class="hover:underline"> {{ agen.publication_date }} </a>
                 </p>
                 <p class="mt-1.5 text-base text-gray-500">
-                  Palais de la Marina, Cotonou, Bénin
+                  {{agen.short_content}}
                 </p>
               </a>
             </div>
@@ -55,7 +55,7 @@
       </div>
       <div class="tracking-tight mt-12 text-left text-dark" v-if="isNotFull == true">
         <span class="block sm:ml-2 sm:inline-block">
-          <a href="" class="text-primary">
+          <a @click="$router.push({ name: 'agenda' })" class="text-primary">
             Voir tous les évènements <span aria-hidden="true">&rarr;</span></a
           >
         </span>
@@ -68,7 +68,7 @@
   props: {
     agenda_data: {
       type: [Array, Number],
-      dafault: 3
+      dafault: () => []
     },
     isNotFull: {
       type: Boolean,
