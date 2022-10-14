@@ -20,7 +20,7 @@
       <AppelsOffresBox :appels_offres="appels_offres" />
       <Partenaires :partners="partners" />
     </div>
-    <NewsLettersBox @sucess="update_notif('success')" @error="update_notif('error')" />
+    <NewsLettersBox id="souscrire"  @sucess="update_notif('success')" @error="update_notif('error')" />
   </main>
 </template>
 

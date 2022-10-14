@@ -86,7 +86,7 @@
             </div>
             <div class="w-auto">
               <a
-                href="#"
+              @click="$router.push({name: 'impulse'})"
                 class="flex items-center justify-center px-4 py-2 text-lg font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white md:py-2.5 md:text-lg md:px-5"
               >
                 Aller sur impulse.bj

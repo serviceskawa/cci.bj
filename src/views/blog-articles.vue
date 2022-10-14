@@ -51,7 +51,7 @@
           Notre sélection d’articles sur l’entreprenariat
         </h1>
         <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          <ArticleCard class="mb-8" v-for="branch in commits" :key="branch.id" :branch="branch" />
+          <ArticleCard class="mb-8" v-for="n in news" :key="n.id" :branch="n"  />
         </div>
       </div>
       <div class="mb-16">
@@ -59,7 +59,7 @@
           Les dernières actu-ecobusiness
         </h1>
         <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          <ArticleCard v-for="branch in commits" :key="branch.id" :branch="branch" />
+          <ArticleCard v-for="n in news" :key="n.id" :branch="n"  />
         </div>
       </div>
       <div class="mb-16">
@@ -67,7 +67,7 @@
           Actu-Entreprise
         </h1>
         <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          <ArticleCard v-for="branch in commits" :key="branch.id" :branch="branch" />
+          <ArticleCard v-for="n in news" :key="n.id" :branch="n"  />
         </div>
       </div>
     </div>
@@ -93,54 +93,28 @@ export default {
     notif: {
       type: '',
       title: '',
-      description: ''
-    },
-    commits: [
-      {
-        cover: ActuTwo,
-        news_publication_date: "20/02/2022",
-        title: "6 eme édition du world Cooperation Industries Forum (WCI FORUM)",
-        short_content:
-          "Il se tient depuis ce mercredi 16 mars 2022 à Ankara en Turquie, la 6ème édition du World Cooperation Industries Forum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.",
-      },
-      {
-        cover: ActuOne,
-        news_publication_date: "20/02/2022",
-        title: "6 eme édition du world Cooperation Industries Forum (WCI FORUM)",
-        short_content:
-          "Il se tient depuis ce mercredi 16 mars 2022 à Ankara en Turquie, la 6ème édition du World Cooperation Industries Forum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.",
-      },
-      {
-        cover: ActuThree,
-        news_publication_date: "20/02/2022",
-        title: "6 eme édition du world Cooperation Industries Forum (WCI FORUM)",
-        short_content:
-          "Il se tient depuis ce mercredi 16 mars 2022 à Ankara en Turquie, la 6ème édition du World Cooperation Industries Forum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.",
-      },
-      {
-        cover: ActuTwo,
-        news_publication_date: "20/02/2022",
-        title: "6 eme édition du world Cooperation Industries Forum (WCI FORUM)",
-        short_content:
-          "Il se tient depuis ce mercredi 16 mars 2022 à Ankara en Turquie, la 6ème édition du World Cooperation Industries Forum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.",
-      },
-      {
-        cover: ActuOne,
-        news_publication_date: "20/02/2022",
-        title: "6 eme édition du world Cooperation Industries Forum (WCI FORUM)",
-        short_content:
-          "Il se tient depuis ce mercredi 16 mars 2022 à Ankara en Turquie, la 6ème édition du World Cooperation Industries Forum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.",
-      },
-      {
-        cover: ActuThree,
-        news_publication_date: "20/02/2022",
-        title: "6 eme édition du world Cooperation Industries Forum (WCI FORUM)",
-        short_content:
-          "Il se tient depuis ce mercredi 16 mars 2022 à Ankara en Turquie, la 6ème édition du World Cooperation Industries Forum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsa libero labore natus atque, ducimus sed.",
-      },
+      description: '',
+      news: [
     ],
+    },
   }),
   
+  created() {
+    let configs = sessionStorage.getItem('configs')
+    if (configs !== undefined && configs !== null) {
+      configs = JSON.parse(configs)
+    }
+    if ( this.$store.state.home_elements.news !== undefined &&  this.$store.state.home_elements.news !== undefined)  {
+      let news = this.$store.state.home_elements.news
+      news = news.data.map((element) => {
+        return {
+          ...element,
+          cover: configs.image_url + '/' + element.photo,
+        }
+      })
+      this.news = news.slice(0, 3)
+    } 
+  },
   methods: {
     update_notif(type) {
       if (type == 'success') {

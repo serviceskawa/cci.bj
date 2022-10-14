@@ -29,13 +29,9 @@
     <div class="py-16">
       <div class="px-4 lg:px-20 md:pt-16 md:pb-8">
         <div class="lg:px-20 px-0">
-          <div
-            class="w-full rounded-lg p-4 md:p-8 bg-gray flex flex-wrap justify-between items-center"
-          >
+          <div class="w-full rounded-lg p-4 md:p-8 bg-gray flex flex-wrap justify-between items-center">
             <div class="w-3/4 pr-4 mb-4">
-              <h2
-                class="text-2xl md:text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl"
-              >
+              <h2 class="text-2xl md:text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
                 Voulez vous en savoir plus ?
               </h2>
               <p class="mt-3 text-lg text-subtitlegray sm:mt-4">
@@ -44,10 +40,8 @@
               </p>
             </div>
             <div class="w-auto">
-              <a
-                href="#"
-                class="flex items-center justify-center px-4 py-2 text-lg font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white md:py-2.5 md:text-lg md:px-5"
-              >
+              <a @click="$router.push({name: 'impulse'})"
+                class="flex items-center justify-center px-4 py-2 text-lg font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white md:py-2.5 md:text-lg md:px-5">
                 Aller sur impulse.bj
               </a>
             </div>

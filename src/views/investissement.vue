@@ -58,10 +58,10 @@
               mb-6">
                         Nous vous tenons informé(e) des actualités relatives aux démarches administratives.
                     </p>
-                    <button type="button"
-                        class="btn btn-light text-primary hover:text-white hover:bg-primary w-full text-sm leading-5 font-medium">
+                    <a type="button" @click="$router.push({name: 'index'})"
+                        class="btn text-center btn-light text-primary hover:text-white hover:bg-primary w-full text-sm leading-5 font-medium">
                         S'abonner
-                    </button>
+                </a>
                 </div>
                 <div class="bg-gray px-8 py-6">
                     <div class="text-lg leading-6 font-medium">
@@ -78,11 +78,12 @@
               mb-6">
                         Quis suspendisse ut fermentum neque vivamus non tellus. </p>
                     <div class="w-full">
-                        <button class="btn btn-light text-primary hover:text-white hover:bg-primary w-full text-sm leading-5
-                            font-medium">
+                        <a type="button" href="https://apiex.bj/" target="_blank"                         class="btn text-center btn-light text-primary hover:text-white hover:bg-primary w-full text-sm leading-5 font-medium">
+                           <span class="w-full">
                             Visiter <span
-                                class="text-underline border-b-2 border-primary hover:border-white">Apiex.bj</span>
-                        </button>
+                                class="text-underline border-b-2 border-primary hover:border-white w-full">Apiex.bj</span>
+                           </span>
+                        </a>
                     </div>
                 </div>
                 <div class="bg-gray px-8 py-6">
@@ -99,7 +100,7 @@
               text-subtitlegray
               mb-6">
                         Quis suspendisse ut fermentum neque vivamus non tellus. </p>
-                    <button
+                    <button @click="$router.push({name: 'rdv-experts'})"
                         class="btn btn-light text-primary hover:text-white hover:bg-primary w-full text-sm leading-5 font-medium">
                         Voir le planning
                     </button>

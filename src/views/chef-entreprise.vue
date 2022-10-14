@@ -275,26 +275,34 @@
 
               </h3>
               <div class="mt-12 overflow-x-auto no-scrollbar pb-8	-mr-20 flex">
-                <div v-for="i in 7" :key="i"
+                <div v-for="(agen, i) in agenda_datas"
+          :key="i"
+          :event="event"
                   class="min-w-max h-full rounded-lg shadow mr-8 ">
                   <div class="flex-shrink-0">
-                    <img class="h-48 w-full object-cover" src="@/assets/images/agenda.jpeg" alt="" />
-                  </div>
+            <img
+              class="h-48 w-full object-cover"
+              :src="agen.photo"
+              alt=""
+            />
+          </div>
                   <div class="flex-1 bg-white pt-6 px-6 flex flex-col justify-between">
                     <div class="flex-1 flex-wrap">
-                      <span class="inline-flex items-center px-6 py-1 rounded-full text-sm bg-primaryInfo text-primary mr-3">
-                        Présentiel
-                      </span>
-                      <span class="inline-flex items-center px-6 py-1 rounded-full text-sm bg-green text-green">
+                      <span
+                class="inline-flex items-center px-6 py-1 rounded-full text-sm bg-primaryInfo text-primary"
+              >
+                {{agen.type.name}}
+              </span>
+                      <!-- <span class="inline-flex items-center px-6 py-1 rounded-full text-sm bg-green text-green">
                         5 places
-                      </span>
+                      </span> -->
                       <a href="" class="block mt-2 spaxe-y-2">
                         <h3 class="leading-tight text-3xl mb-3 font-semibold text-gray-900">Le réseautage d'affaires <br/> intelligent et rentable</h3>
                         <p class="text-base font-medium text-indigo-600">
-                          Cotonou, Bénin
+                          {{agen.event_location}}
                         </p>
                         <p class="mt-3 text-base text-gray-500">
-                          18h 00 min - 20h 00
+                          {{formatDate(agen.start_date,'DD-MM-YYYY hh:mm' )}} au {{formatDate(agen.end_date, 'DD-MM-YYYY hh:mm')}}
                         </p>
                       </a>
                     </div>
@@ -315,12 +323,36 @@
   </main>
 </template>
 <script>
+import moment from 'moment'
 export default {
   data() {
     return {
       current_tab: "renew",
+      agenda_datas: []
     };
   },
+  created () {
+    moment.locale('fr');
+    let configs = sessionStorage.getItem('configs')
+    if (configs !== undefined && configs !== null) {
+      configs = JSON.parse(configs)
+    }
+    this.agenda_datas = this.$store.state.home_elements
+    if (this.agenda_datas.events !== undefined && this.agenda_datas.events !== null) {
+      this.agenda_datas = this.agenda_datas.events
+      this.agenda_datas = this.agenda_datas.data.map((element => {
+        return {
+          ...element,
+          photo: configs.image_url + '/' + element.photo,
+        }
+      }))
+    }
+  },
+  methods: {
+    formatDate (date, format) {
+      return moment(date).format(format)
+    }
+  }
 };
 </script>
   

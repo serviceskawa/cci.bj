@@ -154,16 +154,25 @@ const router = createRouter({
   routes,
 });
 router.beforeEach(async (to, from, next) => {
-  await services.get_settings().then((response) => {
-    if (response.status == 200) {
-      sessionStorage.setItem('configs', JSON.stringify(response.data))
+  let configs = sessionStorage.getItem('configs')
+    if (configs == undefined || configs == null) {
+      await services.get_settings().then((response) => {
+        if (response.status == 200) {
+          sessionStorage.setItem('configs', JSON.stringify(response.data))
+        }
+      })
     }
-  })
-  await services.home_elements().then((response) => {
-    if (response.status == 200) {
-      store.state.home_elements = response.data
-    }
-  })
-  next()
+  if (store.state.home_elements.sliders === undefined || store.state.home_elements == undefined || store.state.home_elements == null) {
+   
+    await services.home_elements().then((response) => {
+      if (response.status == 200) {
+        store.state.home_elements = response.data
+      }
+    })
+    next()
+  }
+  else {
+    next()
+  }
 })
 export default router;
