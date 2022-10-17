@@ -775,7 +775,7 @@ export default {
     ArrowRightIcon
   },
   async mounted () {
-    await axios.get('http://formationccib.bj/api/top_courses').then((response) => {
+    await axios.get('https://formationccib.bj/api/top_courses').then((response) => {
       console.log('Les formations', response)
     })
   }
