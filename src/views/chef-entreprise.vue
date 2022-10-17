@@ -309,7 +309,7 @@
                   </div>
                   <div class="tracking-tight bg-white px-6 py-9 text-left text-dark">
                     <span class="block sm:inline-block">
-                      <a href="" class="text-primary">
+                      <a  :href="agen.link" class="text-primary">
                         Participer <span aria-hidden="true">&rarr;</span></a>
                     </span>
                   </div>
