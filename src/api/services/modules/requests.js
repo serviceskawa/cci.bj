@@ -9,7 +9,8 @@ import {
   SUBSCRIBE_NEWSLETTERS,
   NOTIFICATIONS,
   ARTICLES_BY_CATEGORY,
-  EVENTS
+  EVENTS,
+  READ_ARTICLE
 } from '@/api/routes'
 
 export async function home_elements () {
@@ -68,4 +69,8 @@ export async function get_articles_by_categories () {
 
 export async function get_agenda_datas () {
   return await client.get(EVENTS)
+}
+
+export async function get_article_read (slug) {
+  return await client.get(`${READ_ARTICLE}` + slug)
 }

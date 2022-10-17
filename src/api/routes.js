@@ -14,3 +14,4 @@ export const SUBSCRIBE_NEWSLETTERS = `/subscriber`
 export const NOTIFICATIONS = `/notification`
 export const ARTICLES_BY_CATEGORY = `/news_by_category`
 export const EVENTS = `/events`
+export const READ_ARTICLE = `/news/`

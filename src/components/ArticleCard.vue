@@ -12,11 +12,11 @@
     >
       <div class="flex-1">
         <p class="text-sm text-primary text-indigo-600">
-          <a href="" class="hover:underline">
+          <span class="hover:underline">
             Publié le {{ branch.news_publication_date }}
-          </a>
+          </span>
         </p>
-        <a href="" class="block mt-2">
+        <a @click="$router.push({ name: 'read-article', params: { slug: branch.slug } })" class="block mt-2">
           <p class="text-xl font-semibold text-gray-900">
             {{ branch.title }}
           </p>

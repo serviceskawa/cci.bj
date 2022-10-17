@@ -83,6 +83,12 @@ const routes = [
     component: page('blog-articles'),
   },
   {
+    path: '/article/slug=:slug',
+    name: 'read-article',
+    component: page('read-article'),
+  },
+
+  {
     path: '/appels-offres',
     name: 'appels-offres',
     component: page('appels-offres'),
