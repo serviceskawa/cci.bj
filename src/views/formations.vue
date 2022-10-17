@@ -701,9 +701,9 @@
         Profitez du catalogue de cours en ligne de la CCI-Bénin <br />
         pour monter en compétences.
       </p>
-      <button class="btn btn-white loading-6 text-medium bg-white">
+      <a href="https://www.formationccib.bj/home/courses" target="_blank" class="btn btn-white loading-6 text-medium bg-white">
         <span class="text-primary">Démarrer</span>
-      </button>
+      </a>
     </div>
     <div class="p-6 md:p-10 lg:p-20">
       <h1 class="text-blue text-3xl leading-10 font-extrabold tracking-tight mb-3">
@@ -766,8 +766,21 @@
   </main>
 </template>
 
-<script setup>
+<script>
+import axios from 'axios'
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid";
+export default {
+  components: {
+    ArrowLeftIcon,
+    ArrowRightIcon
+  },
+  async mounted () {
+    await axios.get('http://formationccib.bj/api/top_courses').then((response) => {
+      console.log('Les formations', response)
+    })
+  }
+}
+
 </script>
 
 <style lang="scss" scoped>

@@ -17,13 +17,13 @@
         </div>
         <PopoverGroup as="nav" class="hidden xl:flex space-x-10">
           <a @click="$router.push({name: 'cci'})"
-            class="text-base font-medium tracking-tight hover:text-primary cursor-pointer">
+            class="text-base font-medium tracking-tight hover:text-primary active:text-primary cursor-pointer">
             Ma CCI
           </a>
           <Popover class="relative" v-slot="{ open }">
             <PopoverButton :class="[
               open ? 'text-gray-900' : 'text-subtitlegray tracking-tight',
-              'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-primary focus:outline-none',
+              'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-primary active:text-primary focus:outline-none',
             ]">
               <span>Vous êtes</span>
               <ChevronDownIcon :class="[
@@ -39,7 +39,7 @@
                 <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-primary ring-opacity-5">
                   <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
                     <a @click="$router.push({name: 'createur-entreprise'})"
-                      class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50 cursor-pointer">
+                      class="-m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary cursor-pointer">
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +60,7 @@
                       </div>
                     </a>
                     <a @click="$router.push({name: 'chef-entreprise'})"
-                      class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50 cursor-pointer">
+                      class="-m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary cursor-pointer">
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,7 +80,7 @@
                       </div>
                     </a>
                     <a @click="$router.push({name: 'investissement'})"
-                      class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50 cursor-pointer">
+                      class="-m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary cursor-pointer">
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -102,7 +102,7 @@
                       </div>
                     </a>
                     <a @click="$router.push({name: 'institutionnelle'})"
-                      class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50 cursor-pointer">
+                      class="-m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary cursor-pointer">
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -130,7 +130,7 @@
                       </div>
                     </a>
                     <a @click="$router.push({name: 'industriel-commercant'})"
-                      class="-m-3 flex items-center rounded-lg p-3 hover:bg-gray-50 cursor-pointer">
+                      class="-m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary cursor-pointer">
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
                         <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -162,7 +162,7 @@
           <Popover class="relative" v-slot="{ open }">
             <PopoverButton :class="[
               open ? 'text-gray-900' : '',
-              'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-primary focus:outline-none',
+              'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-primary active:text-primary focus:outline-none',
             ]">
               <span>Nos Services</span>
               <ChevronDownIcon :class="[
@@ -179,7 +179,7 @@
                 <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-primary ring-opacity-5">
                   <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                     <a @click="$router.push({name: 'services-specs'})"
-                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9 19V13C9 11.8954 8.10457 11 7 11H5C3.89543 11 3 11.8954 3 13V19C3 20.1046 3.89543 21 5 21H7C8.10457 21 9 20.1046 9 19ZM9 19V9C9 7.89543 9.89543 7 11 7H13C14.1046 7 15 7.89543 15 9V19M9 19C9 20.1046 9.89543 21 11 21H13C14.1046 21 15 20.1046 15 19M15 19V5C15 3.89543 15.8954 3 17 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H17C15.8954 21 15 20.1046 15 19Z"
@@ -192,7 +192,7 @@
                       </div>
                     </a>
                     <a @click="$router.push({name: 'services-infos'})"
-                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M14.9998 14.9998L12.9998 19.9998L8.99983 8.99976L19.9998 12.9998L14.9998 14.9998ZM14.9998 14.9998L19.9998 19.9998M7.18806 2.23828L7.96452 5.13606M5.13606 7.96448L2.23828 7.18802M13.9495 4.05005L11.8282 6.17137M6.17146 11.8281L4.05014 13.9494"
@@ -205,7 +205,7 @@
                       </div>
                     </a>
                     <a @click="$router.push({name: 'services-formations'})"
-                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9 11.999L11 13.999L15 9.99903M20.6179 5.98336C20.4132 5.99374 20.2072 5.999 20 5.999C16.9265 5.999 14.123 4.84356 11.9999 2.94336C9.87691 4.84348 7.07339 5.99887 4 5.99887C3.79277 5.99887 3.58678 5.99362 3.38213 5.98324C3.1327 6.94685 3 7.95745 3 8.99903C3 14.5906 6.82432 19.2889 12 20.621C17.1757 19.2889 21 14.5906 21 8.99903C21 7.95749 20.8673 6.94694 20.6179 5.98336Z"
@@ -225,12 +225,12 @@
           </Popover>
 
           <a @click="$router.push({ name: 'formations' })"
-            class="text-base font-medium hover:text-primary cursor-pointer">
+            class="text-base font-medium hover:text-primary active:text-primary cursor-pointer">
             Formations
           </a>
 
           <a @click="$router.push({ name: 'blog-articles' })"
-            class="text-base font-medium hover:text-primary cursor-pointer">
+            class="text-base font-medium hover:text-primary active:text-primary cursor-pointer">
             Blog
           </a>
 
@@ -238,7 +238,7 @@
           <Popover class="relative" v-slot="{ open }">
             <PopoverButton :class="[
               open ? 'text-gray-900' : '',
-              'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-primary focus:outline-none',
+              'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-primary active:text-primary focus:outline-none',
             ]">
               <span>Travailler avec nous</span>
               <ChevronDownIcon :class="[
@@ -257,7 +257,7 @@
 
                     <!-- Appel d'offre-->
                     <a @click="$router.push({ name: 'appels-offres' })"
-                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9 19V13C9 11.8954 8.10457 11 7 11H5C3.89543 11 3 11.8954 3 13V19C3 20.1046 3.89543 21 5 21H7C8.10457 21 9 20.1046 9 19ZM9 19V9C9 7.89543 9.89543 7 11 7H13C14.1046 7 15 7.89543 15 9V19M9 19C9 20.1046 9.89543 21 11 21H13C14.1046 21 15 20.1046 15 19M15 19V5C15 3.89543 15.8954 3 17 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H17C15.8954 21 15 20.1046 15 19Z"
@@ -273,7 +273,7 @@
 
                     <!-- Appel a projets-->
                     <a @click="$router.push({ name: 'appels-offres' })"
-                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M14.9998 14.9998L12.9998 19.9998L8.99983 8.99976L19.9998 12.9998L14.9998 14.9998ZM14.9998 14.9998L19.9998 19.9998M7.18806 2.23828L7.96452 5.13606M5.13606 7.96448L2.23828 7.18802M13.9495 4.05005L11.8282 6.17137M6.17146 11.8281L4.05014 13.9494"
@@ -286,7 +286,7 @@
                       </div>
                     </a>
                     <a @click="$router.push({name: 'devenir-partenaire'})"
-                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:bg-gray-50">
+                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M9 11.999L11 13.999L15 9.99903M20.6179 5.98336C20.4132 5.99374 20.2072 5.999 20 5.999C16.9265 5.999 14.123 4.84356 11.9999 2.94336C9.87691 4.84348 7.07339 5.99887 4 5.99887C3.79277 5.99887 3.58678 5.99362 3.38213 5.98324C3.1327 6.94685 3 7.95745 3 8.99903C3 14.5906 6.82432 19.2889 12 20.621C17.1757 19.2889 21 14.5906 21 8.99903C21 7.95749 20.8673 6.94694 20.6179 5.98336Z"
@@ -305,12 +305,12 @@
             </transition>
           </Popover>
           <!-- <a @click="$router.push({ name: 'appels-offres' })"
-            class="text-base font-medium hover:text-primary cursor-pointer">
+            class="text-base font-medium hover:text-primary active:text-primary cursor-pointer">
             Travailler avec nous
           </a> -->
         </PopoverGroup>
         <div class="h-full hidden xl:flex items-center justify-end xl:flex-1 xl:w-0">
-          <!-- <a href="#" class="whitespace-nowrap text-base font-medium text-subtitlegray tracking-tight hover:text-primary">
+          <!-- <a href="#" class="whitespace-nowrap text-base font-medium text-subtitlegray tracking-tight hover:text-primary active:text-primary">
             <svg width="52" height="53" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g filter="url(#a)">
                 <rect x="2" y="1.5" width="48" height="48" rx="6" fill="#fff" />
@@ -361,7 +361,7 @@
               <div class="mt-6">
                 <nav class="grid grid-cols-1 gap-7">
                   <a v-for="item in solutions" :key="item.name" @click="$router.push({name: item.route_name})"
-                    class="-m-3 p-3 flex items-center rounded-lg hover:bg-gray-50">
+                    class="-m-3 p-3 flex items-center rounded-lg hover:text-primary active:text-primary">
                     <div class="text-base font-medium text-gray-900">
                       {{ item.name }}
                     </div>

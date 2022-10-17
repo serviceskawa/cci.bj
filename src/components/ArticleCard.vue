@@ -3,7 +3,7 @@
     <div class="flex-shrink-0">
       <img
         class="h-48 w-full object-cover"
-        :src="branch.cover"
+        :src="branch.cover == undefined ? branch.photo : branch.cover"
         alt=""
       />
     </div>

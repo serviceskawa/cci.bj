@@ -7,7 +7,9 @@ import {
   SERVICES,
   CLIENTS,
   SUBSCRIBE_NEWSLETTERS,
-  NOTIFICATIONS
+  NOTIFICATIONS,
+  ARTICLES_BY_CATEGORY,
+  EVENTS
 } from '@/api/routes'
 
 export async function home_elements () {
@@ -58,4 +60,12 @@ export async function subscribe_newsletter (email) {
 
 export async function get_notifcations () {
   return await client.get(NOTIFICATIONS)
+}
+
+export async function get_articles_by_categories () {
+  return await client.get(ARTICLES_BY_CATEGORY)
+}
+
+export async function get_agenda_datas () {
+  return await client.get(EVENTS)
 }
