@@ -115,8 +115,7 @@ export default {
       if (type == 'success') {
         this.notif.type = 'success'
         this.notif.title = "Effectuée"
-        this.notif.description = "Votre requête a été transmise avec succès."
-      } else {
+        this.notif.description = this.$store.state.current_notif_message
         this.notif.type = 'error'
         this.notif.title = "Erreur"
         this.notif.description = "Une erreur s'est produite. Veuillez réessayer."

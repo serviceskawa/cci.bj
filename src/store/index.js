@@ -7,7 +7,8 @@ const store = createStore({
     show_alert: true,
     configs: {},
     faqs: [],
-    home_elements: {}
+    home_elements: {},
+    current_notif_message: ""
   },
   getters: {},
   actions: {

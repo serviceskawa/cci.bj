@@ -359,7 +359,7 @@
                 </div>
               </div>
               <div class="mt-6">
-                <nav class="grid grid-cols-1 gap-7">
+                <nav class="grid grid-cols-2 gap-4">
                   <a v-for="item in solutions" :key="item.name" @click="$router.push({name: item.route_name})"
                     class="-m-3 p-3 flex items-center rounded-lg hover:text-primary active:text-primary">
                     <div class="text-base font-medium text-gray-900">
@@ -413,97 +413,66 @@ export default {
     return {
       solutions: [
         {
-          name: "Opportunités d'affaires",
-          description: "Un élément déterminant et important pour la croissance des entreprises",
-          route_name: "#",
+          name: "Ma CCI",
+          route_name: "cci",
           icon: InboxIcon,
         },
         {
-          name: "Accompagnement",
-          description: "ImPULSE, le cadre d'accélération de la croissance de toutes les entreprises",
-          route_name: "impulse",
+          name: "Créateur d'entreprise",
+          route_name: "createur-entreprise",
           icon: AnnotationIcon,
         },
         {
-          name: "Etude de marché",
-          description: "L'étude de marché est un passage obligatoire pour tout projet d'entreprise",
-          route_name: "etude-marche",
+          name: "Chef d'entreprise",
+          route_name: "chef-entreprise",
           icon: ChatAlt2Icon,
         },
         {
-          name: "Arbitrage et mediation",
-          description: "CAMeC-CCI Bénin, l’organe facilitant le règlement des litiges dans les d’affaires",
-          route_name: "arbitrage-mediation",
-          icon: QuestionMarkCircleIcon,
-        },
-        {
-          name: "E-learning",
-          description: "Se faire former dans divers domaines à votre rythme sans pression de temps",
-          route_name: "formations",
+          name: "Investisseur",
+          route_name: "investissement",
           icon: QuestionMarkCircleIcon,
         },
         {
           name: "Institutionnelle",
-          description: "Accedez à des données fiables",
           route_name: "institutionnelle",
           icon: QuestionMarkCircleIcon,
         },
+        {
+          name: "Commerçant ou industriel",
+          route_name: "industriel-commercant",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "Services",
+          route_name: "services",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "Formations",
+          route_name: "formations",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "Blog",
+          route_name: "blog-articles",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "Appels d'offres",
+          route_name: "appels-offres",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "Appels à projets ",
+          route_name: "appels-offres",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "Devenir partenaire",
+          route_name: "devenir-partenaire",
+          icon: QuestionMarkCircleIcon,
+        },
       ],
-      posts: [
-        {
-          title: "Boost your conversion rate",
-          href: "#",
-          category: { name: "Article", href: "#" },
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto accusantium praesentium eius, ut atque fuga culpa, similique sequi cum eos quis dolorum.",
-          date: "Mar 16, 2020",
-          datetime: "2020-03-16",
-          imageUrl: "@/assets/images/agenda.jpeg",
-          readingTime: "6 min",
-          author: {
-            name: "Roel Aufderehar",
-            href: "#",
-            imageUrl:
-              "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-          },
-        },
-        {
-          title: "How to use search engine optimization to drive sales",
-          href: "#",
-          category: { name: "Video", href: "#" },
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit facilis asperiores porro quaerat doloribus, eveniet dolore. Adipisci tempora aut inventore optio animi., tempore temporibus quo laudantium.",
-          date: "Mar 10, 2020",
-          datetime: "2020-03-10",
-          imageUrl:
-            "https://images.unsplash.com/photo-1547586696-ea22b4d4235d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-          readingTime: "4 min",
-          author: {
-            name: "Brenna Goyette",
-            href: "#",
-            imageUrl:
-              "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-          },
-        },
-        {
-          title: "Improve your customer experience",
-          href: "#",
-          category: { name: "Case Study", href: "#" },
-          description:
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint harum rerum voluptatem quo recusandae magni placeat saepe molestiae, sed excepturi cumque corporis perferendis hic.",
-          date: "Feb 12, 2020",
-          datetime: "2020-02-12",
-          imageUrl:
-            "https://images.unsplash.com/photo-1492724441997-5dc865305da7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
-          readingTime: "11 min",
-          author: {
-            name: "Daniela Metz",
-            href: "#",
-            imageUrl:
-              "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
-          },
-        },
-      ]
     }
   }
 }
