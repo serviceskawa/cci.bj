@@ -234,12 +234,12 @@ export default {
             services: [
                 {
                     name: 'Services spécifiques',
-                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    short_description: 'Découvrez nos programmes d’accompagnement dédiés aux entreprises et industries locales.',
                     route: 'services-specs'
                 },
                 {
                     name: 'Information et orientation',
-                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    short_description: 'Accédez à nos dispositifs de support pour vous orienter dans votre recherche d’informations.',
                     route: 'services-infos'
                 }
             ]
