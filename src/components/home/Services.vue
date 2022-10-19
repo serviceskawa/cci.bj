@@ -47,9 +47,9 @@
                             <h4 class="text-lg leading-none font-bold text-blue">
                                 {{service.name}}
                             </h4>
-                            <!--<p class="text-sm leading-5 text-blue mt-4">
+                            <p class="text-sm leading-5 text-blue mt-4">
                                 {{service.short_description}}
-                            </p> -->
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -82,17 +82,17 @@ export default {
             this.services = [
                 {
                     name: 'Services spécifiques',
-                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    short_description: 'Découvrez nos programmes d’accompagnement dédiés aux entreprises et industries locales.',
                     route: 'services-specs'
                 },
                 {
                     name: 'Information et orientation',
-                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    short_description: 'Accédez à nos dispositifs de support pour vous orienter dans votre recherche d’informations.',
                     route: 'services-infos'
                 },
                 {
                     name: 'Formation, assistance et appui-conseil',
-                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    short_description: 'Faites-vous former et conseiller par nos experts dans divers domaines touchant à la vie de l’entreprise.',
                     route: 'services-formations'
                 },
             ]

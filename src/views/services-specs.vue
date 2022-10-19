@@ -296,12 +296,12 @@ export default {
       services: [
         {
           name: 'Information et orientation',
-          short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+          short_description: 'Accédez à nos dispositifs de support pour vous orienter dans votre recherche d’informations.',
           route: 'services-infos'
         },
         {
           name: 'Formation, assistance et appui-conseil',
-          short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+          short_description: 'Faites-vous former et conseiller par nos experts dans divers domaines touchant à la vie de l’entreprise.',
           route: 'services-formations'
         },
       ]

@@ -60,7 +60,7 @@ pour la facilitation des affaires.
           <dt class="text-lg">
             <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
               <span class="font-bold text-blue text-sm text-gray-900">
-                Iformation spécialisée
+                Information spécialisée
               </span>
               <span class="ml-6 flex h-7 items-center">
                 <ChevronDownIcon :class="[
@@ -246,12 +246,12 @@ export default {
       services: [
         {
           name: 'Services spécifiques',
-          short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+          short_description: 'Découvrez nos programmes d’accompagnement dédiés aux entreprises et industries locales.',
           route: 'services-specs'
         },
         {
           name: 'Formation, assistance et appui-conseil',
-          short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+          short_description: 'Faites-vous former et conseiller par nos experts dans divers domaines touchant à la vie de l’entreprise.',
           route: 'services-formations'
         }
       ]
