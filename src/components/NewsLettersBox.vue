@@ -76,8 +76,9 @@ export default {
         await services.subscribe_newsletter(data).then((response) => {
           this.on_loading_request = false
           this.email = ''
-          if (response.status == 200 && (response.code == 0 || response.success)) {
+          if (response.status == 200) {
             this.$emit('sucess')
+            this.$store.state.current_notif_message = response.message
           } else {
             this.$emit('error')
           }

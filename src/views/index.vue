@@ -125,6 +125,7 @@ export default {
         }
       }))
     }
+    console.log('..... actus ===>', this.agenda_datas)
     this.appels_offres = this.$store.state.home_elements
     if (this.appels_offres.appels !== undefined && this.appels_offres.appels !== null) {
       this.appels_offres = this.appels_offres.appels
@@ -154,7 +155,7 @@ export default {
       if (type == 'success') {
         this.notif.type = 'success'
         this.notif.title = "Effectuée"
-        this.notif.description = "Votre requête a été transmise avec succès."
+        this.notif.description = this.$store.state.current_notif_message
       } else {
         this.notif.type = 'error'
         this.notif.title = "Erreur"

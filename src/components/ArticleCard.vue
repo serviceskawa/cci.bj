@@ -17,12 +17,9 @@
           </span>
         </p>
         <a @click="$router.push({ name: 'read-article', params: { slug: branch.slug } })" class="block mt-2">
-          <p class="text-xl font-semibold text-gray-900">
-            {{ branch.title }}
+          <p class="text-xl font-semibold text-gray-900" v-html="branch.title">
           </p>
-          <p class="mt-3 text-sp text-base">
-            {{ branch.short_content }}
-          </p>
+          <p class="mt-3 text-sp text-base" v-html="branch.short_content" />
         </a>
       </div>
     </div>

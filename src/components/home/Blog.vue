@@ -96,8 +96,9 @@ export default {
           cover: configs.image_url + '/' + element.photo,
         }
       })
+
       this.news = news.slice(0, 3)
-    } 
+    }
   },
 
   methods: {},
