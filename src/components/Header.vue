@@ -358,9 +358,17 @@
                   </PopoverButton>
                 </div>
               </div>
-              <div class="mt-6">
-                <nav class="grid grid-cols-2 gap-4">
-                  <a v-for="item in solutions" :key="item.name" @click="$router.push({name: item.route_name})"
+              <div class="mt-6 grid grid-cols-2 gap-8">
+                <nav class="">
+                  <a v-for="item in solutions_left" :key="item.name" @click="$router.push({name: item.route_name})"
+                    class="-m-3 p-3 flex items-center rounded-lg hover:text-primary active:text-primary">
+                    <div class="text-base font-medium text-gray-900">
+                      {{ item.name }}
+                    </div>
+                  </a>
+                </nav>
+                <nav class="">
+                  <a v-for="item in solutions_right" :key="item.name" @click="$router.push({name: item.route_name})"
                     class="-m-3 p-3 flex items-center rounded-lg hover:text-primary active:text-primary">
                     <div class="text-base font-medium text-gray-900">
                       {{ item.name }}
@@ -411,12 +419,39 @@ export default {
   },
   data() {
     return {
-      solutions: [
+      solutions_left: [
         {
           name: "Ma CCI",
           route_name: "cci",
           icon: InboxIcon,
         },
+        {
+          name: "Services spécifiques",
+          route_name: "services-specs",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "Informations et orientation",
+          route_name: "services-infos",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "Formation, assistance et appui-conseil",
+          route_name: "services-infos",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "Formations",
+          route_name: "formations",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "Blog",
+          route_name: "blog-articles",
+          icon: QuestionMarkCircleIcon,
+        }
+      ],
+      solutions_right: [
         {
           name: "Créateur d'entreprise",
           route_name: "createur-entreprise",
@@ -426,6 +461,11 @@ export default {
           name: "Chef d'entreprise",
           route_name: "chef-entreprise",
           icon: ChatAlt2Icon,
+        },
+        {
+          name: "Commerçant ou industriel",
+          route_name: "industriel-commercant",
+          icon: QuestionMarkCircleIcon,
         },
         {
           name: "Investisseur",
@@ -438,38 +478,8 @@ export default {
           icon: QuestionMarkCircleIcon,
         },
         {
-          name: "Commerçant ou industriel",
-          route_name: "industriel-commercant",
-          icon: QuestionMarkCircleIcon,
-        },
-        {
-          name: "Services",
-          route_name: "services",
-          icon: QuestionMarkCircleIcon,
-        },
-        {
-          name: "Formations",
-          route_name: "formations",
-          icon: QuestionMarkCircleIcon,
-        },
-        {
-          name: "Blog",
-          route_name: "blog-articles",
-          icon: QuestionMarkCircleIcon,
-        },
-        {
-          name: "Appels d'offres",
-          route_name: "appels-offres",
-          icon: QuestionMarkCircleIcon,
-        },
-        {
           name: "Appels à projets ",
           route_name: "appels-offres",
-          icon: QuestionMarkCircleIcon,
-        },
-        {
-          name: "Devenir partenaire",
-          route_name: "devenir-partenaire",
           icon: QuestionMarkCircleIcon,
         },
       ],

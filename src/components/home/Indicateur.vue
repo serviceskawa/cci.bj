@@ -1,7 +1,7 @@
 <template>
     <div class="bg-white overflow-hidden">
       <div class="py-12 ">
-        <div class="relative lg:grid lg:grid-cols-4 lg:gap-x-8">
+        <div class="relative grid lg:grid-cols-4 gap-x-8">
           <div class="lg:col-span-2 xl:mt-20 space-y-4">
             <p class="mt-2 text-base font-medium tracking-tight text-primary">
               Indicateurs clés
@@ -18,7 +18,7 @@
             </p>
           </div>
           <dl
-            class="mt-10 space-y-10 sm:space-y-0 sm:grid sm:grid-cols-2 sm:gap-x-8 sm:gap-y-10 lg:mt-0 lg:col-span-2"
+            class="mt-10 space-y-10 sm:space-y-0 grid grid-cols-2 gap-x-8 gap-y-10 lg:mt-0 lg:col-span-2"
           >
             <div>
               <dt>
