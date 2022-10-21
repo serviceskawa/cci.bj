@@ -11,11 +11,11 @@
           <span class="text-white">une CCI au service de votre </span> <br />
           stratégie à l'international
         </h1>
-        <p class="text-white text-xl leading-7 font-normal mt-5">
+        <!-- <p class="text-white text-xl leading-7 font-normal mt-5">
           Sagittis scelerisque nulla cursus in enim consectetur quam. <br />
           Dictum urna sed consectetur neque tristique pellentesque. <br />
           Blandit amet, sed aenean erat arcu morbi.
-        </p>
+        </p> -->
       </div>
     </div>
     <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
