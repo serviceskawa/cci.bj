@@ -63,7 +63,6 @@ export default {
       this.loader = true
       try {
         await services.get_agenda_datas().then((response) => {
-          console.log('res', response)
           this.loader = false
           this.agenda_datas = response.data
           this.agenda_datas = this.agenda_datas.data.map((element) => {

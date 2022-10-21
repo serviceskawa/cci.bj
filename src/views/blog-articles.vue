@@ -112,7 +112,6 @@ export default {
               this.news[i].news[j].photo = this.configs.image_url + '/' + this.news[i].news[j].photo
             }
           }
-          console.log('les nn', this.news)
         })
       } catch (error) {
         this.loader = false
