@@ -13,13 +13,13 @@
       <div class="flex-1">
         <p class="text-sm text-primary text-indigo-600">
           <span class="hover:underline">
-            Publié le {{ branch.news_publication_date }}
+            Publié le {{ branch.created_at }}
           </span>
         </p>
         <a @click="$router.push({ name: 'read-article', params: { slug: branch.slug } })" class="block mt-2">
           <p class="text-xl font-semibold text-gray-900" v-html="branch.title">
           </p>
-          <p class="mt-3 text-sp text-base" v-html="branch.short_content" />
+          <p class="mt-3 text-sp text-base truncate ..." v-html="branch.short_content" />
         </a>
       </div>
     </div>
@@ -36,4 +36,5 @@ export default {
   name: "ArticleCard",
   props: ["branch", ""],
 };
+
 </script>
