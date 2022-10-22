@@ -125,7 +125,6 @@ export default {
         }
       }))
     }
-    console.log('..... actus ===>', this.agenda_datas)
     this.appels_offres = this.$store.state.home_elements
     if (this.appels_offres.appels !== undefined && this.appels_offres.appels !== null) {
       this.appels_offres = this.appels_offres.appels

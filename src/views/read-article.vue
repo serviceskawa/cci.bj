@@ -203,7 +203,6 @@ export default {
               banner: this.configs.image_url + '/' + element.bannner
             }
           })
-          console.log('ciurrenbt artticle  ==<', this.current_article)
         })
       } catch (error) {
         this.loader = false
