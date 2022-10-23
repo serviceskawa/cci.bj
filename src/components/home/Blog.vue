@@ -70,9 +70,6 @@
 </template>
 <script>
 import ArticleCard from "@/components/ArticleCard.vue";
-import ActuOne from "@/assets/actu_one.jpeg";
-import ActuTwo from "@/assets/actu_two.jpeg";
-import ActuThree from "@/assets/actu_three.jpeg";
 export default {
   components: {
     ArticleCard,

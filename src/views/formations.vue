@@ -776,7 +776,6 @@ export default {
   },
   async mounted () {
     await axios.get('https://formationccib.bj/api/top_courses').then((response) => {
-      console.log('=>', response)
     })
   }
 }

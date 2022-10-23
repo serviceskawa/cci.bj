@@ -11,7 +11,9 @@ import {
   ARTICLES_BY_CATEGORY,
   EVENTS,
   READ_ARTICLE,
-  APPELS_OFFRES
+  APPELS_OFFRES,
+  CATEGORIES,
+  ARTICLES
 } from '@/api/routes'
 
 export async function home_elements () {
@@ -78,4 +80,14 @@ export async function get_article_read (slug) {
 
 export async function get_appels_offres () {
   return await client.get(`${APPELS_OFFRES}`)
+}
+export async function get_categories () {
+  return await client.get(`${CATEGORIES}`)
+}
+
+export async function getCategory_articles (id, current_page) {
+  if (current_page == 1 || current_page == undefined) {
+    return await client.get(`${ARTICLES}/${id}`)
+  }
+  return await client.get(`${ARTICLES}/${id}?page=${current_page}`)
 }

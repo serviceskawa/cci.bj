@@ -1,10 +1,22 @@
 <template>
   <div class="min-h-screen relative">
-    <Header class="fixed top-0 w-full z-10" />
-    <div class="content">
-      <Alert :alert="alert" />
-      <router-view />
-      <Footer />
+    <div v-if="$store.state.app_ready == false">
+      <div id="loader" class="">
+        <div class="loading">
+          <div class="effect-1 effects"></div>
+          <div class="effect-2 effects"></div>
+          <div class="effect-3 effects"></div>
+        </div>
+      </div>
+
+    </div>
+    <div v-else-if="$store.state.app_ready == true">
+      <Header class="fixed top-0 w-full z-10" />
+      <div class="content">
+        <Alert :alert="alert" />
+        <router-view />
+        <Footer />
+      </div>
     </div>
   </div>
 </template>
@@ -22,7 +34,9 @@ export default {
   },
   data() {
     return {
-      alert: ''
+      alert: '',
+      loader: false,
+      configs: ''
     }
   },
   async created() {
@@ -31,6 +45,9 @@ export default {
         this.getNotifications()
       }, 180000)
     )
+  },
+  watch: {
+
   },
   methods: {
     async getNotifications() {

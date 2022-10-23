@@ -3,10 +3,10 @@
     <Popover class="relative bg-white shadow">
       <div class="px-4 flex justify-between items-center mx-auto py-2 xl:justify-start xl:space-x-4">
         <div class="flex justify-start">
-          <a href="/" class="mr-8">
+          <router-link :to="{ name: 'index' }" class="mr-8">
             <span class="sr-only">CCI Bénin</span>
             <img class="w-28" src="@/assets/logo.png" alt="CCI Bénin" />
-          </a>
+          </router-link>
         </div>
         <div class="-mr-2 -my-2 xl:hidden">
           <PopoverButton
@@ -16,10 +16,10 @@
           </PopoverButton>
         </div>
         <PopoverGroup as="nav" class="hidden xl:flex space-x-10">
-          <a @click="$router.push({name: 'cci'})"
+          <router-link :to="{name: 'cci'}"
             class="text-base font-medium tracking-tight hover:text-primary active:text-primary cursor-pointer">
             Ma CCI
-          </a>
+          </router-link>
           <Popover class="relative" v-slot="{ open }">
             <PopoverButton :class="[
               open ? 'text-gray-900' : 'text-subtitlegray tracking-tight',
@@ -38,7 +38,7 @@
                 class="absolute z-10 mt-6 w-screen max-w-md transform lg:left-full lg:ml-0 lg:max-w-2xl lg:-translate-x-1/2">
                 <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-primary ring-opacity-5">
                   <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 lg:grid-cols-2">
-                    <a @click="$router.push({name: 'createur-entreprise'})"
+                    <router-link :to="{name: 'createur-entreprise'}"
                       class="-m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary cursor-pointer">
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
@@ -58,8 +58,8 @@
                           Get a better understanding of where your traffic is coming from.
                         </p> -->
                       </div>
-                    </a>
-                    <a @click="$router.push({name: 'chef-entreprise'})"
+                    </router-link>
+                    <router-link :to="{name: 'chef-entreprise'}"
                       class="-m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary cursor-pointer">
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
@@ -78,8 +78,8 @@
                           Speak directly to your customers in a more meaningful way.
                         </p> -->
                       </div>
-                    </a>
-                    <a @click="$router.push({name: 'investissement'})"
+                    </router-link>
+                    <router-link :to="{name: 'investissement'}"
                       class="-m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary cursor-pointer">
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
@@ -96,12 +96,9 @@
                         <p class="text-base font-medium text-gray-900">
                           Investisseur
                         </p>
-                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">
-                          Your customers' data will be safe and secure.
-                        </p> -->
                       </div>
-                    </a>
-                    <a @click="$router.push({name: 'institutionnelle'})"
+                    </router-link>
+                    <router-link :to="{ name: 'institutionnelle' } "
                       class="-m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary cursor-pointer">
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
@@ -125,11 +122,9 @@
                         <p class="text-base font-medium text-gray-900">
                           Institutionnel
                         </p>
-                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">
-                          Connect with third-party tools that you're already using. </p> -->
                       </div>
-                    </a>
-                    <a @click="$router.push({name: 'industriel-commercant'})"
+                    </router-link>
+                    <router-link :to=" {name: 'industriel-commercant'}"
                       class="-m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary cursor-pointer">
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
@@ -139,20 +134,13 @@
                             d="M16 16V21H16.5815M31.9381 23C31.446 19.0537 28.0796 16 24 16C20.6426 16 17.7683 18.0682 16.5815 21M16.5815 21H21M32 32V27H31.4185M31.4185 27C30.2317 29.9318 27.3574 32 24 32C19.9204 32 16.554 28.9463 16.0619 25M31.4185 27H27"
                             stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
-
-
-
-
                       </div>
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">
                           Commerçant ou industriel
                         </p>
-                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">
-                          Build strategic funnels that will drive your customers to convert.
-                        </p> -->
                       </div>
-                    </a>
+                    </router-link>
                   </div>
                 </div>
               </PopoverPanel>
@@ -187,8 +175,7 @@
                       </svg>
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">Services spécifiques</p>
-                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Get a better understanding of where
-                          your traffic is coming from.</p> -->
+
                       </div>
                     </a>
                     <a @click="$router.push({name: 'services-infos'})"
@@ -200,8 +187,6 @@
                       </svg>
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">Informations et orientation</p>
-                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Speak directly to your customers in a
-                          more meaningful way.</p> -->
                       </div>
                     </a>
                     <a @click="$router.push({name: 'services-formations'})"
@@ -214,8 +199,6 @@
 
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">Formation, assistance et appui-conseil</p>
-                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Your customers' data will be safe and
-                          secure.</p> -->
                       </div>
                     </a>
                   </div>
@@ -224,15 +207,15 @@
             </transition>
           </Popover>
 
-          <a @click="$router.push({ name: 'formations' })"
+          <router-link :to="{ name: 'formations' }"
             class="text-base font-medium hover:text-primary active:text-primary cursor-pointer">
             Formations
-          </a>
+          </router-link>
 
-          <a @click="$router.push({ name: 'blog-articles' })"
+          <router-link :to="{ name: 'blog-articles' }"
             class="text-base font-medium hover:text-primary active:text-primary cursor-pointer">
             Blog
-          </a>
+          </router-link>
 
           <!-- Travailler avec nous -->
           <Popover class="relative" v-slot="{ open }">
@@ -266,13 +249,11 @@
 
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">Appels d’offres</p>
-                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Get a better understanding of where
-                          your traffic is coming from.</p> -->
                       </div>
                     </a>
 
                     <!-- Appel a projets-->
-                    <a @click="$router.push({ name: 'appels-offres' })"
+                    <router-link :to="{ name: 'appels-offres' }"
                       class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -281,11 +262,9 @@
                       </svg>
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">Appels à projets</p>
-                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Speak directly to your customers in a
-                          more meaningful way.</p> -->
                       </div>
-                    </a>
-                    <a @click="$router.push({name: 'devenir-partenaire'})"
+                    </router-link>
+                    <router-link :to="{name: 'devenir-partenaire'}"
                       class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -295,49 +274,19 @@
 
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">Devenir partenaire</p>
-                        <!-- <p class="mt-1 text-sm text-subtitlegray tracking-tight">Your customers' data will be safe and
-                          secure.</p> -->
                       </div>
-                    </a>
+                    </router-link>
                   </div>
                 </div>
               </PopoverPanel>
             </transition>
           </Popover>
-          <!-- <a @click="$router.push({ name: 'appels-offres' })"
-            class="text-base font-medium hover:text-primary active:text-primary cursor-pointer">
-            Travailler avec nous
-          </a> -->
         </PopoverGroup>
         <div class="h-full hidden xl:flex items-center justify-end xl:flex-1 xl:w-0">
-          <!-- <a href="#" class="whitespace-nowrap text-base font-medium text-subtitlegray tracking-tight hover:text-primary active:text-primary">
-            <svg width="52" height="53" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <g filter="url(#a)">
-                <rect x="2" y="1.5" width="48" height="48" rx="6" fill="#fff" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M24 19.5a4 4 0 1 0 0 8 4 4 0 0 0 0-8Zm-6 4a6 6 0 1 1 10.89 3.477l4.817 4.816a1 1 0 0 1-1.414 1.414l-4.816-4.816A6 6 0 0 1 18 23.5Z"
-                  fill="#111827" />
-                <rect x="2.5" y="2" width="47" height="47" rx="5.5" stroke="#111827" />
-              </g>
-              <defs>
-                <filter id="a" x="0" y=".5" width="52" height="52" filterUnits="userSpaceOnUse"
-                  color-interpolation-filters="sRGB">
-                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                  <feColorMatrix in="SourceAlpha" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                    result="hardAlpha" />
-                  <feOffset dy="1" />
-                  <feGaussianBlur stdDeviation="1" />
-                  <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0" />
-                  <feBlend in2="BackgroundImageFix" result="effect1_dropShadow_5092_3872" />
-                  <feBlend in="SourceGraphic" in2="effect1_dropShadow_5092_3872" result="shape" />
-                </filter>
-              </defs>
-            </svg>
-          </a> -->
-          <a @click="$router.push({ name: 'contact' })"
+          <router-link :to="{ name: 'contact' }"
             class="cursor-pointer ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2.5 border border-transparent rounded-md shadow-sm text-base font-medium text-dark">
             Nous contacter
-          </a>
+          </router-link>
         </div>
       </div>
       <transition enter-active-class="duration-200 ease-out" enter-from-class="opacity-0 scale-95"
@@ -360,20 +309,20 @@
               </div>
               <div class="mt-6 grid grid-cols-2 gap-8">
                 <nav class="">
-                  <a v-for="item in solutions_left" :key="item.name" @click="$router.push({name: item.route_name})"
+                  <router-link v-for="item in solutions_left" :key="item.name" :to="{name: item.route_name}"
                     class="-m-3 p-3 flex items-center rounded-lg hover:text-primary active:text-primary">
                     <div class="text-base font-medium text-gray-900">
                       {{ item.name }}
                     </div>
-                  </a>
+                  </router-link>
                 </nav>
                 <nav class="">
-                  <a v-for="item in solutions_right" :key="item.name" @click="$router.push({name: item.route_name})"
+                  <router-link v-for="item in solutions_right" :key="item.name" :to="{name: item.route_name}"
                     class="-m-3 p-3 flex items-center rounded-lg hover:text-primary active:text-primary">
                     <div class="text-base font-medium text-gray-900">
                       {{ item.name }}
                     </div>
-                  </a>
+                  </router-link>
                 </nav>
               </div>
             </div>
@@ -404,7 +353,6 @@ import {
   SearchIcon,
 } from "@heroicons/vue/outline";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
-import { defineComponent, h } from "vue"
 export default {
   components: {
     AnnotationIcon,
@@ -492,5 +440,8 @@ export default {
 button:focus {
   outline: none !important;
   border: none !important;
+}
+::v-deep .router-link-exact-active {
+  color: #DD7A4B !important
 }
 </style>

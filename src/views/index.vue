@@ -97,24 +97,7 @@ export default {
     if (configs !== undefined && configs !== null) {
       configs = JSON.parse(configs)
     }
-    this.slides = this.$store.state.home_elements
-    this.slides = this.slides.sliders
-    if (this.slides !== undefined) {
-      this.slides = this.slides.map((element) => {
-        return {
-          ...element,
-          slide: configs.image_url + '/' + element.photo,
-          slide_content: {
-            heading: element.heading,
-            content: element.content,
-            button1_text: element.button1_text,
-            button1_url: element.button1_url,
-            button2_text: element.button2_text,
-            button2_url: element.button2_url
-          }
-        }
-      })
-    }
+    this.slides = this.$store.state.home_elements.sliders
     this.agenda_datas = this.$store.state.home_elements
     if (this.agenda_datas.events !== undefined && this.agenda_datas.events !== null) {
       this.agenda_datas = this.agenda_datas.events

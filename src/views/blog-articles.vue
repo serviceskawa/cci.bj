@@ -11,11 +11,6 @@
           <span class="text-white">une CCI au service de votre </span> <br />
           stratégie à l'international
         </h1>
-        <!--<p class="text-white text-xl leading-7 font-normal mt-5">
-          Sagittis scelerisque nulla cursus in enim consectetur quam. <br />
-          Dictum urna sed consectetur neque tristique pellentesque. <br />
-          Blandit amet, sed aenean erat arcu morbi.
-        </p> -->
       </div>
     </div>
     <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
@@ -33,33 +28,46 @@
         </div>
         <button class="btn bg-white text-primary mb-3">Filtrer</button>
       </div>
-      <div class="flex justify-center py-12" v-if="loader == true">
-        <div role="status">
-          <svg aria-hidden="true" class="w-12 h-12 text-gray animate-spin fill-primary" viewBox="0 0 100 101"
-            fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
-              fill="currentColor" />
-            <path
-              d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
-              fill="currentFill" />
-          </svg>
-          <span class="sr-only">Loading...</span>
-        </div>
+      <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3" v-if="loader == true">
+        <ArticleCard class="mb-8" v-for="article in 20" :on_loading="loader" />
       </div>
-      <div  v-else-if="loader == false">
-        <div v-if="news.length == 0">
-            <h1 class="">Aucun article disponible</h1>
+      <div v-else-if="loader == false">
+        <div>
+          <div class="mb-16" v-for="(n, index) in $store.state.categories" :key="index + 'n'">
+            <h1 class="text-blue text-3xl leading-10 font-extrabold tracking-tight mb-3">
+              {{n.name}}
+            </h1>
+            <div v-if="n.articles_datas !== undefined">
+              <div class="flex justify-center items-center py-12" v-if="n.articles_datas.data.length == 0">
+                <h1 class="">Aucun article disponible pour cette catégorie</h1>
+              </div>
+              <div v-else>
+                <div  class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                  <ArticleCard class="mb-8" v-for="(article) in n.articles_datas.data" :key="'article_' + n.id + 'ar' "
+                  :branch="article" />
+                </div>
+                <div class="flex justify-end">
+                  <div class="flex" v-if="n.articles_datas.total > n.articles_datas.data.length">
+                    <a @click="getCategoryArticles(n.id, index, n.articles_datas.current_page-1)" v-if="n.articles_datas.current_page > 1" class="mr-4">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="23.5901" y="24" width="23.41" height="24" rx="11.705"
+                          transform="rotate(-180 23.5901 24)" fill="#E9E9E9" />
+                        <path d="M14.1801 18L15.5901 16.59L11.0101 12L15.5901 7.41L14.1801 6L8.18009 12L14.1801 18Z"
+                          fill="#F7F9F9" />
+                      </svg>
+                    </a>
+                    <a @click="getCategoryArticles(n.id, index, n.articles_datas.current_page+1)">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="0.590088" width="23.41" height="24" rx="11.705" fill="#FAE8E0" />
+                        <path d="M10.0001 6L8.59009 7.41L13.1701 12L8.59009 16.59L10.0001 18L16.0001 12L10.0001 6Z"
+                          fill="#DD7A4B" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-        <div v-else>
-          <div class="mb-16" v-for="n in news" :key="n.id">
-        <h1 class="text-blue text-3xl leading-10 font-extrabold tracking-tight mb-3">
-          {{n.name}}
-        </h1>
-        <div class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          <ArticleCard class="mb-8" v-for="(article, index) in n.news" :key="article.id + index + 'ar' " :branch="article" />
-        </div>
-      </div>
         </div>
       </div>
     </div>
@@ -70,9 +78,6 @@
 <script>
 import NewsLettersBox from "@/components/NewsLettersBox.vue";
 import ArticleCard from "@/components/ArticleCard.vue";
-import ActuOne from "@/assets/actu_one.jpeg";
-import ActuTwo from "@/assets/actu_two.jpeg";
-import ActuThree from "@/assets/actu_three.jpeg";
 import Notifications from "@/components/Notifications.vue";
 import { services } from "@/api"
 export default {
@@ -88,24 +93,56 @@ export default {
       title: '',
       description: '',
     },
-    loader: false,
+    loader: true,
     news: [],
     configs: ''
   }),
-
   async created() {
     this.configs = sessionStorage.getItem('configs')
     if (this.configs !== undefined && this.configs !== null) {
       this.configs = JSON.parse(this.configs)
     }
+    this.load_categories()
     this.load_articles()
   },
   methods: {
-    async load_articles() {
+    async load_categories() {
       this.loader = true
       try {
+        await services.get_categories().then((response) => {
+          if (response.status === 200) {
+            this.$store.state.categories = response.data.data
+            for (let index = 0; index < response.data.data.length; index++) {
+              this.getCategoryArticles(response.data.data[index].id, index)
+            }
+          }
+        })
+      } catch (error) {
+        this.loader = false
+      }
+    },
+    async getCategoryArticles(category_id, category_index, current_page) {
+      try {
+        await services.getCategory_articles(category_id, current_page).then((response) => {
+          if (response.status == 200) {
+            this.$store.state.categories[category_index].articles_datas = response.data
+            this.$store.state.categories[category_index].articles_datas.data = this.$store.state.categories[category_index].articles_datas.data.map((element) => {
+              return {
+                ...element,
+                news_publication_date: element.news_publication_date == null || element.news_publication_date.trim() == '' ? element.created_at : element.news_publication_date,
+                photo: this.configs.image_url + '/' + element.photo,
+              }
+            })
+          }
+        })
+        this.loader = false
+      } catch (error) {
+        this.loader = false
+      }
+    },
+    async load_articles() {
+      try {
         await services.get_articles_by_categories().then((response) => {
-          this.loader = false
           this.news = response.data
           for (let i = 0; i < this.news.length; i++) {
             for (let j = 0; j < this.news[i].news.length; j++) {
