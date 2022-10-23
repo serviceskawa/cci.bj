@@ -162,6 +162,7 @@ const router = createRouter({
   },
   routes,
 });
+
 router.beforeEach(async (to, from, next) => {
   let configs = sessionStorage.getItem('configs')
   if (configs == undefined || configs == null) {
@@ -194,8 +195,8 @@ router.beforeEach(async (to, from, next) => {
           }
         }
       })
-      store.state.app_ready = true
     }
+    store.state.app_ready = true
     next()
   }
   else {
