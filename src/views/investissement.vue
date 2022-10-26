@@ -50,14 +50,8 @@
                         Souscrivez à notre <br>
                         newsletter
                     </div>
-                    <p class="text-md
-              md:text-lg
-              tracking-tight
-              leading-7
-              text-subtitlegray
-              mb-6">
-                        Nous vous tenons informé(e) des actualités relatives aux démarches administratives.
-                    </p>
+                    <!--<p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray mb-6">
+                        Quis suspendisse ut fermentum neque vivamus non tellus. </p>-->
                     <a type="button" @click="$router.push({name: 'index'})"
                         class="btn text-center btn-light text-primary hover:text-white hover:bg-primary w-full text-sm leading-5 font-medium">
                         S'abonner
@@ -67,18 +61,13 @@
                     <div class="text-lg leading-6 font-medium">
                         Nouvel Investisseur
                     </div>
-                    <div class="pt-12 pb-4 text-4xl leading-10 font-extrabold ">
-                        Investir
+                    <div class="pt-12 pb-4 text-4xl leading-10 font-extrabold">
+                        Investir<br><br>
                     </div>
-                    <p class="text-md
-              md:text-lg
-              tracking-tight
-              leading-7
-              text-subtitlegray
-              mb-6">
-                        Quis suspendisse ut fermentum neque vivamus non tellus. </p>
+                    <!--<p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray mb-6">
+                        Quis suspendisse ut fermentum neque vivamus non tellus. </p>-->
                     <div class="w-full">
-                        <a type="button" href="https://apiex.bj/" target="_blank"                         class="btn text-center btn-light text-primary hover:text-white hover:bg-primary w-full text-sm leading-5 font-medium">
+                        <a type="button" href="https://apiex.bj/" target="_blank" class="btn text-center btn-light text-primary hover:text-white hover:bg-primary w-full text-sm leading-5 font-medium">
                            <span class="w-full">
                             Visiter <span
                                 class="text-underline border-b-2 border-primary hover:border-white w-full">Apiex.bj</span>
@@ -93,20 +82,16 @@
                     <div class="pt-12 pb-4 text-4xl leading-10 font-extrabold ">
                         Comprendre le marché béninois
                     </div>
-                    <p class="text-md
-              md:text-lg
-              tracking-tight
-              leading-7
-              text-subtitlegray
-              mb-6">
-                        Quis suspendisse ut fermentum neque vivamus non tellus. </p>
+                    <!--<p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray mb-6">
+                        Quis suspendisse ut fermentum neque vivamus non tellus. </p>-->
                     <button @click="$router.push({name: 'rdv-experts'})"
                         class="btn btn-light text-primary hover:text-white hover:bg-primary w-full text-sm leading-5 font-medium">
                         Voir le planning
                     </button>
                 </div>
             </div>
-            <div class="pt-12 lg:pt-20">
+
+            <!--<div class="pt-12 lg:pt-20">
                 <div class="flex items-center flex-wrap grid grid-cols-1 md:grid-cols-2 gap-16 pb-8 md:pb-16">
                     <div>
                         <svg class="mb-4" width="48" height="48" viewBox="0 0 48 48" fill="none"
@@ -185,7 +170,7 @@
                     </div>
                     <div class="asset-session-three hidden md:flex" />
                 </div>
-            </div>
+            </div> -->
         </div>
         <div class="px-6 md:px-10 lg:px-20 py-10 bg-gray">
             <div
