@@ -698,7 +698,7 @@
         maintenant.
       </h1>
       <p class="text-white text-lg leading-6 py-6">
-        Profitez du catalogue de cours en ligne de la CCI-Bénin <br />
+        Profitez du catalogue de cours en ligne de la CCI Bénin <br />
         pour monter en compétences.
       </p>
       <a href="https://www.formationccib.bj/home/courses" target="_blank" class="btn btn-white loading-6 text-medium bg-white">

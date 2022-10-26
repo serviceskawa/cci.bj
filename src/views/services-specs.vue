@@ -122,7 +122,7 @@
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
               <a href="#" class="text-primary font-medium text-sm">
                 <span class="underline">
-                  Mettez en avant votre entreprise à l’occasion d’un événement organisé par la CCI-Bénin
+                  Mettez en avant votre entreprise à l’occasion d’un événement organisé par la CCI Bénin
                 </span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>

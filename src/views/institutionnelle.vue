@@ -31,7 +31,7 @@
           </p>
           <h2 class="text-3xl text-blue leading-9 font-extrabold mb-6">
             Vérifiez les informations d’entreprises <br />
-            avec la CCI-Bénin
+            avec la CCI Bénin
           </h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3 items-center">
             <div class="pr-2">

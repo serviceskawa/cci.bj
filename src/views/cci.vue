@@ -78,7 +78,7 @@
             <div>
               <div v-if="current_tab == 'who_we_are'">
                 <h3 class="leading-tight text-4xl font-extrabold mb-3">
-                  La CCI-Bénin
+                  La CCI Bénin
                 </h3>
                 <p class="text-md
                 md:text-lg
@@ -98,7 +98,7 @@
                   sous la tutelle du Ministère chargé du Commerce et sa compétence couvre l’ensemble du territoire
                   national.
                   Les statuts actuellement en vigueur sont consacrés par le décret 2011-502 du 25 juillet 2011.
-                  Les prestations offertes par la CCI-Bénin couvrent plusieurs domaines d’intérêt. Elles sont fournies à
+                  Les prestations offertes par la CCI Bénin couvrent plusieurs domaines d’intérêt. Elles sont fournies à
                   travers les activités menées quotidiennement par les services et départements opérationnels rattachés
                   au
                   Secrétariat Général et au Président de la CCI Bénin.
@@ -166,7 +166,7 @@
                 leading-7
                 text-subtitlegray mb-8">
 
-                  La Chambre de Commerce et d’Industrie du Bénin (CCI-Bénin) assure la représentation, la protection, et
+                  La Chambre de Commerce et d’Industrie du Bénin (CCI Bénin) assure la représentation, la protection, et
                   la promotion des intérêts communs des Opérateurs Economiques de la République du Bénin dans les
                   domaines
                   du Commerce, l’Industrie et des Prestations de services.
@@ -176,7 +176,7 @@
                 leading-7
                 text-subtitlegray mb-8">
 
-                  La CCI-Bénin fournit aux opérateurs économiques et autres investisseurs, l’assistance documentaire,
+                  La CCI Bénin fournit aux opérateurs économiques et autres investisseurs, l’assistance documentaire,
                   toutes informations sur le droit applicable en République du Bénin et les renseignements sur les zones
                   économiques et les zones franches.
                 </p>
@@ -194,7 +194,7 @@
                 md:text-lg
                 leading-7
                 text-subtitlegray mb-8">
-                  La CCI-Bénin peut recevoir délégation des autorités compétentes pour gérer tous organismes ou ouvrages
+                  La CCI Bénin peut recevoir délégation des autorités compétentes pour gérer tous organismes ou ouvrages
                   publics, délivrer ou authentifier les certificats d’origine ou autres documents accompagnant des
                   marchandises à l’exportation.
                 </p>
@@ -209,7 +209,7 @@
               </div>
               <div v-if="current_tab == 'organisation'">
                 <h3 class="pb-10 leading-tight text-4xl font-extrabold">
-                  Organisation de la CCI-Bénin
+                  Organisation de la CCI Bénin
                 </h3>
                 <p class="text-md
                 md:text-lg
@@ -261,7 +261,7 @@
                 text-subtitlegray mb-8">
                   Nous sommes dans un monde où plus rien n’est véritablement statique, et où plus rien n’est comme
                   autrefois. Ni nos prévisions d’actions, ni même les réalités et les attentes de nos mandats. Ce pour
-                  quoi la Chambre de Commerce et d’Industrie du Bénin (CCI-Bénin) se mobilise aujourd’hui, c’est
+                  quoi la Chambre de Commerce et d’Industrie du Bénin (CCI Bénin) se mobilise aujourd’hui, c’est
                   d’accélérer la transformation des entreprises béninoises, leur permettre de tirer parti des nombreuses
                   opportunités qu’offre la redynamisation de nos économies africaines, leur offrir le cadre adéquat pour
                   qu’elles travaillent davantage ensemble et remportent des succès commerciaux.
@@ -271,7 +271,7 @@
                 tracking-tight
                 leading-7
                 text-subtitlegray mb-8">
-                  La CCI-Bénin a élaboré un plan stratégique vision 2020-2025 pour accompagner les entreprises à gagner
+                  La CCI Bénin a élaboré un plan stratégique vision 2020-2025 pour accompagner les entreprises à gagner
                   le
                   pari de la compétitivité, celui de la résilience. Au cours des dernières années et avec les réformes
                   structurelles mises en place, la CCI Bénin a réussi à renforcer son modèle de gouvernance, à déployer
@@ -283,10 +283,10 @@
                 tracking-tight
                 leading-7
                 text-subtitlegray mb-8">
-                  La réorganisation de la CCI-Bénin et l’élection des nouveaux élus et membres du Bureau Consulaire ont
+                  La réorganisation de la CCI Bénin et l’élection des nouveaux élus et membres du Bureau Consulaire ont
                   eu
                   pour principe directeur, la focalisation des efforts sur la prestation de services, un soutien
-                  diversifié et de grande valeur en direction des principaux mandants de la CCI-Bénin que sont les
+                  diversifié et de grande valeur en direction des principaux mandants de la CCI Bénin que sont les
                   entreprises du Bénin.
                 </p>
                 <p class="text-md
@@ -294,7 +294,7 @@
                 tracking-tight
                 leading-7
                 text-subtitlegray mb-8">
-                  La CCI-Bénin aujourd’hui, est devenue une organisation hautement professionnelle, avec une orientation
+                  La CCI Bénin aujourd’hui, est devenue une organisation hautement professionnelle, avec une orientation
                   claire sur la transformation des entreprises et la satisfaction des besoins de ses membres. Ce qu’il
                   faut désormais prendre en compte, c’est que le contexte socioéconomique en Afrique et au Bénin évolue
                   grandement, du fait de la conjonction de plusieurs grands facteurs qui ont œuvré à transformer le
@@ -311,7 +311,7 @@
                 leading-7
                 text-subtitlegray mb-8">
                   De nombreuses autres influences économiques, politiques et sociétales continuent encore d’avoir un
-                  impact sur le secteur privé, obligeant par la même occasion, la CCI-Bénin à s’adapter pour mieux
+                  impact sur le secteur privé, obligeant par la même occasion, la CCI Bénin à s’adapter pour mieux
                   servir.
                   Les années à venir poseront des défis nouveaux et uniques aux entreprises du pays et à notre
                   Institution. Au fur et à mesure que nous progresserons, nous devrons nous appesantir sur nos succès
@@ -379,7 +379,7 @@
       <div class="text-center">
         <h1 class="leading-tight text-4xl font-extrabold mb-6">
           Boostez votre productivité <br />
-          avec la CCI-Bénin
+          avec la CCI Bénin
         </h1>
         <p class="text-md
                 md:text-lg

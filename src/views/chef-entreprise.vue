@@ -34,7 +34,7 @@
               mt-6
             ">
             Consolidez votre projet entrepreneurial et amenez votre <br />
-            société vers de nouveaux sommets. La CCI-Bénin vous <br />
+            société vers de nouveaux sommets. La CCI Bénin vous <br />
             offre les clefs pour accélerer votre croissance.
           </p>
         </div>
@@ -237,7 +237,7 @@
                 par
                 des préconisations objectives et qualifiées avec des partenaires.
                 Vous recevez ainsi des éléments concrets pour préparer votre business plan
-                Outre les chiffres clés de votre secteur d'activité, l'étude de marché établie par la CCI-Bénin vous
+                Outre les chiffres clés de votre secteur d'activité, l'étude de marché établie par la CCI Bénin vous
                 permet de calculer votre chiffre d'affaires potentiel, en préparation de votre business plan.
 
               </p>

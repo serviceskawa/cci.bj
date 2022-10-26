@@ -7,11 +7,11 @@
           Aide au montage des dossiers
         </h1>
         <p class="text-lg text-center tracking-tight leading-7 text-subtitlegray mt-6">
-          La Chambre de Commerce et d’Industrie du Bénin (CCI-Bénin) outille les Chefs
+          La Chambre de Commerce et d’Industrie du Bénin (CCI Bénin) outille les Chefs
           d’entreprise dans le montage de dossiers. Il s’agit d’une étape cruciale
           indispensable au lancement d’un projet ; c’est pourquoi elle nécessite des
           compétences spécifiques. À travers une équipe de conseillers rompus à cette
-          tâche, la CCI-Bénin aide dans les démarches en réponse aux différentes
+          tâche, la CCI Bénin aide dans les démarches en réponse aux différentes
           préoccupations des Chefs d'entreprises.
         </p>
       </div>
@@ -20,7 +20,7 @@
       <div class="pt-16 pb-8">
         <h1 class="text-3xl md:text-4xl leading-none font-extrabold tracking-tight">Objectifs</h1>
         <p class="text-sm sm:text-lg tracking-tight leading-4 md:leading-7 text-subtitlegray mt-3">
-          La CCI-Bénin accompagne les entreprises qui souhaitent postuler aux dispositifs
+          La CCI Bénin accompagne les entreprises qui souhaitent postuler aux dispositifs
           de financement ou subvention en toute simplicité. Nous prenons en charge
           l’ensemble des démarches pour augmenter vos chances de réussite.
         </p>

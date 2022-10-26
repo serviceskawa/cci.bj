@@ -74,7 +74,7 @@
                 </p>
               </dt>
               <dd class="mt-2 text-base text-sp">
-                D’activités de la CCI-Bénin <br> au service du secteur privé
+                D’activités de la CCI Bénin <br> au service du secteur privé
               </dd>
             </div>
             <div>
