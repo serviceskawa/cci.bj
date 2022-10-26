@@ -24,11 +24,9 @@
         class="flex flex-wrap justify-center grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-3"
       >
         <div class="mb-4 pr-4">
-          <p
-            class="uppercase text-primary text-sm leading-5 font-semibold tracking-wide uppercase mb-4"
-          >
+          <!--<p class="uppercase text-primary text-sm leading-5 font-semibold tracking-wide uppercase mb-4">
             Section 1
-          </p>
+          </p>-->
           <h2 class="text-3xl text-blue leading-9 font-extrabold mb-6">
             Vérifiez les informations d’entreprises <br />
             avec la CCI Bénin
@@ -38,7 +36,7 @@
               <p class="text-2xl leading-8 font-bold">01</p>
               <div class="text-base tracking-tight leading-6 text-subtitlegray">
                 <b>Explorez</b> l’outil de connexion aux opportunités pour obtenir les
-                donnees didentite des entreprises et etablisssements locaux.
+                donnees d'identité des entreprises et etablisssements locaux.
               </div>
             </div>
             <div>
@@ -49,13 +47,18 @@
               </div>
             </div>
           </div>
+
+          <div class="tracking-tight mt-6 text-left text-dark">
+        <span class="block sm:ml-2 sm:inline-block">
+          <a href="http://www.ahilido.bj" target="_blank" class="text-primary">Visiter www.ahilido.bj <span aria-hidden="true">&rarr;</span></a>
+        </span>
+      </div>
+          <p><a ></a></p>
         </div>
         <div class="mb-4 pr-4">
-          <p
-            class="uppercase text-primary text-sm leading-5 font-semibold tracking-wide uppercase mb-4"
-          >
+          <!--<p class="uppercase text-primary text-sm leading-5 font-semibold tracking-wide uppercase mb-4">
             Section 1
-          </p>
+          </p>-->
           <h2 class="text-3xl text-blue leading-9 font-extrabold mb-6">
             Decouvrez les indicateurs conjecturels sur <br />
             l’environnement des affaires
@@ -76,11 +79,9 @@
           </div>
         </div>
         <div class="mb-4">
-          <p
-            class="uppercase text-primary text-sm leading-5 font-semibold tracking-wide uppercase"
-          >
+          <!--<p class="uppercase text-primary text-sm leading-5 font-semibold tracking-wide uppercase mb-4">
             Section 1
-          </p>
+          </p>-->
           <h2 class="text-3xl text-blue leading-9 font-extrabold mb-6">
             Consultez toutes les données chiffrées <br />
             en libre accès
