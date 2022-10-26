@@ -65,6 +65,19 @@
             " :class="current_tab === 'barem' ? 'active-tab' : ''" @click="current_tab = 'barem'">
             Barème des cotisations
           </div>
+
+          <div class="
+              text-md
+              md:text-lg
+              tracking-tight
+              leading-7
+              text-subtitlegray
+              mb-4
+              cursor-pointer
+            " :class="current_tab === 'justice' ? 'active-tab' : ''" @click="current_tab = 'justice'">
+            Arbitrage et médiation
+          </div>
+
           <div class="
               text-md
               md:text-lg
@@ -88,17 +101,7 @@
             Etude de marché sectoriel
           </div>
 
-          <div class="
-              text-md
-              md:text-lg
-              tracking-tight
-              leading-7
-              text-subtitlegray
-              mb-4
-              cursor-pointer
-            " :class="current_tab === 'rencontre' ? 'active-tab' : ''" @click="current_tab = 'rencontre'">
-            Rencontres thématiques
-          </div>
+          
           <div class="
               text-md
               md:text-lg
@@ -110,6 +113,19 @@
             " :class="current_tab === 'facilitation' ? 'active-tab' : ''" @click="current_tab = 'facilitation'">
             Facilitation de l’accès au financement
           </div>
+
+          <!--<div class="
+              text-md
+              md:text-lg
+              tracking-tight
+              leading-7
+              text-subtitlegray
+              mb-4
+              cursor-pointer
+            " :class="current_tab === 'rencontre' ? 'active-tab' : ''" @click="current_tab = 'rencontre'">
+            Rencontres thématiques
+          </div> -->
+
         </div>
         <div class="col-span-3">
           <div>
@@ -117,31 +133,23 @@
               <h3 class="leading-tight text-4xl font-extrabold mb-3">
                 Renouvelez votre carte Professionnelle
               </h3>
-              <p class="text-md
-              md:text-lg
-              tracking-tight
-              leading-7
-              text-subtitlegray">
-                Pour renouveler votre carte d’importateur vous devez produire les
-                pièces ci-après : <br> quittance de paiement de la Patente
-                d’importation de l’année en cours, <br> La quittance de paiement de
-                l’impôt sur le BIC de l’année en cours, <br />La quittance de paiement
-                de la TPS (ceci prend en compte BIC et Patente), <br />La quittance de
-                la cotisation de la CCI Bénin, La quittance de cotisation de la
-                CNSS ou attestation d’immatriculation, <br />Une copie de l’agrément
-                pour les activités faisant l’objet d’une réglementation
-                spécifique,<br /> Un timbre fiscal de 1000 F CFA Deux (02) photos
-                d’identité du Gérant de la société,<br /> Le récépissé de paiement des
-                droits d’établissement de la carte d’importateur (5.000 F CFA), <br />La
-                photocopie du Registre de Commerce et du Crédit Mobilier (RCCM) Le
-                numéro d’Immatriculation Fiscal Unique (IFU) <br />L’ancienne Carte
-                d’Importateur. Nous rappelons que munis, de toutes ces pièces,
-                vous devez vous rendre au ministère de l’Industrie et du Commerce
-                pour renouveler votre carte d’Importateur ou à travers.
+              <div class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
+              <p>
+              Pour renouveler votre carte d’importateur ou de commerçant connectez vous à la plateforme <a href="http://www.monentreprise.bj" target="_blank" style="color:#DD7A4B;">www.monentreprise.bj</a> et préparer les documents ci-après :
+              <ul>
+                <li>Ancienne Carte</li>
+                <li>Carte nationale d'identité ou Passeport</li>
+                <li>Titre de séjour du ou des gérants(Visa en ligne, Page visa du passeport, Carte de séjour, Carte consulaire (UEMOA))</li>
+                <li>Déclaration sur l'honneur (Un modèle de déclaration est téléchargeable en ligne sur la plateforme)</li>
+                <li>Extrait d'immatriculation RCCM</li>
+                <li>Quittance CCIB de l'année en cours</li>
+              </ul>
+              Nous rappelons que munis, de toutes ces documents, vous devez vous connecter à  la plateforme www.monentreprise.bj  et  parmi les Services disponibles cliquer sur « Renouvellement  la carte professionnelle».
               </p>
             </div>
+            </div>
             <div v-if="current_tab == 'barem'">
-              <h3 class="pb-10 leading-tight text-4xl font-extrabold text-subtitlegray">
+              <h3 class="leading-tight text-4xl font-extrabold mb-3">
                 Barème des cotisations applicable aux entreprises membre de la CCI Bénin
               </h3>
               <p class="text-md
@@ -150,11 +158,12 @@
               leading-7
               text-subtitlegray">
                 A partir de janvier 2020, les montants annuels établis en fonction des chiffres d’affaires sont fixés
-                comme suit : <a href="#" class="text-green hover:font-bold">Télécharger le barème</a>
+                comme suit : <a href="#" target="_blank" style="color:#DD7A4B;">Télécharger le barème</a>
               </p>
             </div>
-            <div v-if="current_tab == 'contact'">
-              <h3 class="pb-10 leading-tight text-4xl font-extrabold text-subtitlegray">
+
+            <div v-if="current_tab == 'justice'">
+              <h3 class="leading-tight text-4xl font-extrabold mb-3">
                 Besoin d’assistance juridique ? Faites-vous accompagner en un clic
               </h3>
               <p class="text-md
@@ -189,12 +198,15 @@
               tracking-tight
               leading-7
               text-subtitlegray">Contactez : <br />
-                Adresse électronique : <br />
-                contact@camec.bj; camec@ccib.bj<br />
+                Adresse électronique : contact@camec.bj; camec@ccib.bj<br />
                 Tel: +229 68 63 70 70 /69 33 70 70<br />
-                Site web: www.camec.bj</span>
+                Site web: <a href="http://www.camec.bj" target="_blank" style="color:#DD7A4B;">www.camec.bj</a></span>
               </p>
-              <h3 class="py-10 leading-tight text-4xl font-extrabold text-subtitlegray">
+  
+            </div>
+
+            <div v-if="current_tab == 'contact'">
+              <h3 class="leading-tight text-4xl font-extrabold mb-3">
                 Prenez contact avec les partenaires opérant dans divers domaines
 
               </h3>
@@ -203,12 +215,12 @@
               tracking-tight
               leading-7
               text-subtitlegray">
-                Obtenez plus d’informations auprès de nos partenaires. <a href="#"
-                  class="text-green hover:font-bold">Télécharger la liste</a>
+                Obtenez plus d’informations auprès de nos partenaires : <a href="#" target="_blank" style="color:#DD7A4B;">Télécharger la liste</a>
               </p>
             </div>
+
             <div v-if="current_tab == 'etude'">
-              <h3 class="pb-10 leading-tight text-4xl font-extrabold text-xb-extrabold text-green">
+              <h3 class="leading-tight text-4xl font-extrabold mb-3">
                 Etude de marché sectoriel
               </h3>
               <p class="text-md
@@ -222,10 +234,10 @@
                 votre future entreprise.
                 La CCI Bénin vous accompagne pour l'implantation de vos commerces de votre industrie et de vos services.
                 <br />
-                • Connaissez-vous les grandes tendances du marché, ses acteurs ? <br />
-                • Qui sont les consommateurs, les acheteurs et les concurrents ?<br />
-                • Quelles sont les contraintes et les opportunités de votre secteur d'activité ?<br />
-                Bénéficiez de nos données locales, notre exclusivité
+                <li>Connaissez-vous les grandes tendances du marché, ses acteurs ?</li>
+                <li>Qui sont les consommateurs, les acheteurs et les concurrents ?</li>
+                <li>Quelles sont les contraintes et les opportunités de votre secteur d'activité ?</li>
+                <br>Bénéficiez de nos données locales, notre exclusivité
                 La CCI Bénin accompagne les entreprises du Bénin. Grâce à cette expérience et à notre excellent réseau
                 national, nous disposons des chiffres actuels, exclusifs concernant votre marché, les profils des
                 consommateurs et concurrents. Autrement dit, nous vous donnons accès à des données d'enquêtes précieuses
@@ -242,8 +254,9 @@
 
               </p>
             </div>
-            <div v-if="current_tab == 'rencontre'">
-              <h3 class="leading-tight text-4xl font-extrabold">
+
+            <!--<div v-if="current_tab == 'rencontre'">
+              <h3 class="leading-tight text-4xl font-extrabold mb-3">
                 Nos rencontres thématiques
               </h3>
               <p class="text-md
@@ -268,12 +281,18 @@
                 vous devez vous rendre au ministère de l’Industrie et du Commerce
                 pour renouveler votre carte d’Importateur ou à travers.
               </p>
-            </div>
+            </div> -->
+
             <div v-if="current_tab == 'facilitation'">
               <h3 class="leading-tight text-4xl font-extrabold mb-3">
                 Facilitation de l’accès au financement
-
               </h3>
+              <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
+              <p>Dans sa mission d’accompagnement des entreprises, la Chambre de Commerce et d’Industrie du Bénin (CCI Bénin) permet aux Petites et Moyennes Entreprises (PME), au Petites et Moyennes Industries (PMI), et aux grosses entreprises béninoises de découvrir et de comprendre les mécanismes utilisés dans la facilitation de l’accès au financement.</p>
+              <p>Afin de répondre de manière plus efficace aux besoins exprimés par chaque entreprise, la CCI Bénin met en place une initiative à la mesure des besoins : la plateforme imPULSE. Une équipe de conseillers formés pour la tâche vous donneront les informations nécessaires pour vous faciliter l’accès au financement dont vous avez besoin.</p>
+              <p>Connecter sur notre plateforme imPULSE pour avoir plus de détails et éventuellement prendre contact avec un de nos conseillers : <a href="http://www.impulse.bj" target="_blank" style="color:#DD7A4B;">www.impulse.bj</a></p>
+
+              </p>
               <div class="mt-12 overflow-x-auto no-scrollbar pb-8	-mr-20 flex">
                 <div v-for="(agen, i) in agenda_datas"
           :key="i"
