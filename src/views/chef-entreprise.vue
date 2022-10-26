@@ -290,7 +290,7 @@
               <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
               <p>Dans sa mission d’accompagnement des entreprises, la Chambre de Commerce et d’Industrie du Bénin (CCI Bénin) permet aux Petites et Moyennes Entreprises (PME), au Petites et Moyennes Industries (PMI), et aux grosses entreprises béninoises de découvrir et de comprendre les mécanismes utilisés dans la facilitation de l’accès au financement.</p>
               <p>Afin de répondre de manière plus efficace aux besoins exprimés par chaque entreprise, la CCI Bénin met en place une initiative à la mesure des besoins : la plateforme imPULSE. Une équipe de conseillers formés pour la tâche vous donneront les informations nécessaires pour vous faciliter l’accès au financement dont vous avez besoin.</p>
-              <p>Connecter sur notre plateforme imPULSE pour avoir plus de détails et éventuellement prendre contact avec un de nos conseillers : <a href="http://www.impulse.bj" target="_blank" style="color:#DD7A4B;">www.impulse.bj</a></p>
+              <p>Connecter sur notre plateforme imPULSE pour avoir plus de détails et éventuellement prendre contact avec un de nos conseillers : <a @click="$router.push({name: 'impulse'})" style="color:#DD7A4B;">www.impulse.bj</a></p>
 
               </p>
               <div class="mt-12 overflow-x-auto no-scrollbar pb-8	-mr-20 flex">
