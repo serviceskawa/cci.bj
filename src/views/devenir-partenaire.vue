@@ -22,13 +22,13 @@
           <div class="mb-3">
             <label class="block">
               <span class="block text-sm font-medium leading-5 mb-2 text-label">Nom complet</span>
-              <input required v-model="form.fullname"
+              <input required v-model="form.fullname" type="text"
                 class="w-full border-borderInput px-3 focus:border-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 text-gray-900 placeholder-gray-500 focus:placeholder-gray-400 focus:outline-none" />
             </label>
           </div>
           <div class="mb-3">
             <label class="block">
-              <span class="block text-sm font-medium leading-5 mb-2 text-label">Nom</span>
+              <span class="block text-sm font-medium leading-5 mb-2 text-label">Email</span>
               <input required v-model="form.email" type="email"
                 class="w-full border-borderInput px-3 focus:border-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 text-gray-900 placeholder-gray-500 focus:placeholder-gray-400 focus:outline-none" />
             </label>
@@ -36,7 +36,7 @@
           <div class="mb-3">
             <label class="block">
               <span class="block text-sm font-medium leading-5 mb-2 text-label">Téléphone</span>
-              <input required v-model="form.phone" type=""
+              <input required v-model="form.phone" type="tel"
                 class="w-full border-borderInput px-3 focus:border-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 text-gray-900 placeholder-gray-500 focus:placeholder-gray-400 focus:outline-none" />
             </label>
           </div>
