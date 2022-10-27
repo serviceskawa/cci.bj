@@ -136,9 +136,9 @@
             par l’écoute attentive et l’appui conseil aux Micro, Petites et Moyennes
             entreprises qui doivent affronter le détricotage de leurs modèles d’affaires.
           </p>
-          <button class="btn text-primary mt-4">
-            S’inscrire au prochain journée pays
-          </button>
+          <a href="tel:0022991373333"><button class="btn text-primary mt-4">
+            Appelez-nous
+          </button></a>
         </div>
         <div class="asset-session hidden lg:flex" />
       </div>
@@ -162,6 +162,9 @@
             expertise-métier, leur valeur ajoutée et leur connaissance des préoccupations
             des entreprises en Afrique et au Bénin.
           </p>
+          <a href="mailto:pere@ccib.bj"><button class="btn text-primary mt-4">
+            Ecrivez-nous
+          </button></a>
         </div>
       </div>
       <div class="pt-6 md:pt-20 mb-6">

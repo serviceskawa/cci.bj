@@ -145,7 +145,7 @@
                     </dt>
                     <DisclosurePanel as="dd" class="mt-2 pr-12">
                         <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-                            <a @click="$router.push({name: 'impulse'})" class="text-primary font-medium text-sm">
+                            <a @click="$router.push({name: 'pere'})" class="text-primary font-medium text-sm">
                                 <span class="underline">Nos consultants et experts en gestion et croissance d’entreprise vous aident à résoudres vos préoccupations</span> <span class="ml-2">→</span> </a>
                         </p>
                     </DisclosurePanel>
