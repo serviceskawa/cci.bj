@@ -80,16 +80,13 @@
                 Voulez vous en savoir plus ?
               </h2>
               <p class="mt-3 text-lg text-subtitlegray sm:mt-4">
-                Connectez-vous sur notre plateforme imPULSE pour avoir plus de détails et
-                éventuellement prendre contact avec un de nos conseillers
+                Visitez le site web du CAMeC-CCI Bénin pour avoir plus de détails sur les Modes Alternatifs de Règlement des Litiges et
+                éventuellement prendre contact avec nous.
               </p>
             </div>
             <div class="w-auto">
-              <a
-              @click="$router.push({name: 'impulse'})"
-                class="flex items-center justify-center px-4 py-2 text-lg font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white md:py-2.5 md:text-lg md:px-5"
-              >
-                Aller sur impulse.bj
+              <a href="https://camec.bj" class="flex items-center justify-center px-4 py-2 text-lg font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white md:py-2.5 md:text-lg md:px-5">
+                Aller sur camec.bj
               </a>
             </div>
           </div>
