@@ -169,6 +169,8 @@ router.beforeEach(async (to, from, next) => {
     await services.get_settings().then((response) => {
       if (response.status == 200) {
         sessionStorage.setItem('configs', JSON.stringify(response.data))
+        configs = sessionStorage.getItem('configs')
+        configs = JSON.parse(configs)
       }
     })
   } else {

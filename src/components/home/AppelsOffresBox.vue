@@ -37,6 +37,13 @@
           </div>
         </div>
       </div>
+      <div class="tracking-tight mt-12 text-left text-dark">
+        <span class="block sm:ml-2 sm:inline-block">
+          <a @click="$router.push({ name: 'appels-offres' })" class="text-primary">
+            Voir tous appels d'offres / projets <span aria-hidden="true">&rarr;</span>
+          </a>
+        </span>
+      </div>
     </div>
   </div>
 </template>

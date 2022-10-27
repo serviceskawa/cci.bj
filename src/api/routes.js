@@ -18,3 +18,4 @@ export const READ_ARTICLE = `/news/`
 export const APPELS_OFFRES = `/appels_by_type`
 export const CATEGORIES = `/categories`
 export const ARTICLES = `/news/category`
+export const FILES = `/files`

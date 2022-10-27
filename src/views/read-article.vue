@@ -11,11 +11,6 @@
           <span class="text-white">une CCI au service de votre </span> <br />
           stratégie à l'international
         </h1>
-        <!-- <p class="text-white text-xl leading-7 font-normal mt-5">
-          Sagittis scelerisque nulla cursus in enim consectetur quam. <br />
-          Dictum urna sed consectetur neque tristique pellentesque. <br />
-          Blandit amet, sed aenean erat arcu morbi.
-        </p> -->
       </div>
     </div>
     <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
@@ -40,6 +35,17 @@
         <div v-else>
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
             <div class="col-span-1 lg:col-span-7">
+              <div class="mb-6 flex items-center">
+                <img src="@/assets/svg/avatar.svg" alt="">
+                <div class="ml-2">
+                  <div class="text-center text-primary text-sm">
+                    {{current_article.news.author}}
+                  </div>
+                  <div class="text-sm">
+                    {{ current_article.news.created_at }}
+                  </div>
+                </div>
+              </div>
               <div class="image-box w-full mb-10"
                 :style="{ backgroundImage: `url(${configs.image_url+ '/' +current_article.news.photo})` }">
               </div>
@@ -48,7 +54,7 @@
               </p>
               <div class="flex items-center">
                 <h3 class="text-blue text-xl leading-10 font-extrabold tracking-tight mr-4">Partagez l'article</h3>
-                <span class="mr-4">
+                <a href="javascript:void(window.open('https://www.facebook.com/sharer.php?u=' + encodeURIComponent(document.location) + '?t=' + encodeURIComponent(document.title),'_blank'))" class="mr-4">
                   <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_3624_45113)">
                       <path
@@ -65,48 +71,8 @@
                     </defs>
                   </svg>
 
-                </span>
-                <span class="mr-4">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g clip-path="url(#clip0_3624_45116)">
-                      <path
-                        d="M22 0H10C4.478 0 0 4.478 0 10V22C0 27.522 4.478 32 10 32H22C27.522 32 32 27.522 32 22V10C32 4.478 27.522 0 22 0ZM29 22C29 25.86 25.86 29 22 29H10C6.14 29 3 25.86 3 22V10C3 6.14 6.14 3 10 3H22C25.86 3 29 6.14 29 10V22Z"
-                        fill="url(#paint0_linear_3624_45116)" />
-                      <path
-                        d="M16 8C11.582 8 8 11.582 8 16C8 20.418 11.582 24 16 24C20.418 24 24 20.418 24 16C24 11.582 20.418 8 16 8ZM16 21C13.244 21 11 18.756 11 16C11 13.242 13.244 11 16 11C18.756 11 21 13.242 21 16C21 18.756 18.756 21 16 21Z"
-                        fill="url(#paint1_linear_3624_45116)" />
-                      <path
-                        d="M24.5999 8.46598C25.1887 8.46598 25.6659 7.98872 25.6659 7.39998C25.6659 6.81125 25.1887 6.33398 24.5999 6.33398C24.0112 6.33398 23.5339 6.81125 23.5339 7.39998C23.5339 7.98872 24.0112 8.46598 24.5999 8.46598Z"
-                        fill="url(#paint2_linear_3624_45116)" />
-                    </g>
-                    <defs>
-                      <linearGradient id="paint0_linear_3624_45116" x1="2.9293" y1="29.0709" x2="29.0707" y2="2.9291"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FFC107" />
-                        <stop offset="0.507" stop-color="#F44336" />
-                        <stop offset="0.99" stop-color="#9C27B0" />
-                      </linearGradient>
-                      <linearGradient id="paint1_linear_3624_45116" x1="10.3433" y1="21.6567" x2="21.6567" y2="10.3433"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FFC107" />
-                        <stop offset="0.507" stop-color="#F44336" />
-                        <stop offset="0.99" stop-color="#9C27B0" />
-                      </linearGradient>
-                      <linearGradient id="paint2_linear_3624_45116" x1="23.8462" y1="8.15388" x2="25.3536" y2="6.64628"
-                        gradientUnits="userSpaceOnUse">
-                        <stop stop-color="#FFC107" />
-                        <stop offset="0.507" stop-color="#F44336" />
-                        <stop offset="0.99" stop-color="#9C27B0" />
-                      </linearGradient>
-                      <clipPath id="clip0_3624_45116">
-                        <rect width="32" height="32" fill="white" />
-                      </clipPath>
-                    </defs>
-                  </svg>
-
-
-                </span>
-                <span class="mr-4">
+                </a>
+                <a href="javascript:void(window.open('https://twitter.com/share?url=' + encodeURIComponent(document.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;via=fabienb&amp;hashtags=koandesign','_blank'))" class="mr-4">
                   <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_3624_45120)">
                       <path
@@ -119,11 +85,8 @@
                       </clipPath>
                     </defs>
                   </svg>
-
-
-
-                </span>
-                <span class="mr-4">
+                </a>
+                <a  href="javascript:void(0)" data-social="whatsapp" data-text="From Page Bottom Share Section" class="mr-4">
                   <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink">
                     <rect x="0.304688" width="32" height="32" fill="url(#pattern0)" />
@@ -139,7 +102,7 @@
 
 
 
-                </span>
+                </a>
               </div>
             </div>
             <div class="col-span-1 lg:col-span-5">

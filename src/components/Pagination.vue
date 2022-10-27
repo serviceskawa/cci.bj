@@ -2,57 +2,21 @@
 <template>
   <nav class="flex items-center justify-between px-4 sm:px-0 text-subtitlegray">
     <div class="-mt-px flex w-0 flex-1">
-      <a
-        href="#"
-        class="inline-flex items-center pt-4 pr-1 text-sm font-medium text-gray-500 hover:text-primary"
-      >
+      <a class="inline-flex items-center pt-4 pr-1 text-sm font-medium text-gray-500 hover:text-primary"
+        @click="$emit('previous')">
         <ArrowLeftIcon class="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
-        Previous
+        Précédent
       </a>
     </div>
     <div class="hidden md:-mt-px md:flex">
-      <a
-        href="#"
-        class="inline-flex items-center border-t-2 border-primary px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-        >1</a
-      >
-      <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300" -->
-      <a
-        href="#"
-        class="inline-flex items-center px-4 pt-4 text-sm font-medium text-indigo-600"
-        aria-current="page"
-        >2</a
-      >
-      <a
-        href="#"
-        class="inline-flex items-center px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-        >3</a
-      >
-      <span class="inline-flex items-center px-4 pt-4 text-sm font-medium text-gray-500"
-        >...</span
-      >
-      <a
-        href="#"
-        class="inline-flex items-center px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-        >8</a
-      >
-      <a
-        href="#"
-        class="inline-flex items-center px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-        >9</a
-      >
-      <a
-        href="#"
-        class="inline-flex items-center px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
-        >10</a
-      >
+      <a v-for="(page, index) in  pagesNumber" @click="$emit('current_page', index + 1)"
+        class="inline-flex items-center border-t-2 border-primary px-4 pt-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">{{
+            index + 1
+        }}</a>
     </div>
-    <div class="-mt-px flex w-0 flex-1 justify-end">
-      <a
-        href="#"
-        class="inline-flex items-center pt-4 pl-1 text-sm font-medium text-gray-500 hover:text-primary"
-      >
-        Next
+    <div class="-mt-px flex w-0 flex-1 justify-end" @click="$emit('next')">
+      <a class="inline-flex items-center pt-4 pl-1 text-sm font-medium text-gray-500 hover:text-primary">
+        Suivant
         <ArrowRightIcon class="ml-3 h-5 w-5 text-gray-400" aria-hidden="true" />
       </a>
     </div>

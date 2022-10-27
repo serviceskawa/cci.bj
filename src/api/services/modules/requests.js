@@ -13,7 +13,8 @@ import {
   READ_ARTICLE,
   APPELS_OFFRES,
   CATEGORIES,
-  ARTICLES
+  ARTICLES,
+  FILES
 } from '@/api/routes'
 
 export async function home_elements () {
@@ -90,4 +91,11 @@ export async function getCategory_articles (id, current_page) {
     return await client.get(`${ARTICLES}/${id}`)
   }
   return await client.get(`${ARTICLES}/${id}?page=${current_page}`)
+}
+
+export async function get_document_rapports (current_page) {
+  if (current_page == 1 || current_page == 1) {
+    return await client.get(`${FILES}`)
+  }
+  return await client.get(`${FILES}?page=${current_page}`)
 }
