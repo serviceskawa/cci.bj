@@ -30,7 +30,7 @@
                     </dt>
                     <DisclosurePanel as="dd" class="mt-2 pr-12">
                         <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-                            <a href="#" class="text-primary font-medium text-sm">
+                            <a @click="$router.push({name: 'formations'})" class="text-primary font-medium text-sm">
                                 <span class="underline">Nous vous faisons monter en compétences dans divers domaines liés à la gestion de l’entreprise</span> <span class="ml-2">→</span> </a>
                         </p>
                     </DisclosurePanel>
@@ -51,7 +51,7 @@
                     </dt>
                     <DisclosurePanel as="dd" class="mt-2 pr-12">
                         <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-                            <a href="#" class="text-primary font-medium text-sm">
+                            <a @click="$router.push({name: 'agenda'})" class="text-primary font-medium text-sm">
                                 <span class="underline">
                                     Développez une maitrise des langues les plus utilisées pour les affaires et boostez votre croissance
                                 </span> <span class="ml-2">→</span> </a>
@@ -74,13 +74,14 @@
                     </dt>
                     <DisclosurePanel as="dd" class="mt-2 pr-12">
                         <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-                            <a href="#" class="text-primary font-medium text-sm">
+                            <a @click="$router.push({name: 'formations'})" class="text-primary font-medium text-sm">
                                 <span class="underline">
-                                    Accédez à nos cours en ligne sur la plateforme de la CCIB sédiée à l’apprentissage en ligne
+                                    Accédez à nos cours en ligne sur la plateforme de la CCI Bénin dédiée à l’apprentissage en ligne
                                 </span> <span class="ml-2">→</span> </a>
                         </p>
                     </DisclosurePanel>
                 </Disclosure>
+
                 <Disclosure as="div" class="pt-6" v-slot="{ open }">
                     <dt class="text-lg">
                         <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
@@ -97,13 +98,14 @@
                     </dt>
                     <DisclosurePanel as="dd" class="mt-2 pr-12">
                         <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-                            <a href="#" class="text-primary font-medium text-sm">
+                            <a @click="$router.push({name: 'contact'})" class="text-primary font-medium text-sm">
                                 <span class="underline">
                                     Familiarisez-vous avec la méthodologie du BIT pour améliorer la gestion de votre entreprise
                                 </span> <span class="ml-2">→</span> </a>
                         </p>
                     </DisclosurePanel>
                 </Disclosure>
+
                 <Disclosure as="div" class="pt-6" v-slot="{ open }">
                     <dt class="text-lg">
                         <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
@@ -120,7 +122,7 @@
                     </dt>
                     <DisclosurePanel as="dd" class="mt-2 pr-12">
                         <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-                            <a href="#" class="text-primary font-medium text-sm">
+                            <a @click="$router.push({name: 'contact'})" class="text-primary font-medium text-sm">
                                 <span class="underline">
                                     Suivez des formations certifiantes et obtenez un diplôme en gestion grâce à nos partenaires
                                 </span> <span class="ml-2">→</span> </a>
@@ -143,7 +145,7 @@
                     </dt>
                     <DisclosurePanel as="dd" class="mt-2 pr-12">
                         <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-                            <a href="#" class="text-primary font-medium text-sm">
+                            <a @click="$router.push({name: 'pere'})" class="text-primary font-medium text-sm">
                                 <span class="underline">Nos consultants et experts en gestion et croissance d’entreprise vous aident à résoudres vos préoccupations</span> <span class="ml-2">→</span> </a>
                         </p>
                     </DisclosurePanel>

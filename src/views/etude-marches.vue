@@ -10,7 +10,7 @@
           L'étude de marché est un passage obligé pour tout projet d'entreprise. Elle vous
           apporte les réponses adaptées et vous sert à mieux connaitre le secteur d'
           activité, la zone de chalandise et l'environnement de votre future entreprise.
-          La CCI-Bénin vous accompagne pour l'implantation de vos commerces de votre
+          La CCI Bénin vous accompagne pour l'implantation de vos commerces de votre
           industrie et de vos services.
         </p>
       </div>
@@ -47,7 +47,7 @@
               Explorer les grandes tendances du marché et ses acteurs
             </h4>
             <p class="text-sm leading-5 text-subtitlegray">
-              Utilisez les données fournies par la CCI-Bénin pour identifier les tendances
+              Utilisez les données fournies par la CCI Bénin pour identifier les tendances
               en termes de croissance, le niveau d’attractivité du secteur, l’évolution
               des entreprises et leur marge commerciale.
             </p>
@@ -122,7 +122,7 @@
             locales et notre exclusivité
           </h2>
           <p class="my-3 leading-7 text-lg text-subtitlegray sm:my-4">
-            La CCI-Bénin accompagne les entreprises béninoises dans leur démarche
+            La CCI Bénin accompagne les entreprises béninoises dans leur démarche
             d’analyse sectorielle. Grâce à cette expérience et à notre excellent réseau
             national, nous disposons des chiffres actuels, exclusifs concernant votre
             marché, les profils des consommateurs et concurrents. Autrement dit, nous vous
@@ -166,7 +166,7 @@
           </h2>
           <p class="my-3 leading-7 text-lg text-subtitlegray sm:my-4">
             Outre les chiffres clés de votre secteur d'activité, l'étude de marché établie
-            par la CCI-Bénin vous permet de calculer votre chiffre d'affaires potentiel,
+            par la CCI Bénin vous permet de calculer votre chiffre d'affaires potentiel,
             en préparation de votre business plan.
           </p>
         </div>

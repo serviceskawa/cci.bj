@@ -7,8 +7,7 @@
           <span class="text-white">Informations et  orientataion</span>
         </h1>
         <p class="text-white text-xl leading-7 font-normal mt-4">
-          Vérification d’existence et de fiabilité des entreprises, <br>
-pour la facilitation des affaires. 
+          Vérification d’existence et de fiabilité des entreprises, <br>pour la facilitation des affaires. 
         </p>
       </div>
     </div>
@@ -30,7 +29,7 @@ pour la facilitation des affaires.
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a @click="$router.push({name: 'contact'})" class="text-primary font-medium text-sm">
                 <span class="underline">Notre équipe se tient à votre disposition pour vouus recevoir aux jours et heures ouvrables</span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>
@@ -51,7 +50,7 @@ pour la facilitation des affaires.
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a @click="$router.push({name: 'contact'})" class="text-primary font-medium text-sm">
                 <span class="underline">Accédez à nos solutions d’acceuil personnalisé pour la prise en charge de vos besoins</span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>
@@ -72,7 +71,7 @@ pour la facilitation des affaires.
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a @click="$router.push({name: 'contact'})" class="text-primary font-medium text-sm">
                 <span class="underline">Obtenez des informations sur des thématiques précises auprès de nos agents</span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>
@@ -93,7 +92,7 @@ pour la facilitation des affaires.
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a @click="$router.push({name: 'contact'})" class="text-primary font-medium text-sm">
                 <span class="underline">
                   Notre équipe vous oriente vers les services dont vous avez besoin selon votre profil
                 </span> <span class="ml-2">→</span> </a>
@@ -116,7 +115,7 @@ pour la facilitation des affaires.
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a href="https://ahilido.bj/" target="_blank" class="text-primary font-medium text-sm">
                 <span class="underline">
                   Accédez à la base de données d’identité des entreprises et établissements  enregistrés
                 </span> <span class="ml-2">→</span> </a>
@@ -139,7 +138,7 @@ pour la facilitation des affaires.
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a href="mailto:ahilido@ccib.bj?subject=Fichier%20d%27entreprises" target="_blank" class="text-primary font-medium text-sm">
                 <span class="underline">Contactez notre équipe par mail pour accéder aux données d’entreprises béninoises</span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>
@@ -160,7 +159,7 @@ pour la facilitation des affaires.
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a href="https://ahilido.bj/" target="_blank" class="text-primary font-medium text-sm">
                 <span class="underline">Accédez à la plateforme dédiée à la vérification d’existence et de fiabilité des entreprises</span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>

@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
-            <h1 class="text-4xl text-center leading-10 font-extrabold tracking-tight mb-4"> CAMeC-CCI
+            <h1 class="text-4xl text-center leading-10 font-extrabold tracking-tight mb-4"> CAMeC-CCI Bénin
             </h1>
             <p class="text-md
                 md:text-lg
@@ -51,7 +51,7 @@
                 (CAMeC - CCI Bénin) est un organe de la Chambre de Commerce et d’Industrie du Bénin mis à la disposition
                 des
                 commerçants, industiels et hommes d’affaires pour faciliter le règlement des litiges nés de leurs
-                relations d’affaires. Les modes alternatifs de règlement des litiges mis en œuvre par le CAMeC-CCI Bénin
+                relations d’affaires. Les modes alternatifs de règlement des litiges mis en œuvre par le CAMeC-CCI Bénin Bénin
                 sont
                 l’arbitrage, la conciliation, la médiation.
             </p>
@@ -59,7 +59,7 @@
                 <div class="card rounded-lg">
                     <div class=" p-5  md:p-10">
                         <div class="mb-4">
-                            <span class="badge text-sm mb-4 text-green w-auto">CAMeC-CCI</span>
+                            <span class="badge text-sm mb-4 text-green w-auto">CAMeC</span>
                         </div>
                         <h2 class="text-blue text-3xl mb-4 leading-7 font-semibold">L’arbitrage</h2>
                         <p class="text-lg tracking-tight leading-7 text-subtitlegray">
@@ -71,7 +71,7 @@
                         </p>
                     </div>
 
-                    <div class="p-5 py-3 md:p-10 md:py-6 bg-gray">
+                    <!--<div class="p-5 py-3 md:p-10 md:py-6 bg-gray">
                         <p class="flex items-center text-lg tracking-tight leading-7 text-subtitlegray mbt-3 ">
                             <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -108,12 +108,12 @@
                             </span>
                             <span class="ml-3">Itaque cupiditate adipisci quibusdam</span>
                         </p>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="card rounded-lg">
                     <div class=" p-5  md:p-10">
                         <div class="mb-4">
-                            <span class="badge text-sm mb-4 text-green w-auto">CAMeC-CCI</span>
+                            <span class="badge text-sm mb-4 text-green w-auto">CAMeC</span>
                         </div>
                         <h2 class="text-blue text-3xl mb-4 leading-7 font-semibold">La méditation</h2>
                         <p class="text-lg tracking-tight leading-7 text-subtitlegray">
@@ -125,7 +125,7 @@
                         </p>
                     </div>
 
-                    <div class="p-5 py-3 md:p-10 md:py-6 bg-gray">
+                    <!--<div class="p-5 py-3 md:p-10 md:py-6 bg-gray">
                         <p class="flex items-center text-lg tracking-tight leading-7 text-subtitlegray mbt-3 ">
                             <span><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
@@ -162,7 +162,7 @@
                             </span>
                             <span class="ml-3">Itaque cupiditate adipisci quibusdam</span>
                         </p>
-                    </div>
+                    </div> -->
                 </div>
 
 
@@ -178,7 +178,7 @@
                             </h2>
                             <p class="mt-3 text-lg text-subtitlegray sm:mt-4">
                                 Connectez-vous sur notre plateforme imPULSE pour avoir plus de détails
-                                et éventuellement prendre contact avec un de nos conseillers
+                                et éventuellement prendre contact avec un de nos conseillers.
                             </p>
                         </div>
                         <div class="w-auto">

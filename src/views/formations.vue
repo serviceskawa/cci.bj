@@ -692,20 +692,21 @@
         </div>
       </div>
     </div>
-    <div class="p-6 md:p-10 lg:p-20 bg-green text-center">
+    <div class="p-6 md:p-10 lg:p-20 mb-12 bg-green text-center">
       <h1 class="text-white text-4xl lg:text-5xl leading-none font-extrabold tracking-tight">
         Commencez à apprendre dès <br />
         maintenant.
       </h1>
       <p class="text-white text-lg leading-6 py-6">
-        Profitez du catalogue de cours en ligne de la CCI-Bénin <br />
+        Profitez du catalogue de cours en ligne de la CCI Bénin <br />
         pour monter en compétences.
       </p>
       <a href="https://www.formationccib.bj/home/courses" target="_blank" class="btn btn-white loading-6 text-medium bg-white">
         <span class="text-primary">Démarrer</span>
       </a>
     </div>
-    <div class="p-6 md:p-10 lg:p-20">
+
+    <!-- <div class="p-6 md:p-10 lg:p-20">
       <h1 class="text-blue text-3xl leading-10 font-extrabold tracking-tight mb-3">
         Les formations récemments ajoutées
       </h1>
@@ -758,11 +759,11 @@
       </div>
       <div class="tracking-tight mt-12 text-left text-dark">
         <span class="block sm:ml-2 sm:inline-block">
-          <a href="" class="text-primary">
+          <a href="https://www.formationccib.bj/home/courses" target="_blank" class="text-primary">
             Voir toutes les formations <span aria-hidden="true">&rarr;</span></a>
         </span>
       </div>
-    </div>
+    </div> -->
   </main>
 </template>
 

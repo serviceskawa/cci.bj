@@ -30,7 +30,7 @@
             Qu'est ce que c'est
           </h2>
           <p class="my-3 leading-7 text-lg text-subtitlegray sm:my-4">
-            La Chambre de Commerce et d’Industrie du Bénin (CCI-Bénin), organise chaque
+            La Chambre de Commerce et d’Industrie du Bénin (CCI Bénin), organise chaque
             mois au profit des chefs d’entreprises « LE RENDEZ-VOUS MENSUEL DES EXPERTS ».
             Il s’agit de consultations gratuites d’experts dans divers domaines où les
             chefs d’entreprises peuvent exprimer des besoins de conseils, pour le

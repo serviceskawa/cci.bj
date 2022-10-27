@@ -31,7 +31,7 @@
             Qu'est ce que c'est
           </h2>
           <p class="my-3 leading-7 text-lg text-subtitlegray sm:my-4">
-            La CCI-Bénin déploie différentes actions au profit des entreprises afin de
+            La CCI Bénin déploie différentes actions au profit des entreprises afin de
             leur faire découvrir les opportunités de développement offertes par diVers
             pays. Il s’agit de susciter l’intérêt des entreprises béninoises pour
             certaines destinations en vue de créer des relations commerciales avec les

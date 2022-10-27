@@ -17,7 +17,7 @@
           </p>
           <p class="mt-3 max-w-2xl mx-auto text-lg text-subtitlegray sm:mt-4">
             Afin de répondre de manière plus efficace aux besoins exprimés par chaque
-            entreprise, la CCI-Bénin met en place une initiative à la mesure des besoins :
+            entreprise, la CCI Bénin met en place une initiative à la mesure des besoins :
             la plateforme imPULSE. Une équipe de conseillers formés pour la tâche vous
             donneront les informations nécessaires pour vous faciliter l’accès au
             financement dont vous avez besoin.
