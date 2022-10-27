@@ -7,7 +7,7 @@
           <span class="text-white">Services spécifiques </span>
         </h1>
         <p class="text-white text-xl leading-7 font-normal mt-4">
-          Programme de la CCIB destiné à assurer un accompagnement technique par <br />
+          Programme de la CCI Bénin destiné à assurer un accompagnement technique par <br />
           l’organisation de sessions de rencontre entre promoteurs et experts ou <br />
           consultants spécialisés dans les domaines touchant à la vie de l’entreprise.
         </p>
@@ -19,7 +19,7 @@
           <dt class="text-lg">
             <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
               <span class="font-bold text-blue text-sm text-gray-900">
-                REM
+                RENDEZ-VOUS MENSUEL DES EXPERTS
               </span>
               <span class="ml-6 flex h-7 items-center">
                 <ChevronDownIcon :class="[
@@ -31,7 +31,7 @@
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a @click="$router.push({name: 'rdv-experts'})" class="text-primary font-medium text-sm">
                 <span class="underline">Participez à des panels animés par des experts sur diverses thématiques
                   relatives à la vie de l’entreprise</span> <span class="ml-2">→</span> </a>
             </p>
@@ -53,13 +53,14 @@
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a @click="$router.push({name: 'agenda'})" class="text-primary font-medium text-sm">
                 <span class="underline">Participez à des panels animés par des experts sur diverses thématiques
                   relatives à la vie de l’entreprise</span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>
         </Disclosure>
-        <Disclosure as="div" class="pt-6" v-slot="{ open }">
+
+        <!-- <Disclosure as="div" class="pt-6" v-slot="{ open }">
           <dt class="text-lg">
             <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
               <span class="font-bold text-blue text-sm text-gray-900">
@@ -76,12 +77,12 @@
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
               <a href="#" class="text-primary font-medium text-sm">
-                <span class="underline">Inscrivez-vous aux sessions de formation offertes en gestion et developpement
-                  d’entreprise</span> <span class="ml-2">→</span> </a>
+                <span class="underline">Inscrivez-vous aux sessions de formation offertes en gestion et developpement d’entreprise</span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>
-        </Disclosure>
-        <Disclosure as="div" class="pt-6" v-slot="{ open }">
+        </Disclosure> -->
+        
+        <!--<Disclosure as="div" class="pt-6" v-slot="{ open }">
           <dt class="text-lg">
             <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
               <span class="font-bold text-blue text-sm text-gray-900">
@@ -103,12 +104,13 @@
                 </span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>
-        </Disclosure>
+        </Disclosure> -->
+        
         <Disclosure as="div" class="pt-6" v-slot="{ open }">
           <dt class="text-lg">
             <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
               <span class="font-bold text-blue text-sm text-gray-900">
-                Evenement de promotion
+                Evènement de promotion
               </span>
               <span class="ml-6 flex h-7 items-center">
                 <ChevronDownIcon :class="[
@@ -120,14 +122,14 @@
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a @click="$router.push({name: 'agenda'})" class="text-primary font-medium text-sm">
                 <span class="underline">
                   Mettez en avant votre entreprise à l’occasion d’un événement organisé par la CCI Bénin
                 </span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>
         </Disclosure>
-        <Disclosure as="div" class="pt-6" v-slot="{ open }">
+        <!--<Disclosure as="div" class="pt-6" v-slot="{ open }">
           <dt class="text-lg">
             <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
               <span class="font-bold text-blue text-sm text-gray-900">
@@ -148,7 +150,7 @@
                   entrepreneurial</span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>
-        </Disclosure>
+        </Disclosure> -->
         <Disclosure as="div" class="pt-6" v-slot="{ open }">
           <dt class="text-lg">
             <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
@@ -165,7 +167,7 @@
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a @click="$router.push({name: 'impulse'})" class="text-primary font-medium text-sm">
                 <span class="underline">Faites-vous accompagner par un conseiller d’entreprise pour structurer et
                   developper votre projet</span> <span class="ml-2">→</span> </a>
             </p>
@@ -187,7 +189,7 @@
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a @click="$router.push({name: 'contact'})" class="text-primary font-medium text-sm">
                 <span class="underline">Bénéficiez d’un accompagnement et d’outils d’aide à l’accès au marché des
                   produits locaux de qualité</span> <span class="ml-2">→</span> </a>
             </p>
@@ -209,9 +211,8 @@
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
-                <span class="underline">Bénéficiez d’un accompagnement et d’outils d’aide à l’accès au marché des
-                  produits locaux de qualité </span> <span class="ml-2">→</span> </a>
+              <a @click="$router.push({name: 'arbitrage-mediation'})" class="text-primary font-medium text-sm">
+                <span class="underline">Bénéficiez d’un accompagnement du CAMeC - CCI Bénin pour faciliter le règlement des litiges nés de vos relations d’affaires</span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>
         </Disclosure>
