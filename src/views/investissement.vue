@@ -195,7 +195,7 @@
 						Quis suspendisse ut fermentum neque vivamus non tellus.
 					</p> -->
 					<button
-						@click="$router.push({ name: 'rdv-experts' })"
+						@click="gotoApiex()"
 						class="
 							btn btn-light
 							text-primary
@@ -206,7 +206,7 @@
 							font-medium
 						"
 					>
-						Voir le planning
+						En savoir plus
 					</button>
 				</div>
 			</div>
@@ -535,7 +535,10 @@ export default {
 		scrollToAnchorPoint(refName) {
             const el = this.$refs[refName]
             el.scrollIntoView({ behavior: 'smooth'})
-        }
+        },
+		gotoApiex() {
+			window.open("https://apiex.bj/vous-accompagner/principaux-secteurs-agriculture-et-agroalimentaire/");
+		},
 	},
 };
 </script>
