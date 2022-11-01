@@ -287,13 +287,13 @@
               <h3 class="leading-tight text-4xl font-extrabold mb-3">
                 Facilitation de l’accès au financement
               </h3>
-              <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
+              <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray"></p>
               <p>Dans sa mission d’accompagnement des entreprises, la Chambre de Commerce et d’Industrie du Bénin (CCI Bénin) permet aux Petites et Moyennes Entreprises (PME), au Petites et Moyennes Industries (PMI), et aux grosses entreprises béninoises de découvrir et de comprendre les mécanismes utilisés dans la facilitation de l’accès au financement.</p>
               <p>Afin de répondre de manière plus efficace aux besoins exprimés par chaque entreprise, la CCI Bénin met en place une initiative à la mesure des besoins : la plateforme imPULSE. Une équipe de conseillers formés pour la tâche vous donneront les informations nécessaires pour vous faciliter l’accès au financement dont vous avez besoin.</p>
               <p>Connecter sur notre plateforme imPULSE pour avoir plus de détails et éventuellement prendre contact avec un de nos conseillers : <a @click="$router.push({name: 'impulse'})" style="color:#DD7A4B;">www.impulse.bj</a></p>
 
-              </p>
-              <div class="mt-12 overflow-x-auto no-scrollbar pb-8	-mr-20 flex">
+              
+              <!-- <div class="mt-12 overflow-x-auto no-scrollbar pb-8	-mr-20 flex">
                 <div v-for="(agen, i) in agenda_datas"
           :key="i"
           :event="event"
@@ -312,9 +312,9 @@
               >
                 {{agen.type.name}}
               </span>
-                      <!-- <span class="inline-flex items-center px-6 py-1 rounded-full text-sm bg-green text-green">
+                      <span class="inline-flex items-center px-6 py-1 rounded-full text-sm bg-green text-green">
                         5 places
-                      </span> -->
+                      </span>
                       <a href="" class="block mt-2 spaxe-y-2">
                         <h3 class="leading-tight text-3xl mb-3 font-semibold text-gray-900">Le réseautage d'affaires <br/> intelligent et rentable</h3>
                         <p class="text-base font-medium text-indigo-600">
@@ -333,21 +333,34 @@
                     </span>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="px-10 lg:px-20">
+      <Agenda :agenda_data="$store.state.persona" isNotFull />
+
+    </div>
+
   </main>
 </template>
 <script>
-import moment from 'moment'
+import moment from 'moment';
+import Agenda from "@/components/home/Agenda.vue";
+import { services } from "@/api"
+
 export default {
+  components:{
+    Agenda,
+  },
   data() {
     return {
       current_tab: "renew",
-      agenda_datas: []
+      agenda_datas: [],
+      persona_datas: [],
+      configs: ''
     };
   },
   created () {
@@ -355,22 +368,45 @@ export default {
     let configs = sessionStorage.getItem('configs')
     if (configs !== undefined && configs !== null) {
       configs = JSON.parse(configs)
+      this.$store.state.configs = configs
     }
-    this.agenda_datas = this.$store.state.home_elements
-    if (this.agenda_datas.events !== undefined && this.agenda_datas.events !== null) {
-      this.agenda_datas = this.agenda_datas.events
-      this.agenda_datas = this.agenda_datas.data.map((element => {
-        return {
-          ...element,
-          photo: configs.image_url + '/' + element.photo,
-        }
-      }))
-    }
+    // this.agenda_datas = this.$store.state.home_elements
+    // if (this.agenda_datas.events !== undefined && this.agenda_datas.events !== null) {
+    //   this.agenda_datas = this.agenda_datas.events
+    //   this.agenda_datas = this.agenda_datas.data.map((element => {
+    //     return {
+    //       ...element,
+    //       photo: configs.image_url + '/' + element.photo,
+    //     }
+    //   }))
+    // }
+    this.load_persona('chef-d-entreprise')
+
   },
   methods: {
     formatDate (date, format) {
       return moment(date).format(format)
-    }
+    },
+    async load_persona(title) {
+      try {
+        await services.getPersona_type(title).then((response) => {
+          if (response.status == 200) {
+            this.$store.state.persona = response.data.events.data
+            this.$store.state.persona = this.$store.state.persona.map((element=>{
+              return {
+                ...element,
+                photo: this.$store.state.configs.image_url + '/' + element.photo,
+              }
+            }))
+
+            }
+
+        })
+        this.loader = false
+      } catch (error) {
+        this.loader = false
+      }
+    },
   }
 };
 </script>

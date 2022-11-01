@@ -14,7 +14,9 @@ import {
   APPELS_OFFRES,
   CATEGORIES,
   ARTICLES,
-  FILES
+  FILES,
+  PERSONAS,
+  PERSONA
 } from '@/api/routes'
 
 export async function home_elements () {
@@ -98,4 +100,15 @@ export async function get_document_rapports (current_page) {
     return await client.get(`${FILES}`)
   }
   return await client.get(`${FILES}?page=${current_page}`)
+}
+
+export async function get_personas () {
+  return await client.get(`${PERSONAS}`)
+}
+
+export async function getPersona_type (slug, current_page) {
+  if (current_page == 1 || current_page == undefined) {
+    return await client.get(`${PERSONA}` + slug)
+  }
+  return await client.get(`${PERSONA}`+ slug +`?page=${current_page}`)
 }
