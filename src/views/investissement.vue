@@ -415,7 +415,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="px-6 md:px-10 lg:px-20 py-10 bg-gray">
+		<div class="px-6 md:px-10 lg:px-20 py-10 bg-gray" ref="subscribe">
 			<div
 				class="
 					bg-green
@@ -430,7 +430,7 @@
 					text-white
 				"
 			>
-				<div class="py-6" ref="subscribe">
+				<div class="py-6" >
 					<h1 class="text-4xl leading-10 font-extrabold mb-4">
 						Recevez nos appels d’offres via email
 					</h1>
