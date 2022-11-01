@@ -94,7 +94,7 @@
 					</p>
 					<a
 						type="button"
-						@click="$router.push({ name: 'index' })"
+						@click="scrollToAnchorPoint('subscribe')"
 						class="
 							btn
 							text-center
@@ -430,7 +430,7 @@
 					text-white
 				"
 			>
-				<div class="py-6" id="subscribe">
+				<div class="py-6" ref="subscribe">
 					<h1 class="text-4xl leading-10 font-extrabold mb-4">
 						Recevez nos appels d’offres via email
 					</h1>
@@ -532,6 +532,10 @@ export default {
 				this.$emit("error");
 			}
 		},
+		scrollToAnchorPoint(refName) {
+            const el = this.$refs[refName]
+            el.scrollIntoView({ behavior: 'smooth'})
+        }
 	},
 };
 </script>
