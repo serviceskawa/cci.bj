@@ -79,7 +79,7 @@
 						Souscrivez à notre <br />
 						newsletter
 					</div>
-					<p
+					<!-- <p
 						class="
 							text-md
 							md:text-lg
@@ -91,7 +91,7 @@
 					>
 						Nous vous tenons informé(e) des actualités relatives aux démarches
 						administratives.
-					</p>
+					</p> -->
 					<a
 						type="button"
 						@click="scrollToAnchorPoint('subscribe')"
@@ -123,8 +123,8 @@
 						"
 					>
 						Investir
-					</div>
-					<p
+					</div> <br><br>
+					<!-- <p
 						class="
 							text-md
 							md:text-lg
@@ -135,7 +135,7 @@
 						"
 					>
 						Quis suspendisse ut fermentum neque vivamus non tellus.
-					</p>
+					</p> -->
 					<div class="w-full">
 						<a
 							type="button"
@@ -182,7 +182,7 @@
 					>
 						Comprendre le marché béninois
 					</div>
-					<p
+					<!-- <p
 						class="
 							text-md
 							md:text-lg
@@ -193,7 +193,7 @@
 						"
 					>
 						Quis suspendisse ut fermentum neque vivamus non tellus.
-					</p>
+					</p> -->
 					<button
 						@click="$router.push({ name: 'rdv-experts' })"
 						class="
@@ -210,7 +210,7 @@
 					</button>
 				</div>
 			</div>
-			<div class="pt-12 lg:pt-20">
+			<!-- <div class="pt-12 lg:pt-20">
 				<div
 					class="
 						flex
@@ -413,7 +413,7 @@
 					</div>
 					<div class="asset-session-three hidden md:flex" />
 				</div>
-			</div>
+			</div> -->
 		</div>
 		<div class="px-6 md:px-10 lg:px-20 py-10 bg-gray" ref="subscribe">
 			<div
