@@ -395,7 +395,7 @@
           </button>
           </div>
           <div>
-            <button type="button" class="btn btn-light text-primary hover:text-white hover:bg-primary mb-4">
+            <button type="button" class="btn btn-light text-primary hover:text-white hover:bg-primary mb-4" @click="$router.push({name: 'documents'})">
             Voir tous les documents
           </button>
           </div>
