@@ -11,8 +11,8 @@
       </p>
     </div>
   </div>
-  <div class="flex flex-col rounded-lg shadow-lg overflow-hidden" v-else-if="on_loading == false">
-    <div class="flex-shrink-0">
+  <div class="flex flex-col rounded-lg shadow-lg overflow-hidden cursor-pointer" @click="$router.push({ name: 'read-article', params: { slug: branch.slug } })" v-else-if="on_loading == false">
+    <div class="flex-shrink-0 cursor-pointer" @click="$router.push({ name: 'read-article', params: { slug: branch.slug } })">
       <img class="h-48 w-full object-cover" :src="branch.cover == undefined ? branch.photo : branch.cover" alt="" />
     </div>
     <div class="flex-1 bg-white p-6 flex flex-col justify-between group hover:bg-primaryInfo">

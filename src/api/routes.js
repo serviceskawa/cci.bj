@@ -19,5 +19,7 @@ export const APPELS_OFFRES = `/appels_by_type`
 export const CATEGORIES = `/categories`
 export const ARTICLES = `/news/category`
 export const FILES = `/files`
+export const SEARCH_NEWS = `/news_search`
+export const APPELS_SEARCH = `/appels_search`
 export const PERSONAS = `/personas`
 export const PERSONA = `/persona/`

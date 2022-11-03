@@ -10,7 +10,8 @@ const store = createStore({
     faqs: [],
     home_elements: {},
     current_notif_message: "",
-    categories: []
+    categories: [],
+    pagination_current_page: 1
   },
   getters: {},
   actions: {

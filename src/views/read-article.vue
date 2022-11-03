@@ -36,7 +36,7 @@
           <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
             <div class="col-span-1 lg:col-span-7">
               <div class="mb-6 flex items-center">
-                <img src="@/assets/svg/avatar.svg" alt="">
+                <img class="rounded-full h-12 w-12" src="@/assets/images/avatar.jpeg" alt="">
                 <div class="ml-2">
                   <div class="text-center text-primary text-sm">
                     {{current_article.news.author}}
@@ -49,6 +49,10 @@
               <div class="image-box w-full mb-10"
                 :style="{ backgroundImage: `url(${configs.image_url+ '/' +current_article.news.photo})` }">
               </div>
+              <!-- Titre-->
+              <p class="text-3xl font-semibold text-gray-100">{{ current_article.news.title }}</p><br>
+
+              <!-- Contenu -->
               <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
                 <span v-html="current_article.news.content"></span>
               </p>

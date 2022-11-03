@@ -16,7 +16,9 @@ import {
   ARTICLES,
   FILES,
   PERSONAS,
-  PERSONA
+  PERSONA,
+  SEARCH_NEWS,
+  APPELS_SEARCH
 } from '@/api/routes'
 
 export async function home_elements () {
@@ -73,8 +75,11 @@ export async function get_articles_by_categories () {
   return await client.get(ARTICLES_BY_CATEGORY)
 }
 
-export async function get_agenda_datas () {
-  return await client.get(EVENTS)
+export async function get_agenda_datas (current_page) {
+  if (current_page == 1 || current_page == undefined) {
+    return await client.get(`${EVENTS}`)
+  }
+  return await client.get(`${EVENTS}/?page=${current_page}`)
 }
 
 export async function get_article_read (slug) {
@@ -111,4 +116,18 @@ export async function getPersona_type (slug, current_page) {
     return await client.get(`${PERSONA}` + slug)
   }
   return await client.get(`${PERSONA}`+ slug +`?page=${current_page}`)
+}
+
+export async function search_an_article (value, current_page) {
+  if (current_page == 1 || current_page == undefined) {
+    return await client.get(`${SEARCH_NEWS}/${value}`)
+  }
+  return await client.get(`${SEARCH_NEWS}/${value}?page=${current_page}`)
+}
+
+export async function search_appels (value, current_page) {
+  if (current_page == 1 || current_page == undefined) {
+    return await client.get(`${APPELS_SEARCH}/${value}`)
+  }
+  return await client.get(`${APPELS_SEARCH}/${value}?page=${current_page}`)
 }
