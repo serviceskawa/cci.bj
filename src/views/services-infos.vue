@@ -30,7 +30,7 @@
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
               <a @click="$router.push({name: 'contact'})" class="text-primary font-medium text-sm">
-                <span class="underline">Notre équipe se tient à votre disposition pour vouus recevoir aux jours et heures ouvrables</span> <span class="ml-2">→</span> </a>
+                <span class="underline">Notre équipe se tient à votre disposition pour vous recevoir aux jours et heures ouvrables</span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>
         </Disclosure>
