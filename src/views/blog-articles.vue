@@ -71,7 +71,7 @@
           </svg>
         </div>
         <button
-          class="btn bg-white text-primary mb-3"
+          class="btn btn-light text-primary mb-3"
           @click="searchSomething()"
           :disabled="search.button_loader"
         >

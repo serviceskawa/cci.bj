@@ -19,7 +19,7 @@
             placeholder-gray-500
             focus:placeholder-gray-400 focus:outline-none
           "
-          placeholder="Rechercher un mot clé"
+          placeholder="Saisir et appuyer sur Entrée pour rechercher"
         />
         <svg
           class="absolute left-4 top-5"
@@ -70,7 +70,7 @@
           :key="index"
         >
           <div class="text-base text-primary">
-            Publié le {{ formatDate(el.created_at, "LLL") }}
+            Publié le {{ el.created_at }}
           </div>
           <h4 class="text-xl font-semibold mt-2 mb-3">{{ el.title }}</h4>
           <p class="text-lg text-subtitlegray">
@@ -130,14 +130,15 @@
               </div>
             </div>
           </div>
-          <div class="py-20">
-            <Pagination
-              :pagesNumber="files_datas.total"
-              @previous="previousPage()"
-              @get-page="getCurrentPage()"
-              @next="nextPage()"
-            />
-          </div>
+        </div>
+        <div class="py-20">
+          <Pagination
+            :pagesNumber="files_datas.last_page"
+            @previous="previousPage()"
+            @get-page="getCurrentPage()"
+            @next="nextPage()"
+            :current_page="files_datas.current_page"
+          />
         </div>
       </div>
     </div>
@@ -156,6 +157,7 @@ export default {
     configs: "",
     loader: false,
     files_datas: {},
+    current_page: 1
   }),
   async created() {
     moment().locale("fr");
@@ -165,21 +167,21 @@ export default {
     }
     this.load_files(1);
   },
-    beforeDestroy() {
-    this.$store.state.pagination_current_page = 1
+  beforeDestroy() {
+    this.current_page = 1;
   },
   methods: {
     formatDate(date, format) {
       return moment(date).format(format);
     },
     previousPage() {
-      this.load_files(this.$store.state.pagination_current_page - 1);
+      this.load_files(this.current_page - 1);
     },
     nextPage() {
-      this.load_files(this.$store.state.pagination_current_page + 1);
+      this.load_files(this.current_page + 1);
     },
     getCurrentPage() {
-      this.load_files(this.$store.state.pagination_current_page);
+      this.load_files(this.current_page);
     },
     async load_files(current_page) {
       this.loader = true;
@@ -189,12 +191,18 @@ export default {
         this.files_datas.data = this.files_datas.data.map((element) => {
           return {
             ...element,
+            file_name: element.file_name.split('/')[1],
             file_url: this.configs.image_url + "/" + element.file_name,
           };
         });
       });
     },
   },
+  watch: {
+    files_datas () {
+      this.current_page = this.files_datas.current_page
+    }
+  }
 };
 </script>
 

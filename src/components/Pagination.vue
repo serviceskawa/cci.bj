@@ -3,6 +3,7 @@
   <nav class="flex items-center justify-between px-4 sm:px-0 text-subtitlegray">
     <div class="-mt-px flex w-0 flex-1">
       <a
+        v-if="current_page > 1"
         class="
           inline-flex
           items-center
@@ -13,13 +14,13 @@
           text-gray-500
           hover:text-primary
         "
-        @click="$emit('previous')"
+        @click="previous()"
       >
         <ArrowLeftIcon class="mr-3 h-5 w-5 text-gray-400" aria-hidden="true" />
         Précédent
       </a>
     </div>
-    <div class="hidden md:-mt-px md:flex hidden">
+    <div class="md:-mt-px md:flex hidden">
       <a
         v-for="(page, index) in pagesNumber"
         :key="index"
@@ -34,11 +35,16 @@
           font-medium
           text-gray-500
           hover:border-gray-300 hover:text-gray-700
+          hidden
         "
         >{{ index + 1 }}</a
       >
     </div>
-    <div class="-mt-px flex w-0 flex-1 justify-end" @click="$emit('next')">
+    <div
+      class="-mt-px flex w-0 flex-1 justify-end"
+      v-if="current_page < pagesNumber"
+      @click="next()"
+    >
       <a
         class="
           inline-flex
@@ -66,13 +72,24 @@ export default {
     ArrowRightIcon,
   },
   props: {
-    pagesNumber: Number
+    pagesNumber: Number,
+    current_page: Number,
   },
-  data() {},
+  data() {
+    return {};
+  },
   methods: {
     get_page(page) {
       this.$store.state.pagination_current_page = page;
       this.$emit("get-page");
+    },
+    previous() {
+      this.$emit("previous");
+      window.scrollTo(0, 0);
+    },
+    next() {
+      this.$emit("next");
+      window.scrollTo(0, 0);
     },
   },
 };

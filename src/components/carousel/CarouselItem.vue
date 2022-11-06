@@ -125,7 +125,6 @@ export default {
 	emits: ["mouseenter", "mouseout"],
 	props: ["slide", "slide_content", "currentSlide", "index", "direction"],
 	mounted() {
-		console.log("....Lui", this.slide_content);
 	},
 	computed: {
 		transitionEffect() {
@@ -134,7 +133,6 @@ export default {
 	},
 	watch: {
 		slide_content() {
-			console.log("....Lui", this.slide_content);
 		},
 	},
 };

@@ -19,7 +19,7 @@
             placeholder-gray-500
             focus:placeholder-gray-400 focus:outline-none
           "
-          placeholder="Rechercher un mot clé"
+          placeholder="Saisir et appuyer sur Entrée pour rechercher"
           v-model="search_value"
           @keyup.enter="searchSomething()"
         />
@@ -252,7 +252,7 @@ export default {
   methods: {
     async searchSomething() {
       if (this.search_value.trim() == "") {
-        this.load_appels_offres;
+        this.load_appels_offres();
       } else {
         this.loader = true;
         try {
