@@ -19,7 +19,7 @@
             placeholder-gray-500
             focus:placeholder-gray-400 focus:outline-none
           "
-          placeholder="Saisir et appuyer sur Entrée pour rechercher"
+          placeholder="Rechercher un mot clé"
         />
         <svg
           class="absolute left-4 top-5"
@@ -73,8 +73,7 @@
             Publié le {{ el.created_at }}
           </div>
           <h4 class="text-xl font-semibold mt-2 mb-3">{{ el.title }}</h4>
-          <p class="text-lg text-subtitlegray">
-            {{ el.short_content }}
+          <p class="text-lg text-subtitlegray" v-html="el.short_content">
           </p>
           <div class="text-base mb-2">
             <span>{{ el.file_size }}</span>
@@ -122,7 +121,6 @@
               <div class="text-sm leading-5 font-medium">
                 <a
                   :href="el.file_url"
-                  :download="el.file_name"
                   target="_blank"
                   class="text-primary"
                   >Télécharger</a

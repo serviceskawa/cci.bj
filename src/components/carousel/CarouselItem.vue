@@ -29,7 +29,7 @@
 			>
 				<h1
 					class="
-						lg:text-left
+					text-left
 						text-4xl
 						font-extrabold
 						sp

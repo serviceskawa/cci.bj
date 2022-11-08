@@ -5,7 +5,7 @@
         <div class="flex justify-start">
           <router-link :to="{ name: 'index' }" class="mr-8">
             <span class="sr-only">CCI Bénin</span>
-            <img class="w-28" src="@/assets/logo.png" alt="CCI Bénin" />
+            <img class="w-40" src="@/assets/logo.png" alt="CCI Bénin" />
           </router-link>
         </div>
         <div class="-mr-2 -my-2 xl:hidden">

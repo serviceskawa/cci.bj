@@ -54,7 +54,7 @@
             "
             :class="current_tab == 'appels' ? 'active' : ''"
           >
-            Appels à projets en cours</button
+            Appels à projets</button
           ><button
             @click="select_tab('resultats')"
             :class="current_tab == 'resultats' ? 'active' : ''"
@@ -98,9 +98,9 @@
       <div class="tab-content p-3 md:p-16" v-if="current_tab == 'appels'">
         <div v-if="appels_projets.data.length > 0">
           <div
-            class="mb-8"
-            v-for="(line, index) in appels_projets.data"
-            :key="index"
+            class="document-box pt-16"
+            v-for="(el, index) in appels_projets.data"
+            :key="'pr_' + index"
           >
             <div class="flex items-center justify-between flex-wrap">
               <div class="py-3 mb-4">
@@ -113,11 +113,11 @@
                     mb-2
                   "
                 >
-                  Publié le {{ formatDate(line.publication_date, "LL") }} -
-                  Prend fin le {{ formatDate(line.end_date, "LL") }}
+                  Publié le {{ el.publication_date }} - Prend fin le
+                  {{ el.end_date }}
                 </p>
-                <h5 class="text-xl leading-7 font-semibold">
-                  {{ line.title }}
+                <h5 class="text-xl font-semibold mt-2 mb-3">
+                  {{ el.title }}
                 </h5>
                 <p
                   class="
@@ -127,20 +127,77 @@
                     tracking-tight
                     my-2
                   "
-                  v-html="line.short_content"
+                  v-html="el.short_content"
                 ></p>
-                <a href="#" class="text-primary flex items-center">
-                  En savoir plus
-                  <ArrowRightIcon class="ml-2 h-4 w-4" aria-hidden="true" />
-                </a>
+                <div class="text-base mb-2">
+                  <div v-if="el.file_size">
+                    <span>{{ el.file_size }}</span>
+                    <span v-if="el.file_size !== ''"> - </span>
+                  </div>
+                  <span>
+                    {{ el.nbre_downloads != undefined ? el.nbre_downloads : 0 }}
+                    {{
+                      el.nbre_downloads != undefined && el.nbre_downloads > 0
+                        ? "Téléchargements"
+                        : "Téléchargement"
+                    }}</span
+                  >
+                </div>
+                <div>
+                  <div
+                    class="text-sm leading-5 font-medium text-subtitlegray mb-2"
+                  >
+                    Fichier
+                  </div>
+                  <div
+                    class="
+                      attachment-box
+                      w-full
+                      flex
+                      items-center
+                      flex-wrap
+                      justify-between
+                    "
+                  >
+                    <div class="mb-0 flex items-center">
+                      <span class="mr-2">
+                        <svg
+                          width="20"
+                          height="20"
+                          viewBox="0 0 20 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M8 4C6.34315 4 5 5.34315 5 7V11C5 13.7614 7.23858 16 10 16C12.7614 16 15 13.7614 15 11V7C15 6.44772 15.4477 6 16 6C16.5523 6 17 6.44772 17 7V11C17 14.866 13.866 18 10 18C6.13401 18 3 14.866 3 11V7C3 4.23858 5.23858 2 8 2C10.7614 2 13 4.23858 13 7V11C13 12.6569 11.6569 14 10 14C8.34315 14 7 12.6569 7 11V7C7 6.44772 7.44772 6 8 6C8.55228 6 9 6.44772 9 7V11C9 11.5523 9.44772 12 10 12C10.5523 12 11 11.5523 11 11V7C11 5.34315 9.65685 4 8 4Z"
+                            fill="#9CA3AF"
+                          />
+                        </svg>
+                      </span>
+                      <span class="text-sm leading-5 mr-3">{{
+                        el.document.split("/")[1]
+                      }}</span>
+                    </div>
+                    <div class="text-sm leading-5 font-medium">
+                      <a
+                        :href="configs.image_url + '/' + el.document"
+                        target="_blank"
+                        class="text-primary"
+                        >Télécharger</a
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
-              <img
+              <!-- <img
                 :src="configs.image_url + '/' + line.photo"
                 class="rounded-md appels mb-4"
                 alt=""
-              />
+              /> -->
             </div>
-            <hr class="divider" />
+            <!-- <hr class="divider" /> -->
           </div>
         </div>
         <div v-else class="text-center py-10 text-xl font-semibold">
@@ -155,7 +212,8 @@
             :key="index"
           >
             <p class="text-sm leading-5 text-subtitlegray tracking-tight mb-2">
-              Publié le {{ formatDate(document.publication_date, "LL") }}
+              Publié le {{ formatDate(document.publication_date, "LL") }} -
+              Prend fin le {{ formatDate(document.end_date, "LL") }}
             </p>
             <h5 class="text-xl leading-7 font-semibold">
               {{ document.title }}
@@ -165,13 +223,27 @@
               v-html="document.short_content"
             ></p>
             <div class="text-base mb-2">
-              <span>760 Ko</span>
-              <span> - </span>
-              <span> 114 Téléchargements</span>
+              <div v-if="document.file_size">
+                <span>{{ document.file_size }}</span>
+                <span v-if="document.file_size !== ''"> - </span>
+              </div>
+              <span>
+                {{
+                  document.nbre_downloads != undefined
+                    ? document.nbre_downloads
+                    : 0
+                }}
+                {{
+                  document.nbre_downloads != undefined &&
+                  document.nbre_downloads > 0
+                    ? "Téléchargements"
+                    : "Téléchargement"
+                }}</span
+              >
             </div>
             <div>
               <div class="text-sm leading-5 font-medium text-subtitlegray mb-2">
-                Attachments
+                Fichier
               </div>
               <div
                 class="
@@ -200,12 +272,17 @@
                       />
                     </svg>
                   </span>
-                  <span class="text-sm leading-5"
-                    >Décret N° 2022-283 du 11 mai 2022</span
-                  >
+                  <span class="text-sm leading-5">{{
+                    document.document.split("/")[1]
+                  }}</span>
                 </div>
                 <div class="text-sm leading-5 font-medium">
-                  <a href="#" class="text-primary">Télécharger</a>
+                  <a
+                    :href="configs.image_url + '/' + document.document"
+                    target="_blank"
+                    class="text-primary"
+                    >Télécharger</a
+                  >
                 </div>
               </div>
             </div>
@@ -260,11 +337,11 @@ export default {
             this.loader = false;
             this.appels_projets = resp.data;
             this.appels_offres = resp.data;
-            if (this.resp.data["projects"]) {
-              this.appels_projets = this.appels_projets["projets"];
+            if (this.resp.data["projets"]) {
+              this.appels_projets = this.appels_projets["projets"].data;
             }
             if (this.resp.data["offres"]) {
-              this.appels_offres = this.appels_offres["offres"];
+              this.appels_offres = this.appels_offres["offres"].data;
             }
           });
         } catch (error) {}

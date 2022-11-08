@@ -50,7 +50,7 @@
               <p class="text-2xl leading-8 font-bold">01</p>
               <div class="text-base tracking-tight leading-6 text-subtitlegray">
                 <b>Explorez</b> l’outil de connexion aux opportunités pour
-                obtenir les données d'identité des entreprises et
+                obtenir les donnees d'identité des entreprises et
                 etablisssements locaux.
               </div>
             </div>
@@ -58,7 +58,7 @@
               <p class="text-2xl leading-8 font-bold">02</p>
               <div class="text-base tracking-tight leading-6 text-subtitlegray">
                 <b>Retrouvez</b> une entreprise en quelques clics grace au
-                moteur de recherche integré
+                moteur de recherche integre
               </div>
             </div>
           </div>
@@ -92,9 +92,9 @@
                   >À travers l’Observatoire du Commerce, de l’industrie et des
                   Services,</b
                 >
-                la CCI Bénin met à disposition des acteurs économiques des
+                la CCl Bénin met à disposition des acteurs économiques des
                 statistiques de qualité et des informations crédibles pour les
-                aider dans leurs prises de décision.
+                aider dans leurs prises de decision.
               </div>
             </div>
           </div>
@@ -157,7 +157,7 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid";
       rgba(72, 127, 80, 0.1) 0%,
       rgba(72, 127, 80, 0) 100%
     ),
-    url("../assets/images/bulding.png") !important;
+    url("../assets/images/bulding.jpeg") !important;
   height: 520px !important;
   background-position: center !important;
   background-attachment: local !important;
