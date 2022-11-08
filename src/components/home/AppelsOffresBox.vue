@@ -11,12 +11,12 @@
       <hr class="separation mt-5">
       <div class="grid gap-5 lg:grid-cols-2 mt-12">
         <div class="p-1 group sm:flex space-x-6 bg-white bg-opacity-50 mb-5" v-for="(el, index) in appels_offres" :key="index">
-          <img
+          <!--<img
           :src="el.photo"
             alt="art cover"
             loading="lazy"
             class="h-56 rounded sm:h-[208px] w-full sm:w-[200px] object-cover object-top transition duration-500"
-          />
+          />-->
           <div class="pl-0">
             <div class="space-y-2">
               <div class="space-y-4">
@@ -32,6 +32,7 @@
                   {{el.short_content}}
                 </h4>
               </div>
+              <!--<a :href="configs.image_url + '/' + el.document" target="_blank" class="block text-base w-max text-primary">Télécharger</a>-->
               <a href="#" class="block text-base w-max text-primary">En savoir plus →</a>
             </div>
           </div>

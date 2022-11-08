@@ -36,7 +36,7 @@
               <a href="" class="block mt-2 spaxe-y-2">
                 <p class="text-base font-semibold text-gray-900">{{ agen.title }}</p>
                 <p class="text-base font-medium text-indigo-600">
-                  <a href="#" class="hover:underline"> {{ agen.publication_date }} </a>
+                  <a href="#" class="hover:underline"> {{ agen.start_date }} </a>
                 </p>
                 <p class="mt-1.5 text-base text-gray-500">
                   {{agen.short_content}}
