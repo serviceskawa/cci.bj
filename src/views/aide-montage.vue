@@ -1,8 +1,8 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <main>
-    <div class="flex items-center p-4 md:px-10 lg:px-20">
-      <div class="p-4 md:px-10 lg:px-20">
+  <main class="max-w-7xl mx-auto">
+    <div class="flex items-center px-6 lg:px-10 py-8">
+      <div class="p-4 md:px-6 lg:px-10">
         <h1 class="text-center text-3xl md:text-4xl leading-none font-extrabold tracking-tight">
           Aide au montage des dossiers
         </h1>
@@ -16,7 +16,7 @@
         </p>
       </div>
     </div>
-    <div class="p-4 md:px-10 lg:px-20">
+    <div class="p-4 md:px-6 lg:px-10">
       <div class="pt-16 pb-8">
         <h1 class="text-3xl md:text-4xl leading-none font-extrabold tracking-tight">Objectifs</h1>
         <p class="text-sm sm:text-lg tracking-tight leading-4 md:leading-7 text-subtitlegray mt-3">

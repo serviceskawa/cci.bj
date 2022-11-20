@@ -1,8 +1,8 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <main class="p-3 sm:p-16">
+  <main class="max-w-7xl mx-auto px-6 lg:px-10 py-16">
     <Notifications :notif="notif" v-if="notif.type !== ''" @close="notif.type = ''" />
-    <div class="px-3 md:px-16">
+    <div class="">
       <div class="box mx-auto relative flex justify-center items-center">
         <input type="text"
           class="w-full py-2 px-10 text-base focus:border-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 text-gray-900 placeholder-gray-500 focus:placeholder-gray-400 focus:outline-none"

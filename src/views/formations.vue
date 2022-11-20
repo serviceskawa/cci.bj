@@ -17,7 +17,7 @@
         <div class="right-section hidden lg:flex w-2/5"></div>
       </div>
     </div>
-    <div class="p-6 md:p-10 lg:p-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
       <div class="flex flex-wrap justify-center grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6 md:gap-8">
         <div class="flex justify-center">
           <div>
@@ -692,7 +692,7 @@
         </div>
       </div>
     </div>
-    <div class="p-6 md:p-10 lg:p-20 mb-12 bg-green text-center">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20 mb-12 bg-green text-center">
       <h1 class="text-white text-4xl lg:text-5xl leading-none font-extrabold tracking-tight">
         Commencez à apprendre dès <br />
         maintenant.

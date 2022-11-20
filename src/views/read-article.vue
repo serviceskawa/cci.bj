@@ -2,7 +2,7 @@
 <template>
   <main>
     <Notifications :notif="notif" v-if="notif.type !== ''" @close="notif.type = ''" />
-    <div class="barner flex items-center p-4 md:px-10 lg:px-20">
+    <div class="barner flex items-center p-4 md:px-6 lg:px-10">
       <div>
         <h6 class="text-primary text-base leading-6 font-semibold tracking-wide uppercase">
           Le blog
@@ -13,7 +13,7 @@
         </h1>
       </div>
     </div>
-    <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
       <div class="flex justify-center py-12" v-if="loader == true">
         <div role="status">
           <svg aria-hidden="true" class="w-12 h-12 text-gray animate-spin fill-primary" viewBox="0 0 100 101"

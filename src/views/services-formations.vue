@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
     <main>
-        <div class="barner flex items-center p-4 md:px-10 lg:px-20">
+        <div class="barner flex items-center p-4 md:px-6 lg:px-10">
             <div>
                 <h1 class="text-primary text-4xl lg:text-6xl leading-none font-extrabold tracking-tight">
                     <span class="text-white">Formation conseil et appui-conseil</span>
@@ -12,7 +12,7 @@
                 </p>
             </div>
         </div>
-        <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
             <dl class="mt-6 space-y-6 divide-y divide-gray-200">
                 <Disclosure as="div" class="pt-6" v-slot="{ open }">
                     <dt class="text-lg">

@@ -1,7 +1,7 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-    <main>
-        <div class="flex items-center p-4 md:px-10 lg:px-20">
+    <main class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+        <div class="flex items-center">
             <div class="pt-8 pb-4 grid grid-cols-1  md:grid-cols-3">
                 <div class="col-span-2">
                     <h1 class="text-3xl md:text-4xl leading-none font-extrabold tracking-tight">
@@ -15,7 +15,7 @@
                 <div></div>
             </div>
         </div>
-        <div class="p-4 md:px-10 lg:px-20">
+        <div class="">
             <div class="flex justify-center py-20" v-if="loader == true">
                 <div role="status" class="py-20">
                     <svg aria-hidden="true" class="w-12 h-12 text-gray animate-spin fill-primary" viewBox="0 0 100 101"

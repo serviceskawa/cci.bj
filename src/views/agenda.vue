@@ -1,7 +1,7 @@
           <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <main>
-    <div class="flex items-center p-4 md:px-10 lg:px-20">
+    <div class="flex items-center md:px-6 lg:px-10 max-w-7xl mx-auto">
       <div
         class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
         v-if="loader == true"
@@ -13,7 +13,7 @@
           :on_loading="loader"
         />
       </div>
-      <div class="py-8 lg:py-16 md:px-10 lg:px-20 w-full" v-else>
+      <div class="py-8 lg:py-16 w-full" v-else>
         <div v-if="agenda_datas.length == 0">
           <h1 class="">Aucune donnée disponible</h1>
         </div>

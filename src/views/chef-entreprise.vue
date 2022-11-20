@@ -40,7 +40,7 @@
         </div>
       </div>
     </div>
-    <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
       <div class="grid flex flex-wrap grid grid-cols-1 lg:grid-cols-4 gap-16">
         <div class="">
           <div class="
@@ -339,9 +339,8 @@
         </div>
       </div>
     </div>
-    <div class="px-10 lg:px-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
       <Agenda :agenda_data="$store.state.persona" isNotFull />
-
     </div>
 
   </main>

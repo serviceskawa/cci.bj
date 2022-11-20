@@ -14,7 +14,7 @@
           w-full
         ">
       </div>
-      <div class="p-6 md:p-10 lg:p-12  xl:p-20 ">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
         <div class="grid flex flex-wrap grid grid-cols-1 lg:grid-cols-4 gap-16">
           <div class="">
             <div class="
@@ -375,18 +375,18 @@
 
       </div>
     </div>
-    <div class="py-20 bg-gray flex justify-center px-3">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20 mb-20 bg-gray flex justify-center px-3">
       <div class="text-center">
         <h1 class="leading-tight text-4xl font-extrabold mb-6">
           Boostez votre productivité <br />
           avec la CCI Bénin
         </h1>
         <p class="text-md
-                md:text-lg
-                tracking-tight
-                leading-7
-                text-subtitlegray mb-6">
-
+          md:text-lg
+          tracking-tight
+          leading-7
+          text-subtitlegray mb-6"
+        >
         </p>
         <div class="sm:block md:flex justify-center flex-wrap mr-0 md:mr-4">
           <div>
@@ -413,11 +413,13 @@ export default {
       features: [
         {
           name: "Le travail d’équipe",
-          description: "Une équipe motivée et engagée à vous apporter toutes les ressources nécessaires pour prospérer dans votre business."
+          description:
+            "Une équipe motivée et engagée à vous apporter toutes les ressources nécessaires pour prospérer dans votre business.",
         },
         {
           name: "La proximité",
-          description: "Toujours plus proche de vous pour un soutien fort en matière de stratégie, de structuration  et d’organisation."
+          description:
+            "Toujours plus proche de vous pour un soutien fort en matière de stratégie, de structuration  et d’organisation.",
         },
         {
           name: "La confiance",
@@ -438,9 +440,9 @@ export default {
           name: "Le suivi des entrepreneurs",
           description:
             "Attentifs à la progression de votre business, nous défendons continuellement les intérêts de votre entreprise.",
-        }
-      ]
-    }
+        },
+      ],
+    };
   },
 };
 </script>
@@ -449,7 +451,7 @@ export default {
 .barner {
   background: url("../assets/images/cci.jpeg") !important;
   height: 520px !important;
-  background-position: top !important;
+  background-position: center !important;
   background-attachment: local !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;

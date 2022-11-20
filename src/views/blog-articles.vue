@@ -32,8 +32,8 @@
         </h1>
       </div>
     </div>
-    <div class="p-6 md:p-10 lg:p-12 xl:p-20">
-      <div class="mx-auto pb-10 flex justify-center flex-wrap items-center">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+      <div class="py-12 lg:py-20 flex justify-center flex-wrap items-center">
         <div class="relative mr-2 sm:mr-5 mb-3">
           <input
             type="text"

@@ -7,15 +7,15 @@
         <carousel :slides="slides" :interval="5000" controls indicators></carousel>
       </div>
     </div>
-    <div class="px-10 lg:px-20">
+    <div class="px-6 lg:px-10 max-w-7xl mx-auto">
       <Offres />
     </div>
     <Blog />
-    <div class="px-10 lg:px-20">
+    <div class="px-6 lg:px-10  max-w-7xl mx-auto">
       <Indicateur />
       <Services />
     </div>
-    <div class="px-10 lg:px-20">
+    <div class="px-6 lg:px-10 max-w-7xl mx-auto ">
       <Agenda :agenda_data="agenda_datas" isNotFull />
       <AppelsOffresBox :appels_offres="appels_offres" />
       <Partenaires :partners="partners" />

@@ -1,7 +1,7 @@
 <template>
   <header>
     <Popover class="relative bg-white shadow">
-      <div class="px-4 flex justify-between items-center mx-auto py-2 xl:justify-start xl:space-x-4">
+      <div class="px-6 lg:px-10 max-w-7xl mx-auto flex justify-between items-center mx-auto py-2 xl:justify-start xl:space-x-4">
         <div class="flex justify-start">
           <router-link :to="{ name: 'index' }" class="mr-8">
             <span class="sr-only">CCI Bénin</span>

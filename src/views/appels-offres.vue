@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <main class="p-3 sm:p-16">
+  <main class="max-w-7xl mx-auto px-6 lg:px-10 py-10">
     <div class="px-3 md:px-16">
       <div class="box mx-auto relative flex justify-center items-center">
         <input

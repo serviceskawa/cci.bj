@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white pt-16 sm:pt-16">
-    <div class="relative bg-gray">
+  <div class="bg-gray pt-16 sm:pt-16">
+    <div class="relative max-w-7xl mx-auto">
       <div aria-hidden="true" class="hidden sm:block">
         <div class="absolute inset-y-0 left-0 w-1/2 rounded-r-3xl" />
       </div>

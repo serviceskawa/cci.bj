@@ -25,7 +25,7 @@
         <div class="right-section hidden lg:flex w-2/5"></div>
       </div>
     </div>
-    <div class="p-6 md:p-10 lg:p-12 xl:p-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
       <div
         class="
           flex flex-wrap
@@ -152,12 +152,8 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid";
   ) !important;
 }
 .right-section {
-  background: linear-gradient(
-      180deg,
-      rgba(72, 127, 80, 0.1) 0%,
-      rgba(72, 127, 80, 0) 100%
-    ),
-    url("../assets/images/bulding.jpeg") !important;
+  background: 
+    url("../assets/images/bulding.png") !important;
   height: 520px !important;
   background-position: center !important;
   background-attachment: local !important;
