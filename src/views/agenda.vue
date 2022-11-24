@@ -1,19 +1,19 @@
           <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <main>
-    <div class="flex items-center md:px-6 lg:px-10 max-w-7xl mx-auto">
+    <div class="flex items-center p-4 md:px-10 lg:px-20">
       <div
-        class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3"
+        class="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3 w-full"
         v-if="loader == true"
       >
         <ArticleCard
-          class="mb-8"
+          class="py-8 mb-8 w-full"
           v-for="(article, index) in 20"
           :key="index"
           :on_loading="loader"
         />
       </div>
-      <div class="py-8 lg:py-16 w-full" v-else>
+      <div class="py-8 lg:py-16 md:px-10 lg:px-20 w-full" v-else>
         <div v-if="agenda_datas.length == 0">
           <h1 class="">Aucune donnée disponible</h1>
         </div>
@@ -84,10 +84,12 @@
 import { services } from "@/api";
 import EmptyState from "@/components/ArticleCard.vue";
 import Agenda from "@/components/home/Agenda.vue";
+import ArticleCard from "@/components/ArticleCard.vue";
 export default {
   components: {
     Agenda,
-    EmptyState
+    EmptyState,
+    ArticleCard
   },
   data: () => ({
     commits: null,
@@ -120,13 +122,7 @@ export default {
         await services.get_agenda_datas(page).then((response) => {
           this.loader = false;
           this.agenda_datas = response.data;
-          this.agenda_datas.data = this.agenda_datas.data.map((element) => {
-            return {
-              ...element,
-              photo: this.configs.image_url + "/" + element.photo,
-              banner: this.configs.image_url + "/" + element.banner,
-            };
-          });
+          this.agenda_datas.data = this.agenda_datas.data
         });
       } catch (error) {
         this.loader = false;

@@ -28,7 +28,8 @@ module.exports = {
       sp: "#6B7280",
       borderInput:"#D1D5DB",
       subtitlegray: "#6B7280",
-      label: "#374151"
+      label: "#374151",
+      lightGray: "#F7F9F9"
       //sous paragraphe
     },
   },
