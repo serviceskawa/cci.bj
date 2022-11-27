@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <main class="pb-20">
+  <main class="">
     <Notifications
       :notif="notif"
       v-if="notif.type !== ''"
@@ -269,7 +269,7 @@
         <div class="interessed-box">
           <img
             src="@/assets/images/interessed.jpeg"
-            class="w-full h-full"
+            class="w-full h-60 object-cover"
             alt=""
           />
         </div>
@@ -505,7 +505,7 @@
         <div class="transform-box">
           <img
             src="@/assets/images/transform.jpeg"
-            class="w-full h-full"
+            class="h-64 w-full object-cover"
             alt=""
           />
         </div>
@@ -1012,7 +1012,6 @@
         <div
           v-for="(agen, i) in agenda_datas"
           :key="i"
-          :event="event"
           class="flex flex-col shadow overflow-hidden mb-4 mt-6 rounded-b-md"
         >
           <div class="flex-shrink-0">
@@ -1061,7 +1060,7 @@
       </div>
     </div>
     <div class="bg-grayCard">
-      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 items-center">
           <div>
             <img
@@ -1135,11 +1134,12 @@ import moment from "moment";
 import ArticleCard from "@/components/ArticleCard.vue";
 import AppelsOffresBox from "@/components/home/AppelsOffresBox.vue";
 import { services } from "@/api";
-
+import Notifications from "@/components/Notifications.vue";
 export default {
   components: {
     ArticleCard,
     AppelsOffresBox,
+    Notifications
   },
   data() {
     return {
@@ -1202,22 +1202,6 @@ export default {
     }
   },
   methods: {
-    formatDate(date, format) {
-      return moment(date).format(format);
-    },
-    async load_persona(title) {
-      try {
-        await services.getPersona_type(title).then((response) => {
-          if (response.status == 200) {
-            this.$store.state.persona = response.data.events.data;
-            this.persona_datas = this.$store.state.persona;
-          }
-        });
-        this.loader = false;
-      } catch (error) {
-        this.loader = false;
-      }
-    },
     async sendRequest() {
       const data = {
         email: this.email,
@@ -1289,10 +1273,6 @@ ul {
 }
 .bg-green {
   background: rgba(72, 127, 80, 0.1) !important;
-}
-.interessed-box,
-.transform-box {
-  height: 280px !important;
 }
 input {
   height: 48px !important;

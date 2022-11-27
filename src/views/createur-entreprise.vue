@@ -1,6 +1,6 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <main class="pb-20">
+  <main class="">
     <Notifications
       :notif="notif"
       v-if="notif.type !== ''"
@@ -269,10 +269,10 @@
             </button>
           </div>
         </div>
-        <div class="interessed-box">
+        <div class="chef-box">
           <img
-            src="@/assets/images/interessed.jpeg"
-            class="w-full h-full"
+            src="@/assets/images/chef.jpeg"
+            class="w-full h-60 object-cover"
             alt=""
           />
         </div>
@@ -522,10 +522,11 @@
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 pt-0">
       <h1 class="text-blue text-4xl leading-none font-bold tracking-tight">
-       Nos programmes d'accompagnement
+        Nos programmes d'accompagnement
       </h1>
       <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
-        Bénéficiez des outils élaborés par la CCI-Bénin pour accompagner les créateurs d'entreprise.
+        Bénéficiez des outils élaborés par la CCI-Bénin pour accompagner les
+        créateurs d'entreprise.
       </p>
       <div class="mt-6 grid grid-cols-1 md:grid-cols-2 md:gap-6 mb-6">
         <div>
@@ -537,7 +538,9 @@
           <div class="p-6 bg-lightGray">
             <h5 class="text-blue text-lg font-bold">Formation</h5>
             <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
-              Nous vous faisons monter en compétences dans divers domaines liés à la vie de l'entreprise. Développez une maîtrise de compétences clés pour votre projet.
+              Nous vous faisons monter en compétences dans divers domaines liés
+              à la vie de l'entreprise. Développez une maîtrise de compétences
+              clés pour votre projet.
             </p>
             <div class="mt-4 w-full">
               <button
@@ -561,7 +564,9 @@
               Parcours de l'entrepreneur
             </h5>
             <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
-              Inscrivez-vous aux sessions de coaching offertes en gestion et en développement d'entreprise. Découvrez les étapes et enjeux du lancement de votre projet.
+              Inscrivez-vous aux sessions de coaching offertes en gestion et en
+              développement d'entreprise. Découvrez les étapes et enjeux du
+              lancement de votre projet.
             </p>
             <div class="mt-4 w-full">
               <button
@@ -624,7 +629,9 @@
                 Arbitrage et médiation
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
-                À travers la CAMeC-CCIB, la Chambre de Commerce et d'Industrie du Bénin offre gratuitement des sessions sur les modes alternatifs de règlement des litiges.
+                À travers la CAMeC-CCIB, la Chambre de Commerce et d'Industrie
+                du Bénin offre gratuitement des sessions sur les modes
+                alternatifs de règlement des litiges.
               </p>
             </div>
             <div class="mt-4 w-full">
@@ -684,7 +691,9 @@
                 Étude de marché sectoriel
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
-                Nous vous aidons à identifier les secteurs porteurs en vous fournissant les informations nécessaires pour réaliser une analyse sectorielle de vos marchés cible.
+                Nous vous aidons à identifier les secteurs porteurs en vous
+                fournissant les informations nécessaires pour réaliser une
+                analyse sectorielle de vos marchés cible.
               </p>
             </div>
             <div class="mt-4 w-full">
@@ -737,7 +746,9 @@
                 Journées Pays
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
-                Rencontrez des conseillers et experts pays pour découvrir les opportunités de développement et les marchés porteurs dans les pays qui vous intéressent.
+                Rencontrez des conseillers et experts pays pour découvrir les
+                opportunités de développement et les marchés porteurs dans les
+                pays qui vous intéressent.
               </p>
             </div>
             <div class="mt-4 w-full">
@@ -814,7 +825,7 @@
       </div>
     </div>
     <div class="bg-grayCard">
-      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 items-center">
           <div>
             <img
@@ -907,7 +918,6 @@
 <script>
 import Notifications from "@/components/Notifications.vue";
 import { services } from "@/api";
-import moment from "moment";
 import ArticleCard from "@/components/ArticleCard.vue";
 import AppelsOffresBox from "@/components/home/AppelsOffresBox.vue";
 export default {
@@ -918,8 +928,6 @@ export default {
   },
   data() {
     return {
-      current_tab: "renew",
-      on_loading_request: false,
       email: "",
       phone: "",
       notif: {
@@ -930,7 +938,6 @@ export default {
       news: [],
       appels_offres: [],
       on_loading_request: false,
-      email: "",
       agenda_datas: [],
     };
   },
@@ -981,22 +988,6 @@ export default {
     }
   },
   methods: {
-    formatDate(date, format) {
-      return moment(date).format(format);
-    },
-    async load_persona(title) {
-      try {
-        await services.getPersona_type(title).then((response) => {
-          if (response.status == 200) {
-            this.$store.state.persona = response.data.events.data;
-            this.persona_datas = this.$store.state.persona;
-          }
-        });
-        this.loader = false;
-      } catch (error) {
-        this.loader = false;
-      }
-    },
     async sendRequest() {
       const data = {
         email: this.email,
@@ -1025,10 +1016,6 @@ export default {
         this.on_loading_request = false;
         this.$emit("error");
       }
-    },
-    scrollToAnchorPoint(refName) {
-      const el = this.$refs[refName];
-      el.scrollIntoView({ behavior: "smooth" });
     },
   },
 };

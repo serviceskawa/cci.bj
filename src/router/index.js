@@ -103,11 +103,13 @@ const routes = [
     name: 'institutionnelle',
     component: page('institutionnelle'),
   },
-  {
-    path: '/industriel-commercant',
-    name: 'industriel-commercant',
-    component: page('industriel-commercant'),
-  },
+
+  // {
+  //   path: '/industriel-commercant',
+  //   name: 'industriel-commercant',
+  //   component: page('industriel-commercant'),
+  // },
+
   {
     path: '/faq',
     name: 'faq',

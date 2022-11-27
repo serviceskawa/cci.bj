@@ -124,7 +124,7 @@
                         </p>
                       </div>
                     </router-link>
-                    <router-link :to=" {name: 'industriel-commercant'}"
+                    <!-- <router-link :to=" {name: 'industriel-commercant'}"
                       class="-m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary cursor-pointer">
                       <div
                         class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-md bg-indigo-500 text-white sm:h-12 sm:w-12">
@@ -140,7 +140,7 @@
                           Commerçant ou industriel
                         </p>
                       </div>
-                    </router-link>
+                    </router-link> -->
                   </div>
                 </div>
               </PopoverPanel>
@@ -410,11 +410,11 @@ export default {
           route_name: "chef-entreprise",
           icon: ChatAlt2Icon,
         },
-        {
-          name: "Commerçant ou industriel",
-          route_name: "industriel-commercant",
-          icon: QuestionMarkCircleIcon,
-        },
+        // {
+        //   name: "Commerçant ou industriel",
+        //   route_name: "industriel-commercant",
+        //   icon: QuestionMarkCircleIcon,
+        // },
         {
           name: "Investisseur",
           route_name: "investissement",
