@@ -663,7 +663,7 @@
             mt-4
           "
         >
-          Comprenez le marché béninois, la fiscalité, les politiques, les lois réglementations et législation en <br> matière d’investissement grâces aux billets des experts de la CCI-Bénin
+          Comprenez le marché béninois, la fiscalité, les politiques, les lois réglementations et législation en <br> matière d’investissement grâces aux billets des experts de la CCI Bénin
         </p>
         <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           <ArticleCard v-for="n in news" :key="n.id" :branch="n" />

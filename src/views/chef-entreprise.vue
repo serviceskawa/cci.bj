@@ -64,7 +64,7 @@
           mb-10
         "
       >
-        Quel que soit votre besoin, la CCI-Bénin vous accompagne à chaque étape
+        Quel que soit votre besoin, la CCI Bénin vous accompagne à chaque étape
         du processus vers l’atteinte <br />
         de vos objectifs. Nous vous simplifions les démarches pour votre
         satisfaction complète.
@@ -122,7 +122,7 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Téléchargez le barème des cotisations applicables aux
-                entreprises membre de la CCI-Bénin
+                entreprises membre de la CCI Bénin
               </p>
             </div>
           </div>
@@ -643,7 +643,7 @@
         Nos services d'appui et conseil
       </h1>
       <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
-        Bénéficiez des outils élaborés par la CCI-Bénin pour accompagner les
+        Bénéficiez des outils élaborés par la CCI Bénin pour accompagner les
         créateurs d'entreprise.
       </p>
       <div class="mt-6 grid grid-cols-1 md:grid-cols-2 md:gap-6 mb-6">

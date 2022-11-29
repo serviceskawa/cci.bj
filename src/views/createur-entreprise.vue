@@ -66,7 +66,7 @@
           mb-10
         "
       >
-        Quel que soit votre besoin, la CCI-Bénin vous accompagne à chaque étape
+        Quel que soit votre besoin, la CCI Bénin vous accompagne à chaque étape
         du processus vers l’atteinte de vos objectifs. Nous vous simplifions les
         démarches pour votre satisfaction complète.
       </p>
@@ -179,12 +179,13 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Notre équipe s’engage à vous guider et vous orienter vers les
-                services compétents en fonction de vos préoccupations
+                services compétents en fonction de vos préoccupations.
               </p>
             </div>
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
-            <button
+            <button 
+              @click="$router.push({ name: 'services-infos'})"
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >
@@ -227,7 +228,7 @@
             </div>
             <div class="mt-4">
               <h4 class="text-lg leading-none font-bold text-blue">
-                Se former
+                Rester informé
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Souscrivez à notre newsletter. Nous vous tenons informé(e) des
@@ -241,7 +242,7 @@
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >
-              Voir les formations
+              S'abonner
             </button>
           </div>
         </div>
@@ -498,7 +499,7 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Profitez des opportunités de partenariats dans divers <br />
-                domaines avec les partenaires de la CCIB
+                domaines avec les partenaires de la CCI Bénin
               </p>
             </div>
           </div>
@@ -525,7 +526,7 @@
         Nos programmes d'accompagnement
       </h1>
       <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
-        Bénéficiez des outils élaborés par la CCI-Bénin pour accompagner les
+        Bénéficiez des outils élaborés par la CCI Bénin pour accompagner les
         créateurs d'entreprise.
       </p>
       <div class="mt-6 grid grid-cols-1 md:grid-cols-2 md:gap-6 mb-6">
@@ -545,6 +546,7 @@
             <div class="mt-4 w-full">
               <button
                 type="button"
+                @click="$router.push({ name: 'formations'})"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
                 En savoir plus
@@ -573,7 +575,7 @@
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
-                Participer
+              Bientôt disponible
               </button>
             </div>
           </div>
@@ -629,7 +631,7 @@
                 Arbitrage et médiation
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
-                À travers la CAMeC-CCIB, la Chambre de Commerce et d'Industrie
+                À travers la CAMeC, la Chambre de Commerce et d'Industrie
                 du Bénin offre gratuitement des sessions sur les modes
                 alternatifs de règlement des litiges.
               </p>
@@ -637,6 +639,7 @@
             <div class="mt-4 w-full">
               <button
                 type="button"
+                @click="$router.push({ name: 'arbitrage-mediation'})"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
                 En savoir plus
@@ -698,6 +701,7 @@
             </div>
             <div class="mt-4 w-full">
               <button
+                @click="$router.push({ name: 'etude-marche'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -753,6 +757,7 @@
             </div>
             <div class="mt-4 w-full">
               <button
+              @click="$router.push({ name: 'journees-pays'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -824,7 +829,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-grayCard">
+    <!--<div class="bg-grayCard">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 items-center">
           <div>
@@ -853,7 +858,7 @@
               Restons connectés
             </h1>
             <p class="mt-4 text-lg leading-7 font-normal text-blue">
-              Recevez par appels d’offres via whatsapp/sms ou par mails les
+              Recevez les appels d’offres via whatsapp/sms ou par mails.es
               meilleures opportunités d’affaires, plus proches de vous, en
               instantané.
             </p>
@@ -912,7 +917,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div>-->
   </main>
 </template>
 <script>

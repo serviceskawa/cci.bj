@@ -385,7 +385,7 @@
                 Retrouvez toute l'information économique du Bénin
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
-                Accédez à la documentation en ligne de la CCI-Bénin pour
+                Accédez à la documentation en ligne de la CCI Bénin pour
                 découvrir les chiffres clés, les dossiers économiques, les
                 rapports et le baromètre de l'opinion des entreprises au Bénin
                 élaborés sur la base des données issues de nos collectes.
