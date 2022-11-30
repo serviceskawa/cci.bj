@@ -953,7 +953,7 @@ export default {
       this.appels_offres = this.appels_offres.map((element) => {
         return {
           ...element,
-          photo: configs.image_url + "/" + element.photo,
+          photo: configs.image_url + "/" + element.document,
         };
       });
     }
@@ -970,6 +970,7 @@ export default {
         };
       });
     }
+    // console.log(this.appels_offres[0])
   },
   methods: {
     async sendRequest() {
