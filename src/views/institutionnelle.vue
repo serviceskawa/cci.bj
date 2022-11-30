@@ -267,7 +267,7 @@
             </div>
             <div class="mt-4">
               <h4 class="text-lg leading-none font-bold text-blue">
-                Faites vos vérifications d'entreprises en accédant  à AHILIDO
+                Faites vos vérifications d'entreprises en accédant à AHILIDO
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Explorez l'outil de connexion aux opportunités pour obtenir les
@@ -278,12 +278,14 @@
             </div>
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
-            <button
+            <a href="https://ahilido.bj/" target="_blank">
+              <button
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >
               Visiter Ahilido
             </button>
+            </a>
           </div>
         </div>
         <div
@@ -329,7 +331,7 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 À travers l'Observatoire du Commerce de l'Industrie et des
-                Services, la CCI- Bénin met à disposition des acteurs
+                Services, la CCI Bénin met à disposition des acteurs
                 économiques des statistiques de qualité et des informations
                 crédibles pour les aider dans leurs prises de décisions.
               </p>
@@ -469,7 +471,7 @@
               Nos dernières publications
             </h1>
             <div>
-              <a href="#" class="text-primary">
+              <a @click="$router.push({ name: 'documents' })" class="text-primary">
                 Voir toutes les publications<span aria-hidden="true"
                   >&rarr;</span
                 ></a
@@ -869,12 +871,14 @@
         </div>
       </div>
       <div>
-        <button
-          type="button"
-          class="btn btn-light bg-white shadow-md text-primary underline"
-        >
-          Visiter la médiathèque
-        </button>
+        <a href="https://www.flickr.com/photos/ccibenin/albums" target="_blank">
+          <button
+            type="button"
+            class="btn btn-light bg-white shadow-md text-primary underline"
+          >
+            Visiter la médiathèque
+          </button>
+        </a>
       </div>
     </div>
     <div class="bg-grayCard">
@@ -906,9 +910,7 @@
               Restons connectés
             </h1>
             <p class="mt-4 text-lg leading-7 font-normal text-blue">
-              Recevez par appels d’offres via whatsapp/sms ou par mails les
-              meilleures opportunités d’affaires, plus proches de vous, en
-              instantané.
+              Abonnez-vous à notre bulletin d’information pour être informé(e) de nos dernières actualités.
             </p>
             <div class="mt-4">
               <div>
@@ -937,7 +939,7 @@
                   type="button"
                   class="btn btn-light bg-white shadow-md text-primary w-full"
                 >
-                  Souscrire
+                Restez informé(e)
                 </button>
               </div>
             </div>
