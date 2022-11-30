@@ -829,7 +829,7 @@
         </div>
       </div>
     </div>
-    <!--<div class="bg-grayCard">
+    <div class="bg-grayCard">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 items-center">
           <div>
@@ -858,7 +858,7 @@
               Restons connectés
             </h1>
             <p class="mt-4 text-lg leading-7 font-normal text-blue">
-              Recevez les appels d’offres via whatsapp/sms ou par mails.es
+              Recevez les appels d’offres via whatsapp/sms ou par mails. Les
               meilleures opportunités d’affaires, plus proches de vous, en
               instantané.
             </p>
@@ -885,27 +885,6 @@
                 </div>
               </div>
               <div class="mt-4">
-                <label for="cta-email" class="sr-only">Email</label>
-                <div>
-                  <input
-                    id="cta-email"
-                    type="tel"
-                    required
-                    v-model="phone"
-                    class="
-                      block
-                      w-full
-                      border border-borderInput
-                      rounded-md
-                      px-5
-                      py-3
-                      text-base text-dark
-                    "
-                    placeholder="Téléphone"
-                  />
-                </div>
-              </div>
-              <div class="mt-4">
                 <button
                   type="button"
                   class="btn btn-light bg-white shadow-md text-primary w-full"
@@ -917,7 +896,7 @@
           </div>
         </div>
       </div>
-    </div>-->
+    </div>
   </main>
 </template>
 <script>

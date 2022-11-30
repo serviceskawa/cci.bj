@@ -51,7 +51,7 @@
         "
       >
         Devenez un chef d’entreprise performant et efficient <br />
-        grâce aux services et accompagnements de la CCI
+        grâce aux services et accompagnements de la CCI Bénin
       </h1>
       <p
         class="
@@ -122,7 +122,7 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Téléchargez le barème des cotisations applicables aux
-                entreprises membre de la CCI Bénin
+                entreprises membre de la CCI Bénin.
               </p>
             </div>
           </div>
@@ -183,6 +183,7 @@
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
             <button
+              @click="$router.push({ name: 'documents'})"
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >
@@ -229,12 +230,13 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 La plateforme ImPulse met en relation les dirigeants
-                d'entreprises et sociétés avec des conseillers stratégiques.
+                d'entreprises et de sociétés avec des conseillers stratégiques.
               </p>
             </div>
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
             <button
+              @click="$router.push({ name: 'impulse'})"
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >
@@ -255,7 +257,7 @@
           </h1>
           <p class="text-blue text-lg leading-6 font-normal mt-4">
             Consultez les procédures applicables au Bénin en <br />
-            matière d'importation et d'exportation
+            matière d'importation et d'exportation.
           </p>
           <div class="mt-8">
             <button
@@ -326,7 +328,7 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Procédez à la vérification de votre facture <br />
-                et à son émission
+                et à son émission.
               </p>
             </div>
           </div>
@@ -388,7 +390,7 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Profitez des opportunités de partenariats dans divers <br />
-                domaines avec les partenaires de la CCIB
+                domaines avec les partenaires de la CCI Bénin.
               </p>
             </div>
           </div>
@@ -520,10 +522,11 @@
           </h1>
           <p class="text-blue text-lg leading-6 font-normal mt-4">
             Nos dernière formations pour accompagner les chef d’entreprises et
-            faire d’eux des succès
+            faire d’eux des succès.
           </p>
           <div class="mt-8">
             <button
+              @click="$router.push({ name: 'formations'})"
               type="button"
               class="btn btn-light bg-white shadow-md text-primary underline"
             >
@@ -662,6 +665,7 @@
             </p>
             <div class="mt-4 w-full">
               <button
+                @click="$router.push({ name: 'pere'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -688,6 +692,7 @@
             </p>
             <div class="mt-4 w-full">
               <button
+              @click="$router.push({ name: 'rdv-experts'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -754,6 +759,7 @@
             </div>
             <div class="mt-4 w-full">
               <button
+                @click="$router.push({ name: 'financement'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -815,6 +821,7 @@
             </div>
             <div class="mt-4 w-full">
               <button
+              @click="$router.push({ name: 'aide-montage'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -870,6 +877,7 @@
             </div>
             <div class="mt-4 w-full">
               <button
+              @click="$router.push({ name: 'arbitrage-mediation'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -917,16 +925,17 @@
             </div>
             <div class="mt-4">
               <h4 class="text-lg leading-none font-bold text-blue">
-                Facilitation de l'accès au financement
+                Étude de marché sectoriel
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Nous vous aidons à identifier les secteurs porteurs en vous
                 fournissant les informations nécessaires pour réaliser une
-                analyse sectorielle de vos marchés cibles
+                analyse sectorielle de vos marchés cibles.
               </p>
             </div>
             <div class="mt-4 w-full">
               <button
+              @click="$router.push({ name: 'etude-marche'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -989,6 +998,7 @@
             </div>
             <div class="mt-4 w-full">
               <button
+              @click="$router.push({ name: 'journees-pays'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -1005,8 +1015,8 @@
       </h1>
       <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
         Ne ratez aucune opportunité - Ne manquez aucun événement de la Chambre
-        <br />
-        de Commerce et d’Industrie du Bénin
+        <br/>
+        de Commerce et d’Industrie du Bénin.
       </p>
       <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div
@@ -1088,7 +1098,7 @@
               Restons connectés
             </h1>
             <p class="mt-4 text-lg leading-7 font-normal text-blue">
-              Recevez par appels d’offres via whatsapp/sms ou par mails les
+              Recevez par appels d’offres via whatsapp/sms ou par mails. Les
               meilleures opportunités d’affaires, plus proches de vous, en
               instantané.
             </p>
