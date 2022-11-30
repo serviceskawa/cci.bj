@@ -34,7 +34,7 @@
             d'investissement au Bénin
           </h1>
           <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-            La CCI- Bénin met à disposition des opérateurs <br />
+            La CCI Bénin met à disposition des opérateurs <br />
             économiques, des outils et ressources pour <br />
             faciliter leurs projets d'investissement.
           </p>
@@ -254,7 +254,7 @@
             <div class="text-sm leading-5 text-subtitlegray">
               Recherchez des informations légales, juridiques et financières sur
               les entreprises béninoises (Registre de Commerce, IFU, bilan
-              d’exercice, décisions de justice, etc.)
+              d’exercice, décisions de justice, etc.).
             </div>
           </div>
           <div class="">
@@ -290,7 +290,7 @@
             <div class="text-sm leading-5 text-subtitlegray">
               Nous connectons vos besoins avec diverses opportunités (mise en
               place de partenariats d’affaires, offres ou demandes de produits
-              et de services, accès au financement)
+              et de services, accès au financement).
             </div>
           </div>
           <div class="">
@@ -339,12 +339,11 @@
               sur Ahilido
             </h1>
             <div class="mt-8 w-full">
-              <button
-                type="button"
-                class="btn btn-primary bg-primary text-white text-sm w-full"
-              >
-                Visiter
-              </button>
+              <a href="https://ahilido.bj/" target="_blank">
+                <button type="button" class="btn btn-primary bg-primary text-white text-sm w-full">
+                  Visiter
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -602,12 +601,15 @@
                   pays qui vous intéressent.
                 </p>
               </div>
+              <a href="mailto:info@ccib.bj?subject=Annuaire%20statistique%20des%20entreprises
+">
               <button
                 type="button"
                 class="btn btn-light bg-white text-primary text-sm w-full"
               >
                 <span class="underline">Demander</span>
               </button>
+            </a>
             </div>
           </div>
         </div>
@@ -623,12 +625,14 @@
             L'Agence de Promotion des Investissements et des Exportations (APIEx) est un instrument mis en place par le gouvernement béninois pour vous informer et vous accompagner dans vos démarches
           </p>
           <div class="mt-8 w-full">
+            <a href="https://apiex.bj/" target="_blank">
             <button
               type="button"
               class="btn btn-light bg-white shadow-md text-primary underline w-full"
             >
               Visiter
             </button>
+          </a>
           </div>
         </div>
         <div>
@@ -834,9 +838,9 @@
         Agenda
       </h1>
       <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
-        Ne ratez aucune opportunité - Ne manquez aucun événement de la Chambre
+        Participez aux rencontres thématiques pour échanger avec d'autres opérateurs
         <br />
-        de Commerce et d’Industrie du Bénin
+        économiques sur des sujets d'intérêt pour les affaires.
       </p>
       <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div
@@ -915,12 +919,10 @@
                 text-primary
               "
             >
-              Restons connectés
+            Recevez nos appels d’offres via email
             </h1>
             <p class="mt-4 text-lg leading-7 font-normal text-blue">
-              Recevez par appels d’offres via whatsapp/sms ou par mails les
-              meilleures opportunités d’affaires, plus proches de vous, en
-              instantané.
+              Les meilleures opportunités d’affaires, plus proches de vous, en instantané.
             </p>
             <div class="mt-4">
               <div>
@@ -944,31 +946,10 @@
                   />
                 </div>
               </div>
-              <div class="mt-2">
-                <label for="cta-email" class="sr-only">Téléphone</label>
-                <div>
-                  <input
-                    id="cta-phone"
-                    type="phone"
-                    required
-                    v-model="phome"
-                    class="
-                      block
-                      w-full
-                      border border-borderInput
-                      rounded-md
-                      px-5
-                      py-3
-                      text-base text-dark
-                    "
-                    placeholder="Téléphone"
-                  />
-                </div>
-              </div>
               <div class="mt-4">
                 <button
                   type="button"
-                  class="btn btn-light bg-white shadow-md text-primary"
+                  class="btn btn-light bg-white shadow-md text-primary w-full"
                 >
                   Souscrire
                 </button>
