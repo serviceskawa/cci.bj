@@ -333,6 +333,22 @@
                 "
                 placeholder="Entrez votre adresse mail"
               />
+              <input
+                id=""
+                type="hidden"
+                value="appels_offres" 
+                required
+                class="
+                  block
+                  w-full
+                  border border-borderInput
+                  rounded-md
+                  px-5
+                  py-3
+                  text-base text-dark
+                "
+                placeholder="Entrez votre adresse mail"
+              />
             </div>
           </div>
           <div class="w-full">
