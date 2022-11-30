@@ -836,8 +836,8 @@ export default {
     async sendRequest() {
       const data = {
         email: this.email,
-        subject: "appel_offre",
-        slug: "createur d'entreprise",
+        subject: "appel offre",
+        slug: "Créateur d’entreprise",
       };
       try {
         this.on_loading_request = true;
