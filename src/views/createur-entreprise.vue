@@ -238,7 +238,7 @@
             </div>
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
-            <button
+            <button @click="scrollToAnchorPoint('subscribe')"
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >
@@ -322,6 +322,22 @@
                 type="email"
                 required
                 v-model="email"
+                class="
+                  block
+                  w-full
+                  border border-borderInput
+                  rounded-md
+                  px-5
+                  py-3
+                  text-base text-dark
+                "
+                placeholder="Entrez votre adresse mail"
+              />
+              <input
+                id=""
+                type="hidden"
+                value="appels_offres" 
+                required
                 class="
                   block
                   w-full
@@ -829,7 +845,7 @@
         </div>
       </div>
     </div>
-    <div class="bg-grayCard">
+    <div class="bg-grayCard" ref="subscribe">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 items-center">
           <div>
@@ -953,7 +969,7 @@ export default {
       this.appels_offres = this.appels_offres.map((element) => {
         return {
           ...element,
-          photo: configs.image_url + "/" + element.photo,
+          photo: configs.image_url + "/" + element.document,
         };
       });
     }
@@ -970,6 +986,7 @@ export default {
         };
       });
     }
+    // console.log(this.appels_offres[0])
   },
   methods: {
     async sendRequest() {
@@ -1001,6 +1018,10 @@ export default {
         this.$emit("error");
       }
     },
+    scrollToAnchorPoint(refName) {
+            const el = this.$refs[refName]
+            el.scrollIntoView({ behavior: 'smooth'})
+        },
   },
 };
 </script>
