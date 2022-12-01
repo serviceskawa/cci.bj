@@ -131,7 +131,7 @@ export default {
       const data = {
         email: this.email,
         subject: "Appel offre",
-        slug: "",
+        slug: "Général",
       };
       try {
         this.on_loading_request = true;
