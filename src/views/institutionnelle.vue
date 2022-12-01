@@ -479,6 +479,7 @@
             </div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
             <div class="border border-gray p-4">
               <div class="italic font-light text-gray-rbg">
                 18 Novembre 2022
@@ -493,6 +494,7 @@
                 >
               </div>
             </div>
+
             <div class="border border-gray p-4">
               <div class="italic font-light text-gray-rbg">
                 18 Novembre 2022
@@ -545,10 +547,10 @@
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             <div class="flex">
-              <img
+              <!--<img
                 src="@/assets/svg/rapport-box.svg"
                 class="w-40 h-auto object-cover"
-              />
+              />-->
               <div class="ml-4">
                 <div class="italic font-light text-gray-rbg">
                   18 Novembre 2022
@@ -588,10 +590,10 @@
               </div>
             </div>
             <div class="flex">
-              <img
+              <!--<img
                 src="@/assets/svg/rapport-box.svg"
                 class="w-40 h-auto object-cover"
-              />
+              />-->
               <div class="ml-4">
                 <div class="italic font-light text-gray-rbg">
                   18 Novembre 2022
@@ -791,7 +793,9 @@
       <div
         class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6"
       >
+      
         <div class="col-span-2">
+          <a href="https://www.flickr.com/photos/ccibenin/albums/72177720303919630" target="_blank">
           <img
             src="@/assets/images/mediateq.jpeg"
             class="h-48 w-full object-cover rounded-lg mb-6"
@@ -803,71 +807,78 @@
             représentées à la CCI Bordeaux Gironde
           </p>
           <div class="text-subtitlegray text-sm">13 photos</div>
+        </a>
+        </div>
+
+      
+        <div class="">
+          <a href="https://www.flickr.com/photos/ccibenin/albums/72177720303671892" target="_blank">
+            <img
+              src="@/assets/images/media3.jpg"
+              class="h-48 w-full object-cover rounded-lg mb-6"
+              alt=""
+            />
+            <p class="text-blue text-sm mb-2 max-two-lines">
+              Projet e-Tchité ; Renforcement des capacités digitales des bénéficiaires sur la thématique « Comment optimiser la présence de son entreprise sur les Réseaux Sociaux »
+            </p>
+            <div class="text-subtitlegray text-sm">15 photos</div>
+          </a>
         </div>
         <div class="">
+          <a href="https://www.flickr.com/photos/ccibenin/albums/72177720303576988" target="_blank">
           <img
-            src="@/assets/images/mediateq.jpeg"
+            src="@/assets/images/media4.jpg"
             class="h-48 w-full object-cover rounded-lg mb-6"
             alt=""
           />
           <p class="text-blue text-sm mb-2 max-two-lines">
-            Ateliers de la Coopération Consulaire et Économique et Rendez-vous
-            d'Affaires Francophones Africains : La CCI Bénin et l’APIEx
-            représentées à la CCI Bordeaux Gironde
+            La CCI Bénin et le CIPB outillent les opérateurs économiques sur la prévention des risques d’incendie en entreprise
           </p>
-          <div class="text-subtitlegray text-sm">13 photos</div>
+          <div class="text-subtitlegray text-sm">27 photos</div>
+          </a>
         </div>
+
         <div class="">
+          <a href="https://www.flickr.com/photos/ccibenin/albums/72177720302992758" target="_blank">
           <img
-            src="@/assets/images/mediateq.jpeg"
+            src="@/assets/images/media5.jpg"
             class="h-48 w-full object-cover rounded-lg mb-6"
             alt=""
           />
           <p class="text-blue text-sm mb-2 max-two-lines">
-            Ateliers de la Coopération Consulaire et Économique et Rendez-vous
-            d'Affaires Francophones Africains : La CCI Bénin et l’APIEx
-            représentées à la CCI Bordeaux Gironde
+            Signature de conventions avec la CCI de Bahreïn et la CCI de Koweit
           </p>
-          <div class="text-subtitlegray text-sm">13 photos</div>
+          <div class="text-subtitlegray text-sm">2 photos</div>
+        </a>
         </div>
+
         <div class="">
+          <a href="https://www.flickr.com/photos/ccibenin/albums/72177720302854249" target="_blank">
           <img
-            src="@/assets/images/mediateq.jpeg"
+            src="@/assets/images/media6.jpg"
             class="h-48 w-full object-cover rounded-lg mb-6"
             alt=""
           />
           <p class="text-blue text-sm mb-2 max-two-lines">
-            Ateliers de la Coopération Consulaire et Économique et Rendez-vous
-            d'Affaires Francophones Africains : La CCI Bénin et l’APIEx
-            représentées à la CCI Bordeaux Gironde
+            3ème édition du « Mois du Consommons local » : La CCI Bénin œuvre pour l’implication des journalistes dans la promotion des produits locaux
           </p>
-          <div class="text-subtitlegray text-sm">13 photos</div>
+          <div class="text-subtitlegray text-sm">40 photos</div>
+        </a>
         </div>
-        <div class="">
-          <img
-            src="@/assets/images/mediateq.jpeg"
-            class="h-48 w-full object-cover rounded-lg mb-6"
-            alt=""
-          />
-          <p class="text-blue text-sm mb-2 max-two-lines">
-            Ateliers de la Coopération Consulaire et Économique et Rendez-vous
-            d'Affaires Francophones Africains : La CCI Bénin et l’APIEx
-            représentées à la CCI Bordeaux Gironde
-          </p>
-          <div class="text-subtitlegray text-sm">13 photos</div>
-        </div>
+
+
         <div class="col-span-2">
+          <a href="https://www.flickr.com/photos/ccibenin/albums/72177720302811144" target="_blank">
           <img
-            src="@/assets/images/mediateq.jpeg"
+            src="@/assets/images/media7.jpg"
             class="h-48 w-full object-cover rounded-lg mb-6"
             alt=""
           />
           <p class="text-blue text-sm mb-2 max-two-lines">
-            Ateliers de la Coopération Consulaire et Économique et Rendez-vous
-            d'Affaires Francophones Africains : La CCI Bénin et l’APIEx
-            représentées à la CCI Bordeaux Gironde
+            Formation CAMeC sur le thème Exercer comme arbitre médiateur ; Habilités techniques et procédurales
           </p>
-          <div class="text-subtitlegray text-sm">13 photos</div>
+          <div class="text-subtitlegray text-sm">54 photos</div>
+        </a>
         </div>
       </div>
       <div>
