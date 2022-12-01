@@ -427,8 +427,9 @@
                   Tableau de bord de l'investisseur
                 </h4>
                 <p class="text-sm leading-5 text-subtitlegray mt-4">
-                  Nous accompagnons les entreprises qui souhaitent postuler aux
-                  dispositifs de financement ou subvention en toute simplicité.
+                  Découvrez les chiffres et données décrivant l‘état des 
+                  <br>lieux des particuliers et investissements qui interviennent  
+                  <br>sur le marché béninois.
                 </p>
               </div>
               <button
@@ -481,9 +482,9 @@
                   en vigueur au Bénin
                 </h4>
                 <p class="text-sm leading-5 text-subtitlegray mt-4">
-                  Découvrez et explorez les mécanismes utilisés dans la
-                  facilitation de l'accès au financement grâce à
-                  l'accompagnement de nos experts.
+                  Accédez aux documents pour découvrir les lois et 
+                  <br>réglémentations qui encadrent l‘activité des investisseurs 
+                  <br>au Bénin.
                 </p>
               </div>
               <button
@@ -535,9 +536,9 @@
                   Baromètre de l'opinion des entreprises et chiffres clés
                 </h4>
                 <p class="text-sm leading-5 text-subtitlegray mt-4">
-                  Nous vous aidons à identifier les secteurs porteurs en vous
-                  fournissant les informations nécessaires pour réaliser une
-                  analyse sectorielle de vos marchés cibles
+                  Explorez les statistiques et données clefs relatives au 
+                  <br>climat économique des entreprises locales pour mieux 
+                  <br>comprendre le marché.
                 </p>
               </div>
               <button
@@ -596,9 +597,9 @@
                   Annuaire statistique des entreprises
                 </h4>
                 <p class="text-sm leading-5 text-subtitlegray mt-4">
-                  Rencontrez des conseillers et experts pays pour découvrir les
-                  opportunités de développement et les marchés porteurs dans les
-                  pays qui vous intéressent.
+                  Accédez aux données de cadrage et statistiques
+                  <br>actualisées sur les entreprises et activités économiques
+                  <br>en lien avec les industries et le commerce.
                 </p>
               </div>
               <a href="mailto:info@ccib.bj?subject=Annuaire%20statistique%20des%20entreprises
