@@ -84,14 +84,16 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div v-for="(n, index) in newsComuniqué" :key="index">
-            <div class="text-sm font-light text-primary mb-3">{{n.created_at}}</div>
+            <div class="text-sm font-light text-primary mb-3">
+              {{ n.created_at }}
+            </div>
             <div class="text-blue font-bold text-md mb-3 max-three-lines">
-              {{n.title}}
+              {{ n.title }}
             </div>
             <p
-              class="text-md tracking-tight leading-7 text-subtitlegray max-three-lines" v-html="n.short_content"   >
-              
-            </p>
+              class="text-md tracking-tight leading-7 text-subtitlegray max-three-lines"
+              v-html="n.short_content"
+            ></p>
           </div>
           <!-- <div>
             <div class="text-sm font-light text-primary mb-3">Nov 2022</div>
@@ -386,22 +388,29 @@
             </div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="border border-gray p-4">
+            <div
+              class="border border-gray p-4"
+              v-for="(doc, index) in persona.files.data"
+              :key="index"
+            >
               <div class="italic font-light text-gray-rbg">
-                18 Novembre 2022
+                {{ doc.created_at }}
               </div>
               <div class="mt-3">
-                ALLOCUTION DU PRESIDENT DE LA CCI BENIN A L’OCCASION DES
-                CONFERENCES PUBLIQUES DE L’ASSEMBLEE NATIONALE
+                {{ doc.title }}
               </div>
               <div>
-                <a href="#" class="text-primary underline">
+                <a
+                  :href="configs.image_url + '/' + doc.file_name"
+                  target="_blank"
+                  class="text-primary underline"
+                >
                   Télécharger<span aria-hidden="true">&rarr;</span></a
                 >
               </div>
             </div>
 
-            <div class="border border-gray p-4">
+            <!-- <div class="border border-gray p-4">
               <div class="italic font-light text-gray-rbg">
                 18 Novembre 2022
               </div>
@@ -428,7 +437,7 @@
                   Télécharger<span aria-hidden="true">&rarr;</span></a
                 >
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="mb-8">
@@ -854,10 +863,13 @@ export default {
         description: "",
       },
       newsComuniqué: [],
+      persona: [],
       loader: true,
+      configs: [],
     };
   },
   async created() {
+    this.configs = JSON.parse(sessionStorage.getItem("configs"));
     let configs = sessionStorage.getItem("configs");
     if (configs !== undefined && configs !== null) {
       configs = JSON.parse(configs);
@@ -903,7 +915,8 @@ export default {
       });
     }
     await this.getCategoryArticles();
-    console.log(this.newsComuniqué);
+    await this.getPersonaById();
+    console.log(this.configs.image_url);
   },
   methods: {
     async sendRequest() {
@@ -942,6 +955,18 @@ export default {
       try {
         await services.getCategory_articles(3).then((response) => {
           this.newsComuniqué = response.data.data;
+        });
+        this.loader = false;
+      } catch (error) {
+        this.loader = false;
+      }
+    },
+
+    async getPersonaById() {
+      this.loader = true;
+      try {
+        await services.getPersona_by_id(16).then((response) => {
+          this.persona = response.data;
         });
         this.loader = false;
       } catch (error) {
