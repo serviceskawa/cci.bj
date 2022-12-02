@@ -449,7 +449,7 @@ export default {
     
 <style lang="scss" scoped>
 .barner {
-  background: url("../assets/images/cci.jpeg") !important;
+  background: url("../assets/images/cci.jpg") !important;
   height: 520px !important;
   background-position: center !important;
   background-attachment: local !important;

@@ -50,7 +50,7 @@
         "
       >
         Devenez un chef d’entreprise performant et efficient <br />
-        grâce aux services et accompagnements de la CCI
+        grâce aux services et accompagnements de la CCI Bénin
       </h1>
       <p
         class="
@@ -63,7 +63,7 @@
           mb-10
         "
       >
-        Quel que soit votre besoin, la CCI-Bénin vous accompagne à chaque étape
+        Quel que soit votre besoin, la CCI Bénin vous accompagne à chaque étape
         du processus vers l’atteinte <br />
         de vos objectifs. Nous vous simplifions les démarches pour votre
         satisfaction complète.
@@ -121,7 +121,7 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Téléchargez le barème des cotisations applicables aux
-                entreprises membre de la CCI-Bénin
+                entreprises membre de la CCI Bénin.
               </p>
             </div>
           </div>
@@ -182,6 +182,7 @@
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
             <button
+              @click="$router.push({ name: 'documents'})"
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >
@@ -228,12 +229,13 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 La plateforme ImPulse met en relation les dirigeants
-                d'entreprises et sociétés avec des conseillers stratégiques.
+                d'entreprises et de sociétés avec des conseillers stratégiques.
               </p>
             </div>
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
             <button
+              @click="$router.push({ name: 'impulse'})"
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >
@@ -254,7 +256,7 @@
           </h1>
           <p class="text-blue text-lg leading-6 font-normal mt-4">
             Consultez les procédures applicables au Bénin en <br />
-            matière d'importation et d'exportation
+            matière d'importation et d'exportation.
           </p>
           <div class="mt-8">
             <button
@@ -325,7 +327,7 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Procédez à la vérification de votre facture <br />
-                et à son émission
+                et à son émission.
               </p>
             </div>
           </div>
@@ -387,7 +389,7 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Profitez des opportunités de partenariats dans divers <br />
-                domaines avec les partenaires de la CCIB
+                domaines avec les partenaires de la CCI Bénin.
               </p>
             </div>
           </div>
@@ -519,10 +521,11 @@
           </h1>
           <p class="text-blue text-lg leading-6 font-normal mt-4">
             Nos dernière formations pour accompagner les chef d’entreprises et
-            faire d’eux des succès
+            faire d’eux des succès.
           </p>
           <div class="mt-8">
             <button
+              @click="$router.push({ name: 'formations'})"
               type="button"
               class="btn btn-light bg-white shadow-md text-primary underline"
             >
@@ -642,7 +645,7 @@
         Nos services d'appui et conseil
       </h1>
       <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
-        Bénéficiez des outils élaborés par la CCI-Bénin pour accompagner les
+        Bénéficiez des outils élaborés par la CCI Bénin pour accompagner les
         créateurs d'entreprise.
       </p>
       <div class="mt-6 grid grid-cols-1 md:grid-cols-2 md:gap-6 mb-6">
@@ -661,6 +664,7 @@
             </p>
             <div class="mt-4 w-full">
               <button
+                @click="$router.push({ name: 'pere'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -687,6 +691,7 @@
             </p>
             <div class="mt-4 w-full">
               <button
+              @click="$router.push({ name: 'rdv-experts'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -753,6 +758,7 @@
             </div>
             <div class="mt-4 w-full">
               <button
+                @click="$router.push({ name: 'financement'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -814,6 +820,7 @@
             </div>
             <div class="mt-4 w-full">
               <button
+              @click="$router.push({ name: 'aide-montage'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -869,6 +876,7 @@
             </div>
             <div class="mt-4 w-full">
               <button
+              @click="$router.push({ name: 'arbitrage-mediation'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -916,16 +924,17 @@
             </div>
             <div class="mt-4">
               <h4 class="text-lg leading-none font-bold text-blue">
-                Facilitation de l'accès au financement
+                Étude de marché sectoriel
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Nous vous aidons à identifier les secteurs porteurs en vous
                 fournissant les informations nécessaires pour réaliser une
-                analyse sectorielle de vos marchés cibles
+                analyse sectorielle de vos marchés cibles.
               </p>
             </div>
             <div class="mt-4 w-full">
               <button
+              @click="$router.push({ name: 'etude-marche'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -988,6 +997,7 @@
             </div>
             <div class="mt-4 w-full">
               <button
+              @click="$router.push({ name: 'journees-pays'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -1004,8 +1014,8 @@
       </h1>
       <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
         Ne ratez aucune opportunité - Ne manquez aucun événement de la Chambre
-        <br />
-        de Commerce et d’Industrie du Bénin
+        <br/>
+        de Commerce et d’Industrie du Bénin.
       </p>
       <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div
@@ -1087,12 +1097,12 @@
               Restons connectés
             </h1>
             <p class="mt-4 text-lg leading-7 font-normal text-blue">
-              Recevez par appels d’offres via whatsapp/sms ou par mails les
+              Recevez par appels d’offres via whatsapp/sms ou par mails. Les
               meilleures opportunités d’affaires, plus proches de vous, en
               instantané.
             </p>
-            <div class="mt-4">
-              <div>
+            <form @submit.prevent="sendRequest" class="">
+              <div class="mt-4">
                 <label for="cta-email" class="sr-only">Email</label>
                 <div>
                   <input
@@ -1100,28 +1110,40 @@
                     type="email"
                     required
                     v-model="email"
-                    class="
-                      block
-                      w-full
-                      border border-borderInput
-                      rounded-md
-                      px-5
-                      py-3
-                      text-base text-dark
-                    "
+                    class="block w-full border border-borderInput rounded-md px-5 py-3 text-base text-dark"
                     placeholder="Entrez votre adresse mail"
                   />
                 </div>
               </div>
               <div class="mt-4">
                 <button
-                  type="button"
-                  class="btn btn-light bg-white shadow-md text-primary w-full"
+                  type="submit"
+                  class="block w-full rounded-md px-5 py-3 bg-white text-base font-medium text-primary hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:px-10 flex justify-center"
+                  :disabled="on_loading_request"
                 >
-                  Souscrire
+                  <div role="status" v-if="on_loading_request">
+                    <svg
+                      aria-hidden="true"
+                      class="w-6 h-6 text-gray animate-spin fill-primary"
+                      viewBox="0 0 100 101"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                        fill="currentFill"
+                      />
+                    </svg>
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div v-else>Souscrire</div>
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -1182,7 +1204,7 @@ export default {
       this.appels_offres = this.appels_offres.map((element) => {
         return {
           ...element,
-          photo: configs.image_url + "/" + element.photo,
+          photo: configs.image_url + "/" + element.document,
         };
       });
     }
@@ -1204,6 +1226,8 @@ export default {
     async sendRequest() {
       const data = {
         email: this.email,
+        subject: "Appel offre",
+        slug: "Chef d’entreprise",
       };
       try {
         this.on_loading_request = true;

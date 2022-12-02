@@ -130,6 +130,8 @@ export default {
     async sendRequest() {
       const data = {
         email: this.email,
+        subject: "Appel offre",
+        slug: "Général",
       };
       try {
         this.on_loading_request = true;

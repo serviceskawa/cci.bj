@@ -17,6 +17,7 @@ import {
   FILES,
   PERSONAS,
   PERSONA,
+  PERSONA_BY_ID,
   SEARCH_NEWS,
   APPELS_SEARCH
 } from '@/api/routes'
@@ -130,4 +131,11 @@ export async function search_appels (value, current_page) {
     return await client.get(`${APPELS_SEARCH}/${value}`)
   }
   return await client.get(`${APPELS_SEARCH}/${value}?page=${current_page}`)
+}
+
+export async function getPersona_by_id(id, current_page) {
+  if (current_page == 1 || current_page == undefined) {
+    return await client.get(`${PERSONA_BY_ID}` + id)
+  }
+  return await client.get(`${PERSONA_BY_ID}`+ id +`?page=${current_page}`)
 }

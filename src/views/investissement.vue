@@ -33,7 +33,7 @@
             d'investissement au Bénin
           </h1>
           <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-            La CCI- Bénin met à disposition des opérateurs <br />
+            La CCI Bénin met à disposition des opérateurs <br />
             économiques, des outils et ressources pour <br />
             faciliter leurs projets d'investissement.
           </p>
@@ -253,7 +253,7 @@
             <div class="text-sm leading-5 text-subtitlegray">
               Recherchez des informations légales, juridiques et financières sur
               les entreprises béninoises (Registre de Commerce, IFU, bilan
-              d’exercice, décisions de justice, etc.)
+              d’exercice, décisions de justice, etc.).
             </div>
           </div>
           <div class="">
@@ -289,7 +289,7 @@
             <div class="text-sm leading-5 text-subtitlegray">
               Nous connectons vos besoins avec diverses opportunités (mise en
               place de partenariats d’affaires, offres ou demandes de produits
-              et de services, accès au financement)
+              et de services, accès au financement).
             </div>
           </div>
           <div class="">
@@ -338,12 +338,11 @@
               sur Ahilido
             </h1>
             <div class="mt-8 w-full">
-              <button
-                type="button"
-                class="btn btn-primary bg-primary text-white text-sm w-full"
-              >
-                Visiter
-              </button>
+              <a href="https://ahilido.bj/" target="_blank">
+                <button type="button" class="btn btn-primary bg-primary text-white text-sm w-full">
+                  Visiter
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -427,8 +426,9 @@
                   Tableau de bord de l'investisseur
                 </h4>
                 <p class="text-sm leading-5 text-subtitlegray mt-4">
-                  Nous accompagnons les entreprises qui souhaitent postuler aux
-                  dispositifs de financement ou subvention en toute simplicité.
+                  Découvrez les chiffres et données décrivant l‘état des 
+                  <br>lieux des particuliers et investissements qui interviennent  
+                  <br>sur le marché béninois.
                 </p>
               </div>
               <button
@@ -481,9 +481,9 @@
                   en vigueur au Bénin
                 </h4>
                 <p class="text-sm leading-5 text-subtitlegray mt-4">
-                  Découvrez et explorez les mécanismes utilisés dans la
-                  facilitation de l'accès au financement grâce à
-                  l'accompagnement de nos experts.
+                  Accédez aux documents pour découvrir les lois et 
+                  <br>réglémentations qui encadrent l‘activité des investisseurs 
+                  <br>au Bénin.
                 </p>
               </div>
               <button
@@ -535,9 +535,9 @@
                   Baromètre de l'opinion des entreprises et chiffres clés
                 </h4>
                 <p class="text-sm leading-5 text-subtitlegray mt-4">
-                  Nous vous aidons à identifier les secteurs porteurs en vous
-                  fournissant les informations nécessaires pour réaliser une
-                  analyse sectorielle de vos marchés cibles
+                  Explorez les statistiques et données clefs relatives au 
+                  <br>climat économique des entreprises locales pour mieux 
+                  <br>comprendre le marché.
                 </p>
               </div>
               <button
@@ -596,17 +596,20 @@
                   Annuaire statistique des entreprises
                 </h4>
                 <p class="text-sm leading-5 text-subtitlegray mt-4">
-                  Rencontrez des conseillers et experts pays pour découvrir les
-                  opportunités de développement et les marchés porteurs dans les
-                  pays qui vous intéressent.
+                  Accédez aux données de cadrage et statistiques
+                  <br>actualisées sur les entreprises et activités économiques
+                  <br>en lien avec les industries et le commerce.
                 </p>
               </div>
+              <a href="mailto:info@ccib.bj?subject=Annuaire%20statistique%20des%20entreprises
+">
               <button
                 type="button"
                 class="btn btn-light bg-white text-primary text-sm w-full"
               >
                 <span class="underline">Demander</span>
               </button>
+            </a>
             </div>
           </div>
         </div>
@@ -622,12 +625,14 @@
             L'Agence de Promotion des Investissements et des Exportations (APIEx) est un instrument mis en place par le gouvernement béninois pour vous informer et vous accompagner dans vos démarches
           </p>
           <div class="mt-8 w-full">
+            <a href="https://apiex.bj/" target="_blank">
             <button
               type="button"
               class="btn btn-light bg-white shadow-md text-primary underline w-full"
             >
               Visiter
             </button>
+          </a>
           </div>
         </div>
         <div>
@@ -662,7 +667,7 @@
             mt-4
           "
         >
-          Comprenez le marché béninois, la fiscalité, les politiques, les lois réglementations et législation en <br> matière d’investissement grâces aux billets des experts de la CCI-Bénin
+          Comprenez le marché béninois, la fiscalité, les politiques, les lois réglementations et législation en <br> matière d’investissement grâces aux billets des experts de la CCI Bénin
         </p>
         <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
           <ArticleCard v-for="n in news" :key="n.id" :branch="n" />
@@ -833,9 +838,9 @@
         Agenda
       </h1>
       <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
-        Ne ratez aucune opportunité - Ne manquez aucun événement de la Chambre
+        Participez aux rencontres thématiques pour échanger avec d'autres opérateurs
         <br />
-        de Commerce et d’Industrie du Bénin
+        économiques sur des sujets d'intérêt pour les affaires.
       </p>
       <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div
@@ -914,15 +919,13 @@
                 text-primary
               "
             >
-              Restons connectés
+            Recevez nos appels d’offres via email
             </h1>
             <p class="mt-4 text-lg leading-7 font-normal text-blue">
-              Recevez par appels d’offres via whatsapp/sms ou par mails les
-              meilleures opportunités d’affaires, plus proches de vous, en
-              instantané.
+              Les meilleures opportunités d’affaires, plus proches de vous, en instantané.
             </p>
-            <div class="mt-4">
-              <div>
+            <form @submit.prevent="sendRequest" class="">
+              <div class="mt-4">
                 <label for="cta-email" class="sr-only">Email</label>
                 <div>
                   <input
@@ -930,49 +933,40 @@
                     type="email"
                     required
                     v-model="email"
-                    class="
-                      block
-                      w-full
-                      border border-borderInput
-                      rounded-md
-                      px-5
-                      py-3
-                      text-base text-dark
-                    "
+                    class="block w-full border border-borderInput rounded-md px-5 py-3 text-base text-dark"
                     placeholder="Entrez votre adresse mail"
-                  />
-                </div>
-              </div>
-              <div class="mt-2">
-                <label for="cta-email" class="sr-only">Téléphone</label>
-                <div>
-                  <input
-                    id="cta-phone"
-                    type="phone"
-                    required
-                    v-model="phome"
-                    class="
-                      block
-                      w-full
-                      border border-borderInput
-                      rounded-md
-                      px-5
-                      py-3
-                      text-base text-dark
-                    "
-                    placeholder="Téléphone"
                   />
                 </div>
               </div>
               <div class="mt-4">
                 <button
-                  type="button"
-                  class="btn btn-light bg-white shadow-md text-primary"
+                  type="submit"
+                  class="block w-full rounded-md px-5 py-3 bg-white text-base font-medium text-primary hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:px-10 flex justify-center"
+                  :disabled="on_loading_request"
                 >
-                  Souscrire
+                  <div role="status" v-if="on_loading_request">
+                    <svg
+                      aria-hidden="true"
+                      class="w-6 h-6 text-gray animate-spin fill-primary"
+                      viewBox="0 0 100 101"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
+                        fill="currentColor"
+                      />
+                      <path
+                        d="M93.9676 39.0409C96.393 38.4038 97.8624 35.9116 97.0079 33.5539C95.2932 28.8227 92.871 24.3692 89.8167 20.348C85.8452 15.1192 80.8826 10.7238 75.2124 7.41289C69.5422 4.10194 63.2754 1.94025 56.7698 1.05124C51.7666 0.367541 46.6976 0.446843 41.7345 1.27873C39.2613 1.69328 37.813 4.19778 38.4501 6.62326C39.0873 9.04874 41.5694 10.4717 44.0505 10.1071C47.8511 9.54855 51.7191 9.52689 55.5402 10.0491C60.8642 10.7766 65.9928 12.5457 70.6331 15.2552C75.2735 17.9648 79.3347 21.5619 82.5849 25.841C84.9175 28.9121 86.7997 32.2913 88.1811 35.8758C89.083 38.2158 91.5421 39.6781 93.9676 39.0409Z"
+                        fill="currentFill"
+                      />
+                    </svg>
+                    <span class="sr-only">Loading...</span>
+                  </div>
+                  <div v-else>Souscrire</div>
                 </button>
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
@@ -1034,7 +1028,7 @@ export default {
       this.appels_offres = this.appels_offres.map((element) => {
         return {
           ...element,
-          photo: configs.image_url + "/" + element.photo,
+          photo: configs.image_url + "/" + element.document,
         };
       });
     }
@@ -1056,6 +1050,8 @@ export default {
     async sendRequest() {
       const data = {
         email: this.email,
+        subject: "Appel offre",
+        slug: "Investisseur",
       };
       try {
         this.on_loading_request = true;
