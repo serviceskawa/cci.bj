@@ -879,7 +879,7 @@ export default {
       rgba(72, 127, 80, 0.1) 0%,
       rgba(72, 127, 80, 0) 100%
     ),
-    url("../assets/images/creatair.jpeg") !important;
+    url("../assets/images/creatair-min.jpg") !important;
   height: 520px !important;
   background-position: top !important;
   background-attachment: local !important;
