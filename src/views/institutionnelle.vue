@@ -333,7 +333,7 @@
       </div>
     </div>
     <div class="bg-grayCard">
-      <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-10">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-10 pb-10">
         <h1
           class="text-primary text-3xl lg:text-4xl leading-none font-extrabold tracking-tight mb-4"
         >
@@ -440,7 +440,8 @@
             </div> -->
           </div>
         </div>
-        <div class="mb-8">
+
+        <!--<div class="mb-8">
           <div class="flex justify-between items-center mb-4">
             <h1
               class="text-blue text-2xl lg:text-3xl leading-none font-extrabold tracking-tight mb-4"
@@ -455,10 +456,10 @@
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
             <div class="flex">
-              <!--<img
+              <img
                 src="@/assets/svg/rapport-box.svg"
                 class="w-40 h-auto object-cover"
-              />-->
+              />
               <div class="ml-4">
                 <div class="italic font-light text-gray-rbg">
                   18 Novembre 2022
@@ -490,10 +491,10 @@
               </div>
             </div>
             <div class="flex">
-              <!--<img
+              <img
                 src="@/assets/svg/rapport-box.svg"
                 class="w-40 h-auto object-cover"
-              />-->
+              />
               <div class="ml-4">
                 <div class="italic font-light text-gray-rbg">
                   18 Novembre 2022
@@ -525,7 +526,8 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
+
       </div>
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
