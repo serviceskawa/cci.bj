@@ -84,15 +84,15 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div v-for="(n, index) in newsComuniqué.slice(0,4)" :key="index">
-            <div class="text-sm font-light text-primary mb-3">
+            <div class="text-sm font-light text-primary mb-3" @click="$router.push({ name: 'read-article', params: { slug: n.slug } })">
               {{ n.created_at }}
             </div>
-            <div class="text-blue font-bold text-md mb-3 max-three-lines">
+            <div class="text-blue font-bold text-md mb-3 max-three-lines" @click="$router.push({ name: 'read-article', params: { slug: n.slug } })">
               {{ n.title }}
             </div>
             <p
               class="text-md tracking-tight leading-7 text-subtitlegray max-three-lines"
-              v-html="n.short_content"
+              v-html="n.short_content" @click="$router.push({ name: 'read-article', params: { slug: n.slug } })"
             ></p>
           </div>
           <!-- <div>
