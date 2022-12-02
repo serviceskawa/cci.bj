@@ -7,28 +7,12 @@
       @close="notif.type = ''"
     />
     <div
-      class="
-        barner
-        sm:h-96
-        lg:h-auto
-        flex
-        items-center
-        p-4
-        md:px-10
-        lg:px-20
-        w-full
-      "
+      class="barner sm:h-96 lg:h-auto flex items-center p-4 md:px-10 lg:px-20 w-full"
     >
       <div class="flex items-center w-full">
         <div>
           <h1
-            class="
-              text-primary text-4xl
-              lg:text-6xl
-              leading-none
-              font-extrabold
-              tracking-tight
-            "
+            class="text-primary text-4xl lg:text-6xl leading-none font-extrabold tracking-tight"
           >
             Consolidez votre projet <br />
             entrepreneurial
@@ -87,13 +71,7 @@
               />
             </svg>
             <h1
-              class="
-                ml-4
-                text-greenDark text-3xl
-                leading-none
-                font-extrabold
-                tracking-tight
-              "
+              class="ml-4 text-greenDark text-3xl leading-none font-extrabold tracking-tight"
             >
               Nos communiqués
             </h1>
@@ -105,31 +83,17 @@
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div>
-            <div class="text-sm font-light text-primary mb-3">Nov 2022</div>
+          <div v-for="(n, index) in newsComuniqué" :key="index">
+            <div class="text-sm font-light text-primary mb-3">{{n.created_at}}</div>
             <div class="text-blue font-bold text-md mb-3 max-three-lines">
-              Formation en ligne sur la Politique de la Concurrence le 25
-              novembre 2022
+              {{n.title}}
             </div>
             <p
-              class="
-                text-md
-                tracking-tight
-                leading-7
-                text-subtitlegray
-                max-three-lines
-              "
-            >
-              La Fédération des Chambres de Commerce et d'Industrie de l'Afrique
-              de l'Ouest (FEWACCI) a l'honneur de vous informer que dans le
-              cadre de la mise en œuvre du Programme de Compétitivité de
-              l'Afrique de l'Ouest (WACOMP), en partenariat avec la Commission
-              de la CEDEAO et le Centre de Commerce International (CCI), elle
-              organise une formation en ligne sur la Politique de la Concurrence
-              le 25 novembre 2022 à 15 heures, heure d'Abuja (GMT+I).
+              class="text-md tracking-tight leading-7 text-subtitlegray max-three-lines" v-html="n.short_content"   >
+              
             </p>
           </div>
-          <div>
+          <!-- <div>
             <div class="text-sm font-light text-primary mb-3">Nov 2022</div>
             <div class="text-blue font-bold text-md mb-3 max-three-lines">
               9ème salon des produits Halal des états membres de l’OCI,
@@ -201,44 +165,21 @@
               organise une formation en ligne sur la Politique de la Concurrence
               le 25 novembre 2022 à 15 heures, heure d'Abuja (GMT+I).
             </p>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
       <h1
-        class="
-          text-blue text-3xl
-          lg:text-4xl
-          leading-none
-          font-extrabold
-          tracking-tight
-          mb-6
-        "
+        class="text-blue text-3xl lg:text-4xl leading-none font-extrabold tracking-tight mb-6"
       >
         Que voulez vous faire ?
       </h1>
       <div
-        class="
-          flex flex-wrap
-          grid grid-cols-1
-          md:grid-cols-2
-          lg:grid-cols-3
-          gap-6
-          md:gap-8
-          pb-10
-        "
+        class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 pb-10"
       >
         <div
-          class="
-            rounded-md
-            mb-2
-            md:mb-0
-            cursor-pointer
-            flex flex-col
-            justify-between
-            shadow-md
-          "
+          class="rounded-md mb-2 md:mb-0 cursor-pointer flex flex-col justify-between shadow-md"
         >
           <div class="p-6">
             <div class="">
@@ -280,24 +221,16 @@
           <div class="p-6 py-4 bg-grayCard w-full">
             <a href="https://ahilido.bj/" target="_blank">
               <button
-              type="button"
-              class="btn btn-primary bg-primary text-white text-sm w-full"
-            >
-              Visiter Ahilido
-            </button>
+                type="button"
+                class="btn btn-primary bg-primary text-white text-sm w-full"
+              >
+                Visiter Ahilido
+              </button>
             </a>
           </div>
         </div>
         <div
-          class="
-            rounded-md
-            mb-2
-            md:mb-0
-            cursor-pointer
-            flex flex-col
-            justify-between
-            shadow-md
-          "
+          class="rounded-md mb-2 md:mb-0 cursor-pointer flex flex-col justify-between shadow-md"
         >
           <div class="p-6">
             <div class="">
@@ -331,9 +264,9 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 À travers l'Observatoire du Commerce de l'Industrie et des
-                Services, la CCI Bénin met à disposition des acteurs
-                économiques des statistiques de qualité et des informations
-                crédibles pour les aider dans leurs prises de décisions.
+                Services, la CCI Bénin met à disposition des acteurs économiques
+                des statistiques de qualité et des informations crédibles pour
+                les aider dans leurs prises de décisions.
               </p>
             </div>
           </div>
@@ -347,15 +280,7 @@
           </div>
         </div>
         <div
-          class="
-            rounded-md
-            mb-2
-            md:mb-0
-            cursor-pointer
-            flex flex-col
-            justify-between
-            shadow-md
-          "
+          class="rounded-md mb-2 md:mb-0 cursor-pointer flex flex-col justify-between shadow-md"
         >
           <div class="p-6">
             <div class="">
@@ -408,14 +333,7 @@
     <div class="bg-grayCard">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-10">
         <h1
-          class="
-            text-primary text-3xl
-            lg:text-4xl
-            leading-none
-            font-extrabold
-            tracking-tight
-            mb-4
-          "
+          class="text-primary text-3xl lg:text-4xl leading-none font-extrabold tracking-tight mb-4"
         >
           Publications
         </h1>
@@ -426,14 +344,7 @@
             <div class="text-light font-light text-sm mb-4">VISION 2025</div>
             <div>
               <h1
-                class="
-                  mb-3
-                  text-blue text-2xl
-                  leading-none
-                  font-extrabold
-                  tracking-tight
-                  mb-4
-                "
+                class="mb-3 text-blue text-2xl leading-none font-extrabold tracking-tight mb-4"
               >
                 PLAN STRATÉGIQUE DE DÉVELOPPEMENT DE <br />
                 LA CCI BÉNIN VISION 2025
@@ -459,19 +370,15 @@
         <div class="mb-8">
           <div class="flex justify-between items-center mb-4">
             <h1
-              class="
-                text-blue text-2xl
-                lg:text-3xl
-                leading-none
-                font-extrabold
-                tracking-tight
-                mb-4
-              "
+              class="text-blue text-2xl lg:text-3xl leading-none font-extrabold tracking-tight mb-4"
             >
               Nos dernières publications
             </h1>
             <div>
-              <a @click="$router.push({ name: 'documents' })" class="text-primary">
+              <a
+                @click="$router.push({ name: 'documents' })"
+                class="text-primary"
+              >
                 Voir toutes les publications<span aria-hidden="true"
                   >&rarr;</span
                 ></a
@@ -479,7 +386,6 @@
             </div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-
             <div class="border border-gray p-4">
               <div class="italic font-light text-gray-rbg">
                 18 Novembre 2022
@@ -528,14 +434,7 @@
         <div class="mb-8">
           <div class="flex justify-between items-center mb-4">
             <h1
-              class="
-                text-blue text-2xl
-                lg:text-3xl
-                leading-none
-                font-extrabold
-                tracking-tight
-                mb-4
-              "
+              class="text-blue text-2xl lg:text-3xl leading-none font-extrabold tracking-tight mb-4"
             >
               Rapports de l’observatoire
             </h1>
@@ -561,15 +460,7 @@
                 </div>
                 <div class="mt-10 w-full">
                   <button
-                    class="
-                      border border-primary
-                      text-primary text-center
-                      justify-center
-                      w-full
-                      flex
-                      items-center
-                      p-4
-                    "
+                    class="border border-primary text-primary text-center justify-center w-full flex items-center p-4"
                   >
                     <svg
                       width="25"
@@ -604,15 +495,7 @@
                 </div>
                 <div class="mt-10 w-full">
                   <button
-                    class="
-                      border border-primary
-                      text-primary text-center
-                      w-full
-                      flex
-                      items-center
-                      justify-center
-                      p-4
-                    "
+                    class="border border-primary text-primary text-center w-full flex items-center justify-center p-4"
                   >
                     <svg
                       width="25"
@@ -645,13 +528,7 @@
                 Indicateurs clés
               </p>
               <h2
-                class="
-                  text-3xl
-                  font-bold
-                  tracking-tight
-                  text-gray-900
-                  sm:text-4xl
-                "
+                class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl"
               >
                 Une communauté <br />
                 d’affaires forte, résiliente <br />
@@ -670,16 +547,7 @@
                 <div>
                   <dt>
                     <div
-                      class="
-                        flex
-                        items-center
-                        justify-center
-                        bg-white
-                        h-12
-                        w-12
-                        rounded-md
-                        text-white
-                      "
+                      class="flex items-center justify-center bg-white h-12 w-12 rounded-md text-white"
                     >
                       <img
                         class="h-8 w-auto sm:h-10 hover:animate-ping"
@@ -699,16 +567,7 @@
                 <div>
                   <dt>
                     <div
-                      class="
-                        flex
-                        items-center
-                        justify-center
-                        bg-white
-                        h-12
-                        w-12
-                        rounded-md
-                        text-white
-                      "
+                      class="flex items-center justify-center bg-white h-12 w-12 rounded-md text-white"
                     >
                       <img
                         class="h-8 w-auto sm:h-10 hover:animate-ping"
@@ -728,16 +587,7 @@
                 <div>
                   <dt>
                     <div
-                      class="
-                        flex
-                        items-center
-                        justify-center
-                        bg-white
-                        h-12
-                        w-12
-                        rounded-md
-                        text-white
-                      "
+                      class="flex items-center justify-center bg-white h-12 w-12 rounded-md text-white"
                     >
                       <img
                         class="h-8 w-auto sm:h-10 hover:animate-ping"
@@ -757,16 +607,7 @@
                 <div>
                   <dt>
                     <div
-                      class="
-                        flex
-                        items-center
-                        justify-center
-                        bg-white
-                        h-12
-                        w-12
-                        rounded-md
-                        text-white
-                      "
+                      class="flex items-center justify-center bg-white h-12 w-12 rounded-md text-white"
                     >
                       <img
                         class="h-8 w-auto sm:h-10 hover:animate-ping"
@@ -793,92 +634,114 @@
       <div
         class="mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-6"
       >
-      
         <div class="col-span-2">
-          <a href="https://www.flickr.com/photos/ccibenin/albums/72177720303919630" target="_blank">
-          <img
-            src="@/assets/images/mediateq.jpeg"
-            class="h-48 w-full object-cover rounded-lg mb-6"
-            alt=""
-          />
-          <p class="text-blue text-sm mb-2 max-two-lines">
-            Ateliers de la Coopération Consulaire et Économique et Rendez-vous
-            d'Affaires Francophones Africains : La CCI Bénin et l’APIEx
-            représentées à la CCI Bordeaux Gironde
-          </p>
-          <div class="text-subtitlegray text-sm">13 photos</div>
-        </a>
+          <a
+            href="https://www.flickr.com/photos/ccibenin/albums/72177720303919630"
+            target="_blank"
+          >
+            <img
+              src="@/assets/images/mediateq.jpeg"
+              class="h-48 w-full object-cover rounded-lg mb-6"
+              alt=""
+            />
+            <p class="text-blue text-sm mb-2 max-two-lines">
+              Ateliers de la Coopération Consulaire et Économique et Rendez-vous
+              d'Affaires Francophones Africains : La CCI Bénin et l’APIEx
+              représentées à la CCI Bordeaux Gironde
+            </p>
+            <div class="text-subtitlegray text-sm">13 photos</div>
+          </a>
         </div>
 
-      
         <div class="">
-          <a href="https://www.flickr.com/photos/ccibenin/albums/72177720303671892" target="_blank">
+          <a
+            href="https://www.flickr.com/photos/ccibenin/albums/72177720303671892"
+            target="_blank"
+          >
             <img
               src="@/assets/images/media3.jpg"
               class="h-48 w-full object-cover rounded-lg mb-6"
               alt=""
             />
             <p class="text-blue text-sm mb-2 max-two-lines">
-              Projet e-Tchité ; Renforcement des capacités digitales des bénéficiaires sur la thématique « Comment optimiser la présence de son entreprise sur les Réseaux Sociaux »
+              Projet e-Tchité ; Renforcement des capacités digitales des
+              bénéficiaires sur la thématique « Comment optimiser la présence de
+              son entreprise sur les Réseaux Sociaux »
             </p>
             <div class="text-subtitlegray text-sm">15 photos</div>
           </a>
         </div>
         <div class="">
-          <a href="https://www.flickr.com/photos/ccibenin/albums/72177720303576988" target="_blank">
-          <img
-            src="@/assets/images/media4.jpg"
-            class="h-48 w-full object-cover rounded-lg mb-6"
-            alt=""
-          />
-          <p class="text-blue text-sm mb-2 max-two-lines">
-            La CCI Bénin et le CIPB outillent les opérateurs économiques sur la prévention des risques d’incendie en entreprise
-          </p>
-          <div class="text-subtitlegray text-sm">27 photos</div>
+          <a
+            href="https://www.flickr.com/photos/ccibenin/albums/72177720303576988"
+            target="_blank"
+          >
+            <img
+              src="@/assets/images/media4.jpg"
+              class="h-48 w-full object-cover rounded-lg mb-6"
+              alt=""
+            />
+            <p class="text-blue text-sm mb-2 max-two-lines">
+              La CCI Bénin et le CIPB outillent les opérateurs économiques sur
+              la prévention des risques d’incendie en entreprise
+            </p>
+            <div class="text-subtitlegray text-sm">27 photos</div>
           </a>
         </div>
 
         <div class="">
-          <a href="https://www.flickr.com/photos/ccibenin/albums/72177720302992758" target="_blank">
-          <img
-            src="@/assets/images/media5.jpg"
-            class="h-48 w-full object-cover rounded-lg mb-6"
-            alt=""
-          />
-          <p class="text-blue text-sm mb-2 max-two-lines">
-            Signature de conventions avec la CCI de Bahreïn et la CCI de Koweit
-          </p>
-          <div class="text-subtitlegray text-sm">2 photos</div>
-        </a>
+          <a
+            href="https://www.flickr.com/photos/ccibenin/albums/72177720302992758"
+            target="_blank"
+          >
+            <img
+              src="@/assets/images/media5.jpg"
+              class="h-48 w-full object-cover rounded-lg mb-6"
+              alt=""
+            />
+            <p class="text-blue text-sm mb-2 max-two-lines">
+              Signature de conventions avec la CCI de Bahreïn et la CCI de
+              Koweit
+            </p>
+            <div class="text-subtitlegray text-sm">2 photos</div>
+          </a>
         </div>
 
         <div class="">
-          <a href="https://www.flickr.com/photos/ccibenin/albums/72177720302854249" target="_blank">
-          <img
-            src="@/assets/images/media6.jpg"
-            class="h-48 w-full object-cover rounded-lg mb-6"
-            alt=""
-          />
-          <p class="text-blue text-sm mb-2 max-two-lines">
-            3ème édition du « Mois du Consommons local » : La CCI Bénin œuvre pour l’implication des journalistes dans la promotion des produits locaux
-          </p>
-          <div class="text-subtitlegray text-sm">40 photos</div>
-        </a>
+          <a
+            href="https://www.flickr.com/photos/ccibenin/albums/72177720302854249"
+            target="_blank"
+          >
+            <img
+              src="@/assets/images/media6.jpg"
+              class="h-48 w-full object-cover rounded-lg mb-6"
+              alt=""
+            />
+            <p class="text-blue text-sm mb-2 max-two-lines">
+              3ème édition du « Mois du Consommons local » : La CCI Bénin œuvre
+              pour l’implication des journalistes dans la promotion des produits
+              locaux
+            </p>
+            <div class="text-subtitlegray text-sm">40 photos</div>
+          </a>
         </div>
 
-
         <div class="col-span-2">
-          <a href="https://www.flickr.com/photos/ccibenin/albums/72177720302811144" target="_blank">
-          <img
-            src="@/assets/images/media7.jpg"
-            class="h-48 w-full object-cover rounded-lg mb-6"
-            alt=""
-          />
-          <p class="text-blue text-sm mb-2 max-two-lines">
-            Formation CAMeC sur le thème Exercer comme arbitre médiateur ; Habilités techniques et procédurales
-          </p>
-          <div class="text-subtitlegray text-sm">54 photos</div>
-        </a>
+          <a
+            href="https://www.flickr.com/photos/ccibenin/albums/72177720302811144"
+            target="_blank"
+          >
+            <img
+              src="@/assets/images/media7.jpg"
+              class="h-48 w-full object-cover rounded-lg mb-6"
+              alt=""
+            />
+            <p class="text-blue text-sm mb-2 max-two-lines">
+              Formation CAMeC sur le thème Exercer comme arbitre médiateur ;
+              Habilités techniques et procédurales
+            </p>
+            <div class="text-subtitlegray text-sm">54 photos</div>
+          </a>
         </div>
       </div>
       <div>
@@ -909,19 +772,13 @@
               NEWSLETTER
             </h5>
             <h1
-              class="
-                mt-2
-                text-4xl
-                leading-10
-                font-extrabold
-                tracking-tight
-                text-primary
-              "
+              class="mt-2 text-4xl leading-10 font-extrabold tracking-tight text-primary"
             >
               Restons connectés
             </h1>
             <p class="mt-4 text-lg leading-7 font-normal text-blue">
-              Abonnez-vous à notre bulletin d’information pour être informé(e) de nos dernières actualités.
+              Abonnez-vous à notre bulletin d’information pour être informé(e)
+              de nos dernières actualités.
             </p>
             <form @submit.prevent="sendRequest" class="">
               <div class="mt-4">
@@ -996,9 +853,11 @@ export default {
         title: "",
         description: "",
       },
+      newsComuniqué: [],
+      loader: true,
     };
   },
-  created() {
+  async created() {
     let configs = sessionStorage.getItem("configs");
     if (configs !== undefined && configs !== null) {
       configs = JSON.parse(configs);
@@ -1043,6 +902,8 @@ export default {
         };
       });
     }
+    await this.getCategoryArticles();
+    console.log(this.newsComuniqué);
   },
   methods: {
     async sendRequest() {
@@ -1076,10 +937,21 @@ export default {
         this.$emit("error");
       }
     },
+    async getCategoryArticles() {
+      this.loader = true;
+      try {
+        await services.getCategory_articles(3).then((response) => {
+          this.newsComuniqué = response.data.data;
+        });
+        this.loader = false;
+      } catch (error) {
+        this.loader = false;
+      }
+    },
   },
 };
 </script>
-  
+
 <style lang="scss" scoped>
 .barner {
   background: linear-gradient(
@@ -1126,4 +998,3 @@ input {
   height: 240px !important;
 }
 </style>
-
