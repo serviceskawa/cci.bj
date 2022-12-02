@@ -14,12 +14,12 @@
           <h1
             class="text-primary text-4xl lg:text-6xl leading-none font-extrabold tracking-tight"
           >
-            Consolidez votre projet <br />
-            entrepreneurial
+          La CCI Bénin une source <br>de données fiables.
           </h1>
           <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-            Amenez votre société vers de nouveaux sommets. La CCI <br />
-            Bénin vous offre les clefs pour accélérer votre croissance.
+            Découvrez les rapports et informations actualisées de la
+            <br>Chambre de Commerce et de l'Industrie sur les entreprises 
+            <br>et sociétés au Bénin.
           </p>
         </div>
       </div>
