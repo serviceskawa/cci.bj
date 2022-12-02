@@ -6,69 +6,50 @@
         barner
         sm:h-96
         lg:h-auto
-        md:px-6
-        pt-8
-        lg:px-10
         flex
         items-center
+        p-4
+        md:px-10
+        lg:px-20
         w-full
       "
     >
-      <div class="flex items-center w-full">
-        <div class="right-section hidden lg:flex w-5/12"></div>
-        <div class="w-full lg:w-7/12 p-6 md:p-10 lg:p-12 xl:p-20">
-          <h1
-            class="
-              text-primary text-4xl
-              uppercase
-              lg:text-6xl
-              leading-none
-              font-extrabold
-              tracking-tight
-            "
-          >
-            P.E.R.E
+      <div class="text-white flex items-center w-full">
+        <div>
+          <h1 class="text-4xl leading-none font-extrabold tracking-tight">
+            Programme Économique de Résilience <br />
+            pour les Entreprises Béninoises en réponse <br />
+            à la COVID-19
           </h1>
-          <h2
-            class="
-              text-blue text-3xl
-              lg:text-4xl
-              font-extrabold
-              text-blue
-              leading-9
-            "
+          <p class="text-md md:text-lg tracking-tight leading-7 mt-6">
+            Nous mettons à votre disposition diverses expertises pour vous
+            accompagner dans la mise en <br />
+            œuvre de solutions pouvant dynamiser votre modèle d'affaires.
+          </p>
+          <button
+            type="button"
+            class="mt-4 btn btn-light bg-white shadow-md text-primary"
           >
-            Le Programme Économique de Résilience <br />
-            pour les Entreprises béninoises en <br />
-            réponse à la Covid-19
-          </h2>
+            Nous rejoindre
+          </button>
         </div>
       </div>
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
       <div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1
-            class="
-              text-3xl
-              lg:text-4xl
-              leading-10
-              font-extrabold
-              tracking-tight
-            "
-          >
-            Objectif du P.E.R.E
+          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+            Le programme P.E.R.E
           </h1>
-          <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-6">
-            Programme d’appui complémentaire aux mesures prises par le
-            Gouvernement, le P.E.R.E s’associe à l’opérateur téléphonique MTN, à
-            des consultants et experts thématiques pour renforcer les capacités
-            des entreprises.
+          <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
+            Programme d'appui complémentaire aux mesures prises par le
+            Gouvernement, le P.E.R.E <br />
+            se consacre à soutenir les entreprises béninoises.
           </p>
         </div>
         <div
           class="
-            flex flex-wrap
+            flex
             grid grid-cols-1
             md:grid-cols-2
             lg:grid-cols-3
@@ -77,251 +58,312 @@
             mb-16
           "
         >
-          <div class="p-6 rounded-lg bg-gris mb-2 md:mb-0">
+          <div class="p-6 pb-12 shadow-lg mb-2 md:mb-0">
             <svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
+              width="62"
+              height="56"
+              viewBox="0 0 62 56"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="48" height="48" rx="8" fill="#FAE8E0" />
+              <rect
+                width="62"
+                height="56"
+                rx="8"
+                fill="#DD7A4B"
+                fill-opacity="0.1"
+              />
               <path
-                d="M21 24L23 26L27 22M33 24C33 28.9706 28.9706 33 24 33C19.0294 33 15 28.9706 15 24C15 19.0294 19.0294 15 24 15C28.9706 15 33 19.0294 33 24Z"
+                d="M38.5 40H46V37C46 34.5147 43.9853 32.5 41.5 32.5C40.0666 32.5 38.7897 33.1702 37.9656 34.2143M38.5 40H23.5M38.5 40V37C38.5 36.0156 38.3104 35.0756 37.9656 34.2143M23.5 40H16V37C16 34.5147 18.0147 32.5 20.5 32.5C21.9334 32.5 23.2103 33.1702 24.0344 34.2143M23.5 40V37C23.5 36.0156 23.6896 35.0756 24.0344 34.2143M24.0344 34.2143C25.1403 31.4515 27.8422 29.5 31 29.5C34.1578 29.5 36.8597 31.4515 37.9656 34.2143M35.5 20.5C35.5 22.9853 33.4853 25 31 25C28.5147 25 26.5 22.9853 26.5 20.5C26.5 18.0147 28.5147 16 31 16C33.4853 16 35.5 18.0147 35.5 20.5ZM44.5 25C44.5 26.6569 43.1569 28 41.5 28C39.8431 28 38.5 26.6569 38.5 25C38.5 23.3431 39.8431 22 41.5 22C43.1569 22 44.5 23.3431 44.5 25ZM23.5 25C23.5 26.6569 22.1569 28 20.5 28C18.8431 28 17.5 26.6569 17.5 25C17.5 23.3431 18.8431 22 20.5 22C22.1569 22 23.5 23.3431 23.5 25Z"
                 stroke="#DD7A4B"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
             </svg>
-            <div class="mt-6">
+
+            <div class="mt-4">
               <h4 class="text-lg leading-7 font-medium text-borderSimple">
-                PME & PMI à fort potentiel
+                Pour qui ?
               </h4>
-              <p class="text-sm leading-5 text-subtitlegray">
-                Proposer un accompagnement personnalisé de trois à six mois
-                consécutifs, aux dirigeants et promoteurs d’entreprise à fort
-                potentiel dans la planification et la mise en oeuvre de leurs
-                projets stratégiques.
+              <p class="text-md text-light leading-5 text-subtitlegray">
+                Le P.E.R.E s'adresse aux dirigeants des Micro, Petites et
+                Moyennes entreprises qui doivent affronter le détricotage de
+                leurs modèles d'affaires suite à la pandémie de Covid-19.
               </p>
             </div>
           </div>
-          <div class="p-6 rounded-lg bg-gris">
+          <div class="p-6 pb-12 shadow-lg mb-2 md:mb-0">
             <svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
+              width="56"
+              height="56"
+              viewBox="0 0 56 56"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="48" height="48" rx="8" fill="#FAE8E0" />
+              <rect
+                width="56"
+                height="56"
+                rx="8"
+                fill="#DD7A4B"
+                fill-opacity="0.1"
+              />
               <path
-                d="M21 24L23 26L27 22M33 24C33 28.9706 28.9706 33 24 33C19.0294 33 15 28.9706 15 24C15 19.0294 19.0294 15 24 15C28.9706 15 33 19.0294 33 24Z"
+                d="M24.8846 34.6667H31.1152M27.9999 16V17.3333M36.4852 19.5147L35.5424 20.4575M40 27.9999H38.6667M17.3333 27.9999H16M20.4575 20.4575L19.5146 19.5147M23.2859 32.7141C20.6824 30.1106 20.6824 25.8895 23.2859 23.286C25.8894 20.6825 30.1105 20.6825 32.714 23.286C35.3175 25.8895 35.3175 30.1106 32.714 32.7141L31.9845 33.4435C31.1407 34.2874 30.6666 35.4319 30.6666 36.6253V37.3333C30.6666 38.8061 29.4727 40 27.9999 40C26.5272 40 25.3333 38.8061 25.3333 37.3333V36.6253C25.3333 35.4319 24.8592 34.2874 24.0153 33.4435L23.2859 32.7141Z"
                 stroke="#DD7A4B"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
             </svg>
-            <div class="mt-6">
+
+            <div class="mt-4">
               <h4 class="text-lg leading-7 font-medium text-borderSimple">
-                PME et PMI
+                Pourquoi ?
               </h4>
-              <p class="text-sm leading-5 text-subtitlegray">
-                Déployer une plateforme d’écoute et de conseil,accessinle par
-                téléphone et par mail pour accompagner tous les professionnels
-                et promoteurs d’entreprise au Bénin.
+              <p class="text-md text-light leading-5 text-subtitlegray">
+                L'objectif du P.E.R.E est de soutenir l'action du gouvernement
+                dans le redressement des entreprises locales qui ont vu leurs
+                affaires être ralenties suite à la COVID-19.
               </p>
             </div>
           </div>
-          <div class="p-6 rounded-lg bg-gris">
+          <div class="p-6 pb-12 shadow-lg mb-2 md:mb-0">
             <svg
-              width="48"
-              height="48"
-              viewBox="0 0 48 48"
+              width="56"
+              height="56"
+              viewBox="0 0 56 56"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <rect width="48" height="48" rx="8" fill="#FAE8E0" />
+              <rect
+                width="56"
+                height="56"
+                rx="8"
+                fill="#DD7A4B"
+                fill-opacity="0.1"
+              />
               <path
-                d="M21 24L23 26L27 22M33 24C33 28.9706 28.9706 33 24 33C19.0294 33 15 28.9706 15 24C15 19.0294 19.0294 15 24 15C28.9706 15 33 19.0294 33 24Z"
+                d="M25.7662 17.7564C26.3347 15.4145 29.6653 15.4145 30.2338 17.7564C30.6011 19.2692 32.3343 19.9872 33.6638 19.1771C35.7217 17.9232 38.0768 20.2783 36.8229 22.3362C36.0128 23.6657 36.7308 25.3989 38.2436 25.7662C40.5855 26.3347 40.5855 29.6653 38.2436 30.2338C36.7308 30.6011 36.0128 32.3343 36.8229 33.6638C38.0768 35.7217 35.7217 38.0768 33.6638 36.8229C32.3343 36.0128 30.6011 36.7308 30.2338 38.2436C29.6653 40.5855 26.3347 40.5855 25.7662 38.2436C25.3989 36.7308 23.6657 36.0128 22.3362 36.8229C20.2783 38.0768 17.9232 35.7217 19.1771 33.6638C19.9872 32.3343 19.2692 30.6011 17.7564 30.2338C15.4145 29.6653 15.4145 26.3347 17.7564 25.7662C19.2692 25.3989 19.9872 23.6657 19.1771 22.3362C17.9232 20.2783 20.2783 17.9232 22.3362 19.1771C23.6657 19.9872 25.3989 19.2692 25.7662 17.7564Z"
+                stroke="#DD7A4B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M32 28C32 30.2091 30.2091 32 28 32C25.7909 32 24 30.2091 24 28C24 25.7909 25.7909 24 28 24C30.2091 24 32 25.7909 32 28Z"
                 stroke="#DD7A4B"
                 stroke-width="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
               />
             </svg>
-            <div class="mt-6">
+
+            <div class="mt-4">
               <h4 class="text-lg leading-7 font-medium text-borderSimple">
-                Dirigeants & Cadre-Dirigeants de MPME
+                Comment ?
               </h4>
-              <p class="text-sm leading-5 text-subtitlegray">
-                Animer dans les différentes localités du Bénin des sessions
-                physiques de renforcement des capacités pour les professionnels
-                regroupés par corps de métiers et / ou secteurs.
+              <p class="text-md text-light leading-5 text-subtitlegray">
+                Le P. E.R.E s'associe à l'opérateur téléphonique MTN, à des
+                consultants et experts thématiques pour renforcer les capacités
+                des PME et PMI à fort potentiel.
               </p>
             </div>
           </div>
         </div>
-        <div
-          class="
-            flex
-            items-center
-            flex-wrap
-            grid grid-cols-1
-            lg:grid-cols-2
-            gap-6
-            md:gap-8
-            pb-8
-            md:pb-20
-          "
-        >
-          <div>
-            <h2
-              class="
-                text-3xl
-                tracking-tight
-                font-extrabold
-                leading-9
-                text-gray-900
-                sm:text-3xl
-              "
-            >
-              Vision du P.E.R.E
-            </h2>
-            <h2
-              class="
-                text-3xl
-                tracking-tight
-                font-extrabold
-                leading-9
-                text-primary
-                sm:text-3xl
-              "
-            >
-              Accompagner les dirigeants d’entreprises dans la recherche et la
-              mise en oeuvre des solutions innovantes
-            </h2>
-            <p class="my-3 leading-7 text-lg text-subtitlegray sm:my-4">
-              Le P.E.R.E se consacre à soutenir les dirigeants des P.M.E et
-              leurs entreprises, tout le long des phases post-COVID-19. Cela
-              passe nécessairement par l’écoute attentive et l’appui conseil aux
-              Micro, Petites et Moyennes entreprises qui doivent affronter le
-              détricotage de leurs modèles d’affaires.
-            </p>
-            <a href="tel:0022991373333"
-              ><button class="btn text-primary mt-4">Appelez-nous</button></a
-            >
-          </div>
-          <div class="asset-session hidden lg:flex" />
-        </div>
-        <div
-          class="
-            flex
-            items-center
-            flex-wrap
-            grid grid-cols-1
-            lg:grid-cols-2
-            gap-6
-            md:gap-8
-            pb-8
-            md:pb-20
-          "
-        >
-          <div class="asset-session hidden lg:flex" />
-          <div>
-            <h2
-              class="
-                text-3xl
-                tracking-tight
-                font-extrabold
-                leading-9
-                text-gray-900
-                sm:text-3xl
-              "
-            >
-              Notre force
-            </h2>
-            <h2
-              class="
-                text-3xl
-                tracking-tight
-                font-extrabold
-                leading-9
-                text-primary
-                sm:text-3xl
-              "
-            >
-              Un réseau d’experts pluridisciplinaires
-            </h2>
-            <p class="my-3 leading-7 text-lg text-subtitlegray sm:my-4">
-              Nos consultants sont des experts terrain,sélectionnés pour leur
-              expertise-métier, leur valeur ajoutée et leur connaissance des
-              préoccupations des entreprises en Afrique et au Bénin.
-            </p>
-            <a href="mailto:pere@ccib.bj"
-              ><button class="btn text-primary mt-4">Ecrivez-nous</button></a
-            >
-          </div>
-        </div>
-        <div class="pt-6 md:pt-16 mb-6">
-          <h1
-            class="
-              text-3xl
-              lg:text-4xl
-              leading-10
-              font-extrabold
-              tracking-tight
-            "
-          >
-            Programme centré sur le Renforcement <br />
-            des capacités des PME & PMI
+        <div>
+          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+            Le contenu du programme P.E.R.E
           </h1>
-          <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-2">
-            Des formations, des ateliers d’échange d’expériences, des supports
-            et outils d’aide à la gestion et à la décision
+          <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
+            Profitez d'un réseau d'experts pluridisciplinaires pour élaborer des
+            modèles d'affaires résilients
           </p>
-        </div>
-        <div class="pb-16">
-          <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2">
-            <div v-for="feature in features" :key="feature.name" class="pt-6">
-              <div class="flow-root rounded-lg bg-gray px-6 pb-8">
-                <div class="-mt-6">
-                  <div class="flex justify-center">
-                    <span
-                      class="text-center rounded-md bg-primary p-3 shadow-lg"
-                    >
-                      <svg
-                        class="h-6 w-6"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M17 20H22V18C22 16.3431 20.6569 15 19 15C18.0444 15 17.1931 15.4468 16.6438 16.1429M17 20H7M17 20V18C17 17.3438 16.8736 16.717 16.6438 16.1429M7 20H2V18C2 16.3431 3.34315 15 5 15C5.95561 15 6.80686 15.4468 7.35625 16.1429M7 20V18C7 17.3438 7.12642 16.717 7.35625 16.1429M7.35625 16.1429C8.0935 14.301 9.89482 13 12 13C14.1052 13 15.9065 14.301 16.6438 16.1429M15 7C15 8.65685 13.6569 10 12 10C10.3431 10 9 8.65685 9 7C9 5.34315 10.3431 4 12 4C13.6569 4 15 5.34315 15 7ZM21 10C21 11.1046 20.1046 12 19 12C17.8954 12 17 11.1046 17 10C17 8.89543 17.8954 8 19 8C20.1046 8 21 8.89543 21 10ZM7 10C7 11.1046 6.10457 12 5 12C3.89543 12 3 11.1046 3 10C3 8.89543 3.89543 8 5 8C6.10457 8 7 8.89543 7 10Z"
-                          stroke="white"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                    </span>
-                  </div>
-                  <h3
-                    class="
-                      mt-8
-                      text-center text-lg
-                      font-medium
-                      tracking-tight
-                      text-gray-900
-                    "
+          <div
+            class="py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            <div class="flex py-3">
+              <div class="mr-8">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 13L9 17L19 7"
+                    stroke="#1D7834"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="">
+                <p class="font-semibold mb-4">Gestion des entreprises</p>
+                <p class="tracking-tight text-subtitlegray mt-3">
+                  Explorez de nouvelles méthodes méthodes et outils pour gérer
+                  votre entreprise
+                </p>
+              </div>
+            </div>
+            <div class="flex py-3">
+              <div class="mr-8">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 13L9 17L19 7"
+                    stroke="#1D7834"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="">
+                <p class="font-semibold mb-4">Fiscalité et droit</p>
+                <p class="tracking-tight text-subtitlegray mt-3">
+                  Obtenez des conseils pour une meilleure gestion financière,
+                  juridique et fiscale
+                </p>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div
+            class="py-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            <div class="flex py-3">
+              <div class="mr-8">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 13L9 17L19 7"
+                    stroke="#1D7834"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="">
+                <p class="font-semibold mb-">Développement des ventes</p>
+                <p class="tracking-tight text-subtitlegray mt-3">
+                  Accédez aux stratégies de vente les plus efficaces pour
+                  l'acquisition des clients
+                </p>
+              </div>
+            </div>
+            <div class="flex py-3">
+              <div class="mr-8">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M5 13L9 17L19 7"
+                    stroke="#1D7834"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="">
+                <p class="font-semibold mb-4">Gestion de la clientèle</p>
+                <p class="tracking-tight text-subtitlegray mt-3">
+                  Découvrez les méthodes et outils de suivi et de fidélisation
+                  de la clientèle
+                </p>
+              </div>
+            </div>
+            <div></div>
+          </div>
+          <div class="pt-20">
+            <div class="grid grid-cols-1 bg-grayCard lg:grid-cols-2 gap-8">
+              <div class="px-6 py-8">
+                <h4
+                  class="
+                    text-4xl
+                    leading-10
+                    font-extrabold
+                    tracking-tight
+                    text-primary
+                    mb-4
+                  "
+                >
+                  Faites recours au P.E.R.E <br />
+                  pour vos besoins en appui-conseil
+                </h4>
+                <p class="text-lg leading-7 text-blue mb-8">
+                  Prenez vite rendez-vous avec un de nos experts pour être
+                  orienté dans votre stratégie de développement.
+                </p>
+                <div class="flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
                   >
-                    {{ feature.name }}
-                  </h3>
-                  <p class="mt-5 text-base text-center text-gray-500">
-                    {{ feature.description }}
-                  </p>
+                    <path
+                      d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z"
+                      stroke="#DD7A4B"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div class="ml-3 text-subtitlegray">
+                    <div class="mb-2">(+229) 91 37 33 33</div>
+                    <div class="mb-2">Lundi - Vendredi 08:00 - 18:00</div>
+                  </div>
                 </div>
+                <div class="mt-4 flex">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M3 8L10.8906 13.2604C11.5624 13.7083 12.4376 13.7083 13.1094 13.2604L21 8M5 19H19C20.1046 19 21 18.1046 21 17V7C21 5.89543 20.1046 5 19 5H5C3.89543 5 3 5.89543 3 7V17C3 18.1046 3.89543 19 5 19Z"
+                      stroke="#DD7A4B"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+
+                  <div class="ml-3 text-subtitlegray">
+                    <a href="mailto:pere@ccib.bj" class="underline"
+                      >Pere@ccib.bj</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <img
+                  src="@/assets/images/chef.jpeg"
+                  class="w-full h-auto object-cover"
+                />
               </div>
             </div>
           </div>
@@ -333,49 +375,17 @@
 
 <script setup>
 import { defineComponent, h } from "vue";
-const features = [
-  {
-    name: "Gestion des entreprises",
-    description:
-      "Des techniques, méthodes et outils  d’aide à la gestion d’entreprise sont mis à la portée des dirigeants d’entreprise.",
-  },
-  {
-    name: "Finance Fiscalité & Droit",
-    description:
-      "Des conseils en matière juridique, mais aussi des supports et des outils pour une gestion financière et fiscale, sont mis à la disposition des entreprises.",
-  },
-  {
-    name: "Développement des ventes",
-    description:
-      "Des stratégies efficaces de promotion de l’entreprise et d’acquisition de clients sont présentées; les participants sont formés.",
-  },
-  {
-    name: "Gestion de la clientèle",
-    description:
-      "Des méthodes et outils de suivi de la clientèle, de fidélisation sont déployés et les participants y sont formés.",
-  },
-];
 </script>
 
 <style lang="scss" scoped>
 .barner {
-  background: #e3e3e3 !important;
-}
-.right-section {
-  background: url("../assets/images/pere-cover.jpeg") !important;
+  background: linear-gradient(0deg, #dd7a4b, #dd7a4b),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../assets/images/pere.jpeg") !important;
   height: 520px !important;
-  background-position: left !important;
+  background-position: top !important;
   background-attachment: local !important;
   background-size: cover !important;
   background-repeat: no-repeat !important;
-}
-.asset-session {
-  background: url("../assets/images/ass.jpeg");
-  background-size: cover !important;
-  height: 400px;
-  width: 100%;
-  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0px 10px 10px -5px rgba(0, 0, 0, 0.04);
-  border-radius: 12px;
 }
 </style>

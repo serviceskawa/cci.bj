@@ -18,8 +18,7 @@
         <div>
           <h1
             class="
-              text-blue text-4xl
-              lg:text-6xl
+              text-blue text-4xl lg:text-6xl
               leading-none
               font-extrabold
               tracking-tight

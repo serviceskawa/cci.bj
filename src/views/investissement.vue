@@ -23,8 +23,7 @@
         <div>
           <h1
             class="
-              text-primary text-4xl
-              lg:text-6xl
+              text-primary text-4xl lg:text-6xl
               leading-none
               font-extrabold
               tracking-tight
