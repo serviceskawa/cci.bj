@@ -14,12 +14,12 @@
           <h1
             class="text-primary text-4xl lg:text-6xl leading-none font-extrabold tracking-tight"
           >
-          La CCI Bénin une source <br>de données fiables.
+            La CCI Bénin une source <br />de données fiables.
           </h1>
           <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
             Découvrez les rapports et informations actualisées de la
-            <br>Chambre de Commerce et de l'Industrie sur les entreprises 
-            <br>et sociétés au Bénin.
+            <br />Chambre de Commerce et de l'Industrie sur les entreprises
+            <br />et sociétés au Bénin.
           </p>
         </div>
       </div>
@@ -83,16 +83,29 @@
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div v-for="(n, index) in newsComuniqué.slice(0,4)" :key="index">
-            <div class="text-sm font-light text-primary mb-3" @click="$router.push({ name: 'read-article', params: { slug: n.slug } })">
+          <div v-for="(n, index) in newsComuniqué.slice(0, 4)" :key="index">
+            <div
+              class="text-sm font-light text-primary mb-3"
+              @click="
+                $router.push({ name: 'read-article', params: { slug: n.slug } })
+              "
+            >
               {{ n.created_at }}
             </div>
-            <div class="text-blue font-bold text-md mb-3 max-three-lines" @click="$router.push({ name: 'read-article', params: { slug: n.slug } })">
+            <div
+              class="text-blue font-bold text-md mb-3 max-three-lines"
+              @click="
+                $router.push({ name: 'read-article', params: { slug: n.slug } })
+              "
+            >
               {{ n.title }}
             </div>
             <p
               class="text-md tracking-tight leading-7 text-subtitlegray max-three-lines"
-              v-html="n.short_content" @click="$router.push({ name: 'read-article', params: { slug: n.slug } })"
+              v-html="n.short_content"
+              @click="
+                $router.push({ name: 'read-article', params: { slug: n.slug } })
+              "
             ></p>
           </div>
           <!-- <div>
@@ -448,7 +461,10 @@
               Rapports de l’observatoire
             </h1>
             <div>
-              <a href="#" class="text-primary">
+              <a
+                :href="static_file_url + '/publications/1662111194.pdf'"
+                class="text-primary"
+              >
                 Voir les rapports<span aria-hidden="true">&rarr;</span></a
               >
             </div>
@@ -866,6 +882,7 @@ export default {
       persona: [],
       loader: true,
       configs: [],
+      static_file_url: import.meta.env.VITE_FILE_URL,
     };
   },
   async created() {
@@ -916,7 +933,7 @@ export default {
     }
     await this.getCategoryArticles();
     await this.getPersonaById();
-    console.log(this.configs.image_url);
+    console.log(import.meta.env.VITE_FILE_URL);
   },
   methods: {
     async sendRequest() {
