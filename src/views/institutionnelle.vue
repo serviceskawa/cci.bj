@@ -83,7 +83,7 @@
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div v-for="(n, index) in newsComuniqué" :key="index">
+          <div v-for="(n, index) in newsComuniqué.slice(0,4)" :key="index">
             <div class="text-sm font-light text-primary mb-3">
               {{ n.created_at }}
             </div>
