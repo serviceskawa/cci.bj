@@ -89,11 +89,10 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div v-for="(n, index) in newsComuniqué.slice(0, 4)" :key="index">
+            <a @click="$router.push({ name: 'read-article', params: { slug: n.slug } })">
             <div
               class="text-sm font-light text-primary mb-3"
-              @click="
-                $router.push({ name: 'read-article', params: { slug: n.slug } })
-              "
+              
             >
               {{ n.created_at }}
             </div>
@@ -112,6 +111,7 @@
                 $router.push({ name: 'read-article', params: { slug: n.slug } })
               "
             ></p>
+          </a>
           </div>
           <!-- <div>
             <div class="text-sm font-light text-primary mb-3">Nov 2022</div>
@@ -291,12 +291,14 @@
             </div>
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
+            <a @click="$router.push({ name: 'documents' })">
             <button
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >
-              Découvrir l'observatoire
+            Voir les rapports
             </button>
+          </a>
           </div>
         </div>
         <div
