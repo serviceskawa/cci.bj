@@ -332,7 +332,7 @@
 
                   <div class="ml-3 text-subtitlegray">
                     <div class="mb-2">(+229) 91 37 33 33</div>
-                    <div class="mb-2">Lundi - Vendredi 08:00 - 18:00</div>
+                    <div class="mb-2">Lundi - Vendredi 08:00 - 17:30</div>
                   </div>
                 </div>
                 <div class="mt-4 flex">

@@ -505,7 +505,7 @@
           <div class="pt-20">
             <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
               Le calendrier des prochains <br />
-               «Rendez-vous mensuel des experts»
+              «Rendez-vous mensuel des experts»
             </h1>
             <p
               class="
@@ -646,7 +646,7 @@
 
               <div class="ml-3 text-subtitlegray">
                 <div class="mb-2">(+229) 91 37 33 33</div>
-                <div class="mb-2">Lundi - Vendredi 08:00 - 18:00</div>
+                <div class="mb-2">Lundi - Vendredi 08:00 - 17:30</div>
               </div>
             </div>
             <div class="mt-4 flex">
