@@ -58,7 +58,7 @@
             Le programme rendez-vous mensuel des experts
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
-            Programme de la CCI-Bénin destiné à assurer un accompagnement
+            Programme de la CCI Bénin destiné à assurer un accompagnement
             technique des entreprises qui <br />
             souhaitent développer leurs affaires ou améliorer leurs
             performances.
@@ -104,7 +104,7 @@
               </h4>
               <p class="text-md text-light leading-5 text-subtitlegray">
                 Le rendez-vous mensuel des experts est un programme de la
-                CCI-Bénin destiné à assurer un accompagnement technique des
+                CCI Bénin destiné à assurer un accompagnement technique des
                 entreprises qui souhaitent développer leurs affaires ou
                 améliorer leurs performances.
               </p>
@@ -498,7 +498,7 @@
               type="button"
               class="btn btn-light bg-white shadow-md text-primary w-full"
             >
-              Nous rejoindre
+              Voir le planning
             </button>
             <div></div>
           </div>
@@ -645,7 +645,7 @@
               </svg>
 
               <div class="ml-3 text-subtitlegray">
-                <div class="mb-2">(+229) 91 37 33 33</div>
+                <a href="tel:0022951105652"></a><div class="mb-2">(+229) 51 10 56 52</div>
                 <div class="mb-2">Lundi - Vendredi 08:00 - 17:30</div>
               </div>
             </div>
@@ -667,12 +667,12 @@
               </svg>
 
               <div class="ml-3 text-subtitlegray">
-                <a href="mailto:pere@ccib.bj" class="underline">Pere@ccib.bj</a>
+                <a href="mailto:fleur.djegnonde@ccib.bj" class="underline">fleur.djegnonde@ccib.bj</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="py-20">
+        <!--<div class="py-20">
           <h2 class="text-3xl tracking-tight font-bold text-blue text-center mb-6">
             Foire aux questions
           </h2>
@@ -746,7 +746,7 @@
               </DisclosurePanel>
             </Disclosure>
           </dl>
-        </div>
+        </div>-->
       </div>
     </div>
   </main>
