@@ -126,12 +126,17 @@
             </div>
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
+            <a 
+              :href="static_file_url + '/publications/file_2f0ce1cd72d6d3503a31a7c26d6bd0cf.pdf'"
+              target="_blank"
+           >
             <button
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >
               Télécharger le Barème des cotisations
             </button>
+          </a>
           </div>
         </div>
         <div
@@ -259,12 +264,17 @@
             matière d'importation et d'exportation.
           </p>
           <div class="mt-8">
+            <a 
+              :href="static_file_url + '/publications/1666769020.pdf'"
+              target="_blank"
+           >
             <button
               type="button"
               class="btn btn-light bg-white shadow-md text-primary underline"
             >
               Consulter
             </button>
+            </a>
           </div>
         </div>
         <div class="interessed-box">
@@ -394,6 +404,10 @@
             </div>
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
+            <a 
+              :href="static_file_url + '/publications/file_9d1c433f427bce929753cc8e54ca6e6f.pdf'"
+              target="_blank"
+           >
             <button
               type="button"
               class="
@@ -407,6 +421,7 @@
             >
               Consulter
             </button>
+          </a>
           </div>
         </div>
       </div>
@@ -1174,6 +1189,7 @@ export default {
         title: "",
         description: "",
       },
+      static_file_url: import.meta.env.VITE_FILE_URL,
     };
   },
   created() {

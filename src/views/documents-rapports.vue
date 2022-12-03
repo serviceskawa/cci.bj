@@ -79,7 +79,7 @@
         </div>
         <div class="pt-12 pb-8">
           <h2 class="text-4xl tracking-tight font-bold text-gray-900">
-            Documents & rapports de publication
+            Documentation
           </h2>
           <p
             class="
@@ -92,9 +92,8 @@
               mt-4
             "
           >
-            Quel que soit votre besoin, la CCI-Bénin vous accompagne à chaque
-            étape du processus vers l’atteinte de vos objectifs.Nous vous
-            simplifions les démarches pour votre satisfaction complète.
+          Accédez aux documents et rapports de la Chambre de Commerce et de l'Industrie sur l'environnement 
+          <br>des affaires au Bénin.
           </p>
         </div>
         <div class="flex justify-center pt-8" v-if="loader == true">
@@ -479,12 +478,13 @@
               baromètre de l'opinion des entreprises au Bénin élaborés sur la
               base des données issues de nos collectes.
             </p>
-            <button
-              type="button"
-              class="mt-4 btn btn-light bg-white shadow-md text-primary w-full"
-            >
-              Visiter <span class="underline">impulse</span>
-            </button>
+
+            <a href="mailto:info@ccib.bj?subject=Information%20économique">
+              <button type="button" class="mt-4 btn btn-light bg-white shadow-md text-primary w-full">
+                Formuler une demande
+              </button>
+            </a>
+            
           </div>
           <div>
             <img

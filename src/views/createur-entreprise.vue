@@ -206,12 +206,14 @@
             matière d'importation et d'exportation
           </p>
           <div class="mt-8">
-            <button
-              type="button"
-              class="btn btn-light bg-white shadow-md text-primary underline"
-            >
+           <a 
+              :href="static_file_url + '/publications/1666769020.pdf'"
+              target="_blank"
+           >
+            <button type="button" class="btn btn-light bg-white shadow-md text-primary underline">
               Consulter
             </button>
+          </a>
           </div>
         </div>
         <div class="chef-box">
@@ -788,6 +790,7 @@ export default {
       appels_offres: [],
       on_loading_request: false,
       agenda_datas: [],
+      static_file_url: import.meta.env.VITE_FILE_URL,
     };
   },
   created() {

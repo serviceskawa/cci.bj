@@ -601,8 +601,7 @@
                   <br>en lien avec les industries et le commerce.
                 </p>
               </div>
-              <a href="mailto:info@ccib.bj?subject=Annuaire%20statistique%20des%20entreprises
-">
+              <a href="mailto:info@ccib.bj?subject=Annuaire%20statistique%20des%20entreprises">
               <button
                 type="button"
                 class="btn btn-light bg-white text-primary text-sm w-full"
