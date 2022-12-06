@@ -47,6 +47,7 @@
             réussir votre projet entrepreneurial
           </p>
           <div class="mt-3">
+            <a href="mailto:fleur.djegnonde@ccib.bj?subject=Parcours%20de%20l%27entrepreneur&body=J'aimerais prendre part aux séances de formation de la CCI. Gardez-moi au courant du prochain programme." class="text-sm tracking-tight text-subtitlegray underline ml-2" >
             <button
               type="button"
               class="
@@ -59,6 +60,7 @@
             >
               S'inscrire
             </button>
+            </a>
           </div>
         </div>
       </div>
@@ -823,14 +825,11 @@
               </div>
             </div>
           </div>
-          <div class="mt-8 flex justify-center">
-            <button
-              type="button"
-              class="btn btn-light bg-white shadow-md text-primary w-auto"
-            >
+          <!--<div class="mt-8 flex justify-center">
+            <button type="button" class="btn btn-light bg-white shadow-md text-primary w-auto">
               Voir le programme complet
             </button>
-          </div>
+          </div>-->
         </div>
       </div>
       <div class="pb-20">
@@ -880,26 +879,20 @@
                 />
               </svg>
               <a
-                href="mailto:mailtofleur.djegnonde@ccib.bj"
+                href="mailto:fleur.djegnonde@ccib.bj?subject=Parcours%20de%20l%27entrepreneur&body=J'aimerais prendre part aux séances de formation de la CCI. Gardez-moi au courant du prochain programme."
                 class="text-sm tracking-tight text-subtitlegray underline ml-2"
-                >Mailtofleur.djegnonde@ccib.bj</a
+                >fleur.djegnonde@ccib.bj</a
               >
             </div>
-            <button
-              type="button"
-              class="
-                mt-8
-                btn btn-light
-                bg-white
-                shadow-md
-                text-primary
-                w-full
-                underline
-              "
-            >
-              S'inscrire
-            </button>
+
+            <a href="mailto:fleur.djegnonde@ccib.bj?subject=Parcours%20de%20l%27entrepreneur&body=J'aimerais prendre part aux séances de formation de la CCI. Gardez-moi au courant du prochain programme." class="text-sm tracking-tight text-subtitlegray underline ml-2" >
+              <button type="button" class="mt-8 btn btn-light bg-white shadow-md text-primary w-full underline">
+                S'inscrire
+              </button>
+            </a>
+
           </div>
+
           <div>
             <img
               src="@/assets/images/institutionnel.jpeg"

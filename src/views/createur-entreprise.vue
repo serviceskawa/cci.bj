@@ -448,10 +448,11 @@
             </p>
             <div class="mt-4 w-full">
               <button
+               @click="$router.push({name: 'parcours-entrepreneur'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
-                Bientôt disponible
+              En savoir plus
               </button>
             </div>
           </div>
