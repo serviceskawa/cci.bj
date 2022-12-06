@@ -36,18 +36,19 @@
               leading-7
               text-blue
               mt-6
+              mb-6
             "
           >
             Rencontrez des experts et consultants spécialisés <br />
             dans divers domaines touchant à la vie de <br />
             l'entreprise.
           </p>
-          <button
-            type="button"
-            class="btn btn-primary bg-primary text-white mt-4"
+          <a
+            href="#participate"
+            class="btn btn-primary bg-primary text-white"
           >
             Participer
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -502,10 +503,10 @@
             </button>
             <div></div>
           </div>
-          <div class="pt-20">
+          <div class="pt-20" id="participate">
             <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
               Le calendrier des prochains <br />
-               «Rendez-vous mensuel des experts»
+              «Rendez-vous mensuel des experts»
             </h1>
             <p
               class="

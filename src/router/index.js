@@ -1,6 +1,5 @@
 import {
   createRouter,
-  createWebHashHistory,
   createWebHistory,
 } from 'vue-router';
 import { page } from '@/helpers/routeLoader';
@@ -155,10 +154,15 @@ const routes = [
     name: 'investissement',
     component: page('investissement'),
   },
+  {
+    path: '/parcours-entrepreneur',
+    name: 'parcours-entrepreneur',
+    component: page('parcours-entrepreneur'),
+  },
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 }
   },

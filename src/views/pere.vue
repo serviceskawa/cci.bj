@@ -21,17 +21,17 @@
             pour les Entreprises Béninoises en réponse <br />
             à la COVID-19
           </h1>
-          <p class="text-md md:text-lg tracking-tight leading-7 mt-6">
+          <p class="text-md md:text-lg tracking-tight leading-7 my-6 ">
             Nous mettons à votre disposition diverses expertises pour vous
             accompagner dans la mise en <br />
             œuvre de solutions pouvant dynamiser votre modèle d'affaires.
           </p>
-          <button
-            type="button"
-            class="mt-4 btn btn-light bg-white shadow-md text-primary"
+          <a
+            href="#recours"
+            class="btn btn-light bg-white shadow-md text-primary"
           >
             Nous rejoindre
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -293,7 +293,7 @@
             </div>
             <div></div>
           </div>
-          <div class="pt-20">
+          <div class="pt-20" id="recours">
             <div class="grid grid-cols-1 bg-grayCard lg:grid-cols-2 gap-8">
               <div class="px-6 py-8">
                 <h4

@@ -18,7 +18,8 @@
         <div>
           <h1
             class="
-              text-primary text-4xl lg:text-6xl
+              text-primary text-4xl
+              lg:text-6xl
               leading-none
               font-extrabold
               tracking-tight
@@ -34,7 +35,6 @@
               tracking-tight
               text-subtitlegray
               leading-7
-              text-blue
               mt-6
             "
           >
@@ -204,6 +204,7 @@
                   leading-7
                   text-subtitlegray
                   mt-3
+                  mb-6
                 "
               >
                 Produits destinés à susciter l'intérêt des entreprises <br />
@@ -213,19 +214,14 @@
                 <br />
                 étrangers dans les meilleures conditions.
               </p>
-              <button
-                type="button"
-                class="
-                  mt-4
-                  btn btn-light
-                  bg-white
-                  shadow-md
-                  text-primary
-                  w-full
-                "
-              >
-                Voir le planning
-              </button>
+              <div class="w-full">
+                <a
+                  href="#calendar"
+                  class="btn btn-light bg-white shadow-md text-primary w-full"
+                >
+                  Voir le planning
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -348,7 +344,7 @@
           </div>
         </div>
 
-        <div class="pb-20">
+        <div class="pb-20" id="calendar">
           <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
             Le calendrier des prochaines «Journées Pays»
           </h1>
@@ -658,7 +654,7 @@ export default {
           photo: configs.image_url + "/" + element.photo,
         };
       });
-    }
+    } else 
     this.loader = true;
     await services.get_faq().then((res) => {
       if (res.status == 200 && res.data) {
