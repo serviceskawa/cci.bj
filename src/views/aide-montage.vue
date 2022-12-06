@@ -44,9 +44,9 @@
               mt-6
             "
           >
-            La CCI-Bénin accompagne les entreprises qui <br />
+            La CCI Bénin accompagne les entreprises qui <br />
             souhaitent postuler aux dispositifs de financement <br />
-            ou subvention en toute simplicité
+            ou subvention en toute simplicité.
           </p>
         </div>
       </div>
@@ -59,9 +59,9 @@
             d'aides et financement
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
-            Quel que soit votre besoin, la CCI-Bénin vous accompagne à chaque
+            Quel que soit votre besoin, la CCI Bénin vous accompagne à chaque
             étape du processus vers l’atteinte <br />
-            de vos objectifs.Nous vous simplifions les démarches pour votre
+            de vos objectifs. Nous vous simplifions les démarches pour votre
             satisfaction complète.
           </p>
         </div>
@@ -95,7 +95,7 @@
                 Pour qui ?
               </h4>
               <p class="text-md text-light leading-5 text-subtitlegray">
-                Ce produit de la CCI-Bénin s'adresse aux entreprises, <br />
+                Ce produit de la CCI Bénin s'adresse aux entreprises, <br />
                 commerce et industries qui souhaitent postuler à des <br />
                 dispositifs d'aide ou de financement.
               </p>
@@ -307,14 +307,18 @@
                 Vous souhaitez gagner en rapidité et efficacité dans
                 l'élaboration de vos dossiers de subventions ou de financement ?
                 Visitez la plateforme ImPULSE pour être mis en relation avec un
-                conseiller
+                conseiller.
               </p>
+              <a
+                @click="$router.push({ name: 'impulse' })"
+              >
               <button
                 type="button"
                 class="mt-6 btn bg-primary shadow-md text-white w-full"
               >
                 Aller sur <span class="underline">Impulse.bj</span>
               </button>
+              </a>
             </div>
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 items-center">
@@ -329,7 +333,7 @@
                 en ligne. Nos agents sont disponibles pour répondre <br />
                 à vos questions diverses et préoccupations.
               </p>
-              <button
+              <!--<button
                 type="button"
                 class="
                   mt-8
@@ -341,7 +345,7 @@
                 "
               >
                 Commencer le chat
-              </button>
+              </button> -->
             </div>
             <div
               class="

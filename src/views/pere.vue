@@ -331,8 +331,8 @@
                   </svg>
 
                   <div class="ml-3 text-subtitlegray">
-                    <div class="mb-2">(+229) 91 37 33 33</div>
-                    <div class="mb-2">Lundi - Vendredi 08:00 - 18:00</div>
+                    <a href="tel:0022991373333"><div class="mb-2">(+229) 91 37 33 33</div></a>
+                    <div class="mb-2">Lundi - Vendredi 08:00 - 17:30</div>
                   </div>
                 </div>
                 <div class="mt-4 flex">
@@ -354,7 +354,7 @@
 
                   <div class="ml-3 text-subtitlegray">
                     <a href="mailto:pere@ccib.bj" class="underline"
-                      >Pere@ccib.bj</a
+                      >pere@ccib.bj</a
                     >
                   </div>
                 </div>

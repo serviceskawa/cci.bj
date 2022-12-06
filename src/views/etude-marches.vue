@@ -43,7 +43,7 @@
             Nous vous aidons à identifier les secteurs porteurs <br />
             en vous fournissant les informations nécessaires <br />
             pour réaliser une analyse sectorielle de vos <br />
-            marché cibles
+            marché cibles.
           </p>
         </div>
       </div>
@@ -146,15 +146,14 @@
                 >
                   Nos experts établissent une analyse consolidée des <br />
                   informations recueillies sur le terrain pour vous livrer un
-                  <br />
+                  <br/>
                   rapport comprenant nos recommandations précises.
                 </p>
-                <button
-                  type="button"
-                  class="mt-4 btn bg-primary shadow-md text-white w-full"
-                >
-                  Formuler une demande
-                </button>
+                <a href="mailto:info@ccib.bj?subject=Demande%20d%27une%20%C3%A9tude%20de%20march%C3%A9%20sectorielle%0A%0A">
+                  <button type="button" class="mt-4 btn bg-primary shadow-md text-white w-full" >
+                    Formuler une demande
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -328,12 +327,11 @@
                 de marché sectorielle
               </h1>
               <div class="mt-8 w-full">
-                <button
-                  type="button"
-                  class="btn btn-primary bg-primary text-white text-sm w-full"
-                >
-                  Formuler la demande
-                </button>
+                <a href="mailto:info@ccib.bj?subject=Demande%20d%27une%20%C3%A9tude%20de%20march%C3%A9%20sectorielle%0A%0A">
+                  <button type="button" class="mt-4 btn bg-primary shadow-md text-white w-full" >
+                    Formuler une demande
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -353,6 +351,7 @@
                 ligne. Nos agents sont disponibles pour répondre <br />
                 à vos questions diverses et préoccupations.
               </p>
+              <!-- 
               <button
                 type="button"
                 class="
@@ -365,7 +364,7 @@
                 "
               >
                 Commencer le chat
-              </button>
+              </button> -->
             </div>
             <div
               class="

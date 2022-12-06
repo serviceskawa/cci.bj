@@ -431,12 +431,17 @@
                   <br>sur le marché béninois.
                 </p>
               </div>
+              <a 
+              :href="static_file_url + '/publications/file_da68308533576edbd27393e0eb9ff87a.pdf'"
+              target="_blank"
+              >
               <button
                 type="button"
                 class="btn btn-light bg-white text-primary text-sm w-full"
               >
                 <span class="underline">Consulter</span>
               </button>
+              </a>
             </div>
           </div>
           <div
@@ -486,12 +491,14 @@
                   <br>au Bénin.
                 </p>
               </div>
+              <a @click="$router.push({ name: 'documents' })">
               <button
                 type="button"
                 class="btn btn-light bg-white text-primary text-sm w-full"
               >
                 <span class="underline">Consulter</span>
               </button>
+            </a>
             </div>
           </div>
           <div
@@ -540,12 +547,14 @@
                   <br>comprendre le marché.
                 </p>
               </div>
+              <a @click="$router.push({ name: 'documents' })">
               <button
                 type="button"
                 class="btn btn-light bg-white text-primary text-sm w-full"
               >
                 <span class="underline">Consulter</span>
               </button>
+            </a>
             </div>
           </div>
           <div
@@ -601,8 +610,7 @@
                   <br>en lien avec les industries et le commerce.
                 </p>
               </div>
-              <a href="mailto:info@ccib.bj?subject=Annuaire%20statistique%20des%20entreprises
-">
+              <a href="mailto:info@ccib.bj?subject=Annuaire%20statistique%20des%20entreprises">
               <button
                 type="button"
                 class="btn btn-light bg-white text-primary text-sm w-full"
@@ -998,6 +1006,7 @@ export default {
         title: "",
         description: "",
       },
+      static_file_url: import.meta.env.VITE_FILE_URL,
     };
   },
   created() {

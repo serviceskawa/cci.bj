@@ -52,7 +52,7 @@
             Les rencontres «Journées Pays»
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
-            Programme de la CCI-Bénin destiné à assurer un accompagnement
+            Programme de la CCI Bénin destiné à assurer un accompagnement
             technique des entreprises qui <br />
             souhaitent développer leurs affaires ou améliorer leurs
             performances.
@@ -97,7 +97,7 @@
                 Qu'est-ce que c'est ?
               </h4>
               <p class="text-md text-light leading-5 text-subtitlegray">
-                Les journées pays constituent un dispositif de la CCI-Bénin pour
+                Les journées pays constituent un dispositif de la CCI Bénin pour
                 informer les entreprises qui souhaitent découvrir les
                 opportunités de développement offertes par divers pays ou
                 destinations commerciales.
@@ -207,11 +207,10 @@
                   mb-6
                 "
               >
-                Produits destinés à susciter l'intérêt des entreprises <br />
-                béninoises pour certaines destinations en vue de créer <br />
-                des relations commerciales dans les pays choisis, les <br />
+                Produits destinés à susciter l'intérêt des entreprises 
+                béninoises pour certaines destinations en vue de créer
+                des relations commerciales dans les pays choisis, les
                 journées Pays offrent la possibilité d'aborder les marchés
-                <br />
                 étrangers dans les meilleures conditions.
               </p>
               <div class="w-full">
@@ -468,8 +467,8 @@
               </svg>
 
               <div class="ml-3 text-subtitlegray">
-                <div class="mb-2">(+229) 91 37 33 33</div>
-                <div class="mb-2">Lundi - Vendredi 08:00 - 18:00</div>
+                <a href="tel:0022951105652"><div class="mb-2">(+229) 51 10 56 52</div></a>
+                <div class="mb-2">Lundi - Vendredi 08:00 - 17:30</div>
               </div>
             </div>
             <div class="mt-4 flex">
@@ -490,12 +489,12 @@
               </svg>
 
               <div class="ml-3 text-subtitlegray">
-                <a href="mailto:pere@ccib.bj" class="underline">Pere@ccib.bj</a>
+                <a href="mailto:appoline.ahoglegle@ccib.bj" class="underline">appoline.ahoglegle@ccib.bj</a>
               </div>
             </div>
           </div>
         </div>
-        <div class="py-20">
+        <!--<div class="py-20">
           <h2
             class="text-3xl tracking-tight font-bold text-blue text-center mb-6"
           >
@@ -571,7 +570,7 @@
               </DisclosurePanel>
             </Disclosure>
           </dl>
-        </div>
+        </div>-->
       </div>
     </div>
   </main>
