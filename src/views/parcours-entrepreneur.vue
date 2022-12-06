@@ -685,12 +685,11 @@
             démarrage et à la gestion des affaires, puis à les aider à mieux
             structurer leur projet.
           </p>
-          <button
-            type="button"
-            class="btn btn-light bg-white shadow-md text-primary w-auto"
-          >
-            Commencer le chat
-          </button>
+          <a href="javascript:SBChat.initChat();SBChat.open()">
+                <button type="button" class="btn btn-light bg-white shadow-md text-primary w-auto">
+                  Commencer le chat
+                </button>
+              </a>
         </div>
       </div>
     </div>
