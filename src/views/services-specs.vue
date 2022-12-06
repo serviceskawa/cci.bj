@@ -60,7 +60,7 @@
           </DisclosurePanel>
         </Disclosure>
 
-        <!-- <Disclosure as="div" class="pt-6" v-slot="{ open }">
+        <Disclosure as="div" class="pt-6" v-slot="{ open }">
           <dt class="text-lg">
             <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
               <span class="font-bold text-blue text-sm text-gray-900">
@@ -76,11 +76,11 @@
           </dt>
           <DisclosurePanel as="dd" class="mt-2 pr-12">
             <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="#" class="text-primary font-medium text-sm">
+              <a @click="$router.push({name: 'parcours-entrepreneur'})" class="text-primary font-medium text-sm">
                 <span class="underline">Inscrivez-vous aux sessions de formation offertes en gestion et developpement d’entreprise</span> <span class="ml-2">→</span> </a>
             </p>
           </DisclosurePanel>
-        </Disclosure> -->
+        </Disclosure>
         
         <!--<Disclosure as="div" class="pt-6" v-slot="{ open }">
           <dt class="text-lg">
