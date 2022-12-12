@@ -11,7 +11,7 @@
         <p class="mx-auto mt-5 text-xl text-subtitlegray">
           Spécialistes de l’accompagnement et du conseil aux entreprises, nous
           fournissons une gamme variée de solutions innovantes pour accompagner
-          les sociétés béninoises dans leur croissance.
+          les entreprises béninoises dans leur croissance.
         </p>
         <div class="mt-12">
           <div class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

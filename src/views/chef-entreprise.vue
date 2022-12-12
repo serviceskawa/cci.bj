@@ -33,7 +33,7 @@
             entrepreneurial
           </h1>
           <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-            Amenez votre société vers de nouveaux sommets. La CCI <br />
+            Amenez votre entreprise vers de nouveaux sommets. La CCI <br />
             Bénin vous offre les clefs pour accélérer votre croissance.
           </p>
         </div>
@@ -234,7 +234,7 @@
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 La plateforme ImPulse met en relation les dirigeants
-                d'entreprises et de sociétés avec des conseillers stratégiques.
+                d'entreprises avec des conseillers stratégiques.
               </p>
             </div>
           </div>

@@ -80,7 +80,7 @@
                   Chef d’entreprise
                 </h3>
                 <p class="self-stretch font-normal text-base borderSimple px-6 pb-8">
-                  Directeur Général, PDG ou Gérant de société souhaitant optimiser les
+                  Directeur Général, PDG ou Gérant d'entreprises souhaitant optimiser les
                   résultats de vos entreprises, faites-vous accompagner par nos
                   spécialistes en développement d’entreprise
                 </p>
