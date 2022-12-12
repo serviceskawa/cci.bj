@@ -378,8 +378,8 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20 mb-20 bg-gray flex justify-center px-3">
       <div class="text-center">
         <h1 class="leading-tight text-4xl font-extrabold mb-6">
-          Boostez votre productivité <br />
-          avec la CCI Bénin
+          Plan stratégique de développement de<br>
+          la CCI Bénin vision 2025
         </h1>
         <p class="text-md
           md:text-lg

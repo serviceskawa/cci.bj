@@ -333,19 +333,11 @@
                 en ligne. Nos agents sont disponibles pour répondre <br />
                 à vos questions diverses et préoccupations.
               </p>
-              <!--<button
-                type="button"
-                class="
-                  mt-8
-                  btn btn-light
-                  bg-white
-                  shadow-md
-                  text-primary
-                  w-full
-                "
-              >
-                Commencer le chat
-              </button> -->
+              <a href="javascript:SBChat.initChat();SBChat.open()">
+                <button type="button" class="mt-8 btn btn-light bg-white shadow-md text-primary w-full">
+                  Commencer le chat
+                </button>
+              </a>
             </div>
             <div
               class="
