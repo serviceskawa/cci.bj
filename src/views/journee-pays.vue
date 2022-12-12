@@ -614,12 +614,10 @@ export default {
   data() {
     return {
       news: [],
-      email: "",
       agenda_datas: [],
       loader: false,
       faqs: [],
       open: false,
-      on_loading_request: false,
     };
   },
   async created() {

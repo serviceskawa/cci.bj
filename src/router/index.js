@@ -159,6 +159,23 @@ const routes = [
     name: 'parcours-entrepreneur',
     component: page('parcours-entrepreneur'),
   },
+  {
+    path: '/mentions-legales',
+    name: 'legal-mentions',
+    component: page('legal-mention'),
+  },
+  {
+    path: '/observatoire-commerce',
+    name: 'observatoire-commerce',
+    component: page('observatoire-commerce'),
+  },
+  {
+    path: '/:pathMatch(.*)*', name: 'not-found',
+    component: () => import('@/views/404.vue'),
+    meta: {
+      layout: 'empty'
+    }
+  }
 ];
 
 const router = createRouter({

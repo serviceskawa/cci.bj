@@ -645,7 +645,7 @@
         </div>
         <div>
           <img
-            src="@/assets/images/boxer.jpeg"
+            src="@/assets/images/jpays.jpeg"
             class="w-full h-56 object-cover"
             alt=""
           />

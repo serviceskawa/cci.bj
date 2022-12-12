@@ -317,6 +317,7 @@
                   tracking-tight
                   text-subtitlegray
                   leading-6
+                  text-center
                 "
               >
                 Adoptez la posture d'entrepreneur et explorez les challenges à
@@ -428,6 +429,7 @@
                   tracking-tight
                   text-subtitlegray
                   leading-6
+                  text-center
                 "
               >
                 Faites vous former par des experts et entrez en contact avec
@@ -545,6 +547,7 @@
                   tracking-tight
                   text-subtitlegray
                   leading-6
+                  text-center
                 "
               >
                 Évaluez la viabilité, la conception technique et les

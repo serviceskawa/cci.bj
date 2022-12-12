@@ -51,7 +51,7 @@
         </div>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 pb-20">
       <div>
         <div class="pt-6 md:pt-20 mb-6">
           <h1 class="text-4xl leading-10 font-extrabold tracking-tight">

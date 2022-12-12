@@ -88,7 +88,7 @@
           </div>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          <div v-for="(n, index) in newsComuniqué.slice(0, 4)" :key="index">
+          <div v-for="(n, index) in newsComm.slice(0, 4)" :key="index">
             <a @click="$router.push({ name: 'read-article', params: { slug: n.slug } })">
             <div
               class="text-sm font-light text-primary mb-3"
@@ -887,7 +887,7 @@ export default {
         title: "",
         description: "",
       },
-      newsComuniqué: [],
+      newsComm: [],
       persona: [],
       loader: true,
       configs: [],
@@ -942,7 +942,6 @@ export default {
     }
     await this.getCategoryArticles();
     await this.getPersonaById();
-    console.log(import.meta.env.VITE_FILE_URL);
   },
   methods: {
     async sendRequest() {
@@ -980,7 +979,7 @@ export default {
       this.loader = true;
       try {
         await services.getCategory_articles(3).then((response) => {
-          this.newsComuniqué = response.data.data;
+          this.newsComm = response.data.data;
         });
         this.loader = false;
       } catch (error) {

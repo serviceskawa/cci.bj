@@ -7,13 +7,24 @@
       @close="notif.type = ''"
     />
     <div
-      class="barner sm:h-96 lg:h-auto flex items-center p-4 md:px-10 lg:px-20 w-full"
+      class="
+        barner
+        sm:h-96
+        lg:h-auto
+        flex
+        items-center
+        p-4
+        md:px-10
+        lg:px-20
+        w-full
+      "
     >
       <div class="flex justify-end w-full">
         <div class="">
           <h1
             class="
-              text-white text-4xl lg:text-6xl
+              text-white text-4xl
+              lg:text-6xl
               leading-none
               font-extrabold
               tracking-tight
@@ -33,23 +44,53 @@
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
       <h1
-        class="text-blue text-3xl lg:text-4xl leading-none font-extrabold tracking-tight"
+        class="
+          text-blue text-3xl
+          lg:text-4xl
+          leading-none
+          font-extrabold
+          tracking-tight
+        "
       >
         La CCI Bénin vous accompagne dans la mise en place de votre entreprise
         au Bénin
       </h1>
       <p
-        class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray mt-4 mb-10"
+        class="
+          text-md
+          md:text-lg
+          tracking-tight
+          leading-7
+          text-subtitlegray
+          mt-4
+          mb-10
+        "
       >
         Quel que soit votre besoin, la CCI Bénin vous accompagne à chaque étape
         du processus vers l’atteinte de vos objectifs. Nous vous simplifions les
         démarches pour votre satisfaction complète.
       </p>
       <div
-        class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 pb-10"
+        class="
+          flex flex-wrap
+          grid grid-cols-1
+          md:grid-cols-2
+          lg:grid-cols-3
+          gap-6
+          md:gap-8
+          pb-10
+        "
       >
         <div
-          class="rounded-md mb-2 md:mb-0 cursor-pointer flex flex-col justify-between shadow-md"
+          class="
+            rounded-md
+            mb-2
+            md:mb-0
+            cursor-pointer
+            flex flex-col
+            justify-between
+            shadow-md
+          "
         >
           <div class="p-6">
             <div class="">
@@ -86,7 +127,7 @@
               </p>
             </div>
           </div>
-          <div class="p-6 py-4 bg-grayCard w-full">
+          <div class="p-6 py-4 bg-grayCard h-full flex items-center w-full">
             <a
               href="https://monentreprise.bj/"
               target="_blank"
@@ -97,7 +138,15 @@
           </div>
         </div>
         <div
-          class="rounded-md mb-2 md:mb-0 cursor-pointer flex flex-col justify-between shadow-md"
+          class="
+            rounded-md
+            mb-2
+            md:mb-0
+            cursor-pointer
+            flex flex-col
+            justify-between
+            shadow-md
+          "
         >
           <div class="p-6">
             <div class="">
@@ -145,7 +194,15 @@
           </div>
         </div>
         <div
-          class="rounded-md mb-2 md:mb-0 cursor-pointer flex flex-col justify-between shadow-md"
+          class="
+            rounded-md
+            mb-2
+            md:mb-0
+            cursor-pointer
+            flex flex-col
+            justify-between
+            shadow-md
+          "
         >
           <div class="p-6">
             <div class="">
@@ -206,14 +263,17 @@
             matière d'importation et d'exportation
           </p>
           <div class="mt-8">
-           <a 
+            <a
               :href="static_file_url + '/publications/1666769020.pdf'"
               target="_blank"
-           >
-            <button type="button" class="btn btn-light bg-white shadow-md text-primary underline">
-              Consulter
-            </button>
-          </a>
+            >
+              <button
+                type="button"
+                class="btn btn-light bg-white shadow-md text-primary underline"
+              >
+                Consulter
+              </button>
+            </a>
           </div>
         </div>
         <div class="chef-box">
@@ -231,12 +291,27 @@
     <div class="bg-gray-dark">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12">
         <h1
-          class="text-blue text-3xl lg:text-4xl leading-none font-extrabold tracking-tight text-center"
+          class="
+            text-blue text-3xl
+            lg:text-4xl
+            leading-none
+            font-extrabold
+            tracking-tight
+            text-center
+          "
         >
           Ne ratez aucun appels à projets
         </h1>
         <p
-          class="text-md md:text-lg tracking-tight leading-7 text-blue mt-4 text-center"
+          class="
+            text-md
+            md:text-lg
+            tracking-tight
+            leading-7
+            text-blue
+            mt-4
+            text-center
+          "
         >
           Abonnez-vous soyez informé(e) des appels d’offres et des appels à
           projets.
@@ -253,7 +328,15 @@
                 type="email"
                 required
                 v-model="email"
-                class="block w-full border border-borderInput rounded-md px-5 py-3 text-base text-dark"
+                class="
+                  block
+                  w-full
+                  border border-borderInput
+                  rounded-md
+                  px-5
+                  py-3
+                  text-base text-dark
+                "
                 placeholder="Entrez votre adresse mail"
               />
               <input
@@ -261,7 +344,15 @@
                 type="hidden"
                 value="appels_offres"
                 required
-                class="block w-full border border-borderInput rounded-md px-5 py-3 text-base text-dark"
+                class="
+                  block
+                  w-full
+                  border border-borderInput
+                  rounded-md
+                  px-5
+                  py-3
+                  text-base text-dark
+                "
                 placeholder="Entrez votre adresse mail"
               />
             </div>
@@ -269,7 +360,25 @@
           <div class="w-full">
             <button
               type="submit"
-              class="block w-full rounded-md px-5 py-3 bg-white text-base font-medium text-primary hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:px-10 flex justify-center"
+              class="
+                block
+                w-full
+                rounded-md
+                px-5
+                py-3
+                bg-white
+                text-base
+                font-medium
+                text-primary
+                hover:bg-indigo-400
+                focus:outline-none
+                focus:ring-2
+                focus:ring-primary
+                focus:ring-offset-2
+                sm:px-10
+                flex
+                justify-center
+              "
               :disabled="on_loading_request"
             >
               <div role="status" v-if="on_loading_request">
@@ -299,10 +408,25 @@
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
       <div
-        class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 pb-10"
+        class="
+          flex flex-wrap
+          grid grid-cols-1
+          md:grid-cols-2
+          gap-6
+          md:gap-8
+          pb-10
+        "
       >
         <div
-          class="rounded-md mb-2 md:mb-0 cursor-pointer flex flex-col justify-between shadow-md"
+          class="
+            rounded-md
+            mb-2
+            md:mb-0
+            cursor-pointer
+            flex flex-col
+            justify-between
+            shadow-md
+          "
         >
           <div class="p-6">
             <div class="">
@@ -342,14 +466,29 @@
           <div class="p-6 py-4 bg-grayCard w-full">
             <button
               type="button"
-              class="btn btn-light bg-white shadow-md text-primary underline w-full"
+              class="
+                btn btn-light
+                bg-white
+                shadow-md
+                text-primary
+                underline
+                w-full
+              "
             >
               Consulter
             </button>
           </div>
         </div>
         <div
-          class="rounded-md mb-2 md:mb-0 cursor-pointer flex flex-col justify-between shadow-md"
+          class="
+            rounded-md
+            mb-2
+            md:mb-0
+            cursor-pointer
+            flex flex-col
+            justify-between
+            shadow-md
+          "
         >
           <div class="p-6">
             <div class="">
@@ -389,7 +528,14 @@
           <div class="p-6 py-4 bg-grayCard w-full">
             <button
               type="button"
-              class="btn btn-light bg-white shadow-md text-primary underline w-full"
+              class="
+                btn btn-light
+                bg-white
+                shadow-md
+                text-primary
+                underline
+                w-full
+              "
             >
               Consulter
             </button>
@@ -467,7 +613,16 @@
         </p>
         <div class="mt-8 grid grid-cols-1 lg:grid-cols-3 lg:gap-6">
           <div
-            class="bg-lightGray p-6 rounded-md mb-2 md:mb-0 cursor-pointer flex flex-col justify-between"
+            class="
+              bg-lightGray
+              p-6
+              rounded-md
+              mb-2
+              md:mb-0
+              cursor-pointer
+              flex flex-col
+              justify-between
+            "
           >
             <div class="">
               <svg
@@ -514,7 +669,16 @@
             </div>
           </div>
           <div
-            class="bg-lightGray p-6 rounded-md mb-2 md:mb-0 cursor-pointer flex flex-col justify-between"
+            class="
+              bg-lightGray
+              p-6
+              rounded-md
+              mb-2
+              md:mb-0
+              cursor-pointer
+              flex flex-col
+              justify-between
+            "
           >
             <div class="">
               <svg
@@ -568,7 +732,16 @@
             </div>
           </div>
           <div
-            class="bg-lightGray p-6 rounded-md mb-2 md:mb-0 cursor-pointer flex flex-col justify-between"
+            class="
+              bg-lightGray
+              p-6
+              rounded-md
+              mb-2
+              md:mb-0
+              cursor-pointer
+              flex flex-col
+              justify-between
+            "
           >
             <div class="">
               <svg
@@ -639,7 +812,17 @@
           <div class="flex-1 bg-white pt-6 px-6 flex flex-col justify-between">
             <div class="flex-1">
               <span
-                class="inline-flex items-center px-6 py-1 rounded-full text-sm bg-primaryInfo text-primary mt-4"
+                class="
+                  inline-flex
+                  items-center
+                  px-6
+                  py-1
+                  rounded-full
+                  text-sm
+                  bg-primaryInfo
+                  text-primary
+                  mt-4
+                "
               >
                 {{ agen.type.name }}
               </span>
@@ -685,7 +868,14 @@
               NEWSLETTER
             </h5>
             <h1
-              class="mt-2 text-4xl leading-10 font-extrabold tracking-tight text-primary"
+              class="
+                mt-2
+                text-4xl
+                leading-10
+                font-extrabold
+                tracking-tight
+                text-primary
+              "
             >
               Restons connectés
             </h1>
@@ -726,7 +916,15 @@
                     type="email"
                     required
                     v-model="email"
-                    class="block w-full border border-borderInput rounded-md px-5 py-3 text-base text-dark"
+                    class="
+                      block
+                      w-full
+                      border border-borderInput
+                      rounded-md
+                      px-5
+                      py-3
+                      text-base text-dark
+                    "
                     placeholder="Entrez votre adresse mail"
                   />
                 </div>
@@ -734,7 +932,25 @@
               <div class="mt-4">
                 <button
                   type="submit"
-                  class="block w-full rounded-md px-5 py-3 bg-white text-base font-medium text-primary hover:bg-indigo-400 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 sm:px-10 flex justify-center"
+                  class="
+                    block
+                    w-full
+                    rounded-md
+                    px-5
+                    py-3
+                    bg-white
+                    text-base
+                    font-medium
+                    text-primary
+                    hover:bg-indigo-400
+                    focus:outline-none
+                    focus:ring-2
+                    focus:ring-primary
+                    focus:ring-offset-2
+                    sm:px-10
+                    flex
+                    justify-center
+                  "
                   :disabled="on_loading_request"
                 >
                   <div role="status" v-if="on_loading_request">
