@@ -207,7 +207,7 @@
                   mb-6
                 "
               >
-                Produits destinés à susciter l'intérêt des entreprises 
+              Évènements destinés à susciter l'intérêt des entreprises 
                 béninoises pour certaines destinations en vue de créer
                 des relations commerciales dans les pays choisis, les
                 journées Pays offrent la possibilité d'aborder les marchés
@@ -224,6 +224,7 @@
             </div>
           </div>
         </div>
+        <!--
         <div class="pb-20 mb-6">
           <h1 class="text-4xl leading-10 font-extrabold tracking-tight mb-6">
             Concrétisez vos projets à l'export
@@ -238,6 +239,7 @@
               md:gap-8
             "
           >
+          
             <div class="p-6 pb-12 shadow-lg mb-2 md:mb-0">
               <svg
                 width="56"
@@ -306,6 +308,7 @@
                 </p>
               </div>
             </div>
+          
             <div class="p-6 pb-12 shadow-lg mb-2 md:mb-0">
               <svg
                 width="54"
@@ -341,7 +344,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div>-->
 
         <div class="pb-20" id="calendar">
           <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
@@ -350,7 +353,9 @@
           <p
             class="text-lg tracking-tight leading-7 text-subtitlegray mt-3 mb-6"
           >
-            Inscrivez-vous aux prochaines Journées Pays.
+            <!--Inscrivez-vous aux prochaines Journées Pays.-->
+            Prenez la mesure économique d'un pays cible et discutez un
+                  expert ou conseiller pays en rendez-vous individuel.
           </p>
           <div
             class="

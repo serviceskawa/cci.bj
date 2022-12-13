@@ -24,8 +24,8 @@
               tracking-tight
             "
           >
-            Participez aux Rendez-vous <br />
-            mensuels des experts
+            Participez aux  <br />
+            Rendez-vous des experts
           </h1>
           <p
             class="
@@ -56,7 +56,7 @@
       <div>
         <div class="pt-6 md:pt-20 mb-6">
           <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
-            Le programme rendez-vous mensuel des experts
+            Le programme rendez-vous des experts
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
             Programme de la CCI Bénin destiné à assurer un accompagnement
@@ -104,7 +104,7 @@
                 Qu'est-ce que c'est ?
               </h4>
               <p class="text-md text-light leading-5 text-subtitlegray">
-                Le rendez-vous mensuel des experts est un programme de la
+                Le rendez-vous des experts est un programme de la
                 CCI Bénin destiné à assurer un accompagnement technique des
                 entreprises qui souhaitent développer leurs affaires ou
                 améliorer leurs performances.
@@ -183,7 +183,7 @@
                 Comment ?
               </h4>
               <p class="text-md text-light leading-5 text-subtitlegray">
-                Le programme rendez-vous mensuel des experts met les promoteurs
+                Le programme rendez-vous des experts met les promoteurs
                 d'entreprise intéressés en relation avec des experts ou
                 consultants spécialisés en gestion et développement
                 d'entreprise.
@@ -195,7 +195,7 @@
           <div class="bg-grayCard grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
             <div>
               <img
-                src="@/assets/images/rdv.jpeg"
+                src="@/assets/images/rdv-expert_cci_benin1.jpeg"
                 class="w-full h-96 object-cover"
               />
             </div>
@@ -506,7 +506,7 @@
           <div class="pt-20" id="participate">
             <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
               Le calendrier des prochains <br />
-              «Rendez-vous mensuel des experts»
+              «Rendez-vous des experts»
             </h1>
             <p
               class="
@@ -518,7 +518,7 @@
                 mb-6
               "
             >
-              Inscrivez-vous aux prochains Rendez-vous mensuels des experts.
+              Inscrivez-vous aux prochains Rendez-vous des experts.
             </p>
             <div
               class="

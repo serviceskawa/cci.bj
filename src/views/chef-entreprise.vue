@@ -697,7 +697,7 @@
 
           <div class="p-6 bg-lightGray">
             <h5 class="text-blue text-lg font-bold">
-              Rendez-vous mensuel des experts
+              Rendez-vous des experts
             </h5>
             <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
               Participez aux séances de consultation gratuite d'experts dans

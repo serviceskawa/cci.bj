@@ -465,7 +465,7 @@
                   </li>
                   <li>
                     <a href="" class="text-base text-white hover:text-white">
-                      Formationsccib.bj
+                      Formationccib.bj
                     </a>
                   </li>
                   <li>
@@ -489,7 +489,7 @@
                 <ul role="list" class="mt-4 space-y-4">
                   <li>
                     <a href="" class="text-base text-white hover:text-white"
-                      >APIEX
+                      >APIEx
                     </a>
                   </li>
                   <li>
@@ -499,7 +499,7 @@
                   </li>
                   <li>
                     <a href="" class="text-base text-white hover:text-white"
-                      >CPCAF
+                      >CPCCAF
                     </a>
                   </li>
                   <li>

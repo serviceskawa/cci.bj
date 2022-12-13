@@ -651,18 +651,18 @@
             </div>
             <div class="mt-4">
               <h4 class="text-lg leading-none font-bold text-blue">
-                Arbitrage et médiation
+                Facilitation de l'accès au financement
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
-                À travers la CAMeC, la Chambre de Commerce et d'Industrie du
-                Bénin offre gratuitement des sessions sur les modes alternatifs
-                de règlement des litiges.
+                Découvrez et explorez les mécanismes utilisés dans la
+                facilitation de l'accès au financement grâce à l'accompagnement
+                de nos experts.
               </p>
             </div>
             <div class="mt-4 w-full">
               <button
+                @click="$router.push({ name: 'financement'})"
                 type="button"
-                @click="$router.push({ name: 'arbitrage-mediation' })"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
                 En savoir plus
@@ -714,17 +714,16 @@
             </div>
             <div class="mt-4">
               <h4 class="text-lg leading-none font-bold text-blue">
-                Étude de marché sectoriel
+                Aide au montage des dossiers
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
-                Nous vous aidons à identifier les secteurs porteurs en vous
-                fournissant les informations nécessaires pour réaliser une
-                analyse sectorielle de vos marchés cible.
+                Nous accompagnons les entreprises qui souhaitent postuler aux
+                dispositifs de financement ou subvention en toute simplicité.
               </p>
             </div>
             <div class="mt-4 w-full">
               <button
-                @click="$router.push({ name: 'etude-marche' })"
+              @click="$router.push({ name: 'aide-montage'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -770,6 +769,127 @@
             </div>
             <div class="mt-4">
               <h4 class="text-lg leading-none font-bold text-blue">
+                Arbitrage et médiation
+              </h4>
+              <p class="text-sm leading-5 text-subtitlegray mt-4">
+                À travers le CAMeC-CCI Bénin, la Chambre de Commerce et
+                d'Industrie du Bénin offre gratuitement des sessions sur les
+                modes alternatifs de règlement des litiges.
+              </p>
+            </div>
+            <div class="mt-4 w-full">
+              <button
+              @click="$router.push({ name: 'arbitrage-mediation'})"
+                type="button"
+                class="btn btn-light bg-white shadow-md text-primary w-full"
+              >
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="mt-8 grid grid-cols-1 md:grid-cols-2 md:gap-6">
+          <div
+            class="
+              bg-lightGray
+              p-6
+              rounded-md
+              mb-2
+              md:mb-0
+              cursor-pointer
+              flex flex-col
+              justify-between
+            "
+          >
+            <div class="">
+              <svg
+                width="57"
+                height="56"
+                viewBox="0 0 57 56"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="56.0016"
+                  height="56"
+                  rx="8"
+                  fill="#DD7A4B"
+                  fill-opacity="0.1"
+                />
+                <path
+                  d="M16 20L20 21.3333M20 21.3333L16 33.3333C18.3634 35.1112 21.6382 35.1112 24.0016 33.3334M20 21.3333L24.0001 33.3333M20 21.3333L28 18.6667M36 21.3333L40 20M36 21.3333L32 33.3333C34.3634 35.1112 37.6382 35.1112 40.0016 33.3334M36 21.3333L40.0001 33.3333M36 21.3333L28 18.6667M28 16V18.6667M28 40V18.6667M28 40H24M28 40H32"
+                  stroke="#DD7A4B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="mt-4">
+              <h4 class="text-lg leading-none font-bold text-blue">
+                Étude de marché sectoriel
+              </h4>
+              <p class="text-sm leading-5 text-subtitlegray mt-4">
+                Nous vous aidons à identifier les secteurs porteurs en vous
+                fournissant les informations nécessaires pour réaliser une
+                analyse sectorielle de vos marchés cibles.
+              </p>
+            </div>
+            <div class="mt-4 w-full">
+              <button
+              @click="$router.push({ name: 'etude-marche'})"
+                type="button"
+                class="btn btn-light bg-white shadow-md text-primary w-full"
+              >
+                En savoir plus
+              </button>
+            </div>
+          </div>
+          <div
+            class="
+              bg-lightGray
+              p-6
+              rounded-md
+              mb-2
+              md:mb-0
+              cursor-pointer
+              flex flex-col
+              justify-between
+            "
+          >
+            <div class="">
+              <svg
+                width="56"
+                height="56"
+                viewBox="0 0 56 56"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="56"
+                  height="56"
+                  rx="8"
+                  fill="#DD7A4B"
+                  fill-opacity="0.1"
+                />
+                <path
+                  d="M26.6993 16C20.681 16.6653 16 21.7676 16 27.9633C16 34.611 21.389 40 28.0367 40C34.2324 40 39.3347 35.319 40 29.3007H26.6993V16Z"
+                  stroke="#DD7A4B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M39.3885 23.951H32.049V16.6117C35.469 17.8205 38.1796 20.531 39.3885 23.951Z"
+                  stroke="#DD7A4B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="mt-4">
+              <h4 class="text-lg leading-none font-bold text-blue">
                 Journées Pays
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
@@ -780,7 +900,7 @@
             </div>
             <div class="mt-4 w-full">
               <button
-                @click="$router.push({ name: 'journees-pays' })"
+              @click="$router.push({ name: 'journees-pays'})"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
@@ -851,7 +971,15 @@
           </div>
         </div>
       </div>
+      <div class="tracking-tight mt-12 text-left text-dark">
+        <span class="block sm:ml-2 sm:inline-block">
+          <a @click="$router.push({ name: 'agenda' })" class="text-primary">
+            Voir tous les évènements <span aria-hidden="true">&rarr;</span></a
+          >
+        </span>
+      </div>
     </div>
+    
     <div class="bg-grayCard" ref="subscribe">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
         <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-4 items-center">

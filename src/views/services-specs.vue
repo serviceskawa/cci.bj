@@ -19,7 +19,7 @@
           <dt class="text-lg">
             <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
               <span class="font-bold text-blue text-sm text-gray-900">
-                RENDEZ-VOUS MENSUEL DES EXPERTS
+                RENDEZ-VOUS DES EXPERTS
               </span>
               <span class="ml-6 flex h-7 items-center">
                 <ChevronDownIcon :class="[

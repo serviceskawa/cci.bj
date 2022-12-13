@@ -81,9 +81,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="tracking-tight mt-12 text-left text-dark"
-        v-if="isNotFull == true"
+      <div class="tracking-tight mt-12 text-left text-dark" v-if="isNotFull == true"
       >
         <span class="block sm:ml-2 sm:inline-block">
           <a @click="$router.push({ name: 'agenda' })" class="text-primary">
