@@ -117,7 +117,7 @@
             </div>
             <div class="mt-4">
               <h4 class="text-lg leading-none font-bold text-blue">
-                Rejoindre la CCI Bénin
+                Payer sa cotisation annuelle
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Téléchargez le barème des cotisations applicables aux
@@ -256,8 +256,7 @@
           <h1
             class="text-primary text-4xl leading-none font-bold tracking-tight"
           >
-            Vous êtes interessé(e)s <br />
-            par le commerce ?
+          Procédures d'import/export
           </h1>
           <p class="text-blue text-lg leading-6 font-normal mt-4">
             Consultez les procédures applicables au Bénin en <br />

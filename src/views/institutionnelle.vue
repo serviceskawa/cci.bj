@@ -283,10 +283,9 @@
                 affaires
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
-                À travers l'Observatoire du Commerce de l'Industrie et des
-                Services, la CCI Bénin met à disposition des acteurs économiques
-                des statistiques de qualité et des informations crédibles pour
-                les aider dans leurs prises de décisions.
+                À travers le Baromètre de l'opinion des entreprises et les chiffres clés, retrouvez 
+                les indicateurs de suivi des entreprises locales et sous-régionales dans la branche d'activité qui
+                 vous intéresse ainsi que les tendances à considérer.
               </p>
             </div>
           </div>
@@ -334,10 +333,8 @@
                 Retrouvez toute l'information économique du Bénin
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
-                Accédez à la documentation en ligne de la CCI Bénin pour
-                découvrir les chiffres clés, les dossiers économiques, les
-                rapports et le baromètre de l'opinion des entreprises au Bénin
-                élaborés sur la base des données issues de nos collectes.
+                Accédez à des informations fiables sur les mesures fiscales prises par l'État dans votre secteur d'activité. 
+                Explorez les dernières études thématiques et les dossiers économiques pour faciliter vos prises de décisions.
               </p>
             </div>
           </div>

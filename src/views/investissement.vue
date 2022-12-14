@@ -602,20 +602,16 @@
               </div>
               <div class="my-4">
                 <h4 class="text-lg leading-none font-bold text-blue">
-                  Annuaire statistique des entreprises
+                  Conseil des Investisseurs Privés au Bénin (CIPB)
                 </h4>
                 <p class="text-sm leading-5 text-subtitlegray mt-4">
-                  Accédez aux données de cadrage et statistiques
-                  <br>actualisées sur les entreprises et activités économiques
-                  <br>en lien avec les industries et le commerce.
+                  Connectez-vous aux personnes morales ayant déjà investi au Bénin en rejoignant le Conseil 
+                  des Investisseurs Privés au Bénin.
                 </p>
               </div>
-              <a href="mailto:info@ccib.bj?subject=Annuaire%20statistique%20des%20entreprises">
-              <button
-                type="button"
-                class="btn btn-light bg-white text-primary text-sm w-full"
-              >
-                <span class="underline">Demander</span>
+              <a href="https://cipb.bj" target="_blank">
+              <button type="button" class="btn btn-light bg-white text-primary text-sm w-full">
+                <span class="underline">Visiter cipb.bj</span>
               </button>
             </a>
             </div>

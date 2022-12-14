@@ -255,8 +255,7 @@
           <h1
             class="text-primary text-4xl leading-none font-bold tracking-tight"
           >
-            Vous êtes interessé(e)s <br />
-            par le commerce ?
+          Procédures d'import/export
           </h1>
           <p class="text-blue text-lg leading-6 font-normal mt-4">
             Consultez les procédures applicables au Bénin en <br />
