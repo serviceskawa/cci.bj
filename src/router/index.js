@@ -1,6 +1,6 @@
 import {
   createRouter,
-  createWebHashHistory, 
+  createWebHashHistory,
 } from 'vue-router';
 import { page } from '@/helpers/routeLoader';
 import { services } from '@/api'
