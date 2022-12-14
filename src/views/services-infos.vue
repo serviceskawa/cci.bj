@@ -1,208 +1,555 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
-  <main>
-    <div class="barner flex items-center p-4 md:px-6 lg:px-10">
-      <div>
-        <h1 class="text-primary text-4xl lg:text-6xl leading-none font-extrabold tracking-tight">
-          <span class="text-white">Informations et  orientataion</span>
-        </h1>
-        <p class="text-white text-xl leading-7 font-normal mt-4">
-          Vérification d’existence et de fiabilité des entreprises, <br>pour la facilitation des affaires. 
-        </p>
+  <main class="">
+    <Notifications
+      :notif="notif"
+      v-if="notif.type !== ''"
+      @close="notif.type = ''"
+    />
+    <div
+      class="
+        barner
+        sm:h-96
+        lg:h-auto
+        flex
+        items-center
+        p-4
+        md:px-10
+        lg:px-20
+        w-full
+      "
+    >
+      <div class="flex items-center w-full">
+        <div>
+          <h1
+            class="
+              text-primary text-4xl
+              lg:text-6xl
+              leading-none
+              font-extrabold
+              tracking-tight
+            "
+          >
+            Informations et orientation
+          </h1>
+          <p
+            class="
+              text-md
+              md:text-lg
+              tracking-tight
+              text-subtitlegray
+              leading-7
+              mt-6
+            "
+          >
+            Accédez à nos dispositifs de support pour vous <br />
+            orienter dans votre recherche d'informations
+          </p>
+          <button
+            type="button"
+            class="btn btn-primary bg-primary text-white text-sm w-auto mt-4"
+            @click="$router.push({ name: 'contact' })"
+          >
+            Nous contacter
+          </button>
+        </div>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
-      <dl class="mt-6 space-y-6 divide-y divide-gray-200">
-        <Disclosure as="div" class="pt-6" v-slot="{ open }">
-          <dt class="text-lg">
-            <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
-              <span class="font-bold text-blue text-sm text-gray-900">
-                Dispositif d'accueil
-              </span>
-              <span class="ml-6 flex h-7 items-center">
-                <ChevronDownIcon :class="[
-                  open ? '-rotate-180' : 'rotate-0',
-                  'h-6 w-6 transform',
-                ]" aria-hidden="true" />
-              </span>
-            </DisclosureButton>
-          </dt>
-          <DisclosurePanel as="dd" class="mt-2 pr-12">
-            <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a @click="$router.push({name: 'contact'})" class="text-primary font-medium text-sm">
-                <span class="underline">Notre équipe se tient à votre disposition pour vous recevoir aux jours et heures ouvrables</span> <span class="ml-2">→</span> </a>
-            </p>
-          </DisclosurePanel>
-        </Disclosure>
-        <Disclosure as="div" class="pt-6" v-slot="{ open }">
-          <dt class="text-lg">
-            <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
-              <span class="font-bold text-blue text-sm text-gray-900">
-                Acceuil personnalisé (physique, téléphoniques, via internet)
-              </span>
-              <span class="ml-6 flex h-7 items-center">
-                <ChevronDownIcon :class="[
-                  open ? '-rotate-180' : 'rotate-0',
-                  'h-6 w-6 transform',
-                ]" aria-hidden="true" />
-              </span>
-            </DisclosureButton>
-          </dt>
-          <DisclosurePanel as="dd" class="mt-2 pr-12">
-            <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a @click="$router.push({name: 'contact'})" class="text-primary font-medium text-sm">
-                <span class="underline">Accédez à nos solutions d’acceuil personnalisé pour la prise en charge de vos besoins</span> <span class="ml-2">→</span> </a>
-            </p>
-          </DisclosurePanel>
-        </Disclosure>
-        <Disclosure as="div" class="pt-6" v-slot="{ open }">
-          <dt class="text-lg">
-            <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
-              <span class="font-bold text-blue text-sm text-gray-900">
-                Information spécialisée
-              </span>
-              <span class="ml-6 flex h-7 items-center">
-                <ChevronDownIcon :class="[
-                  open ? '-rotate-180' : 'rotate-0',
-                  'h-6 w-6 transform',
-                ]" aria-hidden="true" />
-              </span>
-            </DisclosureButton>
-          </dt>
-          <DisclosurePanel as="dd" class="mt-2 pr-12">
-            <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a @click="$router.push({name: 'contact'})" class="text-primary font-medium text-sm">
-                <span class="underline">Obtenez des informations sur des thématiques précises auprès de nos agents</span> <span class="ml-2">→</span> </a>
-            </p>
-          </DisclosurePanel>
-        </Disclosure>
-        <Disclosure as="div" class="pt-6" v-slot="{ open }">
-          <dt class="text-lg">
-            <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
-              <span class="font-bold text-blue text-sm text-gray-900">
-                Orientation vers les services compétents
-              </span>
-              <span class="ml-6 flex h-7 items-center">
-                <ChevronDownIcon :class="[
-                  open ? '-rotate-180' : 'rotate-0',
-                  'h-6 w-6 transform',
-                ]" aria-hidden="true" />
-              </span>
-            </DisclosureButton>
-          </dt>
-          <DisclosurePanel as="dd" class="mt-2 pr-12">
-            <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a @click="$router.push({name: 'contact'})" class="text-primary font-medium text-sm">
-                <span class="underline">
-                  Notre équipe vous oriente vers les services dont vous avez besoin selon votre profil
-                </span> <span class="ml-2">→</span> </a>
-            </p>
-          </DisclosurePanel>
-        </Disclosure>
-        <Disclosure as="div" class="pt-6" v-slot="{ open }">
-          <dt class="text-lg">
-            <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
-              <span class="font-bold text-blue text-sm text-gray-900">
-                Fichier des entreprises
-              </span>
-              <span class="ml-6 flex h-7 items-center">
-                <ChevronDownIcon :class="[
-                  open ? '-rotate-180' : 'rotate-0',
-                  'h-6 w-6 transform',
-                ]" aria-hidden="true" />
-              </span>
-            </DisclosureButton>
-          </dt>
-          <DisclosurePanel as="dd" class="mt-2 pr-12">
-            <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="https://ahilido.bj/" target="_blank" class="text-primary font-medium text-sm">
-                <span class="underline">
-                  Accédez à la base de données d’identité des entreprises et établissements  enregistrés
-                </span> <span class="ml-2">→</span> </a>
-            </p>
-          </DisclosurePanel>
-        </Disclosure>
-        <Disclosure as="div" class="pt-6" v-slot="{ open }">
-          <dt class="text-lg">
-            <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
-              <span class="font-bold text-blue text-sm text-gray-900">
-                Liste des d'entreprises disponibles sur demande et par domaine
-              </span>
-              <span class="ml-6 flex h-7 items-center">
-                <ChevronDownIcon :class="[
-                  open ? '-rotate-180' : 'rotate-0',
-                  'h-6 w-6 transform',
-                ]" aria-hidden="true" />
-              </span>
-            </DisclosureButton>
-          </dt>
-          <DisclosurePanel as="dd" class="mt-2 pr-12">
-            <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="mailto:ahilido@ccib.bj?subject=Fichier%20d%27entreprises" target="_blank" class="text-primary font-medium text-sm">
-                <span class="underline">Contactez notre équipe par mail pour accéder aux données d’entreprises béninoises</span> <span class="ml-2">→</span> </a>
-            </p>
-          </DisclosurePanel>
-        </Disclosure>
-        <Disclosure as="div" class="pt-6" v-slot="{ open }">
-          <dt class="text-lg">
-            <DisclosureButton class="flex w-full items-start justify-between text-left text-gray-400">
-              <span class="font-bold text-blue text-sm text-gray-900">
-                Vérification d'existence et de fiabilité des entreprises
-              </span>
-              <span class="ml-6 flex h-7 items-center">
-                <ChevronDownIcon :class="[
-                  open ? '-rotate-180' : 'rotate-0',
-                  'h-6 w-6 transform',
-                ]" aria-hidden="true" />
-              </span>
-            </DisclosureButton>
-          </dt>
-          <DisclosurePanel as="dd" class="mt-2 pr-12">
-            <p class="text-md md:text-lg tracking-tight leading-7 text-subtitlegray">
-              <a href="https://ahilido.bj/" target="_blank" class="text-primary font-medium text-sm">
-                <span class="underline">Accédez à la plateforme dédiée à la vérification d’existence et de fiabilité des entreprises</span> <span class="ml-2">→</span> </a>
-            </p>
-          </DisclosurePanel>
-        </Disclosure>
-      </dl>
-      <div class="py-12">
-        <h1 class="text-primary text-4xl lg:text-6xl leading-none font-extrabold tracking-tight">
-          <span class="text-white">Autres services</span>
-        </h1>
-        <div class="mt-8">
-          <div class="flex flex-wrap grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 pb-10">
-            <div class="p-6 rounded-lg bg-gris mb-2 md:mb-0 cursor-pointer" v-for="(service, index) in services"
-              :key="'service' + index" @click="$router.push({name: service.route})">
-              <div class="flex justify-between">
-                <span class="p-2.5 rounded-xl bg-primary">
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M16 7C16 9.20914 14.2091 11 12 11C9.79086 11 8 9.20914 8 7C8 4.79086 9.79086 3 12 3C14.2091 3 16 4.79086 16 7Z"
-                      stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M12 14C8.13401 14 5 17.134 5 21H19C19 17.134 15.866 14 12 14Z" stroke="white"
-                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </span>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_5735_1034)">
-                    <path d="M9 5V7H15.59L4 18.59L5.41 20L17 8.41V15H19V5H9Z" fill="#DD7A4B" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_5735_1034">
-                      <rect width="24" height="24" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 pb-20">
+      <div>
+        <div class="pt-6 md:pt-20 mb-6">
+          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+            Dispositif d'accueil
+          </h1>
+          <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
+            Nos équipes se tiennent à votre disposition pour vous recevoir et
+            vous orienter aux jours et heures <br />
+            ouvrables. Posez vos besoins en informations pour être guidés dans
+            nos locaux ou en ligne (appel <br />
+            téléphonique, email ou chat).
+          </p>
+        </div>
+        <div
+          class="
+            flex
+            grid grid-cols-1
+            md:grid-cols-2
+            lg:grid-cols-3
+            gap-6
+            md:gap-8
+            mb-6
+          "
+        >
+          <div class="shadow-lg mb-2 md:mb-0 flex flex-col justify-between">
+            <div class="p-6">
+              <svg
+                width="56"
+                height="56"
+                viewBox="0 0 56 56"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="56"
+                  height="56"
+                  rx="8"
+                  fill="#DD7A4B"
+                  fill-opacity="0.1"
+                />
+                <path
+                  d="M40 31.0072C36.2943 32.5073 32.2436 33.3333 28 33.3333C23.7564 33.3333 19.7057 32.5073 16 31.0072M33.3333 21.3333V18.6667C33.3333 17.1939 32.1394 16 30.6667 16H25.3333C23.8606 16 22.6667 17.1939 22.6667 18.6667V21.3333M28 29.3333H28.0133M18.6667 40H37.3333C38.8061 40 40 38.8061 40 37.3333V24C40 22.5272 38.8061 21.3333 37.3333 21.3333H18.6667C17.1939 21.3333 16 22.5272 16 24V37.3333C16 38.8061 17.1939 40 18.6667 40Z"
+                  stroke="#DD7A4B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
 
-              </div>
-              <div class="mt-6">
-                <h4 class="text-lg leading-none font-bold text-blue">
-                  {{service.name}}
+              <div class="mt-4">
+                <h4
+                  class="
+                    text-lg
+                    leading-6
+                    font-extrabold
+                    text-borderSimple
+                    mb-3
+                  "
+                >
+                  Accueil personnalisé
                 </h4>
-                <p class="text-sm leading-5 text-blue mt-4">
-                  {{service.short_description}}
+                <p
+                  class="
+                    text-base
+                    tracking-tight
+                    text-light
+                    leading-7
+                    text-subtitlegray
+                  "
+                >
+                  Nous prenons en charge vos préoccupations selon vos
+                  disponibilités.
                 </p>
               </div>
+            </div>
+          </div>
+          <div class="shadow-lg mb-2 md:mb-0 flex flex-col justify-between">
+            <div class="p-6">
+              <svg
+                width="56"
+                height="56"
+                viewBox="0 0 56 56"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="56"
+                  height="56"
+                  rx="8"
+                  fill="#DD7A4B"
+                  fill-opacity="0.1"
+                />
+                <path
+                  d="M29.3333 22.1462H40M40 22.1462V31.5121M40 22.1462L29.3333 31.5121L24 26.8292L16 33.8536"
+                  stroke="#DD7A4B"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <div class="mt-4">
+                <h4
+                  class="
+                    text-lg
+                    leading-6
+                    font-extrabold
+                    text-borderSimple
+                    mb-3
+                  "
+                >
+                  Information spécialisée
+                </h4>
+                <p
+                  class="
+                    text-base
+                    tracking-tight
+                    text-light
+                    leading-7
+                    text-subtitlegray
+                  "
+                >
+                  Obtenez des informations sur des thématiques précises auprès
+                  de nos agents
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="shadow-lg mb-2 md:mb-0 flex flex-col justify-between">
+            <div class="p-6">
+              <svg
+                width="56"
+                height="56"
+                viewBox="0 0 56 56"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect
+                  width="56"
+                  height="56"
+                  rx="8"
+                  fill="#DD7A4B"
+                  fill-opacity="0.1"
+                />
+                <path
+                  d="M39 28C39 34.0751 34.0751 39 28 39V41C35.1797 41 41 35.1797 41 28H39ZM28 39C21.9249 39 17 34.0751 17 28H15C15 35.1797 20.8203 41 28 41V39ZM17 28C17 21.9249 21.9249 17 28 17V15C20.8203 15 15 20.8203 15 28H17ZM28 17C34.0751 17 39 21.9249 39 28H41C41 20.8203 35.1797 15 28 15V17ZM32.3333 28C32.3333 30.3932 30.3932 32.3333 28 32.3333V34.3333C31.4978 34.3333 34.3333 31.4978 34.3333 28H32.3333ZM28 32.3333C25.6068 32.3333 23.6667 30.3932 23.6667 28H21.6667C21.6667 31.4978 24.5022 34.3333 28 34.3333V32.3333ZM23.6667 28C23.6667 25.6068 25.6068 23.6667 28 23.6667V21.6667C24.5022 21.6667 21.6667 24.5022 21.6667 28H23.6667ZM28 23.6667C30.3932 23.6667 32.3333 25.6068 32.3333 28H34.3333C34.3333 24.5022 31.4978 21.6667 28 21.6667V23.6667ZM35.7782 18.8076L31.0641 23.5217L32.4783 24.9359L37.1924 20.2218L35.7782 18.8076ZM31.0641 32.4783L35.7782 37.1924L37.1924 35.7782L32.4783 31.0641L31.0641 32.4783ZM24.9359 23.5217L20.2218 18.8076L18.8076 20.2218L23.5217 24.9359L24.9359 23.5217ZM23.5217 31.0641L18.8076 35.7782L20.2218 37.1924L24.9359 32.4783L23.5217 31.0641Z"
+                  fill="#DD7A4B"
+                />
+              </svg>
+
+              <div class="mt-4">
+                <h4
+                  class="
+                    text-lg
+                    leading-6
+                    font-extrabold
+                    text-borderSimple
+                    mb-3
+                  "
+                >
+                  Information spécialisée
+                </h4>
+                <p
+                  class="
+                    text-base
+                    tracking-tight
+                    text-light
+                    leading-7
+                    text-subtitlegray
+                  "
+                >
+                  Obtenez des informations sur des thématiques précises auprès
+                  de nos agents
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pt-6 md:pt-20 mb-6">
+          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+            Informations sur les entreprises et industries
+          </h1>
+          <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
+            Trouvez toutes les informations sur les entreprises locales.
+          </p>
+          <div
+            class="
+              grid grid-cols-1
+              md:grid-cols-2
+              lg:grid-cols-3
+              gap-6
+              md:gap-8
+              mb-6
+              mt-10
+            "
+          >
+            <div
+              class="p-6 rounded-lg bg-grayCard flex flex-col justify-between"
+            >
+              <div class="mb-3">
+                <svg
+                  width="56"
+                  height="56"
+                  viewBox="0 0 56 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="56"
+                    height="56"
+                    rx="8"
+                    fill="#DD7A4B"
+                    fill-opacity="0.1"
+                  />
+                  <path
+                    d="M26.6993 16C20.681 16.6653 16 21.7676 16 27.9633C16 34.611 21.389 40 28.0367 40C34.2324 40 39.3347 35.319 40 29.3007H26.6993V16Z"
+                    stroke="#DD7A4B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M39.3885 23.951H32.049V16.6117C35.469 17.8205 38.1796 20.531 39.3885 23.951Z"
+                    stroke="#DD7A4B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="text-blue mb-4 font-extrabold text-lg">
+                Fichier des entreprises
+              </div>
+              <p class="text-md tracking-tight text-subtitlegray leading-6">
+                Accédez à la base de données des entreprises et établissements
+                enregistrés au Bénin.
+              </p>
+              <a
+                href="#"
+                type="button"
+                class="
+                  btn btn-light
+                  bg-white
+                  shadow-md
+                  text-primary
+                  w-full
+                  mt-4
+                  text-center
+                  underline
+                "
+              >
+                En savoir plus
+              </a>
+            </div>
+            <div
+              class="p-6 rounded-lg bg-grayCard flex flex-col justify-between"
+            >
+              <div class="mb-3">
+                <svg
+                  width="57"
+                  height="56"
+                  viewBox="0 0 57 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="56.0016"
+                    height="56"
+                    rx="8"
+                    fill="#DD7A4B"
+                    fill-opacity="0.1"
+                  />
+                  <path
+                    d="M16 20L20 21.3333M20 21.3333L16 33.3333C18.3634 35.1112 21.6382 35.1112 24.0016 33.3334M20 21.3333L24.0001 33.3333M20 21.3333L28 18.6667M36 21.3333L40 20M36 21.3333L32 33.3333C34.3634 35.1112 37.6382 35.1112 40.0016 33.3334M36 21.3333L40.0001 33.3333M36 21.3333L28 18.6667M28 16V18.6667M28 40V18.6667M28 40H24M28 40H32"
+                    stroke="#DD7A4B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="text-blue mb-4 font-extrabold text-lg">
+                Liste d'entreprises disponible sur demande et par domaine
+              </div>
+              <p class="text-md tracking-tight text-subtitlegray leading-6">
+                Formulez vos demandes pour obtenir une liste d'entreprises
+                suivant des critères précis.
+              </p>
+              <a
+                href="#"
+                type="button"
+                class="
+                  btn btn-light
+                  bg-white
+                  shadow-md
+                  text-primary
+                  w-full
+                  mt-4
+                  text-center
+                  underline
+                "
+              >
+                En savoir plus
+              </a>
+            </div>
+            <div
+              class="p-6 rounded-lg bg-grayCard flex flex-col justify-between"
+            >
+              <div class="mb-3">
+                <svg
+                  width="57"
+                  height="56"
+                  viewBox="0 0 57 56"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    width="56.0016"
+                    height="56"
+                    rx="8"
+                    fill="#DD7A4B"
+                    fill-opacity="0.1"
+                  />
+                  <path
+                    d="M16 20L20 21.3333M20 21.3333L16 33.3333C18.3634 35.1112 21.6382 35.1112 24.0016 33.3334M20 21.3333L24.0001 33.3333M20 21.3333L28 18.6667M36 21.3333L40 20M36 21.3333L32 33.3333C34.3634 35.1112 37.6382 35.1112 40.0016 33.3334M36 21.3333L40.0001 33.3333M36 21.3333L28 18.6667M28 16V18.6667M28 40V18.6667M28 40H24M28 40H32"
+                    stroke="#DD7A4B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="text-blue mb-4 font-extrabold text-lg">
+                LVérification d'existence ou de fiabilité des entreprises
+              </div>
+              <p class="text-md tracking-tight text-subtitlegray leading-6">
+                Accédez à la plateforme AHILIDO pour vérifier l'existence et la
+                fiabilité d'une entreprise.
+              </p>
+              <a
+                href="#"
+                type="button"
+                class="
+                  btn btn-light
+                  bg-white
+                  shadow-md
+                  text-primary
+                  w-full
+                  mt-4
+                  text-center
+                  underline
+                "
+              >
+                En savoir plus
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 pb-20">
+      <div
+        class="
+          bg-grayCard
+          grid grid-cols-1
+          md:grid-cols-2
+          items-center
+          gap-6
+          mb-6
+        "
+      >
+        <div>
+          <img
+            src="@/assets/images/rdv.jpeg"
+            class="w-full h-64 object-cover"
+          />
+        </div>
+        <div class="p-6">
+          <h3 class="text-4xl leading-10 font-extrabold text-greenDark">
+            Documentation
+          </h3>
+          <p
+            class="text-lg mt-4 tracking-tight leading-7 text-subtitlegray mt-3"
+          >
+            Retrouvez l'information économique sur les entreprises et <br> l'environnement des affaires au Bénin.
+          </p>
+          <button
+            type="button"
+            class="
+              mt-6
+              btn btn-light
+              bg-white
+              shadow-md
+              text-primary
+              w-full
+            "
+          >
+            Voir les documents
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="bg-primaryInfo py-10">
+      <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 items-center">
+          <div>
+            <h3 class="text-4xl leading-10 font-extrabold text-blue">
+              Discutons maintenant !
+            </h3>
+            <p class="text-lg mt-6 tracking-tight leading-7 text-subtitlegray">
+              Utilisez le chat en ligne. Nos agents sont <br />
+              disponibles pour répondre à vos questions diverses <br />
+              et préoccupations.
+            </p>
+
+            <button
+              type="button"
+              class="mt-8 btn btn-light bg-white shadow-md text-primary w-auto"
+            >
+              Commencer le chat
+            </button>
+          </div>
+          <div
+            class="
+              rounded-lg
+              bg-primaryInfo
+              flex
+              items-center
+              justify-center
+              py-8
+              px-6
+            "
+          >
+            <img src="@/assets/images/chatbot.gif" class="h-56" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 pt-20">
+      <h1 class="text-blue text-4xl leading-none font-bold tracking-tight">
+        Autres services
+      </h1>
+      <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
+        Découvrez nos programmes d’accompagnement dédiés aux entreprises et
+        industries locales.
+      </p>
+      <div class="mt-6 grid grid-cols-1 md:grid-cols-2 md:gap-6 mb-6">
+        <div>
+          <img
+            class="h-48 w-full object-cover"
+            src="@/assets/images/box-one.jpeg"
+            alt=""
+          />
+          <div class="p-6 bg-lightGray">
+            <h5 class="text-blue text-lg font-bold">
+              Services phares
+            </h5>
+            <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
+              Découvrez nos programmes d’accompagnement dédiés aux entreprises et industries locales.
+            </p>
+            <div class="mt-4 w-full">
+              <button
+                type="button"
+                @click="$router.push({ name: 'services-specs' })"
+                class="btn btn-light bg-white shadow-md text-primary w-full"
+              >
+                En savoir plus
+              </button>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img
+            class="h-48 w-full object-cover"
+            src="@/assets/images/box-two.jpeg"
+            alt=""
+          />
+
+          <div class="p-6 bg-lightGray">
+            <h5 class="text-blue text-lg font-bold">
+              Formation, assistance et appui-conseil
+            </h5>
+            <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
+              Faites-vous former et conseiller par nos experts dans divers
+              domaines touchant à la vie de l’entreprise
+            </p>
+            <div class="mt-4 w-full">
+              <button
+                @click="$router.push({ name: 'services-formations' })"
+                type="button"
+                class="btn btn-light bg-white shadow-md text-primary w-full"
+              >
+                En savoir plus
+              </button>
             </div>
           </div>
         </div>
@@ -210,77 +557,138 @@
     </div>
   </main>
 </template>
+
 <script>
-import {
-  Disclosure,
-  DisclosureButton,
-  DisclosurePanel,
-} from '@headlessui/vue';
-import store from "@/store";
-import { ref, onMounted, computed } from 'vue'
-import { services } from "@/api"
-import { ChevronDownIcon } from '@heroicons/vue/outline';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/vue/solid'
-import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
-import Notifications from "@/components/Notifications.vue"
+import Notifications from "@/components/Notifications.vue";
+import { services } from "@/api";
+import AppelsOffresBox from "@/components/home/AppelsOffresBox.vue";
+
 export default {
   components: {
     Notifications,
-    Disclosure,
-    DisclosurePanel,
-    DisclosureButton,
-    DisclosureButton,
-    ChevronDownIcon,
-    ChevronLeftIcon,
-    ChevronRightIcon,
-    Dialog,
-    DialogPanel,
-    DialogTitle,
-    TransitionChild,
-    TransitionRoot
+    AppelsOffresBox,
   },
   data() {
     return {
-      open: true,
-      services: [
-        {
-          name: 'Services spécifiques',
-          short_description: 'Découvrez nos programmes d’accompagnement dédiés aux entreprises et industries locales.',
-          route: 'services-specs'
-        },
-        {
-          name: 'Formation, assistance et appui-conseil',
-          short_description: 'Faites-vous former et conseiller par nos experts dans divers domaines touchant à la vie de l’entreprise.',
-          route: 'services-formations'
-        }
-      ]
-    }
+      email: "",
+      phone: "",
+      notif: {
+        type: "",
+        title: "",
+        description: "",
+      },
+      loader: false,
+      faqs: [],
+      open: false,
+      agenda_datas: [],
+
+      on_loading_request: false,
+    };
   },
   async created() {
+    this.loader = true;
+    await services.get_faq().then((res) => {
+      if (res.status == 200 && res.data) {
+        this.faqs = res.data;
+      }
+      this.loader = false;
+    });
+    let configs = sessionStorage.getItem("configs");
+    if (configs !== undefined && configs !== null) {
+      configs = JSON.parse(configs);
+    }
+    if (
+      this.$store.state.home_elements.news !== undefined &&
+      this.$store.state.home_elements.news !== undefined
+    ) {
+      let news = this.$store.state.home_elements.news;
+      news = news.data.map((element) => {
+        return {
+          ...element,
+          cover: configs.image_url + "/" + element.photo,
+        };
+      });
+
+      this.news = news.slice(0, 3);
+    }
+    this.agenda_datas = this.$store.state.home_elements;
+    if (
+      this.agenda_datas.events !== undefined &&
+      this.agenda_datas.events !== null
+    ) {
+      this.agenda_datas = this.agenda_datas.events;
+      this.agenda_datas = this.agenda_datas.data.map((element) => {
+        return {
+          ...element,
+          photo: configs.image_url + "/" + element.photo,
+        };
+      });
+    }
   },
-  methods: {}
-}
+  methods: {},
+  async sendRequest() {
+    const data = {
+      email: this.email,
+      subject: "Appel offre",
+      slug: "Créateur d’entreprise",
+    };
+    try {
+      this.on_loading_request = true;
+      await services.subscribe_newsletter(data).then((response) => {
+        this.on_loading_request = false;
+        this.email = "";
+        if (response.status == 200) {
+          this.notif.type = "success";
+          this.notif.title = "Effectuée";
+          this.notif.description = this.$store.state.current_notif_message;
+          this.$store.state.current_notif_message = response.message;
+        } else {
+          this.notif.type = "error";
+          this.notif.title = "Erreur";
+          this.notif.description =
+            "Une erreur s'est produite. Veuillez réessayer.";
+        }
+      });
+      setTimeout(() => {
+        this.notif.type = "";
+      }, 6000);
+    } catch (error) {
+      this.on_loading_request = false;
+      this.$emit("error");
+    }
+  },
+};
 </script>
-<style scoped>
+    
+<style lang="scss" scoped>
 .barner {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../assets/images/rdv-cover.jpg");
-  height: 600px !important;
-  background-position: center !important;
-}
-
-.asset-session {
-  background: url("../assets/images/ass.jpeg");
+  background: linear-gradient(
+      90deg,
+      #ffffff 35.49%,
+      rgba(255, 255, 255, 0) 65.73%
+    ),
+    url("../assets/images/finance.jpeg") !important;
+  height: 520px !important;
+  background-position: top !important;
+  background-attachment: local !important;
   background-size: cover !important;
-  height: 400px;
-  width: 100%;
-  box-shadow: 0px 20px 25px -5px rgba(0, 0, 0, 0.1),
-    0px 10px 10px -5px rgba(0, 0, 0, 0.04);
-  border-radius: 12px;
+  background-repeat: no-repeat !important;
 }
 
-:deep(.divide-y > :not([hidden]) ~ :not([hidden])) {
-  border-top: 1px solid #E5E7EB !important
+::v-deep .divide-y > :not([hidden]) ~ :not([hidden]) {
+  border-top: 0px solid #e5e7eb !important;
+  border-bottom: none !important;
+}
+
+.active {
+  border: 1px solid #dd7a4b;
+  background: #faebe0 !important;
+  color: #dd7a4b !important;
+}
+
+::placeholder {
+  font-weight: 400;
+  font-size: 16px !important;
+  color: #6b7280 !important;
 }
 </style>
-    

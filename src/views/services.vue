@@ -105,23 +105,23 @@ export default {
         setTimeout(() => {
             this.services = [
                 {
-                    name: 'Services spécifiques',
-                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    name: 'Services phares',
+                    short_description: 'Nos programmes d\'accompagnement dédiés aux entreprises et industries locales',
                     route: 'services-specs'
                 },
                 {
                     name: 'Information et orientation',
-                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    short_description: 'Accédez à nos dispositifs de support pour vous orienter dans votre recherche d\'informations',
                     route: 'services-infos'
                 },
                 {
                     name: 'Formation, assistance et appui-conseil',
-                    short_description: 'Vérification d’existence et de fiabilité des entreprises, pour la facilitation des affaires',
+                    short_description: 'Faites-vous former et conseiller par nos experts dans divers domaines touchant à la vie de l’entreprise.',
                     route: 'services-formations'
                 },
             ]
             this.loader = false
-        }, 2500)
+        })
     }
 }
 </script>
