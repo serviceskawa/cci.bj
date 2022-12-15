@@ -81,7 +81,7 @@ export default {
         setTimeout(() => {
             this.services = [
                 {
-                    name: 'Services spécifiques',
+                    name: 'Services phares',
                     short_description: 'Découvrez nos programmes d’accompagnement dédiés aux entreprises et industries locales.',
                     route: 'services-specs'
                 },

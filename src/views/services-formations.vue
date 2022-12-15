@@ -53,7 +53,7 @@
       <div>
         <div class="pt-6 md:pt-20 mb-6">
           <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
-            Le programme rendez-vous mensuel des experts
+            Le programme rendez-vous des experts
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
             Programme d'appui complémentaire aux mesures prises par le

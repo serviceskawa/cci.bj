@@ -174,7 +174,7 @@
                           stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                       </svg>
                       <div class="ml-4">
-                        <p class="text-base font-medium text-gray-900">Services spécifiques</p>
+                        <p class="text-base font-medium text-gray-900">Services phares</p>
 
                       </div>
                     </a>
@@ -374,7 +374,7 @@ export default {
           icon: InboxIcon,
         },
         {
-          name: "Services spécifiques",
+          name: "Services phares",
           route_name: "services-specs",
           icon: QuestionMarkCircleIcon,
         },

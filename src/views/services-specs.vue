@@ -106,7 +106,7 @@
                     mb-3
                   "
                 >
-                  Rendez-vous mensuel des experts
+                  Rendez-vous des experts
                 </h4>
                 <p
                   class="
@@ -179,7 +179,7 @@
                   "
                 >
                   Faites vous accompagner par un conseiller d'entreprise pour
-                  structurer et développer votre projet
+                  structurer et développer votre projet.
                 </p>
               </div>
             </div>
@@ -240,7 +240,7 @@
                   "
                 >
                   Réglez plus simplement les litiges commerciaux grâce aux modes
-                  alternatifs de règlement de litiges
+                  alternatifs de règlement de litiges.
                 </p>
               </div>
             </div>
@@ -301,18 +301,16 @@
                   "
                 >
                   Bénéficiez d'un accompagnement et de nos outils d'aide à
-                  l'accès au marché des produits locaux de qualité
+                  l'accès au marché des produits locaux de qualité.
                 </p>
               </div>
             </div>
             <div class="bg-grayCard px-6 py-4">
-              <button
-                type="button"
-                class="btn btn-primary bg-primary text-white text-sm w-full"
-                @click="$router.push({ name: 'aide-montage' })"
-              >
-                En savoir plus
-              </button>
+              <a href="mailto:info@ccib.bj?subject=Accompagnement%20mise%20en%20march%C3%A9%20des%20produits%20locaux%20">
+                <button type="button" class="btn btn-primary bg-primary text-white text-sm w-full">
+                  En savoir plus
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -487,8 +485,7 @@
               création d’entreprise et l'établissement d'un plan d'affaires
               finalisé.
             </p>
-            <router-link
-              :to="{ name: 'observatoire-commerce' }"
+            <button
               type="button"
               class="
                 btn btn-light
@@ -500,8 +497,8 @@
                 text-center
               "
             >
-              S'inscrire
-            </router-link>
+            Bientôt disponible
+            </button>
           </div>
         </div>
       </div>
