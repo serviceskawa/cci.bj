@@ -44,7 +44,7 @@
             "
           >
             Développez des compétences dans divers domaines liés à la <br />
-            gestion de l'entreprise grâce aux formations de la CCI-Bénin
+            gestion de l'entreprise grâce aux formations de la CCI Bénin
           </p>
         </div>
       </div>
@@ -53,10 +53,10 @@
       <div>
         <div class="pt-6 md:pt-20 mb-6">
           <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
-            Se former avec la CCI-Bénin
+            Se former avec la CCI Bénin
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
-            Dispositif de la CCI-Bénin pour outiller les porteurs de projets
+            Dispositif de la CCI Bénin pour outiller les porteurs de projets
             entrepreneuriaux
           </p>
         </div>

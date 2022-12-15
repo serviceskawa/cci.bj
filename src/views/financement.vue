@@ -44,7 +44,7 @@
             "
           >
             Vous avez un projet et souhaitez obtenir un appui <br />
-            financier ? La CCI-Bénin vous connecte aux mécanismes <br />
+            financier ? La CCI Bénin vous connecte aux mécanismes <br />
             de financement les plus adaptés à vos besoins.
           </p>
         </div>
@@ -57,7 +57,7 @@
             Mécanismes d'appui pour l'accès aux financements
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
-            La CCI-Bénin guide les entreprises et initiatives locales dans leur
+            La CCI Bénin guide les entreprises et initiatives locales dans leur
             recherche de financements <br />
             pour démarrer ou accélérer leurs projets.
           </p>
@@ -100,7 +100,7 @@
                   text-subtitlegray
                 "
               >
-                Ce dispositif de la CCI-Bénin est un <br />
+                Ce dispositif de la CCI Bénin est un <br />
                 programme destiné à offrir un <br />
                 accompagnement technique aux <br />
                 entreprises et projets qui <br />
@@ -257,7 +257,7 @@
               </div>
               <p class="text-md tracking-tight text-subtitlegray leading-6">
                 Plateforme de solutions et de services dédiés à la croissance
-                des entreprises, Impulse est une initiative de la CCI-Bénin qui
+                des entreprises, Impulse est une initiative de la CCI Bénin qui
                 connecte les porteurs de projets aux opportunités de financement
               </p>
               <router-link
@@ -303,7 +303,7 @@
               </div>
               <div class="text-blue mb-4 font-extrabold text-lg">
                 Le Fonds d'Appui Catalytique et de <br />
-                Solidarité de la CCI-Bénin
+                Solidarité de la CCI Bénin
               </div>
               <p class="text-md tracking-tight text-subtitlegray leading-6">
                 Fonds d'amorçage et de promotion de l'innovation, ce dispositif

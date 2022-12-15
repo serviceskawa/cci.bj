@@ -24,7 +24,7 @@
                 href="https://apiex.bj/"
                 target="_blank"
                 class="text-base text-white hover:text-white"
-                >APIEX
+                >APIEx
               </a>
             </li>
             <li>
@@ -40,7 +40,7 @@
                 href="https://cpccaf.org/"
                 target="_blank"
                 class="text-base text-white hover:text-white"
-                >CPCAF
+                >CPCCAF
               </a>
             </li>
             <li>
@@ -81,7 +81,7 @@
                 target="_blank"
                 class="text-base text-white hover:text-white"
               >
-                formationsccib.bj
+                formationccib.bj
               </a>
             </li>
             <li>
@@ -144,11 +144,11 @@
           <div>
             <h3 class="text-base font-medium text-white uppercase">CONTACTS</h3>
             <div class="mt-2 text-white">
-              <a href="tel:+22991434343">91 43 43 43</a> /
-              <a href="tel:+22921311238">21 31 12 38</a>
+              <a href="https://api.whatsapp.com/send?phone=22991434343&text=Contactez-nous">+229 91 43 43 43</a> /
+              <a href="tel:+22921311238"> +229 21 31 20 81</a>
             </div>
             <div class="mt-2 text-white">
-              <a href="mailto:ccibj@exemple.com">ccibj@exemple.com</a> /
+              <a href="mailto:info@ccib.bj">info@ccib.bj</a>
             </div>
           </div>
         </div>
@@ -260,8 +260,16 @@ export default {
           name: "rdv-experts",
         },
         {
-          title: "P.E.R.E",
-          name: "pere",
+          title: "Arbitrage et médiation",
+          name: "arbitrage-mediation",
+        },
+        {
+          title: "Impulse",
+          name: "impulse",
+        },
+        {
+          title: "Appels d’offres/projets",
+          name: "appels-offres",
         },
       ],
     };

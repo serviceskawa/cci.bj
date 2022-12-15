@@ -465,7 +465,7 @@
                 Assistance comptable
               </div>
               <p class="text-md tracking-tight text-subtitlegray leading-6">
-                La CCI-Bénin met à la disposition des MPME, des Centres <br />
+                La CCI Bénin met à la disposition des MPME, des Centres <br />
                 de Gestion Agrées (CGA) qui assurent une comptabilité <br />
                 régulière et sûre de leur entreprise.
               </p>
@@ -593,7 +593,7 @@
 import Notifications from "@/components/Notifications.vue";
 import { services } from "@/api";
 import AppelsOffresBox from "@/components/home/AppelsOffresBox.vue";
-import router from "../../../../INTECH/v-dashboard-master/src/router";
+//import router from "../../../../INTECH/v-dashboard-master/src/router";
 
 export default {
   components: {

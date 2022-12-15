@@ -55,7 +55,7 @@
             Pour les entrepreneurs et commerçants
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
-            La CCI-Bénin met à disposition des entreprises et des industries une
+            La CCI Bénin met à disposition des entreprises et des industries une
             grande <br />
             variété de dispositifs pour accompagner leurs activités.
           </p>
@@ -481,7 +481,7 @@
               Parcours du créateur
             </div>
             <p class="text-md tracking-tight text-subtitlegray leading-6">
-              À travers ce produit de CCI-Bénin, les porteurs de projet
+              À travers ce produit de CCI Bénin, les porteurs de projet
               aspirants à la création d'une entreprise sont initiés à la méthode
               TRIE/CRE du BIT. Nous vous offrons les clés pour faciliter la
               création d’entreprise et l'établissement d'un plan d'affaires
@@ -511,7 +511,7 @@
         Nos évènements
       </h1>
       <p class="text-subtitlegray text-center text-lg leading-6 font-normal mt-4">
-        Mettez en avant votre entreprise à l'occasion des événements de promotion organisés par la CCI-Bénin
+        Mettez en avant votre entreprise à l'occasion des événements de promotion organisés par la CCI Bénin
       </p>
       <div class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <div

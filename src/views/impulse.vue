@@ -41,7 +41,7 @@
             "
           >
             Cadre d'accélération de la croissance des jeunes entreprises, <br />
-            Impulse est un produit de la CCI-Bénin destiné à assurer un <br />
+            Impulse est un produit de la CCI Bénin destiné à assurer un <br />
             accompagnement holistique des porteurs de projets.
           </p>
         </div>
