@@ -593,7 +593,6 @@
 import Notifications from "@/components/Notifications.vue";
 import { services } from "@/api";
 import AppelsOffresBox from "@/components/home/AppelsOffresBox.vue";
-import router from "../../../../INTECH/v-dashboard-master/src/router";
 
 export default {
   components: {

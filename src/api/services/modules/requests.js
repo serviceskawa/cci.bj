@@ -19,53 +19,46 @@ import {
   PERSONA,
   PERSONA_BY_ID,
   SEARCH_NEWS,
-  APPELS_SEARCH
+  APPELS_SEARCH,
+  FILES_CATEGORIES,
+  DOCUMENTS_FILTERS
 } from '@/api/routes'
 
 export async function home_elements () {
-  const response = await client.get()
-  return response
+  return await client.get()
 }
 
 export async function get_settings () {
-  const response = await client.get(SETTINGS)
-  return response
+  return await client.get(SETTINGS)
 }
 
 export async function contact_us (data) {
-  const response = await client.post(CONTACT_US, data)
-  return response
+  return await client.post(CONTACT_US, data)
 }
 
 export async function get_faq () {
-  const response = await client.get(FAQS)
-  return response
+  return await client.get(FAQS)
 }
 
 export async function send_faq_request (data) {
-  const response = await client.post(FAQS, data)
-  return response
+  return await client.post(FAQS, data)
 }
 
 
 export async function get_all_clients () {
-  const response = await client.get(CLIENTS)
-  return response
+  return await client.get(CLIENTS)
 }
 
 export async function get_actualites () {
-  const response = await client.get(ACTUALITES)
-  return response
+  return await client.get(ACTUALITES)
 }
 
 export async function get_all_services () {
-  const response = await client.get(SERVICES)
-  return response
+  return await client.get(SERVICES)
 }
 
 export async function subscribe_newsletter (email) {
-  const response = await client.post(SUBSCRIBE_NEWSLETTERS, email)
-  return response
+  return await client.post(SUBSCRIBE_NEWSLETTERS, email)
 }
 
 export async function get_notifcations () {
@@ -138,4 +131,12 @@ export async function getPersona_by_id(id, current_page) {
     return await client.get(`${PERSONA_BY_ID}` + id)
   }
   return await client.get(`${PERSONA_BY_ID}`+ id +`?page=${current_page}`)
+}
+
+export async function get_documents_categories () {
+  return await client.get(FILES_CATEGORIES)
+}
+
+export async function apply_docs_filters (data) {
+  return await client.post(DOCUMENTS_FILTERS, data)
 }
