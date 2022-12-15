@@ -92,11 +92,12 @@
               mt-4
             "
           >
-          Accédez aux documents et rapports de la Chambre de Commerce et de l'Industrie sur l'environnement 
-          <br>des affaires au Bénin.
+            Accédez aux documents et rapports de la Chambre de Commerce et de
+            l'Industrie sur l'environnement
+            <br />des affaires au Bénin.
           </p>
         </div>
-        <div class="flex justify-center pt-8" v-if="loader == true">
+        <div class="flex justify-center py-8" v-if="loader == true">
           <div role="status">
             <svg
               aria-hidden="true"
@@ -118,6 +119,7 @@
           </div>
         </div>
         <div v-else-if="loader == false">
+          
           <div class="flex justify-between mt-6 flex-wrap">
             <div class="flex items-center">
               <div class="relative inline-block text-left mr-3 mb-3">
@@ -146,7 +148,11 @@
                     aria-expanded="true"
                     aria-haspopup="true"
                   >
-                    Type de documents
+                    {{
+                      docs_filters.type_doc === ""
+                        ? "Types de documents"
+                        : docs_filters.type_doc.name
+                    }}
                     <svg
                       width="20"
                       height="20"
@@ -183,20 +189,17 @@
                 >
                   <div class="py-1" role="none">
                     <a
-                      href="#"
+                      v-for="(type, index) in types"
+                      :key="index"
+                      @click="
+                        (docs_filters.type_doc = type),
+                          (show_doc_type = !show_doc_type)
+                      "
                       class="text-gray-700 block px-4 py-2 text-sm"
                       role="menuitem"
                       tabindex="-1"
                       id="menu-item-0"
-                      >PDF</a
-                    >
-                    <a
-                      href="#"
-                      class="text-gray-700 block px-4 py-2 text-sm"
-                      role="menuitem"
-                      tabindex="-1"
-                      id="menu-item-1"
-                      >Word</a
+                      >{{ type.name }}</a
                     >
                   </div>
                 </div>
@@ -227,7 +230,11 @@
                     aria-expanded="true"
                     aria-haspopup="true"
                   >
-                    Année
+                    {{
+                      docs_filters.current_year === ""
+                        ? "Année"
+                        : docs_filters.current_year
+                    }}
                     <svg
                       width="20"
                       height="20"
@@ -264,28 +271,17 @@
                 >
                   <div class="py-1" role="none">
                     <a
-                      href="#"
+                      v-for="(year, index) in years"
+                      :key="'year' + index"
+                      @click="
+                        (docs_filters.current_year = year),
+                          (show_year = !show_year)
+                      "
                       class="text-gray-700 block px-4 py-2 text-sm"
                       role="menuitem"
                       tabindex="-1"
                       id="menu-item-0"
-                      >2022</a
-                    >
-                    <a
-                      href="#"
-                      class="text-gray-700 block px-4 py-2 text-sm"
-                      role="menuitem"
-                      tabindex="-1"
-                      id="menu-item-1"
-                      >2021</a
-                    >
-                    <a
-                      href="#"
-                      class="text-gray-700 block px-4 py-2 text-sm"
-                      role="menuitem"
-                      tabindex="-1"
-                      id="menu-item-2"
-                      >2020</a
+                      >{{ year }}</a
                     >
                   </div>
                 </div>
@@ -318,7 +314,11 @@
                     aria-expanded="true"
                     aria-haspopup="true"
                   >
-                    Nombre par page: 10
+                    {{
+                      docs_filters.nb_pages === ""
+                        ? "Nombre d'éléments"
+                        : docs_filters.nb_pages
+                    }}
                     <svg
                       width="20"
                       height="20"
@@ -355,103 +355,104 @@
                 >
                   <div class="py-1" role="none">
                     <a
-                      href="#"
+                      v-for="(range, index) in page_ranges"
+                      :key="'range' + index"
+                      @click="
+                        (docs_filters.nb_pages = range),
+                          (show_per_page = !show_per_page)
+                      "
                       class="text-gray-700 block px-4 py-2 text-sm"
                       role="menuitem"
                       tabindex="-1"
                       id="menu-item-0"
-                      >20</a
-                    >
-                    <a
-                      href="#"
-                      class="text-gray-700 block px-4 py-2 text-sm"
-                      role="menuitem"
-                      tabindex="-1"
-                      id="menu-item-1"
-                      >50</a
-                    >
-                    <a
-                      href="#"
-                      class="text-gray-700 block px-4 py-2 text-sm"
-                      role="menuitem"
-                      tabindex="-1"
-                      id="menu-item-2"
-                      >100</a
+                      >{{ range }}</a
                     >
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div
-            class="document-box pt-8"
-            v-for="(el, index) in files_datas.data"
-            :key="index"
-          >
-            <div class="text-base text-subtitlegray italic">
-              Publié le {{ el.created_at }}
-            </div>
-            <h4 class="text-xl font-semibold mt-2 mb-3">{{ el.title }}</h4>
-            <p class="text-lg text-subtitlegray" v-html="el.short_content"></p>
-            <div class="text-base mb-2">
-              <span>{{ el.file_size }}</span>
-              <span v-if="el.file_size.trim() !== ''"> - </span>
-              <span>
-                {{ el.nbre_downloads }}
-                {{
-                  el.nbre_downloads > 0 ? "Téléchargements" : "Téléchargement"
-                }}</span
-              >
-            </div>
-            <div>
-              <div class="text-sm leading-5 font-medium text-subtitlegray mb-2">
-                Fichier
-              </div>
-              <div
-                class="
-                  attachment-box
-                  w-full
-                  flex
-                  items-center
-                  flex-wrap
-                  justify-between
-                "
-              >
-                <div class="mb-0 flex items-center">
-                  <span class="mr-2">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        clip-rule="evenodd"
-                        d="M8 4C6.34315 4 5 5.34315 5 7V11C5 13.7614 7.23858 16 10 16C12.7614 16 15 13.7614 15 11V7C15 6.44772 15.4477 6 16 6C16.5523 6 17 6.44772 17 7V11C17 14.866 13.866 18 10 18C6.13401 18 3 14.866 3 11V7C3 4.23858 5.23858 2 8 2C10.7614 2 13 4.23858 13 7V11C13 12.6569 11.6569 14 10 14C8.34315 14 7 12.6569 7 11V7C7 6.44772 7.44772 6 8 6C8.55228 6 9 6.44772 9 7V11C9 11.5523 9.44772 12 10 12C10.5523 12 11 11.5523 11 11V7C11 5.34315 9.65685 4 8 4Z"
-                        fill="#9CA3AF"
-                      />
-                    </svg>
-                  </span>
-                  <span class="text-sm leading-5">{{ el.file_name }}</span>
-                </div>
-                <div class="text-sm leading-5 font-medium">
-                  <a :href="el.file_url" target="_blank" class="text-primary"
-                    >Télécharger</a
-                  >
-                </div>
-              </div>
-            </div>
+          <div class="text-center py-20" v-if="files_datas.data.length == 0">
+            <p class="text-lg text-subtitlegray tracking-tight">
+              Aucun fichier trouvé
+            </p>
           </div>
-          <div class="py-20">
-            <Pagination
-              :pagesNumber="files_datas.last_page"
-              @previous="previousPage()"
-              @get-page="getCurrentPage()"
-              @next="nextPage()"
-              :current_page="files_datas.current_page"
-            />
+          <div v-if="files_datas.data.length > 0">
+            <div
+              class="document-box pt-8"
+              v-for="(el, index) in files_datas.data"
+              :key="index"
+            >
+              <div class="text-base text-subtitlegray italic">
+                Publié le {{ el.created_at }}
+              </div>
+              <h4 class="text-xl font-semibold mt-2 mb-3">{{ el.title }}</h4>
+              <p
+                class="text-lg text-subtitlegray"
+                v-html="el.short_content"
+              ></p>
+              <div class="text-base mb-2">
+                <span>{{ el.file_size }}</span>
+                <span v-if="el.file_size.trim() !== ''"> - </span>
+                <span>
+                  {{ el.nbre_downloads }}
+                  {{
+                    el.nbre_downloads > 0 ? "Téléchargements" : "Téléchargement"
+                  }}</span
+                >
+              </div>
+              <div>
+                <div
+                  class="text-sm leading-5 font-medium text-subtitlegray mb-2"
+                >
+                  Fichier
+                </div>
+                <div
+                  class="
+                    attachment-box
+                    w-full
+                    flex
+                    items-center
+                    flex-wrap
+                    justify-between
+                  "
+                >
+                  <div class="mb-0 flex items-center">
+                    <span class="mr-2">
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M8 4C6.34315 4 5 5.34315 5 7V11C5 13.7614 7.23858 16 10 16C12.7614 16 15 13.7614 15 11V7C15 6.44772 15.4477 6 16 6C16.5523 6 17 6.44772 17 7V11C17 14.866 13.866 18 10 18C6.13401 18 3 14.866 3 11V7C3 4.23858 5.23858 2 8 2C10.7614 2 13 4.23858 13 7V11C13 12.6569 11.6569 14 10 14C8.34315 14 7 12.6569 7 11V7C7 6.44772 7.44772 6 8 6C8.55228 6 9 6.44772 9 7V11C9 11.5523 9.44772 12 10 12C10.5523 12 11 11.5523 11 11V7C11 5.34315 9.65685 4 8 4Z"
+                          fill="#9CA3AF"
+                        />
+                      </svg>
+                    </span>
+                    <span class="text-sm leading-5">{{ el.file_name }}</span>
+                  </div>
+                  <div class="text-sm leading-5 font-medium">
+                    <a :href="el.file_url" target="_blank" class="text-primary"
+                      >Télécharger</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="py-20">
+              <Pagination
+                :pagesNumber="files_datas.last_page"
+                @previous="previousPage()"
+                @get-page="getCurrentPage()"
+                @next="nextPage()"
+                :current_page="files_datas.current_page"
+              />
+            </div>
           </div>
         </div>
       </div>
@@ -480,11 +481,20 @@
             </p>
 
             <a href="mailto:info@ccib.bj?subject=Information%20économique">
-              <button type="button" class="mt-4 btn btn-light bg-white shadow-md text-primary w-full">
+              <button
+                type="button"
+                class="
+                  mt-4
+                  btn btn-light
+                  bg-white
+                  shadow-md
+                  text-primary
+                  w-full
+                "
+              >
                 Formuler une demande
               </button>
             </a>
-            
           </div>
           <div>
             <img
@@ -601,11 +611,13 @@
 </template>
 
 <script>
+import Notifications from "@/components/Notifications.vue";
 import Pagination from "@/components/Pagination.vue";
 import { services } from "@/api";
 import moment from "moment";
 export default {
   components: {
+    Notifications,
     Pagination,
   },
   data: () => ({
@@ -613,15 +625,26 @@ export default {
     loader: false,
     files_datas: {},
     current_page: 1,
+    email: "",
+    phone: "",
     notif: {
       type: "",
       title: "",
       description: "",
     },
+    docs_filters: {
+      type_doc: "",
+      current_year: "",
+      nb_pages: "",
+    },
+    on_loading_request: false,
+    types: [],
+    years: [2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015],
+    page_ranges: [20, 50, 100],
     on_loading_request: false,
     show_per_page: false,
     show_doc_type: false,
-    show_year: false
+    show_year: false,
   }),
   async created() {
     moment().locale("fr");
@@ -677,6 +700,7 @@ export default {
       }
     },
     async load_files(current_page) {
+      this.getDocumentsCategories();
       this.loader = true;
       await services.get_document_rapports(current_page).then((response) => {
         this.loader = false;
@@ -690,10 +714,42 @@ export default {
         });
       });
     },
+    async apply_filters() {
+      this.loader = true;
+      const data = {
+        categoryId: this.docs_filters.type_doc.id
+          ? this.docs_filters.type_doc.id
+          : "",
+        year: this.docs_filters.current_year,
+        nbr_pagination: this.docs_filters.nb_pages,
+      };
+      await services.apply_docs_filters(data).then((response) => {
+        this.loader = false;
+        this.files_datas = response.data;
+        this.files_datas.data = this.files_datas.data.map((element) => {
+          return {
+            ...element,
+            file_name: element.file_name.split("/")[1],
+            file_url: this.configs.image_url + "/" + element.file_name,
+          };
+        });
+      });
+    },
+    async getDocumentsCategories() {
+      await services.get_documents_categories().then((response) => {
+        this.types = response.data.data;
+      });
+    },
   },
   watch: {
     files_datas() {
       this.current_page = this.files_datas.current_page;
+    },
+    docs_filters: {
+      handler(val) {
+        this.apply_filters();
+      },
+      deep: true,
     },
   },
 };

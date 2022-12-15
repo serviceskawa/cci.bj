@@ -24,3 +24,5 @@ export const APPELS_SEARCH = `/appels_search`
 export const PERSONAS = `/personas`
 export const PERSONA = `/persona/`
 export const PERSONA_BY_ID = `/persona_by_id/`
+export const FILES_CATEGORIES =  `/files_categories`
+export const DOCUMENTS_FILTERS = `/files_filter`
