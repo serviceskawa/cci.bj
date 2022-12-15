@@ -187,7 +187,7 @@
 
             <div class="mt-4">
               <h4 class="text-lg leading-7 font-medium text-borderSimple">
-                Comment
+                Comment ?
               </h4>
               <p class="text-md text-light leading-5 text-subtitlegray">
                 Le programme Parcours de <br />
@@ -325,7 +325,7 @@
                 Adoptez la posture d'entrepreneur et explorez les challenges à
                 relever au démarrage des affaires. Découvrez les formalités et
                 les obligations légales liées à la création d'entreprise au
-                Bénin
+                Bénin.
               </p>
             </div>
             <div class="p-6 rounded-lg bg-grayCard">
@@ -555,7 +555,7 @@
                 Évaluez la viabilité, la conception technique et les
                 opportunités de marchés autour de votre projet. Élaborez un plan
                 d'affaires ou de financement pour développer l'entreprise et
-                satisfaire les clients
+                satisfaire les clients.
               </p>
             </div>
           </div>
@@ -665,8 +665,8 @@
     <div class="bg-primaryInfo">
       <div class="max-w-7xl mx-auto px-6 lg:px-10 py-10">
         <img
-          src="@/assets/images/jpays.jpeg"
-          class="h-64 object-cover mb-6 w-full"
+          src="@/assets/images/impuls_cci.jpeg"
+          class="h- object-cover mb-6 w-full"
           alt=""
         />
         <div>
@@ -902,10 +902,9 @@
             />
           </div>
         </div>
-        <div class="pt-20">
-          <h2
-            class="text-3xl tracking-tight font-bold text-blue text-center mb-6"
-          >
+
+        <!--<div class="pt-20">
+          <h2 class="text-3xl tracking-tight font-bold text-blue text-center mb-6">
             Foire aux questions
           </h2>
           <div class="flex justify-center py-12" v-if="loader == true">
@@ -978,7 +977,7 @@
               </DisclosurePanel>
             </Disclosure>
           </dl>
-        </div>
+        </div>-->
       </div>
     </div>
   </main>
