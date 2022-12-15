@@ -147,7 +147,7 @@
         <div class="pt-10 pb-20">
           <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
             En quoi consiste l'accompagnement au montage <br />
-            de dossiers de la CCI-Bénin ?
+            de dossiers de la CCI Bénin ?
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
             Nous vous mettons en relation avec des experts qui vous aident à

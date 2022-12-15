@@ -494,7 +494,7 @@
               </svg>
 
               <div class="ml-3 text-subtitlegray">
-                <a href="mailto:appoline.ahoglegle@ccib.bj" class="underline">appoline.ahoglegle@ccib.bj</a>
+                <a href="mailto:nimata.amadou@ccib.bj" class="underline">nimata.amadou@ccib.bj</a>
               </div>
             </div>
           </div>

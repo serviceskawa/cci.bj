@@ -465,7 +465,7 @@
                 Assistance comptable
               </div>
               <p class="text-md tracking-tight text-subtitlegray leading-6">
-                La CCI-Bénin met à la disposition des MPME, des Centres <br />
+                La CCI Bénin met à la disposition des MPME, des Centres <br />
                 de Gestion Agrées (CGA) qui assurent une comptabilité <br />
                 régulière et sûre de leur entreprise.
               </p>
@@ -503,12 +503,11 @@
               et préoccupations.
             </p>
 
-            <button
-              type="button"
-              class="mt-8 btn btn-light bg-white shadow-md text-primary w-auto"
-            >
-              Commencer le chat
-            </button>
+            <a href="javascript:SBChat.initChat();SBChat.open()">
+                <button type="button" class="mt-8 btn btn-light bg-white shadow-md text-primary w-auto">
+                  Commencer le chat
+                </button>
+              </a>
           </div>
           <div
             class="
@@ -593,7 +592,6 @@
 import Notifications from "@/components/Notifications.vue";
 import { services } from "@/api";
 import AppelsOffresBox from "@/components/home/AppelsOffresBox.vue";
-
 export default {
   components: {
     Notifications,

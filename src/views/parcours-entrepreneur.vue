@@ -72,7 +72,7 @@
             Le séminaire de formation «Parcours de l'entrepreneur»
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
-            Dispositif de la CCI-Bénin pour outiller les porteurs de projets
+            Dispositif de la CCI Bénin pour outiller les porteurs de projets
             entrepreneuriaux
           </p>
         </div>
@@ -107,7 +107,7 @@
               </h4>
               <p class="text-md text-light leading-5 text-subtitlegray">
                 Parcours de l'entrepreneur est un <br />
-                dispositif de la CCI-Bénin pour <br />
+                dispositif de la CCI Bénin pour <br />
                 outiller les porteurs de projets <br />
                 entrepreneuriaux, peu importe leur <br />
                 parcours, leurs connaissances et <br />
@@ -436,7 +436,7 @@
               >
                 Faites vous former par des experts et entrez en contact avec
                 d'autres entrepreneurs pour bénéficier de leur expérience.
-                Profitez des services d'appui-conseil offerts par la CCI-Bénin.
+                Profitez des services d'appui-conseil offerts par la CCI Bénin.
               </p>
             </div>
             <div class="p-6 rounded-lg bg-grayCard">

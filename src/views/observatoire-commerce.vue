@@ -169,7 +169,7 @@
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Vous êtes commerçant ou industriel ? Suivez les tendances sur
                 les marchés régionaux à travers les bulletins d'information de
-                la CCI-Bénin et grâce aux dispositifs de collecte de
+                la CCI Bénin et grâce aux dispositifs de collecte de
                 l'Observatoire du commerce à l'extérieur.
               </p>
             </div>
@@ -265,7 +265,7 @@
                 Publications diverses
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
-                L'OCIS de la CCI-Bénin rend compte des réalisations notables de
+                L'OCIS de la CCI Bénin rend compte des réalisations notables de
                 l'environnement des affaires à travers les chiffres clés, les
                 études sectorielles, le baromètre de l'opinion des entreprises
                 et le dossier économique.
@@ -307,7 +307,7 @@
         >
           Outil de promotion pour l'utilisation pertinente de l'information
           économique, l'Observatoire Économique fournit aux commissions
-          techniques et au Bureau Consulaire de la CCI-Bénin, un appui constant
+          techniques et au Bureau Consulaire de la CCI Bénin, un appui constant
           sur les sujets d'études et d'analyses économiques. Sa mission est
           d'accompagner les entreprises et décideurs dans le processus de veille
           et d'intelligence économique.
@@ -343,10 +343,10 @@
           >
             Accédez au plan stratégique <br />
             de développement <br />
-            2021-2025 de la CCI-Bénin
+            2021-2025 de la CCI Bénin
           </h1>
           <p class="text-subtitlegray text-md font-normal mt-4">
-            Découvrez comment la CCI-Bénin travaille à bâtir une <br />
+            Découvrez comment la CCI Bénin travaille à bâtir une <br />
             communauté d'affaires plus forte, résiliente et diversifiée <br />
             pour l'économie béninoise
           </p>
@@ -368,7 +368,7 @@
       </h1>
       <p class="text-md md:text-lg tracking-tight text-subtitlegray mb-4">
         À travers l'Observatoire du Commerce, de l'Industrie et des Services, la
-        CCI- Bénin met à disposition des acteurs économiques des statistiques de
+        CCI  Bénin met à disposition des acteurs économiques des statistiques de
         qualité et des informations crédibles pour les aider dans leurs prises
         de décisions.
       </p>
