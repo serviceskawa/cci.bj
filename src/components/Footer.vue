@@ -245,7 +245,7 @@ export default {
       links: [
         {
           title: "Documents et rapports",
-          name: "documents",
+          name: "documents-rapports",
         },
         {
           title: "Journée pays",

@@ -491,7 +491,7 @@
                   <br>au Bénin.
                 </p>
               </div>
-              <a @click="$router.push({ name: 'documents' })">
+              <a @click="$router.push({ name: 'documents-rapports' })">
               <button
                 type="button"
                 class="btn btn-light bg-white text-primary text-sm w-full"
@@ -547,7 +547,7 @@
                   <br>comprendre le marché.
                 </p>
               </div>
-              <a @click="$router.push({ name: 'documents' })">
+              <a @click="$router.push({ name: 'documents-rapports' })">
               <button
                 type="button"
                 class="btn btn-light bg-white text-primary text-sm w-full"

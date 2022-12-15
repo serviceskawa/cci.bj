@@ -352,7 +352,7 @@
           </p>
           <div class="mt-8">
             <button
-              @click="$router.push({ name: 'documents' })"
+              @click="$router.push({ name: 'documents-rapports' })"
               type="button"
               class="btn btn-light bg-white shadow-md text-primary underline"
             >
@@ -397,7 +397,7 @@
           </p>
           <div class="mt-8">
             <button
-              @click="$router.push({ name: 'documents' })"
+              @click="$router.push({ name: 'documents-rapports' })"
               type="button"
               class="
                 btn btn-light
