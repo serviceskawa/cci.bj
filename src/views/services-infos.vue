@@ -179,7 +179,7 @@
                   "
                 >
                   Obtenez des informations sur des thématiques précises auprès
-                  de nos agents
+                  de nos agents.
                 </p>
               </div>
             </div>
@@ -216,7 +216,7 @@
                     mb-3
                   "
                 >
-                  Information spécialisée
+                Orientation vers les services compétents
                 </h4>
                 <p
                   class="
@@ -227,8 +227,7 @@
                     text-subtitlegray
                   "
                 >
-                  Obtenez des informations sur des thématiques précises auprès
-                  de nos agents
+                Nous vous orientons vers les services spécialisés selon vos besoins.
                 </p>
               </div>
             </div>
@@ -293,8 +292,8 @@
                 Accédez à la base de données des entreprises et établissements
                 enregistrés au Bénin.
               </p>
-              <a
-                href="#"
+              <button
+                @click="$router.push({ name: 'contact' })"
                 type="button"
                 class="
                   btn btn-light
@@ -307,8 +306,8 @@
                   underline
                 "
               >
-                En savoir plus
-              </a>
+              Nous contacter
+              </button>
             </div>
             <div
               class="p-6 rounded-lg bg-grayCard flex flex-col justify-between"
@@ -344,8 +343,8 @@
                 Formulez vos demandes pour obtenir une liste d'entreprises
                 suivant des critères précis.
               </p>
-              <a
-                href="#"
+              <button
+                @click="$router.push({ name: 'contact' })"
                 type="button"
                 class="
                   btn btn-light
@@ -358,8 +357,8 @@
                   underline
                 "
               >
-                En savoir plus
-              </a>
+              Nous contacter
+              </button>
             </div>
             <div
               class="p-6 rounded-lg bg-grayCard flex flex-col justify-between"
@@ -389,14 +388,14 @@
                 </svg>
               </div>
               <div class="text-blue mb-4 font-extrabold text-lg">
-                LVérification d'existence ou de fiabilité des entreprises
+                Vérification d'existence ou de fiabilité des entreprises
               </div>
               <p class="text-md tracking-tight text-subtitlegray leading-6">
                 Accédez à la plateforme AHILIDO pour vérifier l'existence et la
                 fiabilité d'une entreprise.
               </p>
               <a
-                href="#"
+                href="https://ahilido.bj/" target="_blank"
                 type="button"
                 class="
                   btn btn-light
@@ -409,8 +408,8 @@
                   underline
                 "
               >
-                En savoir plus
-              </a>
+              Visiter Ahilido
+            </a>
             </div>
           </div>
         </div>
@@ -429,8 +428,8 @@
       >
         <div>
           <img
-            src="@/assets/images/rdv.jpeg"
-            class="w-full h-64 object-cover"
+            src="@/assets/images/docs.jpeg"
+            class="w-full object-cover"
           />
         </div>
         <div class="p-6">
