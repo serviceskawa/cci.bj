@@ -608,8 +608,8 @@
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-10">
       <img
-        src="@/assets/images/jpays.jpeg"
-        class="h-64 w-full object-cover mb-4"
+        src="@/assets/images/impuls_cci.jpeg"
+        class="h- w-full object-cover mb-4"
         alt=""
         srcset=""
       />
@@ -650,7 +650,7 @@
           <dd class="mt-4 text-base leading-7 text-subtitlegray">
             Impulse privilégie les approches agiles et une validation rapide
             pour obtenir et mesurer des résultats sur une période relativement
-            courte..
+            courte.
           </dd>
         </div>
         <div class="relative">
@@ -690,8 +690,8 @@
                 vous met en contact avec un conseiller d'entreprise qui peut
                 vous aider.
               </p>
-              <router-link
-                type="button"
+              <a href="https://impulse.bj/form/s-informer-sur-l-activite-partielle-en-cas-de-baisse-d-activite/#scroll-section" target="_blank">
+              <button
                 class="
                   mt-8
                   btn btn-light
@@ -704,7 +704,8 @@
                 :to="{ name: 'impulse' }"
               >
                 Faire une demande
-              </router-link>
+              </button>
+            </a>
             </div>
           </div>
           <div>
@@ -746,8 +747,8 @@
               propulser votre projet et franchir <br />
               un cap dans le développement de votre entreprise.
             </p>
-            <router-link
-              type="button"
+            <a href="https://impulse.bj/" target="_blank">
+            <button
               class="
                 btn btn-light
                 bg-white
@@ -759,7 +760,8 @@
               :to="{ name: 'impulse' }"
             >
               Visiter <span class="underline">impulse</span>
-            </router-link>
+            </button>
+          </a>
           </div>
           <div></div>
         </div>
@@ -770,11 +772,11 @@
 <style lang="scss" scoped>
 .barner {
   background: linear-gradient(
-      90deg,
+      30deg,
       #ffffff 35.49%,
       rgba(255, 255, 255, 0) 65.73%
     ),
-    url("../assets/images/impulse.jpeg") !important;
+    url("../assets/images/impulse2.jpeg") !important;
   height: 520px !important;
   background-position: center !important;
   background-attachment: local !important;
