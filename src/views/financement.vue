@@ -727,8 +727,8 @@
           </div>
           <div>
             <img
-              src="@/assets/images/impulse.jpeg"
-              class="w-full h-64 object-cover"
+              src="@/assets/images/impulse2.jpeg"
+              class="w-full h- object-cover"
             />
           </div>
         </div>

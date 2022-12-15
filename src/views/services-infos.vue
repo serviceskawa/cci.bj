@@ -471,12 +471,11 @@
               et préoccupations.
             </p>
 
-            <button
-              type="button"
-              class="mt-8 btn btn-light bg-white shadow-md text-primary w-auto"
-            >
-              Commencer le chat
-            </button>
+            <a href="javascript:SBChat.initChat();SBChat.open()">
+                <button type="button" class="mt-8 btn btn-light bg-white shadow-md text-primary w-auto">
+                  Commencer le chat
+                </button>
+              </a>
           </div>
           <div
             class="
