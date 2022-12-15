@@ -44,7 +44,7 @@
             "
           >
             Développez des compétences dans divers domaines liés à la <br />
-            gestion de l'entreprise grâce aux formations de la CCI Bénin
+            gestion de l'entreprise grâce aux formations de la CCI Bénin.
           </p>
         </div>
       </div>
@@ -85,7 +85,7 @@
               "
             >
               Une offre de <br />
-              formation variée ;
+              formation variée
             </p>
           </div>
           <div>
@@ -101,7 +101,7 @@
               "
             >
               Des programmes <br />
-              selon votre profil ;
+              selon votre profil
             </p>
           </div>
           <div>
@@ -117,7 +117,7 @@
               "
             >
               Faites-vous former <br />
-              par des experts ;
+              par des experts
             </p>
           </div>
         </div>
@@ -172,12 +172,12 @@
                 </p>
               </div>
               <div class="mt-4 w-full h-full">
-                <button
+                <a href="https://formationcci.bj" target="_blank"><button
                   type="button"
                   class="btn btn-light bg-white shadow-md text-primary w-full"
                 >
                   Découvrir
-                </button>
+                </button></a>
               </div>
             </div>
             <div
@@ -222,16 +222,16 @@
                 </h4>
                 <p class="text-sm leading-5 text-subtitlegray mt-4">
                   Familiarisez-vous avec les standards et la méthodologie du BIT
-                  pour améliorer la gestion de votre entreprise
+                  pour améliorer la gestion de votre entreprise.
                 </p>
               </div>
               <div class="mt-4 w-full h-full">
-                <button
+                <a href="mailto:info@ccib.bj?subject=Voir%20le%20planning%20du%20Programme%20G.E.R.M.E"><button
                   type="button"
                   class="btn btn-light bg-white shadow-md text-primary w-full"
                 >
                   Voir le planning
-                </button>
+                </button></a>
               </div>
             </div>
           </div>
@@ -284,12 +284,11 @@
                 </p>
               </div>
               <div class="mt-4 w-full h-full">
-                <button
-                  type="button"
-                  class="btn btn-light bg-white shadow-md text-primary w-full"
-                >
+                <a href="mailto:info@ccib.bj?subject=Voir%20le%20planning%20de%20la%20Formation%20Anglais-%20Mandarin">
+                  <button type="button" class="btn btn-light bg-white shadow-md text-primary w-full" >
                   Voir le planning
-                </button>
+                  </button>
+                </a>
               </div>
             </div>
             <div
@@ -338,12 +337,11 @@
                 </p>
               </div>
               <div class="mt-4 w-full h-full">
-                <button
-                  type="button"
-                  class="btn btn-light bg-white shadow-md text-primary w-full"
-                >
-                  Voir le planning
-                </button>
+                <a href="mailto:info@ccib.bj?subject=En%20savoir%20plus%20sur%20l%27%C3%89cole%20de%20commerce">
+                  <button type="button" class="btn btn-light bg-white shadow-md text-primary w-full" >
+                  En savoir plus
+                  </button>
+                 </a> 
               </div>
             </div>
             <div
@@ -388,16 +386,15 @@
                 </h4>
                 <p class="text-sm leading-5 text-subtitlegray mt-4">
                   Renforcez vos capacités en matière de montage et de
-                  compréhension des dossiers de marchés publics
+                  compréhension des dossiers de marchés publics.
                 </p>
               </div>
               <div class="mt-4 w-full h-full">
-                <button
-                  type="button"
-                  class="btn btn-light bg-white shadow-md text-primary w-full"
-                >
-                  S'inscrire
-                </button>
+                <a href="mailto:info@ccib.bj?subject=Inscription%20%C3%A0%20la%20Formation%20sur%20l%E2%80%99acc%C3%A8s%20aux%20march%C3%A9s%0A">
+                  <button type="button" class="btn btn-light bg-white shadow-md text-primary w-full">
+                    S'inscrire
+                  </button>
+                </a>
               </div>
             </div>
           </div>
@@ -441,6 +438,7 @@
             >
               Profitez du catalogue de cours en ligne de la CCI <br> Bénin pour monter en compétences.
             </p>
+            <a href="https://formationcci.bj" target="_blank">
             <button
               type="button"
               class="
@@ -455,6 +453,7 @@
             >
               Démarrer
             </button>
+          </a>
           </div>
           <div>
             <img
