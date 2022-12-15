@@ -53,12 +53,11 @@
       <div>
         <div class="pt-6 md:pt-20 mb-6">
           <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
-            Le programme rendez-vous des experts
+            Montez en compétences avec la CCI Bénin
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
-            Programme d'appui complémentaire aux mesures prises par le
-            Gouvernement, le P.E.R.E <br />
-            se consacre à soutenir les entreprises béninoises.
+            La CCI Bénin connecte les entrepreneurs et opérateurs économiques à diverses opportunités <br>pour leur permettre 
+            de développer les compétences nécessaires à l'atteinte de leurs objectifs.
           </p>
         </div>
         <div
@@ -180,7 +179,7 @@
                   "
                 >
                   Maitrisez en 5 jours les différentes étapes pour réussir votre
-                  projet entrepreneurial
+                  projet entrepreneurial.
                 </p>
               </div>
             </div>
@@ -238,18 +237,19 @@
                   "
                 >
                   Découvrez les clés pour créer votre entreprise et établir un
-                  plan d'affaires finalisé
+                  plan d'affaires finalisé.
                 </p>
               </div>
             </div>
             <div class="px-6 py-4 bg-grayCard">
-              <button
-                type="button"
-                class="btn btn-primary bg-primary text-white text-sm w-full"
-                @click="$router.push({ name: 'createur-entreprise' })"
-              >
-                Formations
-              </button>
+              <a href="https://forms.office.com/Pages/ResponsePage.aspx?id=gFiWhURzkkG3Nef2ZX2zBpxfbPJ6tLdFiArNgW3KxyJUNUhFWU8wMlNDVlpHTFZBRUJEUUhaOVRKVy4u" target="_blank">
+                <button
+                  type="button"
+                  class="btn btn-primary bg-primary text-white text-sm w-full"
+                >
+                  Formations
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -470,7 +470,7 @@
                 régulière et sûre de leur entreprise.
               </p>
               <a
-                href="#"
+                
                 type="button"
                 class="
                   btn btn-light
@@ -483,7 +483,7 @@
                   underline
                 "
               >
-                En savoir plus
+                Voir la liste
               </a>
             </div>
           </div>
@@ -566,15 +566,14 @@
 
           <div class="p-6 bg-lightGray">
             <h5 class="text-blue text-lg font-bold">
-              Formation, assistance et appui-conseil
+              Informations et orientation
             </h5>
             <p class="text-subtitlegray text-lg leading-6 font-normal mt-4">
-              Faites-vous former et conseiller par nos experts dans divers
-              domaines touchant à la vie de l’entreprise
+              Accédez à nos dispositifs de support pour vous orienter dans votre recherche d'informations
             </p>
             <div class="mt-4 w-full">
               <button
-                @click="$router.push({ name: 'services-formations' })"
+                @click="$router.push({ name: 'services-infos' })"
                 type="button"
                 class="btn btn-light bg-white shadow-md text-primary w-full"
               >
