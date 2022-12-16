@@ -89,7 +89,7 @@
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <div v-for="(n, index) in newsComm.slice(0, 4)" :key="index">
-            <a @click="$router.push({ name: 'read-article', params: { slug: n.slug } })">
+            <a @click="$router.push({ name: 'read-article', params: { id: n.id, slug: n.slug } })">
             <div
               class="text-sm font-light text-primary mb-3"
               
@@ -99,7 +99,7 @@
             <div
               class="text-blue font-bold text-md mb-3 max-three-lines"
               @click="
-                $router.push({ name: 'read-article', params: { slug: n.slug } })
+                $router.push({ name: 'read-article', params: { id: n.id, slug: n.slug } })
               "
             >
               {{ n.title }}
@@ -108,7 +108,7 @@
               class="text-md tracking-tight leading-7 text-subtitlegray max-three-lines"
               v-html="n.short_content"
               @click="
-                $router.push({ name: 'read-article', params: { slug: n.slug } })
+                $router.push({ name: 'read-article', params: { id: n.id, slug: n.slug } })
               "
             ></p>
           </a>
