@@ -181,7 +181,7 @@ const routes = [
 
 const router = createRouter({
   //history: createWebHistory(),
-  history:createWebHashHistory('/folder/'),
+  history:createWebHashHistory(),
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 }
   },
