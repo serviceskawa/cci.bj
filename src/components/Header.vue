@@ -20,9 +20,10 @@
             class="text-base font-medium tracking-tight hover:text-primary active:text-primary cursor-pointer">
             Ma CCI
           </router-link>
+
           <Popover class="relative" v-slot="{ open }">
             <PopoverButton :class="[
-              open ? 'text-gray-900' : 'text-subtitlegray tracking-tight',
+              open ? 'text-gray-900' : '',
               'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-primary active:text-primary focus:outline-none',
             ]">
               <span>Vous êtes</span>
@@ -31,6 +32,7 @@
                 'ml-2 h-5 w-5 group-hover:text-subtitlegray tracking-tight',
               ]" aria-hidden="true" />
             </PopoverButton>
+
             <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 translate-y-1"
               enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150"
               leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 translate-y-1">
@@ -152,7 +154,7 @@
               open ? 'text-gray-900' : '',
               'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-primary active:text-primary focus:outline-none',
             ]">
-              <span>Nos Services</span>
+              <span>Nos services</span>
               <ChevronDownIcon :class="[
                 open ? 'text-gray-600' : 'text-gray-400',
                 'ml-2 h-5 w-5 group-hover:text-subtitlegray tracking-tight',
