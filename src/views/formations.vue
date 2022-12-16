@@ -639,7 +639,7 @@ export default {
       #ffffff 35.49%,
       rgba(255, 255, 255, 0) 65.73%
     ),
-    url("../assets/images/transform.jpeg") !important;
+    url("../assets/images/formation1.jpeg") !important;
   height: 520px !important;
   background-position: top !important;
   background-attachment: local !important;

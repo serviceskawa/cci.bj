@@ -1,6 +1,7 @@
 import {
   createRouter,
-  createWebHistory,
+  //createWebHistory,
+  createWebHashHistory,
 } from 'vue-router';
 import { page } from '@/helpers/routeLoader';
 import { services } from '@/api'
@@ -179,7 +180,8 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHistory(),
+  //history: createWebHistory(),
+  history:createWebHashHistory('/folder/'),
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 }
   },
