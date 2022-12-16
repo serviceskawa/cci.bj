@@ -25,8 +25,8 @@
               tracking-tight
             "
           >
-            Participez aux <br />
-            Journées Pays
+          Participez aux événements  <br />
+          de promotion de la CCI Bénin
           </h1>
           <p
             class="
@@ -38,53 +38,33 @@
               mt-6
             "
           >
-            Rencontrez des experts pour découvrir les <br />
-            opportunités de développement et les marchés <br />
-            porteurs qui vous intéressent.
+          Rencontrez des opérateurs économiques pour découvrir les 
+          <br>opportunités de développement et les marchés porteurs 
+          <br>qui vous intéressent ou faire connaître vos produits et services.
           </p>
         </div>
       </div>
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-10 pb-20">
       <div>
+
+        <!-- Les rencontres «Journées Pays/Produit/Service» -->
         <div class="pt-6 md:pt-20 mb-6">
           <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
-            Les rencontres «Journées Pays»
+            Les rencontres «Journées Pays/Produit/Service»
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
-            Programme de la CCI Bénin destiné à assurer un accompagnement
-            technique des entreprises qui <br />
-            souhaitent développer leurs affaires ou améliorer leurs
-            performances.
+            Connectez-vous à des experts et opérateurs économiques pour découvrir les meilleures opportunités d'affaires ou de partenariats.
           </p>
         </div>
-        <div
-          class="
-            flex
-            grid grid-cols-1
-            md:grid-cols-2
-            lg:grid-cols-3
-            gap-6
-            md:gap-8
-          "
-        >
+
+        <div class=" flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+          <!-- Qu'est-ce que c'est ? -->
           <div class="p-6 pb-12 shadow-lg mb-2 md:mb-0">
-            <svg
-              width="56"
-              height="56"
-              viewBox="0 0 56 56"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect
-                width="56"
-                height="56"
-                rx="8"
-                fill="#DD7A4B"
-                fill-opacity="0.1"
-              />
-              <path
-                d="M24.8846 34.6667H31.1152M27.9999 16V17.3333M36.4852 19.5147L35.5424 20.4575M40 27.9999H38.6667M17.3333 27.9999H16M20.4575 20.4575L19.5146 19.5147M23.2859 32.7141C20.6824 30.1106 20.6824 25.8895 23.2859 23.286C25.8894 20.6825 30.1105 20.6825 32.714 23.286C35.3175 25.8895 35.3175 30.1106 32.714 32.7141L31.9845 33.4435C31.1407 34.2874 30.6666 35.4319 30.6666 36.6253V37.3333C30.6666 38.8061 29.4727 40 27.9999 40C26.5272 40 25.3333 38.8061 25.3333 37.3333V36.6253C25.3333 35.4319 24.8592 34.2874 24.0153 33.4435L23.2859 32.7141Z"
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="56" height="56" rx="8" fill="#DD7A4B" fill-opacity="0.1"/>
+              <path d="M24.8846 34.6667H31.1152M27.9999 16V17.3333M36.4852 19.5147L35.5424 20.4575M40 27.9999H38.6667M17.3333 27.9999H16M20.4575 20.4575L19.5146 19.5147M23.2859 32.7141C20.6824 30.1106 20.6824 25.8895 23.2859 23.286C25.8894 20.6825 30.1105 20.6825 32.714 23.286C35.3175 25.8895 35.3175 30.1106 32.714 32.7141L31.9845 33.4435C31.1407 34.2874 30.6666 35.4319 30.6666 36.6253V37.3333C30.6666 38.8061 29.4727 40 27.9999 40C26.5272 40 25.3333 38.8061 25.3333 37.3333V36.6253C25.3333 35.4319 24.8592 34.2874 24.0153 33.4435L23.2859 32.7141Z"
                 stroke="#DD7A4B"
                 stroke-width="2"
                 stroke-linecap="round"
@@ -97,13 +77,14 @@
                 Qu'est-ce que c'est ?
               </h4>
               <p class="text-md text-light leading-5 text-subtitlegray">
-                Les journées pays constituent un dispositif de la CCI Bénin pour
-                informer les entreprises qui souhaitent découvrir les
-                opportunités de développement offertes par divers pays ou
-                destinations commerciales.
+                Les journées pays/produit/service constituent un dispositif de la 
+                CCI Bénin pour informer les opérateurs qui souhaitent découvrir 
+                les opportunités de développement offertes par divers pays ou des opportunités commerciales. 
               </p>
             </div>
           </div>
+
+          <!-- Pour qui -->
           <div class="p-6 pb-12 shadow-lg mb-2 md:mb-0">
             <svg
               width="62"
@@ -133,12 +114,14 @@
                 Pour qui ?
               </h4>
               <p class="text-md text-light leading-5 text-subtitlegray">
-                Ce programme s'adresse aux entreprises locales intéressées par
-                une expansion à l'international et aux organisations
-                professionnelles du commerce, des services et de l'industrie.
+                Ce programme s'adresse aux opérateurs économiques désirant 
+                une expansion à l'international et aux organisations professionnelles 
+                du commerce, des services et de l'industrie voulant promouvoir leurs activités. 
               </p>
             </div>
           </div>
+
+          <!-- Comment -->
           <div class="p-6 pb-12 shadow-lg mb-2 md:mb-0">
             <svg
               width="56"
@@ -175,14 +158,129 @@
                 Comment ?
               </h4>
               <p class="text-md text-light leading-5 text-subtitlegray">
-                Le programme journée pays met les entrepreneurs et
-                institutionnels intéressés en relations avec des experts ou
-                conseillers pour évaluer le potentiel de leurs stratégies
-                d'approche des marchés étrangers.
+                Les programmes journée pays/produit/service connectent les opérateurs économiques
+                 intéressés pour évaluer le potentiel de leurs stratégies d'approche 
+                 des marchés étrangers ou mettre en valeur des produits ou services.
               </p>
             </div>
           </div>
+
         </div>
+
+        <!--  Les opportunités autour d'un pays, produit ou service -->
+        <div class="pt-6 md:pt-20 mb-6">
+          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+            Les opportunités autour d'un pays, produit ou service
+          </h1>
+          <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
+            Les évènements de promotion sont des manifestations au cours desquelles la CCI Bénin met en valeur un pays, des produits ou des services.
+          </p>
+        </div>
+
+        <div class=" flex grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+
+          <!-- Journées Pays -->
+          <div class="p-6 pb-12 shadow-lg mb-2 md:mb-0">
+            <svg width="56" height="56" viewBox="0 0 56 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="56" height="56" rx="8" fill="#DD7A4B" fill-opacity="0.1"/>
+              <path d="M24.8846 34.6667H31.1152M27.9999 16V17.3333M36.4852 19.5147L35.5424 20.4575M40 27.9999H38.6667M17.3333 27.9999H16M20.4575 20.4575L19.5146 19.5147M23.2859 32.7141C20.6824 30.1106 20.6824 25.8895 23.2859 23.286C25.8894 20.6825 30.1105 20.6825 32.714 23.286C35.3175 25.8895 35.3175 30.1106 32.714 32.7141L31.9845 33.4435C31.1407 34.2874 30.6666 35.4319 30.6666 36.6253V37.3333C30.6666 38.8061 29.4727 40 27.9999 40C26.5272 40 25.3333 38.8061 25.3333 37.3333V36.6253C25.3333 35.4319 24.8592 34.2874 24.0153 33.4435L23.2859 32.7141Z"
+                stroke="#DD7A4B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <div class="mt-4">
+              <h4 class="text-lg leading-7 font-medium text-borderSimple">
+                Journées Pays
+              </h4>
+              <p class="text-md text-light leading-5 text-subtitlegray">
+                Rencontrez un expert pays et discutez des opportunités commerciales liées à l'expansion de votre activité dans le pays qui vous intéresse. 
+              </p>
+            </div>
+          </div>
+
+          <!-- Journées Produit -->
+          <div class="p-6 pb-12 shadow-lg mb-2 md:mb-0">
+            <svg
+              width="62"
+              height="56"
+              viewBox="0 0 62 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="62"
+                height="56"
+                rx="8"
+                fill="#DD7A4B"
+                fill-opacity="0.1"
+              />
+              <path
+                d="M38.5 40H46V37C46 34.5147 43.9853 32.5 41.5 32.5C40.0666 32.5 38.7897 33.1702 37.9656 34.2143M38.5 40H23.5M38.5 40V37C38.5 36.0156 38.3104 35.0756 37.9656 34.2143M23.5 40H16V37C16 34.5147 18.0147 32.5 20.5 32.5C21.9334 32.5 23.2103 33.1702 24.0344 34.2143M23.5 40V37C23.5 36.0156 23.6896 35.0756 24.0344 34.2143M24.0344 34.2143C25.1403 31.4515 27.8422 29.5 31 29.5C34.1578 29.5 36.8597 31.4515 37.9656 34.2143M35.5 20.5C35.5 22.9853 33.4853 25 31 25C28.5147 25 26.5 22.9853 26.5 20.5C26.5 18.0147 28.5147 16 31 16C33.4853 16 35.5 18.0147 35.5 20.5ZM44.5 25C44.5 26.6569 43.1569 28 41.5 28C39.8431 28 38.5 26.6569 38.5 25C38.5 23.3431 39.8431 22 41.5 22C43.1569 22 44.5 23.3431 44.5 25ZM23.5 25C23.5 26.6569 22.1569 28 20.5 28C18.8431 28 17.5 26.6569 17.5 25C17.5 23.3431 18.8431 22 20.5 22C22.1569 22 23.5 23.3431 23.5 25Z"
+                stroke="#DD7A4B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <div class="mt-4">
+              <h4 class="text-lg leading-7 font-medium text-borderSimple">
+                Journées Produit
+              </h4>
+              <p class="text-md text-light leading-5 text-subtitlegray">
+                Découvrez un produit ou faites découvrir vos produits ainsi que les opportunités commerciales qu'ils présentent pour de potentiels partenaires. 
+              </p>
+            </div>
+          </div>
+
+          <!-- Journées Service -->
+          <div class="p-6 pb-12 shadow-lg mb-2 md:mb-0">
+            <svg
+              width="56"
+              height="56"
+              viewBox="0 0 56 56"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <rect
+                width="56"
+                height="56"
+                rx="8"
+                fill="#DD7A4B"
+                fill-opacity="0.1"
+              />
+              <path
+                d="M25.7662 17.7564C26.3347 15.4145 29.6653 15.4145 30.2338 17.7564C30.6011 19.2692 32.3343 19.9872 33.6638 19.1771C35.7217 17.9232 38.0768 20.2783 36.8229 22.3362C36.0128 23.6657 36.7308 25.3989 38.2436 25.7662C40.5855 26.3347 40.5855 29.6653 38.2436 30.2338C36.7308 30.6011 36.0128 32.3343 36.8229 33.6638C38.0768 35.7217 35.7217 38.0768 33.6638 36.8229C32.3343 36.0128 30.6011 36.7308 30.2338 38.2436C29.6653 40.5855 26.3347 40.5855 25.7662 38.2436C25.3989 36.7308 23.6657 36.0128 22.3362 36.8229C20.2783 38.0768 17.9232 35.7217 19.1771 33.6638C19.9872 32.3343 19.2692 30.6011 17.7564 30.2338C15.4145 29.6653 15.4145 26.3347 17.7564 25.7662C19.2692 25.3989 19.9872 23.6657 19.1771 22.3362C17.9232 20.2783 20.2783 17.9232 22.3362 19.1771C23.6657 19.9872 25.3989 19.2692 25.7662 17.7564Z"
+                stroke="#DD7A4B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M32 28C32 30.2091 30.2091 32 28 32C25.7909 32 24 30.2091 24 28C24 25.7909 25.7909 24 28 24C30.2091 24 32 25.7909 32 28Z"
+                stroke="#DD7A4B"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+
+            <div class="mt-4">
+              <h4 class="text-lg leading-7 font-medium text-borderSimple">
+                Journées Service
+              </h4>
+              <p class="text-md text-light leading-5 text-subtitlegray">
+                Explorez les possibilités offertes par les services d'une entreprise 
+                ou d'un partenaire de la CCI Bénin ou mettez en valeur vos prestations de services. 
+              </p>
+            </div>
+          </div>
+
+        </div>
+
         <div class="py-20">
           <div class="bg-grayCard grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
             <div>
@@ -193,8 +291,8 @@
             </div>
             <div>
               <h3 class="text-4xl leading-10 font-extrabold text-greenDark">
-                Les objectifs des <br />
-                «Journées Pays»
+                Participez aux <br/>
+                «Journées Pays/Produit/Service»
               </h3>
               <p
                 class="
@@ -209,10 +307,11 @@
               >
               Évènements destinés à susciter l'intérêt des entreprises 
                 béninoises pour certaines destinations en vue de créer
-                des relations commerciales dans les pays choisis, les
-                journées Pays offrent la possibilité d'aborder les marchés
-                étrangers dans les meilleures conditions.
+                des relations commerciales dans les pays choisis, ces
+                rencontres fournissent aussi aux participants 
+                les informations sur les marchés cibles et les opportunités existantes.
               </p>
+              
               <div class="w-full">
                 <a
                   href="#calendar"
@@ -348,14 +447,12 @@
 
         <div class="pb-20" id="calendar">
           <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
-            Le calendrier des prochaines «Journées Pays»
+            Le calendrier des prochaines «Journées Pays/Produit/Service»
           </h1>
           <p
             class="text-lg tracking-tight leading-7 text-subtitlegray mt-3 mb-6"
           >
-            <!--Inscrivez-vous aux prochaines Journées Pays.-->
-            Prenez la mesure économique d'un pays cible et discutez un
-                  expert ou conseiller pays en rendez-vous individuel.
+            Inscrivez-vous aux prochains évènements.
           </p>
           <div
             class="

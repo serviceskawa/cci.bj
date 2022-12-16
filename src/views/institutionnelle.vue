@@ -290,7 +290,7 @@
             </div>
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
-            <a @click="$router.push({ name: 'documents' })">
+            <a @click="$router.push({ name: 'documents-rapports' })">
             <button
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
@@ -395,7 +395,7 @@
             </h1>
             <div>
               <a
-                @click="$router.push({ name: 'documents' })"
+                @click="$router.push({ name: 'documents-rapports' })"
                 class="text-primary"
               >
                 Voir toutes les publications<span aria-hidden="true"

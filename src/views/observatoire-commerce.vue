@@ -279,7 +279,7 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-10 py-10">
         <img
           src="@/assets/images/ob.jpeg"
-          class="h-64 w-full object-cover mb-4"
+          class="h- w-full object-cover mb-4"
           alt=""
           srcset=""
         />
@@ -292,7 +292,7 @@
             tracking-tight
           "
         >
-          Le programme OCIS de Chambre de commerce <br />
+          Le programme OCIS de Chambre de Commerce <br />
           et d'Industrie du Bénin
         </h1>
         <p
@@ -327,7 +327,7 @@
       >
         <div class="transform-box">
           <img
-            src="@/assets/images/transform.jpeg"
+            src="@/assets/images/doc.jpeg"
             class="h-full w-full object-cover"
             alt=""
           />
@@ -348,11 +348,11 @@
           <p class="text-subtitlegray text-md font-normal mt-4">
             Découvrez comment la CCI Bénin travaille à bâtir une <br />
             communauté d'affaires plus forte, résiliente et diversifiée <br />
-            pour l'économie béninoise
+            pour l'économie béninoise.
           </p>
           <div class="mt-8">
             <button
-              @click="$router.push({ name: 'documents' })"
+              @click="$router.push({ name: 'documents-rapports' })"
               type="button"
               class="btn btn-light bg-white shadow-md text-primary underline"
             >
@@ -362,7 +362,7 @@
         </div>
       </div>
     </div>
-    <div class="max-w-7xl mx-auto px-6 lg:px-10 pb-20">
+    <!--<div class="max-w-7xl mx-auto px-6 lg:px-10 pb-20">
       <h1 class="text-primary text-3xl mb-3 font-extrabold tracking-tight">
         Retrouvez toute l'information économique
       </h1>
@@ -397,7 +397,7 @@
           </p>
           <div class="mt-8">
             <button
-              @click="$router.push({ name: 'documents' })"
+              @click="$router.push({ name: 'documents-rapports' })"
               type="button"
               class="
                 btn btn-light
@@ -610,7 +610,7 @@
           >Voir toute la documentation →</router-link
         >
       </div>
-    </div>
+    </div>-->
   </main>
 </template>
 <style lang="scss" scoped>

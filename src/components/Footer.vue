@@ -102,14 +102,14 @@
                 apiex.bj
               </a>
             </li>
-            <li>
+            <!--<li>
               <router-link
                 :to="{ name: 'legal-mentions' }"
                 class="text-base text-white hover:text-white"
               >
                 Mentions légales
               </router-link>
-            </li>
+            </li>-->
             <li>
               <router-link
                 :to="{ name: 'faq' }"
@@ -245,7 +245,7 @@ export default {
       links: [
         {
           title: "Documents et rapports",
-          name: "documents",
+          name: "documents-rapports",
         },
         {
           title: "Journée pays",

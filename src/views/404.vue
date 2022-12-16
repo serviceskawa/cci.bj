@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <div>
         <div class="uppercase text-primary text-base font-medium mb-2">
-          404 Error
+          Erreur 404
         </div>
         <div class="text-5xl font-extrabold text-blue mb-2">
           Cette page <br />
@@ -15,7 +15,7 @@
       </div>
       <div>
         <p class="text-subtitlegray tracking-tight text-base">
-          La page que vous recherchez n'a pas pu être trouvée.
+          Visitez d'autres pages pour trouver l'information que vous recherchez.
         </p>
         <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <router-link

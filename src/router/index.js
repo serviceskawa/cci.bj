@@ -159,11 +159,11 @@ const routes = [
     name: 'parcours-entrepreneur',
     component: page('parcours-entrepreneur'),
   },
-  {
-    path: '/mentions-legales',
-    name: 'legal-mentions',
-    component: page('legal-mention'),
-  },
+  //{
+    //path: '/mentions-legales',
+    //name: 'legal-mentions',
+    //component: page('legal-mention'),
+  //},
   {
     path: '/observatoire-commerce',
     name: 'observatoire-commerce',
