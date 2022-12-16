@@ -1,6 +1,6 @@
 import {
   createRouter,
-  createWebHashHistory,
+  createWebHistory,
 } from 'vue-router';
 import { page } from '@/helpers/routeLoader';
 import { services } from '@/api'
@@ -82,7 +82,7 @@ const routes = [
     component: page('blog-articles'),
   },
   {
-    path: '/article/slug=:slug',
+    path: '/articles/:id/:slug',
     name: 'read-article',
     component: page('read-article'),
   },
@@ -179,7 +179,7 @@ const routes = [
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 }
   },
