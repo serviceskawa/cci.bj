@@ -290,14 +290,13 @@
             </div>
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
-            <a @click="$router.push({ name: 'documents-rapports' })">
             <button
+            @click="$router.push({ name: 'observatoire-commerce' })"
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >
-            Voir les rapports
+            Découvrir l'Observatoire
             </button>
-          </a>
           </div>
         </div>
         <div
@@ -340,6 +339,7 @@
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
             <button
+            @click="$router.push({ name: 'documents' })"
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >

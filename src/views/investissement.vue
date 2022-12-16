@@ -547,14 +547,15 @@
                   <br>comprendre le marché.
                 </p>
               </div>
-              <a @click="$router.push({ name: 'documents-rapports' })">
+              
               <button
+              @click="$router.push({ name: 'observatoire-commerce' })"
                 type="button"
                 class="btn btn-light bg-white text-primary text-sm w-full"
               >
                 <span class="underline">Consulter</span>
               </button>
-            </a>
+            
             </div>
           </div>
           <div
