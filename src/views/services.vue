@@ -106,12 +106,12 @@ export default {
             this.services = [
                 {
                     name: 'Services phares',
-                    short_description: 'Nos programmes d\'accompagnement dédiés aux entreprises et industries locales',
+                    short_description: 'Nos programmes d\'accompagnement dédiés aux entreprises et industries locales.',
                     route: 'services-specs'
                 },
                 {
                     name: 'Information et orientation',
-                    short_description: 'Accédez à nos dispositifs de support pour vous orienter dans votre recherche d\'informations',
+                    short_description: 'Accédez à nos dispositifs de support pour vous orienter dans votre recherche d\'informations.',
                     route: 'services-infos'
                 },
                 {
