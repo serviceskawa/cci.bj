@@ -343,7 +343,7 @@
           <div class="p-6 py-4 bg-grayCard w-full">
             <a href="mailto:info@ccib.bj?subject=Facilitation%20des%20%C3%A9changes%20et%20du%20transport">
               <button type="button" class="btn btn-light bg-white shadow-md text-primary underline w-full">
-                Consulter
+                Faire un demande
               </button>
             </a>
           </div>
