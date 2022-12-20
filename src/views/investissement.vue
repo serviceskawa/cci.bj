@@ -491,7 +491,8 @@
                   <br>au Bénin.
                 </p>
               </div>
-              <a @click="$router.push({ name: 'documents-rapports' })">
+
+              <a @click="$router.push({ path: 'documents-rapports', query: { slug: 'lois-et-rglementations' } })">
               <button
                 type="button"
                 class="btn btn-light bg-white text-primary text-sm w-full"
