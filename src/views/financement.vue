@@ -53,7 +53,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10 pb-20">
       <div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Mécanismes d'appui pour l'accès aux financements
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
@@ -207,7 +207,7 @@
           </div>
         </div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Opportunités de financement alternatifs <br />
             pour accélérer votre croissance
           </h1>
@@ -330,7 +330,7 @@
           </div>
         </div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Faites vous accompagner dans votre <br />
             recherche de financements
           </h1>
@@ -691,7 +691,7 @@
         >
           <div class="">
             <div class="p-4">
-              <h3 class="text-4xl leading-10 font-extrabold text-primary">
+              <h3 class="text-2xl lg:text-4xl leading-10 font-extrabold text-primary">
                 Rejoignez imPulse !
               </h3>
               <p
@@ -740,7 +740,7 @@
             class="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 items-center"
           >
             <div>
-              <h3 class="text-4xl leading-10 font-extrabold text-blue">
+              <h3 class="text-2xl lg:text-4xl leading-10 font-extrabold text-blue">
                 Discutons maintenant !
               </h3>
               <p

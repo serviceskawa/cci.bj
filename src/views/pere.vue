@@ -38,7 +38,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
       <div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Le programme P.E.R.E
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
@@ -172,7 +172,7 @@
           </div>
         </div>
         <div>
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Le contenu du programme P.E.R.E
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">

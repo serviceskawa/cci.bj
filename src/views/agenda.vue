@@ -89,7 +89,7 @@ export default {
   components: {
     Agenda,
     EmptyState,
-    ArticleCard
+    ArticleCard,
   },
   data: () => ({
     commits: null,
@@ -122,7 +122,17 @@ export default {
         await services.get_agenda_datas(page).then((response) => {
           this.loader = false;
           this.agenda_datas = response.data;
-          this.agenda_datas.data = this.agenda_datas.data
+          this.agenda_datas.data = this.agenda_datas.data.map((element) => {
+            return {
+              ...element,
+              news_publication_date:
+                element.news_publication_date == null ||
+                element.news_publication_date.trim() == ""
+                  ? element.created_at
+                  : element.news_publication_date,
+              photo: this.configs.image_url + "/" + element.photo,
+            };
+          });
         });
       } catch (error) {
         this.loader = false;

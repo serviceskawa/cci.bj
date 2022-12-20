@@ -50,7 +50,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10 pb-20">
       <div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Impulse, Pré Incubation, Incubation, Accélération
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
@@ -153,7 +153,7 @@
           </div>
         </div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Impulse vous accompagne dans la réussite <br />
             de vos projets d'entreprise
           </h1>
@@ -680,7 +680,7 @@
         >
           <div class="">
             <div class="p-4">
-              <h3 class="text-4xl leading-10 font-extrabold text-greenDark">
+              <h3 class="text-2xl lg:text-4xl leading-10 font-extrabold text-greenDark">
                 Échangez avec <br />
                 un conseiller
               </h3>

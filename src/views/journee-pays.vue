@@ -18,7 +18,7 @@
         <div>
           <h1
             class="
-              text-primary text-4xl
+              text-primary text-2xl lg:text-4xl
               lg:text-6xl
               leading-none
               font-extrabold
@@ -50,7 +50,7 @@
 
         <!-- Les rencontres «Journées Pays/Produit/Service» -->
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Les rencontres «Journées Pays/Produit/Service»
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
@@ -169,7 +169,7 @@
 
         <!--  Les opportunités autour d'un pays, produit ou service -->
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Les opportunités autour d'un pays, produit ou service
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
@@ -290,7 +290,7 @@
               />
             </div>
             <div>
-              <h3 class="text-4xl leading-10 font-extrabold text-greenDark">
+              <h3 class="text-2xl lg:text-2xl lg:text-4xl leading-10 font-extrabold text-greenDark">
                 Participez aux <br/>
                 «Journées Pays/Produit/Service»
               </h3>
@@ -325,7 +325,7 @@
         </div>
         <!--
         <div class="pb-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight mb-6">
+          <h1 class="text-2xl lg:text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight mb-6">
             Concrétisez vos projets à l'export
           </h1>
           <div
@@ -446,7 +446,7 @@
         </div>-->
 
         <div class="pb-20" id="calendar">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Le calendrier des prochaines «Journées Pays/Produit/Service»
           </h1>
           <p

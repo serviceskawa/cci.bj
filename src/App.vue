@@ -15,7 +15,7 @@
     >
       <Header class="fixed left-0 top-0 header w-full" />
       <div class="content">
-        <Alert :alert="alert" />
+        <Alert :alert="alert" v-if="alert.published == 'Yes' " />
         <router-view />
       </div>
       <Footer />
@@ -52,6 +52,7 @@ export default {
   methods: {
     async getNotifications() {
       await services.get_notifcations().then((response) => {
+        console.log('notification', response)
         if (response.status == 200) {
           if (response.status == 200) {
             this.alert = response.data;

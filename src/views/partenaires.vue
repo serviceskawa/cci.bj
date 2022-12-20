@@ -1,22 +1,41 @@
 <!-- This example requires Tailwind CSS v2.0+ -->
 <template>
   <main>
-    <div class="barner flex items-center p-4 md:px-6 lg:px-10">
-      <div>
-        <h1
-          class="
-            text-primary text-4xl
-            lg:text-6xl
-            leading-none
-            font-extrabold
-            tracking-tight
-          "
-        >
-          <span class="text-white">Nos</span>
-          partenaires
-        </h1>
-        <p class="text-white text-xl leading-7 font-normal mt-4">
-          Le développement implique une action collective, inclusive, et à la
+    <div  class="
+        barner
+        sm:h-96
+        lg:h-auto
+        flex
+        items-center
+        p-4
+        md:px-10
+        lg:px-20
+        w-full
+      ">
+       <div class="flex items-center w-full">
+        <div>
+          <h1
+            class="
+              text-primary text-4xl
+              lg:text-6xl
+              leading-none
+              font-extrabold
+              tracking-tight
+            "
+          >
+             Devenir partenaire
+          </h1>
+          <p
+            class="
+              text-md
+              md:text-lg
+              tracking-tight
+              text-white
+              leading-7
+              mt-6
+            "
+          >
+            Le développement implique une action collective, inclusive, et à la
           bonne <br />
           échelle. Ainsi, la moitié de nos projets se font en cofinancement avec
           des
@@ -30,7 +49,8 @@
           projets les
           <br />
           plus ambitieux.
-        </p>
+          </p>
+        </div>
       </div>
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">

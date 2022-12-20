@@ -54,7 +54,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10 pb-20">
       <div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Accompagnement au montage de dossiers <br />
             d'aides et financement
           </h1>
@@ -145,7 +145,7 @@
           </div>
         </div>
         <div class="pt-10 pb-20">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             En quoi consiste l'accompagnement au montage <br />
             de dossiers de la CCI Bénin ?
           </h1>
@@ -288,7 +288,7 @@
               />
             </div>
             <div class="p-6">
-              <h3 class="text-4xl leading-10 font-extrabold text-greenDark">
+              <h3 class="text-2xl lg:text-4xl leading-10 font-extrabold text-greenDark">
                 Faites-vous <br />
                 accompagner par un <br />
                 expert en montage de <br />
@@ -323,7 +323,7 @@
           </div>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 items-center">
             <div>
-              <h3 class="text-4xl leading-10 font-extrabold text-blue">
+              <h3 class="text-2xl lg:text-4xl leading-10 font-extrabold text-blue">
                 Discutons maintenant !
               </h3>
               <p

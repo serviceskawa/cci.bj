@@ -52,7 +52,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10 pb-20">
       <div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Se former avec la CCI Bénin
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
@@ -122,7 +122,7 @@
           </div>
         </div>
         <div class="py-20">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Quelle formation souhaitez-vous suivre ?
           </h1>
           <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -400,7 +400,7 @@
           </div>
         </div>
         <div class="pb-20">
-           <h1 class="text-4xl leading-10 font-extrabold mb-8 tracking-tight">
+           <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold mb-8 tracking-tight">
             Nos thèmes de formation
           </h1>
           <div class="flex flex-wrap text-blue text-md">
@@ -423,7 +423,7 @@
           "
         >
           <div class="p-6">
-            <h3 class="text-4xl leading-10 font-extrabold text-greenDark">
+            <h3 class="text-2xl lg:text-4xl leading-10 font-extrabold text-greenDark">
               Commencez <br> à apprendre dès <br> maintenant
             </h3>
             <p

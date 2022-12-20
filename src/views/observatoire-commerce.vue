@@ -16,7 +16,7 @@
     >
       <div class="flex items-center w-full">
         <div class="text-white">
-          <h1 class="text-4xl lg:text-6xl leading-none font-extrabold">
+          <h1 class="text-3xl lg:text-6xl leading-none font-extrabold">
             Accédez à des informations <br />
             économiques fiables grâce à <br />
             l'Observatoire du commerce

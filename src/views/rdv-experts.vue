@@ -18,7 +18,7 @@
         <div>
           <h1
             class="
-              text-primary text-4xl lg:text-6xl
+              text-primary text-3xl lg:text-6xl
               leading-none
               font-extrabold
               tracking-tight
@@ -55,7 +55,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-10 pb-20">
       <div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Le programme rendez-vous des experts
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
@@ -200,7 +200,7 @@
               />
             </div>
             <div>
-              <h3 class="text-4xl leading-10 font-extrabold text-greenDark">
+              <h3 class="text-2xl lg:text-4xl leading-10 font-extrabold text-greenDark">
                 Communiquez vos <br />
                 besoins, nous vous <br />
                 orientons
@@ -236,7 +236,7 @@
           </div>
         </div>
         <div class="pb-20">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Faites vous accompagner par des conseillers <br />
             spécialisés
           </h1>
@@ -504,7 +504,7 @@
             <div></div>
           </div>
           <div class="pt-20" id="participate">
-            <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+            <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
               Le calendrier des prochains <br />
               «Rendez-vous des experts»
             </h1>

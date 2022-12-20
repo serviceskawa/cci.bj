@@ -21,7 +21,8 @@ import {
   SEARCH_NEWS,
   APPELS_SEARCH,
   FILES_CATEGORIES,
-  DOCUMENTS_FILTERS
+  DOCUMENTS_FILTERS,
+  SEARCH_DOC
 } from '@/api/routes'
 
 export async function home_elements () {
@@ -139,4 +140,8 @@ export async function get_documents_categories () {
 
 export async function apply_docs_filters (data) {
   return await client.post(DOCUMENTS_FILTERS, data)
+}
+
+export async function search_doc (value, current_page) {
+  return await client.get(`${SEARCH_DOC}`+ value + `?page=${current_page}`)
 }

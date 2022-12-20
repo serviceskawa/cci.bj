@@ -13,7 +13,7 @@
         <div>
           <h1
             class="
-              text-primary text-4xl lg:text-6xl
+              text-primary text-3xl lg:text-6xl
               leading-none
               font-extrabold
               tracking-tight
@@ -803,7 +803,7 @@
               NEWSLETTER
             </h5>
             <h1
-              class="mt-2 text-4xl leading-10 font-extrabold tracking-tight text-primary"
+              class="mt-2 text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight text-primary"
             >
               Restons connectés
             </h1>

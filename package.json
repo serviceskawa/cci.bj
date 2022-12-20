@@ -17,6 +17,7 @@
     "moment": "^2.29.4",
     "sass-loader": "^13.0.2",
     "vue": "^3.2.37",
+    "vue-gtag": "^2.0.1",
     "vue-router": "^4.0.13",
     "vue-social-sharing": "^4.0.0-alpha4",
     "vue3-carousel": "^0.1.46",

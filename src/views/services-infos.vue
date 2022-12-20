@@ -58,7 +58,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10 pb-20">
       <div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Dispositif d'accueil
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
@@ -234,7 +234,7 @@
           </div>
         </div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Informations sur les entreprises et industries
           </h1>
           <p class="text-lg tracking-tight leading-7 text-subtitlegray mt-3">
@@ -433,7 +433,7 @@
           />
         </div>
         <div class="p-6">
-          <h3 class="text-4xl leading-10 font-extrabold text-greenDark">
+          <h3 class="text-2xl lg:text-4xl leading-10 font-extrabold text-greenDark">
             Documentation
           </h3>
           <p
@@ -461,7 +461,7 @@
       <div class="max-w-7xl mx-auto px-6 lg:px-10">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 p-6 items-center">
           <div>
-            <h3 class="text-4xl leading-10 font-extrabold text-blue">
+            <h3 class="text-2xl lg:text-4xl leading-10 font-extrabold text-blue">
               Discutons maintenant !
             </h3>
             <p class="text-lg mt-6 tracking-tight leading-7 text-subtitlegray">

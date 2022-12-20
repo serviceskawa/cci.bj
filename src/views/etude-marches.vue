@@ -51,7 +51,7 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-10 pt-10 pb-20">
       <div>
         <div class="pt-6 md:pt-20 mb-6">
-          <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+          <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
             Des réponses adaptées pour mieux connaître <br />
             votre secteur d'activité
           </h1>
@@ -130,7 +130,7 @@
                 />
               </div>
               <div>
-                <h3 class="text-4xl leading-10 font-extrabold text-greenDark">
+                <h3 class="text-2xl lg:text-4xl leading-10 font-extrabold text-greenDark">
                   Demandez une étude <br />
                   de marché sectorielle
                 </h3>
@@ -158,7 +158,7 @@
             </div>
           </div>
           <div class="pb-20 mb-6">
-            <h1 class="text-4xl leading-10 font-extrabold tracking-tight">
+            <h1 class="text-2xl lg:text-4xl leading-10 font-extrabold tracking-tight">
               Validez l’opportunité commerciale de votre offre en vue <br />
               d'une future implantation
             </h1>
@@ -340,7 +340,7 @@
             class="pt-20 grid grid-cols-1 md:grid-cols-2 gap-8 p-6 items-center"
           >
             <div>
-              <h3 class="text-4xl leading-10 font-extrabold text-blue">
+              <h3 class="text-2xl lg:text-4xl leading-10 font-extrabold text-blue">
                 Vous avez des questions ? <br />
                 Discutons maintenant !
               </h3>

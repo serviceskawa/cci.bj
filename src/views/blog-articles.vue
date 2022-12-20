@@ -10,7 +10,7 @@
       <div>
         <h6
           class="
-            text-primary text-base
+            text-primary text-2xl
             leading-6
             font-semibold
             tracking-wide
@@ -22,6 +22,7 @@
         <h1
           class="
             text-primary text-4xl
+            lg:text-6xl
             leading-none
             font-extrabold
             tracking-tight

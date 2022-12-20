@@ -95,7 +95,7 @@
       </div>
     </div>
     <div id="panels" v-else-if="loader == false">
-      <div class="tab-content p-3 md:p-16" v-if="current_tab == 'appels'">
+      <div class="tab-content p-3 md:p-16 flex justify-center" v-if="current_tab == 'appels'">
         <div v-if="appels_projets.data.length > 0">
           <div
             class="document-box pt-16"
@@ -204,7 +204,7 @@
           <h1>Aucune donnée disponible</h1>
         </div>
       </div>
-      <div class="tab-content p-3 md:p-16" v-if="current_tab == 'resultats'">
+      <div class="tab-content p-3 md:p-16 flex justify-center" v-if="current_tab == 'resultats'">
         <div v-if="appels_offres.data.length > 0">
           <div
             class="document-box pt-16"

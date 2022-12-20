@@ -60,6 +60,8 @@
               focus:placeholder-gray-400 focus:outline-none
             "
             placeholder="Rechercher un mot clé"
+            v-model="search_value"
+            @keypress.enter="searchSomething"
           />
           <svg
             class="absolute left-4 top-5"
@@ -119,7 +121,6 @@
           </div>
         </div>
         <div v-else-if="loader == false">
-          
           <div class="flex justify-between mt-6 flex-wrap">
             <div class="flex items-center">
               <div class="relative inline-block text-left mr-3 mb-3">
@@ -459,7 +460,15 @@
       <div class="pb-20">
         <div class="bg-grayCard grid grid-cols-1 md:grid-cols-2 gap-8 p-6">
           <div>
-            <h3 class="text-4xl leading-10 font-extrabold text-primary">
+            <h3
+              class="
+                text-2xl
+                lg:text-4xl
+                leading-10
+                font-extrabold
+                text-primary
+              "
+            >
               Retrouvez toute <br />
               l'information <br />
               économique
@@ -623,7 +632,9 @@ export default {
   data: () => ({
     configs: "",
     loader: false,
-    files_datas: {},
+    files_datas: {
+      data: [],
+    },
     current_page: 1,
     email: "",
     phone: "",
@@ -637,9 +648,17 @@ export default {
       current_year: "",
       nb_pages: "",
     },
+    search: {
+      value: "",
+      mode: false,
+      button_loader: false,
+      state_loader: false,
+      datas: [],
+    },
+    search_value: "",
     on_loading_request: false,
     types: [],
-    years: [2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015],
+    years: ["Tous", 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015],
     page_ranges: [20, 50, 100],
     on_loading_request: false,
     show_per_page: false,
@@ -647,12 +666,42 @@ export default {
     show_year: false,
   }),
   async created() {
+    await this.getDocumentsCategories();
     moment().locale("fr");
     this.configs = sessionStorage.getItem("configs");
     if (this.configs !== undefined && this.configs !== null) {
       this.configs = JSON.parse(this.configs);
     }
-    this.load_files(1);
+    if (this.$route.query.slug) {
+      this.loader = true;
+      let matched = this.types.find(
+        (element) => element.slug == this.$route.query.slug
+      );
+      if (matched !== undefined) {
+        this.docs_filters.type_doc = matched;
+      } else {
+        matched = "";
+      }
+      const data = {
+        categoryId: matched !== undefined ? matched.id : "",
+        year: this.docs_filters.current_year,
+        nbr_pagination: this.docs_filters.nb_pages,
+      };
+
+      await services.apply_docs_filters(data).then((response) => {
+        this.loader = false;
+        this.files_datas = response.data;
+        this.files_datas.data = this.files_datas.data.map((element) => {
+          return {
+            ...element,
+            file_name: element.file_name.split("/")[1],
+            file_url: this.configs.image_url + "/" + element.file_name,
+          };
+        });
+      });
+    } else {
+      this.load_files(1);
+    }
   },
   beforeDestroy() {
     this.current_page = 1;
@@ -673,6 +722,8 @@ export default {
     async sendRequest() {
       const data = {
         email: this.email,
+        subject: "Documentation",
+        slug: "",
       };
       try {
         this.on_loading_request = true;
@@ -700,7 +751,6 @@ export default {
       }
     },
     async load_files(current_page) {
-      this.getDocumentsCategories();
       this.loader = true;
       await services.get_document_rapports(current_page).then((response) => {
         this.loader = false;
@@ -720,7 +770,7 @@ export default {
         categoryId: this.docs_filters.type_doc.id
           ? this.docs_filters.type_doc.id
           : "",
-        year: this.docs_filters.current_year,
+        year: this.docs_filters.current_year == 'Tous' ? '' : this.docs_filters.current_year,
         nbr_pagination: this.docs_filters.nb_pages,
       };
       await services.apply_docs_filters(data).then((response) => {
@@ -739,6 +789,28 @@ export default {
       await services.get_documents_categories().then((response) => {
         this.types = response.data.data;
       });
+    },
+    async searchSomething() {
+   this.$route.query = {}
+      if (this.search_value.trim() == "") {
+        this.load_files(1);
+      } else {
+        this.loader = true;
+        this.docs_filters.type_doc = "";
+        await services
+          .search_doc(this.search_value, this.current_page)
+          .then((response) => {
+            this.loader = false;
+            this.files_datas = response.data;
+            this.files_datas.data = this.files_datas.data.map((element) => {
+              return {
+                ...element,
+                file_name: element.file_name.split("/")[1],
+                file_url: this.configs.image_url + "/" + element.file_name,
+              };
+            });
+          });
+      }
     },
   },
   watch: {
