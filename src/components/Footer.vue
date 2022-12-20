@@ -244,32 +244,36 @@ export default {
     return {
       links: [
         {
-          title: "Documents et rapports",
-          name: "documents-rapports",
-        },
-        {
-          title: "Journée pays",
+          title: "Journée pays/produit/service",
           name: "journees-pays",
-        },
-        {
-          title: "Étude de marché",
-          name: "etude-marche",
         },
         {
           title: "Rendez-vous des Experts",
           name: "rdv-experts",
         },
         {
+          title: "Documents et rapports",
+          name: "documents-rapports",
+        },
+        {
+          title: "Appels d’offres/projets",
+          name: "appels-offres",
+        },
+        {
           title: "Arbitrage et médiation",
           name: "arbitrage-mediation",
+        },
+        {
+          title: "Étude de marché",
+          name: "etude-marche",
         },
         {
           title: "Impulse",
           name: "impulse",
         },
         {
-          title: "Appels d’offres/projets",
-          name: "appels-offres",
+          title: "OCIS",
+          name: "observatoire-commerce",
         },
       ],
     };

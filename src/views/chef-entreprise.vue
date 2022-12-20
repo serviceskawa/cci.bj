@@ -332,28 +332,20 @@
             </div>
             <div class="mt-4">
               <h4 class="text-lg leading-none font-bold text-blue">
-                Émission de BFU/USU
+                Facilitation des échanges et du transport
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
-                Procédez à la vérification de votre facture <br />
-                et à son émission.
+                Nous vous assistons pour toute difficulté liée à l'enlèvement de vos marchandises<br />
+                au Port Autonome de Cotonou (PAC).
               </p>
             </div>
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
-            <button
-              type="button"
-              class="
-                btn btn-light
-                bg-white
-                shadow-md
-                text-primary
-                underline
-                w-full
-              "
-            >
-              Consulter
-            </button>
+            <a href="mailto:info@ccib.bj?subject=Facilitation%20des%20%C3%A9changes%20et%20du%20transport">
+              <button type="button" class="btn btn-light bg-white shadow-md text-primary underline w-full">
+                Faire un demande
+              </button>
+            </a>
           </div>
         </div>
         <div

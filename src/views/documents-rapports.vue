@@ -151,7 +151,7 @@
                   >
                     {{
                       docs_filters.type_doc === ""
-                        ? "Types de documents"
+                        ? "Catégorie de documents"
                         : docs_filters.type_doc.name
                     }}
                     <svg
@@ -394,13 +394,13 @@
               ></p>
               <div class="text-base mb-2">
                 <span>{{ el.file_size }}</span>
-                <span v-if="el.file_size.trim() !== ''"> - </span>
-                <span>
+                <span v-if="el.file_size.trim() !== ''"> <!-- - --> </span>
+                <!--<span>
                   {{ el.nbre_downloads }}
                   {{
                     el.nbre_downloads > 0 ? "Téléchargements" : "Téléchargement"
-                  }}</span
-                >
+                  }}
+                </span>-->
               </div>
               <div>
                 <div
