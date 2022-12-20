@@ -549,8 +549,8 @@
                 </p>
               </div>
               
-              <button
-              @click="$router.push({ name: 'observatoire-commerce' })"
+              <button 
+              @click="$router.push({ path: 'documents-rapports', query: { slug: 'ocis' } })"
                 type="button"
                 class="btn btn-light bg-white text-primary text-sm w-full"
               >

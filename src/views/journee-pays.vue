@@ -193,7 +193,7 @@
 
             <div class="mt-4">
               <h4 class="text-lg leading-7 font-medium text-borderSimple">
-                Journées Pays
+                Journée pays/produit/service
               </h4>
               <p class="text-md text-light leading-5 text-subtitlegray">
                 Rencontrez un expert pays et discutez des opportunités commerciales liées à l'expansion de votre activité dans le pays qui vous intéresse. 
@@ -549,7 +549,7 @@
             <p class="text-lg leading-7 text-subtitlegray mb-8">
               Nous restons à votre disposition pour toute demande de
               renseignements <br />
-              concernant le planning et le contenu des Journées Pays.
+              concernant le planning et le contenu des Journées pays/produit/service.
             </p>
             <div class="flex">
               <svg

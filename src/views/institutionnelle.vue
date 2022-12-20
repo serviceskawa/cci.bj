@@ -339,7 +339,7 @@
           </div>
           <div class="p-6 py-4 bg-grayCard w-full">
             <button
-            @click="$router.push({ name: 'documents' })"
+            @click="$router.push({ path: 'documents-rapports', query: { slug: 'ocis' } })"
               type="button"
               class="btn btn-primary bg-primary text-white text-sm w-full"
             >
