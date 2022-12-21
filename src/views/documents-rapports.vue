@@ -152,7 +152,7 @@
                     {{
                       docs_filters.type_doc === ""
                         ? "Catégorie de documents"
-                        : docs_filters.type_doc.name
+                        : (docs_filters.type_doc.name !== undefined ? docs_filters.type_doc.name : docs_filters.type_doc)
                     }}
                     <svg
                       width="20"
@@ -200,7 +200,7 @@
                       role="menuitem"
                       tabindex="-1"
                       id="menu-item-0"
-                      >{{ type.name }}</a
+                      >{{ type.name !== undefined ? type.name  : type }}</a
                     >
                   </div>
                 </div>
@@ -657,7 +657,7 @@ export default {
     },
     search_value: "",
     on_loading_request: false,
-    types: [],
+    types: ['Tous'],
     years: ["Tous", 2022, 2021, 2020, 2019, 2018, 2017, 2016, 2015],
     page_ranges: [20, 50, 100],
     on_loading_request: false,
@@ -787,7 +787,7 @@ export default {
     },
     async getDocumentsCategories() {
       await services.get_documents_categories().then((response) => {
-        this.types = response.data.data;
+        this.types = [...this.types, ...response.data.data]
       });
     },
     async searchSomething() {
@@ -822,7 +822,7 @@ export default {
         this.apply_filters();
       },
       deep: true,
-    },
+    }
   },
 };
 </script>

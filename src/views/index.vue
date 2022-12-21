@@ -18,8 +18,8 @@
     <div class="px-6 lg:px-10 max-w-7xl mx-auto ">
       <Agenda :agenda_data="agenda_datas" isNotFull />
       <AppelsOffresBox :appels_offres="appels_offres" />
-      <Partenaires :partners="partners" />
     </div>
+    <Partenaires :partners="partners" />
     <NewsLettersBox id="souscrire"  @sucess="update_notif('success')" @error="update_notif('error')" />
   </main>
 </template>
@@ -97,7 +97,7 @@ export default {
     if (configs !== undefined && configs !== null) {
       configs = JSON.parse(configs)
     }
-    this.slides = this.$store.state.home_elements.sliders
+    this.slides = this.$store.state.home_elements.sliders.reverse()
     this.agenda_datas = this.$store.state.home_elements
     if (this.agenda_datas.events !== undefined && this.agenda_datas.events !== null) {
       this.agenda_datas = this.agenda_datas.events
@@ -121,12 +121,13 @@ export default {
     this.partners = this.$store.state.home_elements
     if (this.partners.partners !== undefined && this.partners.partners !== null) {
       this.partners = this.partners.partners
+      console.log('partenaires', this.partners)
       this.partners = this.partners.map((element => {
         return {
           ...element,
           photo: configs.image_url + '/' + element.photo,
         }
-      })).slice(0, 4)
+      }))
     }
   },
   watch: {

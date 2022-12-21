@@ -1174,7 +1174,6 @@ export default {
         };
       });
     }
-    // console.log(this.appels_offres[0])
   },
   methods: {
     async sendRequest() {

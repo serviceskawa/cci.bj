@@ -23,7 +23,7 @@
               tracking-tight
             "
           >
-             Devenir partenaire
+             Nos partenaires
           </h1>
           <p
             class="

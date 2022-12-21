@@ -52,7 +52,6 @@ export default {
   methods: {
     async getNotifications() {
       await services.get_notifcations().then((response) => {
-        console.log('notification', response)
         if (response.status == 200) {
           if (response.status == 200) {
             this.alert = response.data;
