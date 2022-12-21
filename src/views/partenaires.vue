@@ -23,7 +23,7 @@
               tracking-tight
             "
           >
-             Nos partenaires
+            Nos partenaires
           </h1>
           <p
             class="
@@ -49,7 +49,8 @@
           projets les
           <br />
           plus ambitieux.
-        </p>
+          </p>
+        </div>
       </div>
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
