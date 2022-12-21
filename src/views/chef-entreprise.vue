@@ -993,7 +993,7 @@
             </div>
             <div class="mt-4">
               <h4 class="text-lg leading-none font-bold text-blue">
-                Journées Pays
+                Journée pays/produit/service
               </h4>
               <p class="text-sm leading-5 text-subtitlegray mt-4">
                 Rencontrez des conseillers et experts pays pour découvrir les
