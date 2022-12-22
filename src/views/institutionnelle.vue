@@ -374,12 +374,14 @@
                 Bénin, en tant que porte-parole institutionnel du secteur privé,
                 s’est dotée d’un Plan Stratégique.
               </p>
-              <button
-                type="button"
-                class="btn btn-light bg-white shadow-md text-primary w-full"
+              <a 
+              :href="static_file_url + '/publications/file_54aa50d69f68f6cb71d46d7a0800ac4f.pdf'"
+              target="_blank" 
               >
-                Télécharger le plan stratégique 2025
-              </button>
+                <button type="button" class="btn btn-light bg-white shadow-md text-primary w-full">
+                  Télécharger le plan stratégique 2025
+                </button>
+              </a>
             </div>
           </div>
           <div class="w-full">

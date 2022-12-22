@@ -390,9 +390,14 @@
         </p>
         <div class="sm:block md:flex justify-center flex-wrap mr-0 md:mr-4">
           <div>
+            <a 
+              :href="static_file_url + '/publications/file_54aa50d69f68f6cb71d46d7a0800ac4f.pdf'"
+              target="_blank"
+           >
             <button type="button" class="btn btn-primary bg-primary text-white hover:text-primary hover:bg-white mr-0 md:mr-4 mb-4 ">
             Télécharger maintenant
           </button>
+        </a>
           </div>
           <div>
             <button type="button" class="btn btn-light text-primary hover:text-white hover:bg-primary mb-4" @click="$router.push({name: 'documents'})">
@@ -441,7 +446,10 @@ export default {
           description:
             "Attentifs à la progression de votre business, nous défendons continuellement les intérêts de votre entreprise.",
         },
+        
       ],
+      static_file_url: import.meta.env.VITE_FILE_URL,
+
     };
   },
 };
