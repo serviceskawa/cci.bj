@@ -14,7 +14,7 @@
         w-full
       "
     >
-      <div class="text-white flex items-center w-full">
+      <div class="text-white max-w-7xl px-6 lg:px-10 mx-auto flex items-center w-full">
         <div>
           <h1 class="text-4xl leading-none font-extrabold tracking-tight">
             Programme Économique de Résilience <br />

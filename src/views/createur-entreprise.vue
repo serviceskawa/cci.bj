@@ -19,7 +19,7 @@
         w-full
       "
     >
-      <div class="flex justify-end w-full">
+      <div class="max-w-7xl px-6 lg:px-10 mx-auto flex items-center w-full">
         <div class="">
           <h1
             class="

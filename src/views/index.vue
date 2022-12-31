@@ -15,11 +15,11 @@
       <Indicateur />
       <Services />
     </div>
-    <div class="px-6 lg:px-10 max-w-7xl mx-auto ">
+    <div class="px-6 lg:px-10 max-w-7xl mx-auto "> 
       <Agenda :agenda_data="agenda_datas" isNotFull />
       <AppelsOffresBox :appels_offres="appels_offres" />
     </div>
-    <!--<Partenaires :partners="partners" />-->
+    <Partenaires :partners="partners" />
     <NewsLettersBox id="souscrire"  @sucess="update_notif('success')" @error="update_notif('error')" />
   </main>
 </template>

@@ -2,27 +2,30 @@
 <template>
   <main>
     <div class="barner flex items-center p-4 md:px-6 lg:px-10">
-      <div>
-        <h1
-          class="
-            text-primary text-4xl
-            lg:text-6xl
-            leading-none
-            font-extrabold
-            tracking-tight
-          "
-        >
-          <span class="text-white">Devenir</span>
-          partenaires
-        </h1>
-        <p class="text-white text-xl leading-7 font-normal mt-4">
-          Pour nos équipes, l’efficacité et le professionnalisme sont des
-          principes <br />
-          primordiaux. Devenir partenaire de la Chambre de Commerce et de
-          l’Industrie <br />
-          du Bénin, c’est contribuer à bâtir un environnement propice au <br />
-          développement des affaires.
-        </p>
+      <div class="max-w-7xl px-6 lg:px-10 mx-auto flex items-center w-full">
+        <div>
+          <h1
+            class="
+              text-primary text-4xl
+              lg:text-6xl
+              leading-none
+              font-extrabold
+              tracking-tight
+            "
+          >
+            <span class="text-white">Devenir</span>
+            partenaires
+          </h1>
+          <p class="text-white text-xl leading-7 font-normal mt-4">
+            Pour nos équipes, l’efficacité et le professionnalisme sont des
+            principes <br />
+            primordiaux. Devenir partenaire de la Chambre de Commerce et de
+            l’Industrie <br />
+            du Bénin, c’est contribuer à bâtir un environnement propice au
+            <br />
+            développement des affaires.
+          </p>
+        </div>
       </div>
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
@@ -224,7 +227,7 @@ export default {
         phone: "",
       },
       filename: "",
-      on_loading_request: false
+      on_loading_request: false,
     };
   },
   async created() {},

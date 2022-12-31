@@ -14,7 +14,7 @@
         w-full
       "
     >
-      <div class="flex items-center w-full">
+      <div class="max-w-7xl px-6 lg:px-10 mx-auto flex items-center w-full">
         <div class="text-white">
           <h1 class="text-3xl lg:text-6xl leading-none font-extrabold">
             Accédez à des informations <br />

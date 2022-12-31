@@ -19,7 +19,7 @@
         w-full
       "
     >
-      <div class="flex text-white items-center w-full">
+      <div class="max-w-7xl px-6 lg:px-10 mx-auto flex items-center w-full">
         <div>
           <h1
             class="
@@ -28,14 +28,15 @@
               leading-none
               font-extrabold
               tracking-tight
+              text-primary
             "
           >
             Documentation
           </h1>
           <p class="text-md md:text-lg leading-7 mt-6">
-            Accédez aux documents et rapports de la Chambre de Commerce et de
-            l'Industrie <br />
-            sur l'environnement des affaires au Bénin.
+            Accédez aux documents et rapports de la Chambre de <br> Commerce et  de
+            l'Industrie 
+            sur l'environnement des <br> affaires au Bénin.
           </p>
         </div>
       </div>
@@ -829,7 +830,11 @@ export default {
     
 <style lang="scss" scoped>
 .barner {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(
+      90deg,
+      #ffffff 35.49%,
+      rgba(255, 255, 255, 0) 65.73%
+    ),
     url("../assets/images/docs.jpeg") !important;
   height: 520px !important;
   background-position: top !important;

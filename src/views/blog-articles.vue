@@ -7,30 +7,32 @@
       @close="notif.type = ''"
     />
     <div class="barner flex items-center p-4 md:px-10 lg:px-20">
-      <div>
-        <h6
-          class="
-            text-primary text-2xl
-            leading-6
-            font-semibold
-            tracking-wide
-            uppercase
-          "
-        >
-          Le blog
-        </h6>
-        <h1
-          class="
-            text-primary text-4xl
-            lg:text-6xl
-            leading-none
-            font-extrabold
-            tracking-tight
-          "
-        >
-          <span class="text-white">une CCI au service de votre </span> <br />
-          stratégie à l'international
-        </h1>
+      <div class="max-w-7xl px-6 lg:px-10 mx-auto flex items-center w-full">
+        <div>
+          <h6
+            class="
+              text-primary text-2xl
+              leading-6
+              font-semibold
+              tracking-wide
+              uppercase
+            "
+          >
+            Le blog
+          </h6>
+          <h1
+            class="
+              text-primary text-4xl
+              lg:text-6xl
+              leading-none
+              font-extrabold
+              tracking-tight
+            "
+          >
+            <span class="text-white">une CCI au service de votre </span> <br />
+            stratégie à l'international
+          </h1>
+        </div>
       </div>
     </div>
     <div class="max-w-7xl mx-auto px-6 lg:px-10">

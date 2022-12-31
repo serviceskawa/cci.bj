@@ -41,6 +41,20 @@
             <img class="h-48 w-full object-cover" :src="agen.photo" alt="" />
           </div>
           <div class="flex-1 bg-white pt-6 px-6 flex flex-col justify-between">
+            <div class="text-sm">
+              <p class="font-semibold">
+                Date de début:
+                <span class="hover:underline text-subtitlegray font-normal">
+                  {{ agen.start_date }}
+                </span>
+              </p>
+              <p class="font-semibold">
+                Date de fin:
+                <span class="hover:underline text-subtitlegray font-normal">
+                  {{ agen.end_date }}
+                </span>
+              </p>
+            </div>
             <div class="flex-1">
               <span
                 class="
@@ -61,11 +75,7 @@
                 <p class="text-base font-semibold text-gray-900">
                   {{ agen.title }}
                 </p>
-                <p class="text-base font-medium text-indigo-600">
-                  <a href="#" class="hover:underline">
-                    {{ agen.start_date }}
-                  </a>
-                </p>
+
                 <p class="mt-1.5 text-base text-gray-500">
                   {{ agen.short_content }}
                 </p>
@@ -81,7 +91,9 @@
           </div>
         </div>
       </div>
-      <div class="tracking-tight mt-12 text-left text-dark" v-if="isNotFull == true"
+      <div
+        class="tracking-tight mt-12 text-left text-dark"
+        v-if="isNotFull == true"
       >
         <span class="block sm:ml-2 sm:inline-block">
           <a @click="$router.push({ name: 'agenda' })" class="text-primary">

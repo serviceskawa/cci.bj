@@ -17,21 +17,17 @@
       </h2>
       <div class="mt-8 lg:mt-10 max-w-7xl mx-auto flex justify-center">
         <div class="px-6 lg:px-10">
-          <Carousel
-            :settings="settings"
-            :breakpoints="breakpoints"
-            :autoplay="2000"
-            :wrap-around="true"
-            class=""
-          >
-            <Slide v-for="(part, index) in partners" :key="index">
-              <img
+          <div>
+            <div class="flex flex-wrap space-x-12">
+              <div class="flex" v-for="(part, index) in partners" :key="index">
+                <img
                 :src="part.photo"
                 :alt="part.responsable_name"
                 class="carousel__item partner"
               />
-            </Slide>
-          </Carousel>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div
@@ -58,8 +54,6 @@
   </div>
 </template>
 <script>
-import "vue3-carousel/dist/carousel.css";
-import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 export default {
   props: {
     partners: {
@@ -68,27 +62,9 @@ export default {
     },
   },
   components: {
-    Carousel,
-    Slide,
-    Pagination,
-    Navigation,
   },
   data() {
     return {
-      settings: {
-        itemsToShow: 1,
-        snapAlign: "center",
-      },
-      breakpoints: {
-        700: {
-          itemsToShow: 3.5,
-          snapAlign: "center",
-        },
-        1024: {
-          itemsToShow: 5,
-          snapAlign: "start",
-        },
-      },
     };
   },
 };

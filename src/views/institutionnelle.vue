@@ -9,7 +9,7 @@
     <div
       class="barner sm:h-96 lg:h-auto flex items-center p-4 md:px-10 lg:px-20 w-full"
     >
-      <div class="flex items-center w-full">
+      <div class="max-w-7xl px-6 lg:px-10 mx-auto flex items-center w-full">
         <div>
           <h1
             class="
