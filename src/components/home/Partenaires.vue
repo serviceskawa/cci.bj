@@ -15,26 +15,81 @@
       >
         Nos partenaires, plus dévoués que jamais pour votre succès
       </h2>
-      <div class="mt-8 lg:mt-10 max-w-7xl mx-auto flex justify-center">
-        <div class="px-6 lg:px-10">
-          <div>
-            <div class="flex flex-wrap space-x-12">
-              <div class="flex" v-for="(part, index) in partners" :key="index">
-                <img
-                :src="part.photo"
-                :alt="part.responsable_name"
-                class="carousel__item partner"
-              />
-              </div>
+
+      <div class="flex mx-auto mt-8 lg:mt-10 max-w-7xl justify-center">
+        <div
+          tabindex="-1"
+          class="uk-position-relative uk-visible-toggle uk-light"
+          uk-slider="autoplay: true; finite: true; autoplay-interval: 3000"
+        >
+          <div class="uk-position-relative">
+            <div class="uk-slider-container uk-light mb-16">
+              <ul
+                class="
+                  uk-slider-items
+                  uk-child-width-1-2
+                  uk-child-width-1-4@s
+                  uk-child-width-1-6@m
+                  px-6
+                  lg:px-10
+                "
+              >
+                <li v-for="(part, index) in partners" :key="index">
+                  <div class="uk-panel">
+                    <img
+                      :src="part.photo"
+                      :alt="part.responsable_name"
+                      class="partner"
+                    />
+                  </div>
+                </li>
+                <li v-for="(part, index) in partners" :key="index">
+                  <div class="uk-panel">
+                    <img
+                      :src="part.photo"
+                      :alt="part.responsable_name"
+                      class="partner"
+                    />
+                  </div>
+                </li>
+                <li v-for="(part, index) in partners" :key="index">
+                  <div class="uk-panel">
+                    <img
+                      :src="part.photo"
+                      :alt="part.responsable_name"
+                      class="partner"
+                    />
+                  </div>
+                </li>
+              </ul>
             </div>
+
+            <div class="uk-hidden@s uk-light">
+              <a
+                class="uk-position-center-left uk-position-small text-primary"
+                href="#"
+                uk-slidenav-previous
+                uk-slider-item="previous"
+              ></a>
+              <a
+                class="uk-position-center-right uk-position-small text-primary"
+                href="#"
+                uk-slidenav-next
+                uk-slider-item="next"
+              ></a>
+            </div>
+
           </div>
+
+          <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
         </div>
       </div>
+
       <div
         class="
           tracking-tight
           text-right text-dark
-          mt-16
+          mt-16 mb-8
           max-w-7xl
           mx-auto
           px-6
@@ -61,16 +116,24 @@ export default {
       dafault: () => [],
     },
   },
-  components: {
-  },
+  components: {},
   data() {
-    return {
-    };
+    return {};
   },
 };
 </script>
 <style lang="scss" scoped>
 .partner {
   height: 120px !important;
+}
+::v-deep .uk-light .uk-dotnav>*>* {
+  background-color: #D1D5DB !important;
+    border-color: #F7F9F9 !important;
+    height: 15px !important;
+    width: 15px !important;
+}
+::v-deep .uk-dotnav .uk-active a {
+  background-color: #DD7A4B !important;
+    border-color: #DD7A4B !important;
 }
 </style>
