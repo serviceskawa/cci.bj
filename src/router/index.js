@@ -11,7 +11,9 @@ const routes = [
     name: 'index',
     component: page('index'),
     meta: {
-      title: 'Chambre de Commerce et d\'Industrie du Bénin | CCI Bénin'
+      title: 'Chambre de Commerce et d\'Industrie du Bénin | CCI Bénin',
+      description: 'La CCI Bénin assiste créateurs/chefs d\'entreprise, investisseurs... dans leurs projets (création, formation, financement, etc.) pour assurer leur développement.',
+      keywords: 'opérateur économique, opérateurs économiques, développement des affaires'
     }
   },
   {
