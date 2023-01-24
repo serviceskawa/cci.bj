@@ -29,7 +29,7 @@ const routes = [
     name: 'documents',
     component: page('documents-rapports'),
     meta: {
-      title: 'Documents et Rapports'
+      title: 'Documentation et ressources sur l\'environnement des affaires | CCI Bénin '
     }
   },
   {
@@ -37,7 +37,7 @@ const routes = [
     name: 'journees-pays',
     component: page('journee-pays'),
     meta: {
-      title: 'Journées & Pays'
+      title: 'Rencontres Journées Pays/Produit/Service | CCI Bénin '
     }
   },
   {
@@ -45,7 +45,7 @@ const routes = [
     name: 'impulse',
     component: page('impulse'),
     meta: {
-      title: 'Impulse'
+      title: 'Programme ImPulse : Incubation et accélération de startups | CCI Bénin'
     }
   },
   {
@@ -53,7 +53,7 @@ const routes = [
     name: 'etude-marche',
     component: page('etude-marches'),
     meta: {
-      title: 'Études & marchés'
+      title: 'Réaliser une étude de marché sectorielle au Bénin | CCI Bénin '
     }
   },
   {
@@ -61,7 +61,7 @@ const routes = [
     name: 'aide-montage',
     component: page('aide-montage'),
     meta: {
-      title: 'Aide et montage'
+      title: 'Aide au montage de dossiers de subvention ou financement | CCI Bénin '
     }
   },
   {
@@ -69,7 +69,7 @@ const routes = [
     name: 'rdv-experts',
     component: page('rdv-experts'),
     meta: {
-      title: 'Rendez-vous des experts'
+      title: 'Programme Rendez-vous des experts | CCI Bénin'
     }
   },
   {
@@ -77,7 +77,7 @@ const routes = [
     name: 'contact',
     component: page('contact'),
     meta: {
-      title: 'Contacts'
+      title: 'Contactez la Chambre de Commerce et d\'Industrie du Bénin | CCI Bénin'
     }
   },
   {
@@ -85,7 +85,7 @@ const routes = [
     name: 'agenda',
     component: page('agenda'),
     meta: {
-      title: 'Agenda'
+      title: 'Rencontres, événements, salons, foires au Bénin | CCI Bénin'
     }
   },
   {
@@ -93,7 +93,7 @@ const routes = [
     name: 'arbitrage-mediation',
     component: page('arbitrage-mediation'),
     meta: {
-      title: 'Arbitrage et médiation'
+      title: 'Règlement de litiges des entreprises au Bénin | CCI Bénin'
     }
   },
   {
@@ -101,7 +101,7 @@ const routes = [
     name: 'formations',
     component: page('formations'),
     meta: {
-      title: 'Formations'
+      title: 'Formations pour les chefs d\'entreprise et Startups au Bénin | CCI Bénin'
     }
   },
   {
@@ -109,7 +109,7 @@ const routes = [
     name: 'partenaires',
     component: page('partenaires'),
     meta: {
-      title: 'Nos partenaires'
+      title: 'Partenaires | CCI Bénin'
     }
   },
   {
@@ -117,7 +117,7 @@ const routes = [
     name: 'devenir-partenaire',
     component: page('devenir-partenaire'),
     meta: {
-      title: 'Devenir partenaire'
+      title: 'Devenir partenaireNouer un partenariat avec la CCI-Bénin | CCI Bénin'
     }
   },
   {
@@ -125,7 +125,7 @@ const routes = [
     name: 'blog-articles',
     component: page('blog-articles'),
     meta: {
-      title: 'Blogs & articles'
+      title: 'Blog sur l\'environnement des affaires et son développement | CCI Bénin'
     }
   },
   {
@@ -142,7 +142,7 @@ const routes = [
     name: 'appels-offres',
     component: page('appels-offres'),
     meta: {
-      title: 'Appel d\'offres'
+      title: 'Appels d\'offres | CCI Bénin'
     }
   },
   {
@@ -150,7 +150,7 @@ const routes = [
     name: 'pere',
     component: page('pere'),
     meta: {
-      title: 'P.E.R.E'
+      title: 'Soutien aux entreprises béninoises en réponse à la Covid-19 | CCI Bénin'
     }
   },
   {
@@ -158,7 +158,7 @@ const routes = [
     name: 'institutionnelle',
     component: page('institutionnelle'),
     meta: {
-      title: 'Institutionnel'
+      title: 'Acceuil des institutions et missions internationales Bénin | CCI Bénin'
     }
   },
 
@@ -173,7 +173,7 @@ const routes = [
     name: 'faq',
     component: page('faq'),
     meta: {
-      title: 'FAQ'
+      title: 'Foire aux questions | CCI Bénin '
     }
   },
   {
@@ -181,7 +181,7 @@ const routes = [
     name: 'chef-entreprise',
     component: page('chef-entreprise'),
     meta: {
-      title: 'Chef d\'entreprise'
+      title: 'Organiser et gérer efficacement son entreprise au Bénin | CCI Bénin'
     }
   },
   {
@@ -189,7 +189,7 @@ const routes = [
     name: 'cci',
     component: page('cci'),
     meta: {
-      title: 'Ma CCI'
+      title: 'À propos de la Chambre de Commerce et d\'Industrie du Bénin | CCI Bénin '
     }
   },
   {
@@ -197,7 +197,7 @@ const routes = [
     name: 'createur-entreprise',
     component: page('createur-entreprise'),
     meta: {
-      title: 'Créateur d\'entreprise'
+      title: 'Création et formalisation des entreprises au Bénin | CCI Bénin'
     }
   },
   {
@@ -213,7 +213,7 @@ const routes = [
     name: 'services-specs',
     component: page('services-specs'),
     meta: {
-      title: 'Services | Spécifiques'
+      title: 'Programmes d\'accompagnement pour les entreprises au Bénin | CCI Bénin'
     }
   },
   {
@@ -221,7 +221,7 @@ const routes = [
     name: 'services-infos',
     component: page('services-infos'),
     meta: {
-      title: 'Services | Informations-Orientations'
+      title: 'Information et orientation des acteurs économiques du Bénin | CCI Bénin'
     }
   },
   {
@@ -229,7 +229,7 @@ const routes = [
     name: 'services-formations',
     component: page('services-formations'),
     meta: {
-      title: 'Services | Formations'
+      title: 'Formation, assistance et appui-conseil aux entreprises | CCI Bénin'
     }
   },
   {
@@ -237,7 +237,7 @@ const routes = [
     name: 'investissement',
     component: page('investissement'),
     meta: {
-      title: 'Investissement'
+      title: 'Opportunités d\'investissement dans les entreprises du Bénin | CCI Bénin'
     }
   },
   {
@@ -245,7 +245,7 @@ const routes = [
     name: 'parcours-entrepreneur',
     component: page('parcours-entrepreneur'),
     meta: {
-      title: 'Parcours entrepreneur'
+      title: 'Programme Parcours de l\'entrepreneur | CCI Bénin '
     }
   },
   //{
@@ -258,7 +258,7 @@ const routes = [
     name: 'observatoire-commerce',
     component: page('observatoire-commerce'),
     meta: {
-      title: 'Observatoire commerce'
+      title: 'Observatoire du commerce de la CCI-Bénin | CCI Bénin '
     }
   },
   {
