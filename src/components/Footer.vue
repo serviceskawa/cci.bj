@@ -8,7 +8,7 @@
           </h3>
           <ul role="list" class="mt-4 space-y-4">
             <div v-for="(link, index) in links" :key="index">
-              <router-link class="text-white" :to="link.name">
+              <router-link class="text-base text-white hover:text-white" :to="link.name">
                 {{ link.title }}
               </router-link>
             </div>
