@@ -162,6 +162,7 @@
                   />
                 </svg>
               </div>
+              <!--
               <div class="mt-4">
                 <h4 class="text-lg leading-none font-bold text-blue">
                   Formation en ligne
@@ -177,6 +178,23 @@
                   class="btn btn-light bg-white shadow-md text-primary w-full"
                 >
                   Découvrir
+                </button></a>
+              </div>
+            -->
+            <div class="mt-4">
+                <h4 class="text-lg leading-none font-bold text-blue">
+                  Validation des Acquis de l’Expérience (VAE)
+                </h4>
+                <p class="text-sm leading-5 text-subtitlegray mt-4">
+                  La première phase de déploiement de la diplomation par le parcours VAE standard français portée par la CCI Bénin concerne les métiers tertiaires de l'entreprise. Ceci résulte de la convention CCI Côte d'or - CCI Bénin.
+                </p>
+              </div>
+              <div class="mt-4 w-full h-full">
+                <a href="https://cci.bj/admin1/public/upload/publications/file_3ec0f9b0e703767437e02145797a640a.pdf" target="_blank"><button
+                  type="button"
+                  class="btn btn-light bg-white shadow-md text-primary w-full"
+                >
+                En savoir plus
                 </button></a>
               </div>
             </div>
