@@ -4,17 +4,18 @@
       <div class="relative sm:overflow-hidden carousel-inner">
         <carousel-indicators
           v-if="indicators"
-          :total="slides.length"
+          :total="slidesTotal"
           :current-index="currentSlide"
           @switch="switchSlide($event)"
         ></carousel-indicators>
         <carousel-item
           v-for="(slide, index) in slides"
-          :slide="slide"
+          :slide="slide.slide"
           :key="`item-${index}`"
           :current-slide="currentSlide"
           :index="index"
           :direction="direction"
+          :slide_content="slide.slide_content"
           @mouseenter="stopSlideTimer"
           @mouseout="startSlideTimer"
         ></carousel-item>
@@ -58,6 +59,11 @@ export default {
     slideInterval: null,
     direction: "right",
   }),
+  computed: {
+    slidesTotal () {
+      return this.slides.length
+    }
+  },
   methods: {
     setCurrentSlide(index) {
       this.currentSlide = index;
@@ -117,8 +123,7 @@ export default {
 }
 .carousel-inner {
   position: relative;
-  /* width: 900px; */
-  height: 707px;
+  height: 700px;
   overflow: hidden;
 }
 </style>

@@ -1,27 +1,22 @@
+
 import { createStore } from "vuex";
-import axiosClient from "../axios";
 
 const store = createStore({
   state: {
+    app_ready: false,
     news: [],
+    show_alert: true,
+    configs: {},
+    faqs: [],
+    home_elements: {},
+    current_notif_message: "",
+    categories: [],
+    pagination_current_page: 1
   },
   getters: {},
   actions: {
-    async fetchNews({ commit }) {
-      try {
-        const data = await axios.get(axiosClient.baseURL + "news");
-        commit("SET_NEWS", data.data);
-        console.log(data.data);
-      } catch (error) {
-        alert(error);
-        console.log(error);
-      }
-    },
   },
   mutations: {
-    SET_NEWS(state, news) {
-      state.news = news;
-    },
   },
   modules: {},
 });

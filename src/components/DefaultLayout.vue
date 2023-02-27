@@ -8,8 +8,8 @@
         >
           <div class="flex justify-start ">
             <a href="#">
-              <span class="sr-only">CCIB</span>
-              <img class="w-28 h-14" src="../assets/logo.png" alt="" />
+              <span class="sr-only">CCI Bénin</span>
+              <img class="w-28 h-14" src="@/assets/logo.png" alt="" />
             </a>
           </div>
 
@@ -465,7 +465,7 @@
                   </li>
                   <li>
                     <a href="" class="text-base text-white hover:text-white">
-                      Formationsccib.bj
+                      Formationccib.bj
                     </a>
                   </li>
                   <li>
@@ -489,7 +489,7 @@
                 <ul role="list" class="mt-4 space-y-4">
                   <li>
                     <a href="" class="text-base text-white hover:text-white"
-                      >APIEX
+                      >APIEx
                     </a>
                   </li>
                   <li>
@@ -499,7 +499,7 @@
                   </li>
                   <li>
                     <a href="" class="text-base text-white hover:text-white"
-                      >CPCAF
+                      >CPCCAF
                     </a>
                   </li>
                   <li>
@@ -531,7 +531,7 @@
                   </li>
                   <li>
                     <a href="" class="text-base text-white hover:text-white"
-                      >ccibj@exemple.com
+                      >info@ccib.bj
                     </a>
                   </li>
                 </ul>
@@ -735,7 +735,7 @@ const posts = [
     date: "Mar 16, 2020",
     datetime: "2020-03-16",
     imageUrl:
-      "https://images.unsplash.com/photo-1496128858413-b36217c2ce36?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1679&q=80",
+      "@/assets/images/agenda.jpeg",
     readingTime: "6 min",
     author: {
       name: "Roel Aufderehar",

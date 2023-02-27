@@ -13,7 +13,9 @@ module.exports = {
     colors: {
       primary: "#DD7A4B",
       green: "#487F50",
+      greenDark: "#1D7834",
       white: "#FFFFFF",
+      danger: "#B91C1C",
       dark: "#000000",
       gray: "#487F501A",
       primaryInfo: "#DD7A4B1A",
@@ -26,7 +28,9 @@ module.exports = {
       grayCard:"#F9FAFB",
       sp: "#6B7280",
       borderInput:"#D1D5DB",
-      subtitlegray: "#6B7280"
+      subtitlegray: "#6B7280",
+      label: "#374151",
+      lightGray: "#F7F9F9"
       //sous paragraphe
     },
   },

@@ -1,14 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/logo.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <title>CCiB</title>
-  </head>
-  <body class="h-full">
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="icon" type="image/svg+xml" href="/logo.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.20/dist/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.20/dist/js/uikit.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.20/dist/js/uikit-icons.min.js"></script>
+  <title>Chambre de Commerce et d'Industrie du Bénin | CCI Bénin </title>
+</head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-3Z2QK7NBFX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-3Z2QK7NBFX');
+</script>
+
+<body>
+  <div id="app"></div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+<!-- CCI Assistance  -->
+<script src="https://cci.bj/support/js/min/jquery.min.js"></script>
+<script id="sbinit" src="https://cci.bj/support/js/main.js"></script>
+
 </html>
+<style>
+  #loader {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+  }
+
+  .loading {
+    position: absolute;
+    left: calc(50% - 30px);
+    top: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 4px solid transparent;
+  }
+
+  .loading .effect-1,
+  .loading .effect-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid transparent;
+    border-left: 4px solid #DD7A4B !important;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .loading .effect-1 {
+    animation: rotate 1s ease infinite;
+  }
+
+  .loading .effect-2 {
+    animation: rotateOpacity 1s ease infinite 0.1s;
+  }
+
+  .loading .effect-3 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid transparent;
+    border-left: 4px solid #DD7A4B !important;
+    -webkit-animation: rotateOpacity 1s ease infinite 0.2s;
+    animation: rotateOpacity 1s ease infinite 0.2s;
+    border-radius: 50%;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .loading .effects {
+    transition: all 0.3s ease;
+  }
+
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+
+    100% {
+      -webkit-transform: rotate(1turn);
+      transform: rotate(1turn);
+    }
+  }
+
+  @keyframes rotateOpacity {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+      opacity: 0.1;
+    }
+
+    100% {
+      -webkit-transform: rotate(1turn);
+      transform: rotate(1turn);
+      opacity: 1;
+    }
+  }
+</style>

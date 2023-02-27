@@ -22,7 +22,7 @@
             </svg>
           </span>
           <span class="inline-flex rounded-md ml-36">
-            <img class="h-4 w-auto sm:h-4" src="../assets/Vector.svg" alt="" />
+            <img class="h-4 w-auto sm:h-4" src="@/assets/Vector.svg" alt="" />
           </span>
         </div>
         <h3 class="mt-4 text-lg px-6 font-medium tracking-tight text-gray-900">

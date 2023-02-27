@@ -7,7 +7,7 @@
       <div class="hidden flex-shrink-0 sm:block">
         <img
           class="h-20 w-32 rounded-md object-cover"
-          src="../assets/offres.png"
+          src="@/assets/offres.png"
           alt=""
         />
       </div>
