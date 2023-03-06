@@ -35,31 +35,37 @@
                 "
               >
                 <li v-for="(part, index) in partners" :key="index">
-                  <div class="uk-panel">
-                    <img
-                      :src="part.photo"
-                      :alt="part.responsable_name"
-                      class="partner"
-                    />
-                  </div>
+                  <a :href="part.url" target="_blank">
+                    <div class="uk-panel">
+                      <img
+                        :src="part.photo"
+                        :alt="part.name"
+                        class="partner"
+                      />
+                    </div>
+                  </a> 
                 </li>
                 <li v-for="(part, index) in partners" :key="index">
-                  <div class="uk-panel">
-                    <img
-                      :src="part.photo"
-                      :alt="part.responsable_name"
-                      class="partner"
-                    />
-                  </div>
+                  <a :href="part.url" target="_blank">
+                    <div class="uk-panel">
+                      <img
+                        :src="part.photo"
+                        :alt="part.name"
+                        class="partner"
+                      />
+                    </div>
+                  </a> 
                 </li>
                 <li v-for="(part, index) in partners" :key="index">
-                  <div class="uk-panel">
-                    <img
-                      :src="part.photo"
-                      :alt="part.responsable_name"
-                      class="partner"
-                    />
-                  </div>
+                  <a :href="part.url" target="_blank">
+                    <div class="uk-panel">
+                      <img
+                        :src="part.photo"
+                        :alt="part.name"
+                        class="partner"
+                      />
+                    </div>
+                  </a>  
                 </li>
               </ul>
             </div>

@@ -12,7 +12,7 @@
     </div>
     <Blog />
     <div class="px-6 lg:px-10  max-w-7xl mx-auto">
-      <Indicateur />
+      <Indicateur :indicateurs="indicateurs" />
       <Services />
     </div>
     <div class="px-6 lg:px-10 max-w-7xl mx-auto "> 
@@ -89,7 +89,8 @@ export default {
     },
     agenda_datas: [],
     appels_offres: [],
-    partners: []
+    partners: [],
+    indicateurs: []
   }),
 
   mounted() {
@@ -128,6 +129,19 @@ export default {
           photo: configs.image_url + '/' + element.photo,
         }
       }))
+    }
+
+    this.indicateurs = this.$store.state.home_elements
+    if (this.indicateurs.indicateurs !== undefined && this.indicateurs.indicateurs !== null) {
+      this.indicateurs = this.indicateurs.indicateurs
+      this.indicateurs.composants = this.indicateurs.composants.map((element => {
+        return {
+          ...element,
+          icon: configs.image_url + '/' + element.icon,
+        }
+      }))
+      console.log('indicateurs', this.indicateurs)
+
     }
   },
   watch: {
