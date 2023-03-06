@@ -98,7 +98,7 @@ export default {
     if (configs !== undefined && configs !== null) {
       configs = JSON.parse(configs)
     }
-    this.slides = this.$store.state.home_elements.sliders.reverse()
+    this.slides = this.$store.state.home_elements.sliders
     this.agenda_datas = this.$store.state.home_elements
     if (this.agenda_datas.events !== undefined && this.agenda_datas.events !== null) {
       this.agenda_datas = this.agenda_datas.events
@@ -122,7 +122,6 @@ export default {
     this.partners = this.$store.state.home_elements
     if (this.partners.partners !== undefined && this.partners.partners !== null) {
       this.partners = this.partners.partners
-      console.log('partenaires', this.partners)
       this.partners = this.partners.map((element => {
         return {
           ...element,
@@ -140,7 +139,6 @@ export default {
           icon: configs.image_url + '/' + element.icon,
         }
       }))
-      console.log('indicateurs', this.indicateurs)
 
     }
   },

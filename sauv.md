@@ -55,3 +55,118 @@
                 Elus consulaires
               </dd>
             </div>
+
+
+
+
+pour footer
+        <div>
+          <h3 class="text-base font-medium text-white uppercase">
+            partenaires
+          </h3>
+          <ul role="list" class="mt-4 space-y-4">
+            <li>
+              <a
+                href="https://apiex.bj/"
+                target="_blank"
+                class="text-base text-white hover:text-white"
+                >APIEx
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://financements-ue.bj/secteur-prive-projet-dappui-au-renforcement-des-acteurs-du-secteur-prive-parasep/"
+                target="_blank"
+                class="text-base text-white hover:text-white"
+                >PARASEP
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://cpccaf.org/"
+                target="_blank"
+                class="text-base text-white hover:text-white"
+                >CPCCAF
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.impots.bj/"
+                target="_blank"
+                class="text-base text-white hover:text-white"
+                >DGI Bénin
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://sbin.bj/"
+                target="_blank"
+                class="text-base text-white hover:text-white"
+                >SBIN SA
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="">
+          <h3 class="text-base font-medium text-white uppercase">
+            LIENS UTILES
+          </h3>
+          <ul role="list" class="mt-4 space-y-4">
+            <li>
+              <a
+                href="https://monentreprise.bj/"
+                target="_blank"
+                class="text-base text-white hover:text-white"
+              >
+                monentreprise.bj
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.formationccib.bj/"
+                target="_blank"
+                class="text-base text-white hover:text-white"
+              >
+                formationccib.bj
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://ahilido.bj/"
+                target="_blank"
+                class="text-base text-white hover:text-white"
+              >
+                ahilido.bj
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://apiex.bj/"
+                target="_blank"
+                class="text-base text-white hover:text-white"
+              >
+                apiex.bj
+              </a>
+            </li>
+            <!--<li>
+              <router-link
+                :to="{ name: 'legal-mentions' }"
+                class="text-base text-white hover:text-white"
+              >
+                Mentions légales
+              </router-link>
+            </li>-->
+            <li>
+              <router-link
+                :to="{ name: 'faq' }"
+                class="text-base text-white hover:text-white"
+              >
+                FAQ
+              </router-link>
+            </li>
+          </ul>
+        </div>
+
+                      <router-link class="text-base text-white hover:text-white" :to="component.link">
+                {{ component.text }}
+              </router-link>

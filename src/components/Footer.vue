@@ -2,124 +2,22 @@
   <footer class="bg-green" aria-labelledby="footer-heading">
     <div class="max-w-7xl mx-auto py-12 px-6 lg:px-10">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div>
+        <div v-for="(section, index) in data.sections" :key="index">
           <h3 class="text-base font-medium text-white uppercase">
-            LA CCI BÉNIN
+            {{section.header}}
           </h3>
           <ul role="list" class="mt-4 space-y-4">
-            <div v-for="(link, index) in links" :key="index">
-              <router-link class="text-base text-white hover:text-white" :to="link.name">
-                {{ link.title }}
-              </router-link>
+            <div v-for="(component, index) in section.components" :key="index">
+              <a
+                :href="component.link"
+                class="text-base text-white hover:text-white"
+              >
+              {{ component.text }}
+              </a>
             </div>
           </ul>
         </div>
-        <div>
-          <h3 class="text-base font-medium text-white uppercase">
-            partenaires
-          </h3>
-          <ul role="list" class="mt-4 space-y-4">
-            <li>
-              <a
-                href="https://apiex.bj/"
-                target="_blank"
-                class="text-base text-white hover:text-white"
-                >APIEx
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://financements-ue.bj/secteur-prive-projet-dappui-au-renforcement-des-acteurs-du-secteur-prive-parasep/"
-                target="_blank"
-                class="text-base text-white hover:text-white"
-                >PARASEP
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://cpccaf.org/"
-                target="_blank"
-                class="text-base text-white hover:text-white"
-                >CPCCAF
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.impots.bj/"
-                target="_blank"
-                class="text-base text-white hover:text-white"
-                >DGI Bénin
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://sbin.bj/"
-                target="_blank"
-                class="text-base text-white hover:text-white"
-                >SBIN SA
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="">
-          <h3 class="text-base font-medium text-white uppercase">
-            LIENS UTILES
-          </h3>
-          <ul role="list" class="mt-4 space-y-4">
-            <li>
-              <a
-                href="https://monentreprise.bj/"
-                target="_blank"
-                class="text-base text-white hover:text-white"
-              >
-                monentreprise.bj
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.formationccib.bj/"
-                target="_blank"
-                class="text-base text-white hover:text-white"
-              >
-                formationccib.bj
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://ahilido.bj/"
-                target="_blank"
-                class="text-base text-white hover:text-white"
-              >
-                ahilido.bj
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://apiex.bj/"
-                target="_blank"
-                class="text-base text-white hover:text-white"
-              >
-                apiex.bj
-              </a>
-            </li>
-            <!--<li>
-              <router-link
-                :to="{ name: 'legal-mentions' }"
-                class="text-base text-white hover:text-white"
-              >
-                Mentions légales
-              </router-link>
-            </li>-->
-            <li>
-              <router-link
-                :to="{ name: 'faq' }"
-                class="text-base text-white hover:text-white"
-              >
-                FAQ
-              </router-link>
-            </li>
-          </ul>
-        </div>
+
         <div class="">
           <div class="mb-6">
             <h3 class="text-base font-medium text-white uppercase">
@@ -158,7 +56,7 @@
         class="mt-6 border-t border-white flex justify-between pt-8 flex-wrap"
       >
         <div class="mt-2 text-base text-white uppercase">
-          copyright &copy; 2022 CCIBENIN - TOUS DROITS RéSERVéS.
+          {{data.copyright}} 
         </div>
         <div class="flex space-x-3 mt-2">
           <a
@@ -240,6 +138,12 @@
 </template>
 <script>
 export default {
+  props: {
+    data: {
+      type: [Object, Number],
+      dafault: () => [],
+    },
+  },
   data() {
     return {
       links: [
