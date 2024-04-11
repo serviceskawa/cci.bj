@@ -707,7 +707,6 @@ import ServiceCard from "../components/ServiceCard.vue";
 import OffreCard from "../components/OffreCard.vue";
 import ArticleCard from "../components/ArticleCard.vue";
 import { ChevronDownIcon } from "@heroicons/vue/solid";
-import axiosClient from "../axios";
 import Carousel from "../components/carousel/Carousel.vue";
 
 const NEWS_CAT = `https://6cc4-41-138-89-246.ngrok.io/api/news`;

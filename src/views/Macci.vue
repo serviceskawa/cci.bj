@@ -117,7 +117,6 @@ import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import ServiceCard from "../components/ServiceCard.vue";
 import OffreCard from "../components/OffreCard.vue";
 import ArticleCard from "../components/ArticleCard.vue";
-import axiosClient from "../axios";
 
 const NEWS_CAT = `http://localhost/cciwebsite/public/api/news`;
 const services_api = `http://localhost/cciwebsite/public/api/services`;
