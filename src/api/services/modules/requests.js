@@ -22,7 +22,9 @@ import {
   APPELS_SEARCH,
   FILES_CATEGORIES,
   DOCUMENTS_FILTERS,
-  SEARCH_DOC
+  SEARCH_DOC,
+  GET_CATEGORY_FILES_BY_SLUG,
+  GET_CATEGORY_BY_SLUG
 } from '@/api/routes'
 
 export async function home_elements () {
@@ -88,6 +90,13 @@ export async function get_categories () {
   return await client.get(`${CATEGORIES}`)
 }
 
+export async function get_category_by_slug (slug,current_page) {
+  if (current_page == 1 || current_page == undefined) {
+    return await client.get(`${GET_CATEGORY_BY_SLUG}${slug}`)
+  }
+  return await client.get(`${GET_CATEGORY_BY_SLUG}${slug}?page=${current_page}`)
+}
+
 export async function getCategory_articles (id, current_page) {
   if (current_page == 1 || current_page == undefined) {
     return await client.get(`${ARTICLES}/${id}`)
@@ -132,6 +141,13 @@ export async function getPersona_by_id(id, current_page) {
     return await client.get(`${PERSONA_BY_ID}` + id)
   }
   return await client.get(`${PERSONA_BY_ID}`+ id +`?page=${current_page}`)
+}
+
+export async function getCategory_by_slug(slug, current_page) {
+  if (current_page == 1 || current_page == undefined) {
+    return await client.get(`${GET_CATEGORY_FILES_BY_SLUG}` + slug)
+  }
+  return await client.get(`${GET_CATEGORY_FILES_BY_SLUG}`+ slug +`?page=${current_page}`)
 }
 
 export async function get_documents_categories () {

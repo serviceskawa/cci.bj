@@ -118,6 +118,14 @@
                 FAQ
               </router-link>
             </li>
+            <li>
+              <router-link
+                :to="{ name: 'SME Business Training and Coaching Loop' }"
+                class="text-base text-white hover:text-white"
+              >
+                SME Loop
+              </router-link>
+            </li>
           </ul>
         </div>
         <div class="">

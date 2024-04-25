@@ -94,12 +94,6 @@
           </div>
           <div class="mt-3 sm:mt-0 sm:ml-3">
             <a
-<<<<<<< HEAD
-              href="#"
-              class="w-full flex items-center justify-center px-8 py-3 text-lg font-medium rounded-md text-primary bg-white hover:bg-primary hover:text-white md:py-4 md:text-lg md:px-10"
-            >
-              En savoir plus
-=======
               :href="slide_content.button2_url"
               :target="slide_content.new_windows_button2 == 1 ? '_blank' : ''"
               class="
@@ -119,7 +113,7 @@
               "
             >
               {{ slide_content.button2_text }}
->>>>>>> develop
+
             </a>
           </div>
         </div>
@@ -131,23 +125,16 @@
 <script>
 export default {
   emits: ["mouseenter", "mouseout"],
-<<<<<<< HEAD
-  props: ["slide", "currentSlide", "index", "direction"],
-=======
   props: ["slide", "slide_content", "currentSlide", "index", "direction"],
   mounted() {},
->>>>>>> develop
   computed: {
     transitionEffect() {
       return this.direction === "right" ? "slide-out" : "slide-in";
     },
   },
-<<<<<<< HEAD
-=======
   watch: {
     slide_content() {},
   },
->>>>>>> develop
 };
 </script>
 

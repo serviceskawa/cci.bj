@@ -25,11 +25,27 @@ const routes = [
     }
   },
   {
+    path: '/sme-business-training-and-coaching-loop',
+    name: 'SME Business Training and Coaching Loop',
+    component: page('sme-business-training-and-coaching-loop'),
+    meta: {
+      title: 'SME Business Training and Coaching Loop'
+    }
+  },
+  {
     path: '/documents-rapports',
     name: 'documents',
     component: page('documents-rapports'),
     meta: {
       title: 'Documentation et ressources sur l\'environnement des affaires | CCI Bénin '
+    }
+  },
+  {
+    path: '/ressources-et-outils',
+    name: 'ressources',
+    component: page('ressources-et-outils'),
+    meta: {
+      title: 'Ressources et outils : SME Business Training and Coaching Loop'
     }
   },
   {
