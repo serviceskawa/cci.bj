@@ -185,6 +185,94 @@
 
       </div>
 
+      <!-- News -->
+
+      <div class="relative bg-gris">
+        <div class="relative max-w-7xl mx-auto ">
+          <div class="absolute inset-0">
+            <div class="h-1/3 sm:h-2/3" ></div>
+          </div>
+          <div class="relative mx-auto py-12 px-6 lg:px-10 lg:py-16">
+            <div class="text-center">
+              <h2
+                class="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl"
+              >
+                Actualités SME Loop
+              </h2>
+              <p class="mt-3 max-w-2xl mx-auto text-lg text-subtitlegray sm:mt-4">
+                Ne ratez aucune opportunité - Ne manquez aucun événement de la
+                Chambre de Commerce et d’Industrie du Bénin
+              </p>
+            </div>
+            <div
+              class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3" v-if="news.length > 0"
+            >
+              <ArticleCard v-for="n in news" :key="n.id" :branch="n" />
+            </div>
+            <div class="mt-12 flex justify-between items-center flex-wrap">
+              <div class="px-3 lg:px-0">
+                <span class="block sm:ml-2 sm:inline-block">
+                  <a
+                    @click="$router.push({ name: 'blog-articles' })"
+                    class="text-primary"
+                  >
+                    Voir toute l'actualité<span aria-hidden="true">&rarr;</span></a
+                  >
+                </span>
+              </div>
+              <div class="flex" v-if="news.length > 3">
+                <a href="#" class="mr-4">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="23.5901"
+                      y="24"
+                      width="23.41"
+                      height="24"
+                      rx="11.705"
+                      transform="rotate(-180 23.5901 24)"
+                      fill="#E9E9E9"
+                    />
+                    <path
+                      d="M14.1801 18L15.5901 16.59L11.0101 12L15.5901 7.41L14.1801 6L8.18009 12L14.1801 18Z"
+                      fill="#F7F9F9"
+                    />
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <rect
+                      x="0.590088"
+                      width="23.41"
+                      height="24"
+                      rx="11.705"
+                      fill="#FAE8E0"
+                    />
+                    <path
+                      d="M10.0001 6L8.59009 7.41L13.1701 12L8.59009 16.59L10.0001 18L16.0001 12L10.0001 6Z"
+                      fill="#DD7A4B"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- News end -->
+
       <div class="">
         <h1
           class="
@@ -230,11 +318,21 @@
                 {{ doc.title }}
               </div>
               <div>
-                <a
+                <!-- <a
                   :href="configs.image_url + '/' + doc.file_name"
                   target="_blank"
                   class="text-primary underline"
                 >
+                
+                  Télécharger<span aria-hidden="true">&rarr;</span></a
+                > -->
+
+                <a
+                  :href="static_file_url + '/' + doc.file_name"
+                  target="_blank"
+                  class="text-primary underline"
+                >
+                
                   Télécharger<span aria-hidden="true">&rarr;</span></a
                 >
               </div>
@@ -269,6 +367,15 @@
               </div>
             </div> -->
           </div>
+
+          <div class="tracking-tight mt-12 text-left text-dark">
+              <span class="block sm:ml-2 sm:inline-block">
+                <a @click="$router.push({name: 'ressources'})" class="text-primary">
+                  Voir tous les documents <span aria-hidden="true">&rarr;</span></a
+                >
+              </span>
+            </div>
+
         </div>
 
       </div>
@@ -489,6 +596,8 @@
 
     <!-- Agenda section -->
 
+    <!-- Testimonials -->
+
     
     <!-- Contact section -->
 
@@ -684,18 +793,21 @@ export default {
       configs = JSON.parse(configs);
     }
     if (
-      this.$store.state.home_elements.news !== undefined &&
-      this.$store.state.home_elements.news !== undefined
+      this.$store.state.home_elements.news_smeloop !== undefined &&
+      this.$store.state.home_elements.news_smeloop !== null
     ) {
-      let news = this.$store.state.home_elements.news;
-      news = news.data.map((element) => {
+      this.news = this.$store.state.home_elements.news_smeloop;
+      
+      this.news = this.news.data.map((element) => {
         return {
           ...element,
           cover: configs.image_url + "/" + element.photo,
         };
       });
 
-      this.news = news.slice(0, 3);
+      // alert(JSON.stringify(this.news))
+
+      this.news = this.news.slice(0, 3);
     }
     this.appels_offres = this.$store.state.home_elements;
     if (

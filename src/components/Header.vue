@@ -203,6 +203,19 @@
                         <p class="text-base font-medium text-gray-900">Formation, assistance et appui-conseil</p>
                       </div>
                     </a>
+
+                    <a href="https://smeloop.cci.bj"
+                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M14.9998 14.9998L12.9998 19.9998L8.99983 8.99976L19.9998 12.9998L14.9998 14.9998ZM14.9998 14.9998L19.9998 19.9998M7.18806 2.23828L7.96452 5.13606M5.13606 7.96448L2.23828 7.18802M13.9495 4.05005L11.8282 6.17137M6.17146 11.8281L4.05014 13.9494"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">SME Business Training and Coaching Loop</p>
+                      </div>
+                    </a>
+
                   </div>
                 </div>
               </PopoverPanel>
@@ -211,56 +224,11 @@
 
           <!-- Formations -->
 
-          <Popover class="relative" v-slot="{ open }">
-            <PopoverButton :class="[
-              open ? 'text-gray-900' : '',
-              'group bg-white rounded-md inline-flex items-center text-base font-medium hover:text-primary active:text-primary focus:outline-none',
-            ]">
-              <span>Formations</span>
-              <ChevronDownIcon :class="[
-                open ? 'text-gray-600' : 'text-gray-400',
-                'ml-2 h-5 w-5 group-hover:text-subtitlegray tracking-tight',
-              ]" aria-hidden="true" />
-            </PopoverButton>
+          <router-link :to="{name: 'formations'}"
+            class="text-base font-medium tracking-tight hover:text-primary active:text-primary cursor-pointer">
+            Formations
+          </router-link>
 
-            <transition enter-active-class="transition ease-out duration-200" enter-from-class="opacity-0 translate-y-1"
-              enter-to-class="opacity-100 translate-y-0" leave-active-class="transition ease-in duration-150"
-              leave-from-class="opacity-100 translate-y-0" leave-to-class="opacity-0 translate-y-1">
-              <PopoverPanel
-                class="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
-                <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-primary ring-opacity-5">
-                  <div class="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
-
-                    <a @click="$router.push({name: 'formations'})"
-                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M9 19V13C9 11.8954 8.10457 11 7 11H5C3.89543 11 3 11.8954 3 13V19C3 20.1046 3.89543 21 5 21H7C8.10457 21 9 20.1046 9 19ZM9 19V9C9 7.89543 9.89543 7 11 7H13C14.1046 7 15 7.89543 15 9V19M9 19C9 20.1046 9.89543 21 11 21H13C14.1046 21 15 20.1046 15 19M15 19V5C15 3.89543 15.8954 3 17 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H17C15.8954 21 15 20.1046 15 19Z"
-                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                      <div class="ml-4">
-                        <p class="text-base font-medium text-gray-900">Nos formations</p>
-
-                      </div>
-                    </a>
-
-                    <a @click="$router.push({name: 'SME Business Training and Coaching Loop'})"
-                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                          d="M14.9998 14.9998L12.9998 19.9998L8.99983 8.99976L19.9998 12.9998L14.9998 14.9998ZM14.9998 14.9998L19.9998 19.9998M7.18806 2.23828L7.96452 5.13606M5.13606 7.96448L2.23828 7.18802M13.9495 4.05005L11.8282 6.17137M6.17146 11.8281L4.05014 13.9494"
-                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                      </svg>
-                      <div class="ml-4">
-                        <p class="text-base font-medium text-gray-900">SME Loop</p>
-                      </div>
-                    </a>
-                    
-                  </div>
-                </div>
-              </PopoverPanel>
-            </transition>
-          </Popover>
 
           <router-link :to="{ name: 'blog-articles' }"
             class="text-base font-medium hover:text-primary active:text-primary cursor-pointer">
@@ -365,6 +333,12 @@
                       {{ item.name }}
                     </div>
                   </router-link>
+                  <!-- <a href="https://smeloop.cci.bj"
+                    class="-m-3 p-3 flex items-center rounded-lg hover:text-primary active:text-primary">
+                    <div class="text-base font-medium text-gray-900">
+                      SME Business Training and Coaching Loop
+                    </div>
+                  </a> -->
                 </nav>
                 <nav class="">
                   <router-link v-for="item in solutions_right" :key="item.name" :to="{name: item.route_name}"
@@ -373,6 +347,12 @@
                       {{ item.name }}
                     </div>
                   </router-link>
+                  <a href="https://smeloop.cci.bj"
+                    class="-m-3 p-3 flex items-center rounded-lg hover:text-primary active:text-primary">
+                    <div class="text-base font-medium text-gray-900">
+                      SME Business Training and Coaching Loop
+                    </div>
+                  </a>
                 </nav>
               </div>
             </div>

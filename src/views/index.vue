@@ -12,7 +12,7 @@
     </div>
     <Blog />
     <div class="px-6 lg:px-10  max-w-7xl mx-auto">
-      <Indicateur />
+      <Indicateur :indicators="indicators"/>
       <Services />
     </div>
     <div class="px-6 lg:px-10 max-w-7xl mx-auto "> 
@@ -89,7 +89,8 @@ export default {
     },
     agenda_datas: [],
     appels_offres: [],
-    partners: []
+    partners: [],
+    indicators : {}
   }),
 
   mounted() {
@@ -118,6 +119,23 @@ export default {
         }
       }))
     }
+    // Indicateurs
+
+    // alert(JSON.stringify(this.$store.state.home_elements.indicateurs))
+
+    this.indicators = this.$store.state.home_elements
+    if (this.indicators.indicateurs !== undefined && this.indicators.indicateurs !== null) {
+      this.indicators = this.indicators.indicateurs
+      // alert(JSON.stringify(this.indicators))
+      // this.indicators = this.indicators.map((element => {
+      //   return {
+      //     ...element,
+      //     photo: configs.image_url + '/' + element.photo,
+      //   }
+      // }))
+    }
+
+    // Indicateurs end
     this.partners = this.$store.state.home_elements
     if (this.partners.partners !== undefined && this.partners.partners !== null) {
       this.partners = this.partners.partners
