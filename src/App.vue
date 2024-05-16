@@ -18,7 +18,7 @@
         <Alert :alert="alert" v-if="alert.published == 'Yes' " />
         <router-view />
       </div>
-      <Footer />
+      <Footer :data="this.footer_datas" />
     </div>
   </div>
 </template>
@@ -39,6 +39,7 @@ export default {
       alert: "",
       loader: false,
       configs: "",
+      footer_datas:[],
     };
   },
   async created() {
@@ -47,6 +48,19 @@ export default {
         this.getNotifications();
       }, 180000)
     );
+  },
+    mounted() {
+    let configs = sessionStorage.getItem('configs')
+    if (configs !== undefined && configs !== null) {
+      configs = JSON.parse(configs)
+    }
+
+    services.get_footer().then((response) => {
+      if (response.status == 200) {
+         this.footer_datas = response.data
+      }
+    })
+
   },
   watch: {},
   methods: {

@@ -12,7 +12,7 @@
     </div>
     <Blog />
     <div class="px-6 lg:px-10  max-w-7xl mx-auto">
-      <Indicateur :indicators="indicators"/>
+      <Indicateur :indicateurs="indicateurs" />
       <Services />
     </div>
     <div class="px-6 lg:px-10 max-w-7xl mx-auto "> 
@@ -90,7 +90,7 @@ export default {
     agenda_datas: [],
     appels_offres: [],
     partners: [],
-    indicators : {}
+    indicateurs: []
   }),
 
   mounted() {
@@ -98,7 +98,7 @@ export default {
     if (configs !== undefined && configs !== null) {
       configs = JSON.parse(configs)
     }
-    this.slides = this.$store.state.home_elements.sliders.reverse()
+    this.slides = this.$store.state.home_elements.sliders
     this.agenda_datas = this.$store.state.home_elements
     if (this.agenda_datas.events !== undefined && this.agenda_datas.events !== null) {
       this.agenda_datas = this.agenda_datas.events
@@ -139,13 +139,24 @@ export default {
     this.partners = this.$store.state.home_elements
     if (this.partners.partners !== undefined && this.partners.partners !== null) {
       this.partners = this.partners.partners
-      console.log('partenaires', this.partners)
       this.partners = this.partners.map((element => {
         return {
           ...element,
           photo: configs.image_url + '/' + element.photo,
         }
       }))
+    }
+
+    this.indicateurs = this.$store.state.home_elements
+    if (this.indicateurs.indicateurs !== undefined && this.indicateurs.indicateurs !== null) {
+      this.indicateurs = this.indicateurs.indicateurs
+      this.indicateurs.composants = this.indicateurs.composants.map((element => {
+        return {
+          ...element,
+          icon: configs.image_url + '/' + element.icon,
+        }
+      }))
+
     }
   },
   watch: {

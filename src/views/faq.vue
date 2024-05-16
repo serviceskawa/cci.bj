@@ -100,7 +100,7 @@
             <p class="text-md tracking-tight leading-7 text-subtitlegray">
               Posez-la et nous vous répondons par mail ou via whatsapp.
               Ou, rendez-vous dans nos locaux à Ganhi. Notre équipe est prête à vous recevoir du lundi au vendredi de
-              08h à 12h pour répondre à vos questions et vous satisfaire.
+              08h à 12h30 et de 14h à 17h30 pour répondre à vos questions et vous satisfaire.
             </p>
             <p class="mt-4 text-md tracking-tight leading-7 text-subtitlegray">
               <span class="">
@@ -124,8 +124,8 @@
                   </defs>
                 </svg>
 
-                <span class="ml-3">+229 21 31 12 38</span>
-              </span><br />
+                <span class="ml-3"><a href="https://api.whatsapp.com/send?phone=22991434343&text=Contactez-nous" target="_blank">+229 91 43 43 43</a>/ <a href="tel:0022921312081">+229 21 31 20 81</a></span>
+              </span><br/>
               <span class="flex items-center">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -134,7 +134,7 @@
                 </svg>
 
 
-                <span class="ml-3">ccibj@example.com</span>
+                <a href="mailto:info@cci.bj"><span class="ml-3">info@cci.bj</span></a>
               </span>
             </p>
           </div>

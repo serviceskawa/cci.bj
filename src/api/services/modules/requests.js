@@ -24,7 +24,8 @@ import {
   DOCUMENTS_FILTERS,
   SEARCH_DOC,
   GET_CATEGORY_FILES_BY_SLUG,
-  GET_CATEGORY_BY_SLUG
+  GET_CATEGORY_BY_SLUG,
+  FOOTER
 } from '@/api/routes'
 
 export async function home_elements () {
@@ -160,4 +161,8 @@ export async function apply_docs_filters (data) {
 
 export async function search_doc (value, current_page) {
   return await client.get(`${SEARCH_DOC}`+ value + `?page=${current_page}`)
+}
+
+export async function get_footer () {
+  return await client.get(FOOTER)
 }
