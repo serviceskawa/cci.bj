@@ -119,20 +119,11 @@ export default {
         }
       }))
     }
-    // Indicateurs
-
-    // alert(JSON.stringify(this.$store.state.home_elements.indicateurs))
 
     this.indicators = this.$store.state.home_elements
     if (this.indicators.indicateurs !== undefined && this.indicators.indicateurs !== null) {
       this.indicators = this.indicators.indicateurs
-      // alert(JSON.stringify(this.indicators))
-      // this.indicators = this.indicators.map((element => {
-      //   return {
-      //     ...element,
-      //     photo: configs.image_url + '/' + element.photo,
-      //   }
-      // }))
+      
     }
 
     // Indicateurs end
