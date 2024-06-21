@@ -41,11 +41,12 @@
           <div>
             <h3 class="text-base font-medium text-white uppercase">CONTACTS</h3>
             <div class="mt-2 text-white">
-              <a href="https://api.whatsapp.com/send?phone=22991434343&text=Contactez-nous">+229 91 43 43 43</a> /
-              <a href="tel:+22921311238"> +229 21 31 20 81</a>
+              Téléphone : <a href="tel:+22921311238"> +229 21 31 20 81</a><br>
+              Whatsapp : <a href="https://api.whatsapp.com/send?phone=22991434343&text=Contactez-nous">+229 91 43 43 43</a><br>
+              Numero vert : <a href="tel:7444">7444</a>
             </div>
             <div class="mt-2 text-white">
-              <a href="mailto:info@ccib.bj">info@ccib.bj</a>
+              E-mail : <a href="mailto:info@ccib.bj">info@ccib.bj</a>
             </div>
           </div>
         </div>
