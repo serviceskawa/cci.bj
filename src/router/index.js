@@ -284,7 +284,18 @@ const routes = [
       layout: 'empty',
       title: '404 | Not found'
     }
+  },
+  {
+    path: '/ticket-create',
+    name: 'ticket-create',
+    component: () => import('@/components/TicketCreate.vue'),
+    meta: {
+      title: 'Créer un ticket',
+      description: 'Page de création de ticket',
+      keywords: 'ticket, création, page web'
+    }
   }
+
 ];
 
 const router = createRouter({
