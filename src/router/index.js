@@ -288,7 +288,7 @@ const routes = [
   {
     path: '/ticket-create',
     name: 'ticket-create',
-    component: () => import('@/components/TicketCreate.vue'),
+    component: () => import('@/views/TicketCreate.vue'),
     meta: {
       title: 'Créer un ticket',
       description: 'Page de création de ticket',
