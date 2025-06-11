@@ -10,7 +10,7 @@
             <div class="absolute inset-0">
               <img
                 class="h-full w-full object-cover"
-                :src="macci"
+                src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2830&q=80&sat=-100"
                 alt="People working on laptops"
               />
               <div class="absolute inset-0 bgHeader mix-blend-multiply" />
@@ -117,7 +117,6 @@ import { Carousel, Slide, Pagination, Navigation } from "vue3-carousel";
 import ServiceCard from "../components/ServiceCard.vue";
 import OffreCard from "../components/OffreCard.vue";
 import ArticleCard from "../components/ArticleCard.vue";
-import macci from "../assets/macci.jpg";
 
 const NEWS_CAT = `http://localhost/cciwebsite/public/api/news`;
 const services_api = `http://localhost/cciwebsite/public/api/services`;
