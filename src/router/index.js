@@ -278,6 +278,14 @@ const routes = [
     }
   },
   {
+    path: '/projet-eat',
+    name: 'projet-eat',
+    component: page('projet-eat'),
+    meta: {
+      title: 'Facilitation du Commerce Agricole Transfrontalier Bénin-Nigeria | CCI Bénin  '
+    }
+  },
+  {
     path: '/:pathMatch(.*)*', name: 'not-found',
     component: () => import('@/views/404.vue'),
     meta: {

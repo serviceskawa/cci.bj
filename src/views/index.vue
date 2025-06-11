@@ -115,9 +115,10 @@ export default {
       this.appels_offres = this.appels_offres.map((element => {
         return {
           ...element,
-          photo: configs.image_url + '/' + element.photo,
+          photo: configs.image_url + '/' + element.document,
         }
       }))
+      console.log(this.appels_offres)
     }
 
     this.indicators = this.$store.state.home_elements

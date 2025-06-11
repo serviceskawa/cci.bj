@@ -32,7 +32,7 @@
                   {{el.short_content}}
                 </h4>
               </div>
-              <!--<a :href="configs.image_url + '/' + el.document" target="_blank" class="block text-base w-max text-primary">Télécharger</a>-->
+              <!-- <a :href="configs.image_url + '/' + el.document" target="_blank" class="block text-base w-max text-primary">Télécharger</a> -->
               <a :href="el.photo" target="_blank" class="block text-base w-max text-primary">En savoir plus →</a>
             </div>
           </div>

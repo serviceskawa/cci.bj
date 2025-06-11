@@ -457,7 +457,7 @@ export default {
     
 <style lang="scss" scoped>
 .barner {
-  background: url("../assets/images/elus_consulaire_cci_benin.jpg") !important;
+  background: url("../assets/images/macci.jpg") !important;
   height: 520px !important;
   background-position: center !important;
   background-attachment: local !important;

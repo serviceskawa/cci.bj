@@ -33,6 +33,9 @@ module.exports = {
       lightGray: "#F7F9F9"
       //sous paragraphe
     },
+    backgroundImage: {
+      'projet-eat': "linear-gradient(180deg, rgba(72, 127, 80, 0.6) 0%, rgba(72, 127, 80, 0.2) 100%), url('/src/assets/projet_eat.jpg')"
+    },
   },
   plugins: [require("@tailwindcss/forms")],
 };
