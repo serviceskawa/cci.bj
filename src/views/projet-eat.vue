@@ -6,12 +6,12 @@
 
             <article class="max-w-7xl mx-auto px-6 md:min-h-[500px] min-h-[300px] flex flex-col gapy-y-10 justify-center">
                 
-                <header class="font-extrabold text-3xl lg:text-6xl text-white uppercase">
+                <header class="text-md md:text-lg text-white">
                     ECOWAS AGRICULTURAL TRADE
                 </header>
 
-                <p class="text-md md:text-lg tracking-tight leading-7 text-white mt-6">
-                    P<span class="lowercase">ROJET DE FACILITATION DU COMMERCE TRANSFRONTALIER DES PRODUITS AGRICOLES ENTRE LE BENIN ET LE NIGERIA</span>
+                <p class="text-xl lg:text-3xl tracking-tight leading-7 text-white mt-6 uppercase font-extrabold">
+                    Initiative de facilitation du commerce transfrontalier des produits agricoles entre le Bénin et le Nigéria
                 </p>
 
             </article>
@@ -25,11 +25,15 @@
                 <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Contexte de création</header>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-                    Le projet EAT (ECOWAS Agricultural Trade), mis en œuvre par la Chambre de Commerce et
-                    d’Industrie du Bénin avec l’appui de la GIZ, vise à renforcer les capacités des PME et à améliorer les
-                    conditions du commerce transfrontalier des produits agricoles entre le Bénin et le Nigeria. Ce projet
-                    contribue à l'intégration régionale, à la sécurité alimentaire, et à l’autonomisation économique des
-                    femmes et des jeunes dans la région.
+                    L’initiative de facilitation du commerce transfrontalier des produits agrricoles mis en œuvre par la Chambre de Commerce et d’Industrie du Bénin avec l’appui de la GIZ, vise à renforcer les capacités des PME et à améliorer les conditions du commerce transfrontalier des produits agricoles entre le Bénin et le Nigéria.
+                </p>
+
+                <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
+                    Ce projet s’inscrit dans le cadre du Programme ECOWAS AGRICULTURAL TRADE (EAT) qui vise à améliorer l’environnement pour le commerce agricole transfrontalier dans l’espace CEDEAO.
+                </p>
+
+                <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
+                    Il contribue à l’intégration régionale, à la sécurité alimentaire et à l’autonomisation économique des femmes et des jeunes dans la région.
                 </p>
 
             </article>
@@ -130,7 +134,7 @@
                                 />
                             </svg>
                             <span class="ml-4 text-blue font-bold text-lg">
-                                Beneficiaires
+                                Bénéficiaires
                             </span>
                             </div>
                             <div class="text-sm leading-5 text-subtitlegray">
@@ -154,7 +158,7 @@
                 <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Objectifs</header>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-                    Pour atteindre ces résultats, le projet EAT se concentre sur quatre objectifs principaux :
+                    Pour atteindre ces résultats, le projet de facilitation du commerce transfrontalier des produits agricoles se concentre sur quatre objectifs principaux :
                 </p>
 
                 <div class="text-md md:text-lg tracking-tight leading-7 text-blue mt-14">
@@ -179,7 +183,7 @@
                 <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Activités du projet</header>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-                    Le projet EAT déploie des actions concrètes pour renforcer le commerce agricole entre le Bénin et le Nigéria. Il appuie les MPME, forme les acteurs clés, facilite les échanges transfrontaliers et développe la coopération institutionnelle afin de dynamiser les filières agricoles le long du corridor Abidjan–Lagos.
+                    Projet de facilitation du commerce transfrontalier des produits agricoles » puis maintenir tout le reste y compris les 03 encadrés qui décrivent les parties prenantes.
                 </p>
 
                 <div class="text-md md:text-lg tracking-tight leading-7 text-blue mt-14">
@@ -310,7 +314,7 @@
                 <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Produits agricoles concernés par le projet</header>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-                     Le projet EAT se concentre sur les produits à fort potentiel commercial et nutritionnel dans la sous-région :
+                     Projet de facilitation du commerce transfrontalier des produits agricoles
                 </p>
 
                 <div class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
@@ -336,7 +340,7 @@
                 <div class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
                     
                     <ul class="list-disc list-inside grid grid-cols-1 md:grid-cols-3 gap-2">
-                        <li v-for="(area, areas) in products" :key="index" class="text-md md:text-lg tracking-tight leading-7 text-black mt-6 flex gap-2 items-center bg-primaryInfo p-4 rounded-lg">
+                        <li v-for="(area, index) in areas" :key="index" class="text-md md:text-lg tracking-tight leading-7 text-black mt-6 flex gap-2 items-center bg-primaryInfo p-4 rounded-lg">
                             <span class="">{{ area }}</span>
                         </li>
                     </ul>
@@ -349,17 +353,20 @@
 
         <Partenaires :partners="partners" />
 
+        <!-- <img src="" alt="ECOWAS Logo" class="" /> -->
+
     </main>
 </template>
   
 <script>
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid";
 import Partenaires from "@/components/home/Partenaires.vue";
+import ecowasLogo from '@/assets/peat/ecowas.png';
 export default {
     components: {
         ArrowLeftIcon,
         ArrowRightIcon,
-        Partenaires
+        Partenaires,
     },
     data() {
         return {
@@ -379,18 +386,18 @@ export default {
                 'Autres produits maraîchers'
             ],
             areas : [
-                'Département de l’Atlantique',
-                'Département du Littoral',
-                'Département de l’Ouémé',
-                'Département du Mono',
-                'Département du Plateau'
+                'Atlantique',
+                'Littoral',
+                'Mono',
+                'Plateau',
+                'Ouémé',
             ],
             partners : [],
             objectifs : [
-                'Renforcer le commerce transfrontalier des produits agricoles dans l\'espace CEDEAO',
-                'Améliorer l\'intégration régionale et réduire la dépendance aux marchés mondiaux',
-                'Améliorer les conditions sociales et économiques des femmes dans le commerce transfrontalier des produits agricoles',
-                'Contribuer la sécurité alimentaire dans la région'
+                'Accélérer la croissance du commerce transfrontalier des produits agricoles sur les corridors entre le Bénin et le Nigéria.',
+                'Renforcer les MPMEs à la maîtrise des instruments harmonisés de facilitation du Commerce.',
+                'Améliorer la capacité des MPMEs au développement des chaînes de valeurs.',
+                'Optimiser la participation des organismes d’appui et de facilitation et les échanges inter-consulaires entre le Bénin et le Nigéria.'
             ]
         }
     },
@@ -403,13 +410,42 @@ export default {
 
         this.partners = this.$store.state.home_elements
         if (this.partners.partners !== undefined && this.partners.partners !== null) {
-        this.partners = this.partners.partners
-        this.partners = this.partners.map((element => {
-            return {
-            ...element,
-            photo: configs.image_url + '/' + element.photo,
-            }
-        }))
+            this.partners = this.partners.partners
+            // this.partners = this.partners.map((element => {
+            //         return {
+            //         ...element,
+            //         photo: configs.image_url + '/' + element.photo,
+            //         }
+            //     }))
+            //
+
+            this.partners = [
+                {
+                    photo : '/src/assets/peat/ecowas.png',
+                    name : 'ECOWAS',
+                },
+                {
+                    photo : '/src/assets/peat/deutchcop.png',
+                    name : 'Deutch Coporation',
+                },
+                {
+                    photo : '/src/assets/peat/giz.png',
+                    name : 'GIZ',
+                },
+                {
+                    photo : '/src/assets/peat/eat.png',
+                    name : 'EAT',
+                },
+                {
+                    photo : '/src/assets/peat/fewacci.png',
+                    name : 'FEWACCI',
+                },
+                {
+                    photo : '/src/assets/peat/cci.png',
+
+                },
+            ];
+
         }
 
     },

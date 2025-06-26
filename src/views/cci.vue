@@ -97,7 +97,7 @@
                   Etablissement Public qui jouit de la Personnalité civile et de l’autonomie financière. Elle est placée
                   sous la tutelle du Ministère chargé du Commerce et sa compétence couvre l’ensemble du territoire
                   national.
-                  Les statuts actuellement en vigueur sont consacrés par le décret N° 2019-408, du 25 septembre 2019..
+                  Les statuts actuellement en vigueur sont consacrés par le décret N° 2019-408, du 25 septembre 2019.
                   Les prestations offertes par la CCI Bénin couvrent plusieurs domaines d’intérêt. Elles sont fournies à
                   travers les activités menées quotidiennement par les services et départements opérationnels rattachés
                   au

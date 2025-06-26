@@ -297,7 +297,7 @@
 
                     <!-- Project eat -->
 
-                    <!-- <router-link :to="{name: 'projet-eat'}"
+                    <router-link :to="{name: 'projet-eat'}"
                       class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
                       <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -308,7 +308,7 @@
                       <div class="ml-4">
                         <p class="text-base font-medium text-gray-900">Projet EAT</p>
                       </div>
-                    </router-link> -->
+                    </router-link>
 
                   </div>
                 </div>
