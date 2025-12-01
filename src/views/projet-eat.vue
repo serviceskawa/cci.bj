@@ -25,7 +25,7 @@
                 <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Contexte de création</header>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-                    L’initiative de facilitation du commerce transfrontalier des produits agrricoles mis en œuvre par la Chambre de Commerce et d’Industrie du Bénin avec l’appui de la GIZ, vise à renforcer les capacités des PME et à améliorer les conditions du commerce transfrontalier des produits agricoles entre le Bénin et le Nigéria.
+                    L’initiative de facilitation du commerce transfrontalier des produits agricoles mis en œuvre par la Chambre de Commerce et d’Industrie du Bénin avec l’appui de la GIZ, vise à renforcer les capacités des PME et à améliorer les conditions du commerce transfrontalier des produits agricoles entre le Bénin et le Nigéria.
                 </p>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
@@ -45,38 +45,7 @@
                 <div class="py-10">
                     
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <!-- <div class="bg-grayCard rounded-lg p-6">
-                            <div class="flex mb-4">
-                            <svg
-                                width="57"
-                                height="56"
-                                viewBox="0 0 57 56"
-                                fill="none"
-                                xmlns="http://www.w3.org/2000/svg"
-                            >
-                                <rect
-                                width="56.0016"
-                                height="56"
-                                rx="8"
-                                fill="#DD7A4B"
-                                fill-opacity="0.1"
-                                />
-                                <path
-                                d="M16 20L20 21.3333M20 21.3333L16 33.3333C18.3634 35.1112 21.6382 35.1112 24.0016 33.3334M20 21.3333L24.0001 33.3333M20 21.3333L28 18.6667M36 21.3333L40 20M36 21.3333L32 33.3333C34.3634 35.1112 37.6382 35.1112 40.0016 33.3334M36 21.3333L40.0001 33.3333M36 21.3333L28 18.6667M28 16V18.6667M28 40V18.6667M28 40H24M28 40H32"
-                                stroke="#DD7A4B"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
-                                />
-                            </svg>
-                            <span class="ml-4 text-blue font-bold text-lg">
-                                Objectifs 
-                            </span>
-                            </div>
-                            <div class="text-sm leading-5 text-subtitlegray">
-                            Renforcer le commerce agricole transfrontalier, intégrer la région, sécuriser l’alimentation et autonomiser les femmes commerçantes ouest-africaines.
-                            </div>
-                        </div> -->
+                        
                         <div class="bg-grayCard rounded-lg p-6">
                             <div class="flex mb-4">
                             <svg
@@ -87,20 +56,78 @@
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <rect
-                                width="56.0016"
-                                height="56"
-                                rx="8"
-                                fill="#DD7A4B"
-                                fill-opacity="0.1"
+                                    width="56"
+                                    height="56"
+                                    rx="8"
+                                    fill="#DD7A4B"
+                                    fill-opacity="0.1"
                                 />
-                                <path
-                                d="M16 20L20 21.3333M20 21.3333L16 33.3333C18.3634 35.1112 21.6382 35.1112 24.0016 33.3334M20 21.3333L24.0001 33.3333M20 21.3333L28 18.6667M36 21.3333L40 20M36 21.3333L32 33.3333C34.3634 35.1112 37.6382 35.1112 40.0016 33.3334M36 21.3333L40.0001 33.3333M36 21.3333L28 18.6667M28 16V18.6667M28 40V18.6667M28 40H24M28 40H32"
-                                stroke="#DD7A4B"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+
+                                <!-- Outer Impact Waves -->
+                                <circle
+                                    cx="28"
+                                    cy="28"
+                                    r="10"
+                                    stroke="#DD7A4B"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+                                <circle
+                                    cx="28"
+                                    cy="28"
+                                    r="5"
+                                    stroke="#DD7A4B"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+
+                                <!-- Impact Lines -->
+                                <line
+                                    x1="28"
+                                    y1="13"
+                                    x2="28"
+                                    y2="9"
+                                    stroke="#DD7A4B"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+                                <line
+                                    x1="28"
+                                    y1="47"
+                                    x2="28"
+                                    y2="43"
+                                    stroke="#DD7A4B"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+                                <line
+                                    x1="13"
+                                    y1="28"
+                                    x2="9"
+                                    y2="28"
+                                    stroke="#DD7A4B"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+                                <line
+                                    x1="47"
+                                    y1="28"
+                                    x2="43"
+                                    y2="28"
+                                    stroke="#DD7A4B"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+
+                                <!-- Central Dot -->
+                                <circle
+                                    cx="28"
+                                    cy="28"
+                                    r="2"
+                                    fill="#DD7A4B"
                                 />
                             </svg>
+
                             <span class="ml-4 text-blue font-bold text-lg">
                                 Impact
                             </span>
@@ -119,20 +146,62 @@
                                 xmlns="http://www.w3.org/2000/svg"
                             >
                                 <rect
-                                width="56.0016"
-                                height="56"
-                                rx="8"
-                                fill="#DD7A4B"
-                                fill-opacity="0.1"
+                                    width="56"
+                                    height="56"
+                                    rx="8"
+                                    fill="#DD7A4B"
+                                    fill-opacity="0.1"
+                                />
+
+                                <!-- Center Beneficiary -->
+                                <circle
+                                    cx="28"
+                                    cy="22"
+                                    r="4"
+                                    stroke="#DD7A4B"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
                                 />
                                 <path
-                                d="M16 20L20 21.3333M20 21.3333L16 33.3333C18.3634 35.1112 21.6382 35.1112 24.0016 33.3334M20 21.3333L24.0001 33.3333M20 21.3333L28 18.6667M36 21.3333L40 20M36 21.3333L32 33.3333C34.3634 35.1112 37.6382 35.1112 40.0016 33.3334M36 21.3333L40.0001 33.3333M36 21.3333L28 18.6667M28 16V18.6667M28 40V18.6667M28 40H24M28 40H32"
-                                stroke="#DD7A4B"
-                                stroke-width="2"
-                                stroke-linecap="round"
-                                stroke-linejoin="round"
+                                    d="M22 32C22 28.6863 24.6863 26 28 26C31.3137 26 34 28.6863 34 32"
+                                    stroke="#DD7A4B"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+
+                                <!-- Left Beneficiary -->
+                                <circle
+                                    cx="19"
+                                    cy="24"
+                                    r="3.5"
+                                    stroke="#DD7A4B"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+                                <path
+                                    d="M14 32C14 29.2386 16.2386 27 19 27"
+                                    stroke="#DD7A4B"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+
+                                <!-- Right Beneficiary -->
+                                <circle
+                                    cx="37"
+                                    cy="24"
+                                    r="3.5"
+                                    stroke="#DD7A4B"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
+                                />
+                                <path
+                                    d="M40 32C40 29.2386 37.7614 27 35 27"
+                                    stroke="#DD7A4B"
+                                    stroke-width="2"
+                                    stroke-linecap="round"
                                 />
                             </svg>
+
                             <span class="ml-4 text-blue font-bold text-lg">
                                 Bénéficiaires
                             </span>
@@ -183,7 +252,7 @@
                 <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Activités du projet</header>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-                    Projet de facilitation du commerce transfrontalier des produits agricoles » puis maintenir tout le reste y compris les 03 encadrés qui décrivent les parties prenantes.
+                    L'initiative facilite le commerce agricole Bénin-Nigéria en soutenant les MPMEs, formant les acteurs et en levant les obstacles aux échanges le long du corridor Abidjan-Lagos.
                 </p>
 
                 <div class="text-md md:text-lg tracking-tight leading-7 text-blue mt-14">
@@ -200,28 +269,11 @@
                             <span class="">{{ activity }}</span>
                         </li> -->
 
-                        <div v-for="(activity, index) in activities" :key="index" class="pt-6 ">
+                        <div v-for="(activity, index) in activities" :key="index" class="pt-6 flex">
                             <div class="flow-root border border-borederSimple rounded-[16px]">
                             <div class="-mt-6">
                                 <div class="px-6">
-                                <span
-                                    class="inline-flex items-start justify-start text-left rounded-md bg-primary p-3 shadow-lg"
-                                >
-                                    <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke-width="1.5"
-                                    stroke="white"
-                                    class="w-6 h-6"
-                                    >
-                                    <path
-                                        stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M2.25 13.5h3.86a2.25 2.25 0 012.012 1.244l.256.512a2.25 2.25 0 002.013 1.244h3.218a2.25 2.25 0 002.013-1.244l.256-.512a2.25 2.25 0 012.013-1.244h3.859m-19.5.338V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18v-4.162c0-.224-.034-.447-.1-.661L19.24 5.338a2.25 2.25 0 00-2.15-1.588H6.911a2.25 2.25 0 00-2.15 1.588L2.35 13.177a2.25 2.25 0 00-.1.661z"
-                                    />
-                                    </svg>
-                                </span>
+                                    <EatObjectifLogo :key="index" :_k="index" :keyProp="index" />
                                 </div>
                                 <p class="self-stretch text-base borderSimple px-6 pb-8">
                                 {{ activity }}
@@ -246,7 +298,7 @@
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
                     
-                    Le projet EAT s’appuie sur une collaboration étroite entre les acteurs publics, privés et institutionnels pour faciliter le commerce transfrontalier agricole entre le Bénin et le Nigéria. Découvrez les segments clés de nos parties prenantes.
+                    Projet de facilitation du commerce transfrontalier agricole s’appuie sur une collaboration étroite entre les acteurs publics, privés et institutionnels pour faciliter le commerce transfrontalier agricole entre le Bénin et le Nigéria. Découvrez les segments clés de nos parties prenantes.
 
                 </p>
 
@@ -314,7 +366,7 @@
                 <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Produits agricoles concernés par le projet</header>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-                     Projet de facilitation du commerce transfrontalier des produits agricoles
+                     L'initiative de facilitation du commerce transfrontalier des produits agricoles se concentre sur les produits à fort potentiel commercial et nutritionnel dans la sous-région
                 </p>
 
                 <div class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
@@ -362,11 +414,13 @@
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid";
 import Partenaires from "@/components/home/Partenaires.vue";
 import ecowasLogo from '@/assets/peat/ecowas.png';
+import EatObjectifLogo from "../components/EatObjectifLogo.vue";
 export default {
     components: {
         ArrowLeftIcon,
         ArrowRightIcon,
         Partenaires,
+        EatObjectifLogo
     },
     data() {
         return {
