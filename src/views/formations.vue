@@ -190,7 +190,7 @@
                 </p>
               </div>
               <div class="mt-4 w-full h-full">
-                <a href="https://cci.bj/admin1/public/upload/publications/file_3ec0f9b0e703767437e02145797a640a.pdf" target="_blank"><button
+                <a href="https://cci.bj/admin1/public/upload/publications/file_edac72544485d165fb869e8969246ed4.pdf" target="_blank"><button
                   type="button"
                   class="btn btn-light bg-white shadow-md text-primary w-full"
                 >

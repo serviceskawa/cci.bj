@@ -18,7 +18,7 @@
 
         </section>
 
-        <section class="max-w-7xl mx-auto px-6 lg:px-10 py-20">
+        <section class="max-w-7xl mx-auto px-6 lg:px-10 pt-20 md:space-y-10 space-y-5">
 
             <article class="">
 
@@ -42,7 +42,7 @@
 
             <div class="">
       
-                <div class="py-10">
+                <div class="">
                     
                     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
                         
@@ -227,7 +227,7 @@
                 <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Objectifs</header>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-                    Pour atteindre ces résultats, le projet de facilitation du commerce transfrontalier des produits agricoles se concentre sur quatre objectifs principaux :
+                    Pour atteindre ces résultats, l'initiative de facilitation du commerce transfrontalier des produits agricoles se concentre sur quatre objectifs principaux :
                 </p>
 
                 <div class="text-md md:text-lg tracking-tight leading-7 text-blue mt-14">
@@ -249,10 +249,10 @@
 
             <article class="">
 
-                <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Activités du projet</header>
+                <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Activités de l'initiative</header>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-                    L'initiative facilite le commerce agricole Bénin-Nigéria en soutenant les MPMEs, formant les acteurs et en levant les obstacles aux échanges le long du corridor Abidjan-Lagos.
+                    L’initiative de facilitation du commerce transfrontalier des produits agricoles déploie des actions concrètes pour renforcer le commerce agricole entre le Bénin et le Nigéria. Il appuie sur les MPMEs, forme les acteurs clés, facilite les échanges transfrontaliers et développe la coopération institutionnelle afin de dynamiser les filières agricoles le long du corridor Abidjan-Lagos.
                 </p>
 
                 <div class="text-md md:text-lg tracking-tight leading-7 text-blue mt-14">
@@ -294,11 +294,11 @@
 
             <article class="">
 
-                <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Les parties prenantes du projet</header>
+                <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Les parties prenantes de l'initiative</header>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
                     
-                    Projet de facilitation du commerce transfrontalier agricole s’appuie sur une collaboration étroite entre les acteurs publics, privés et institutionnels pour faciliter le commerce transfrontalier agricole entre le Bénin et le Nigéria. Découvrez les segments clés de nos parties prenantes.
+                    l'initiative de facilitation du commerce transfrontalier agricole s’appuie sur une collaboration étroite entre les acteurs publics, privés et institutionnels pour faciliter le commerce transfrontalier agricole entre le Bénin et le Nigéria. Découvrez les segments clés de nos parties prenantes.
 
                 </p>
 
@@ -363,7 +363,7 @@
 
             <article class="">
 
-                <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Produits agricoles concernés par le projet</header>
+                <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Produits agricoles concernés par l'initiative</header>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
                      L'initiative de facilitation du commerce transfrontalier des produits agricoles se concentre sur les produits à fort potentiel commercial et nutritionnel dans la sous-région
@@ -386,7 +386,7 @@
                 <header class="font-extrabold md:text-5xl sm:text-3xl text-xl text-primary">Zone d’intervention géographique</header>
 
                 <p class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
-                    Le projet est déployé le long du corridor Abidjan–Lagos, principalement dans les départements suivants au Bénin :
+                    L'initiative est déployée le long du corridor Abidjan–Lagos, principalement dans les départements suivants au Bénin :
                 </p>
 
                 <div class="text-md md:text-lg tracking-tight leading-7 text-blue mt-6">
@@ -403,7 +403,7 @@
             
         </section>
 
-        <Partenaires :partners="partners" />
+        <EatPartners :partners="partners" />
 
         <!-- <img src="" alt="ECOWAS Logo" class="" /> -->
 
@@ -413,14 +413,23 @@
 <script>
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/vue/solid";
 import Partenaires from "@/components/home/Partenaires.vue";
-import ecowasLogo from '@/assets/peat/ecowas.png';
 import EatObjectifLogo from "../components/EatObjectifLogo.vue";
+import EatPartners from "../components/EatPartners.vue";
+
+// Import partners
+import ecowasLogo from '@/assets/peat/ecowas.png';
+import deutchcopLogo from '@/assets/peat/deutchcop.png';
+import gizLogo from '@/assets/peat/giz.png';
+import eatLogo from '@/assets/peat/eat.png';
+import fewacciLogo from '@/assets/peat/fewacci.png';
+import cciLogo from '@/assets/peat/cci.png';
+
 export default {
     components: {
         ArrowLeftIcon,
         ArrowRightIcon,
-        Partenaires,
-        EatObjectifLogo
+        EatObjectifLogo,
+        EatPartners
     },
     data() {
         return {
@@ -430,14 +439,17 @@ export default {
                 ' Renforcer les capacités managériales des MPME (100) engagées dans le commerce transfrontalier  régional des produits agroalimentaires cibles avec un accent particulier sur les femmes et les jeunes ( Producteurs, Commerçants, porteurs, transporteurs et intermédiaires',
                 'Former et sensibiliser les bénéficiaires sur les réglementations commerciales régionales pour les MPME engagées dans le commerce transfrontalier des produits cibles',
                 'Mettre en place une coopération bilatérale autour du commerce transfrontalier des produits cibles, et travailler sur les opportunités avec le Nigeria et le markéting à travers la coopération entre la CCI Bénin et la NACCIMA  avec la collaboration de la FEWACCI',
-                'Communiquer avec les parties prenantes publiques et privés autour du projet',
+                'Communiquer avec les parties prenantes publiques et privés autour de l\'initiative',
             ],
             products : [
                 'Ananas',
                 'Maïs',
                 'Tomates',
                 'Poivrons',
-                'Autres produits maraîchers'
+                'Autres produits maraîchers',
+                'Palmier à huile',
+                'Manioc',
+                'Pastèque'
             ],
             areas : [
                 'Atlantique',
@@ -475,28 +487,28 @@ export default {
 
             this.partners = [
                 {
-                    photo : '/src/assets/peat/ecowas.png',
+                    photo : ecowasLogo,
                     name : 'ECOWAS',
                 },
                 {
-                    photo : '/src/assets/peat/deutchcop.png',
+                    photo : deutchcopLogo,
                     name : 'Deutch Coporation',
                 },
                 {
-                    photo : '/src/assets/peat/giz.png',
+                    photo : gizLogo,
                     name : 'GIZ',
                 },
                 {
-                    photo : '/src/assets/peat/eat.png',
+                    photo : eatLogo,
                     name : 'EAT',
                 },
                 {
-                    photo : '/src/assets/peat/fewacci.png',
+                    photo : fewacciLogo,
                     name : 'FEWACCI',
                 },
                 {
-                    photo : '/src/assets/peat/cci.png',
-
+                    photo : cciLogo,
+                    name : 'CCI',
                 },
             ];
 

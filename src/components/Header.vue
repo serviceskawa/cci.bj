@@ -310,6 +310,34 @@
                       </div>
                     </router-link>
 
+                    <!-- ProReCED -->
+                    <router-link :to="{name: 'proreced.index'}"
+                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0H5m14 0h2M5 21H3m4-10h2m4 0h2m-6 4h2m4 0h2"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">ProReCED</p>
+                      </div>
+                    </router-link>
+
+                    <!-- PARGeQ -->
+                    <router-link :to="{name: 'pargeq'}"
+                      class="cursor-pointer -m-3 flex items-center rounded-lg p-3 hover:text-primary active:text-primary">
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+                          stroke="#DD7A4B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+
+                      <div class="ml-4">
+                        <p class="text-base font-medium text-gray-900">PARGeQ</p>
+                      </div>
+                    </router-link>
+
                   </div>
                 </div>
               </PopoverPanel>
@@ -481,6 +509,16 @@ export default {
         //   route_name: "projet-eat",
         //   icon: QuestionMarkCircleIcon,
         // },
+        {
+          name: "ProReCED",
+          route_name: "proreced.index",
+          icon: QuestionMarkCircleIcon,
+        },
+        {
+          name: "PARGeQ",
+          route_name: "pargeq",
+          icon: QuestionMarkCircleIcon,
+        },
       ],
     }
   }

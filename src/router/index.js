@@ -285,6 +285,58 @@ const routes = [
       title: 'Facilitation du Commerce Agricole Transfrontalier Bénin-Nigeria | CCI Bénin  '
     }
   },
+  // ── ProReCED routes ──────────────────────────────────────────────
+  {
+    path: '/pro-reced',
+    name: 'proreced.index',
+    component: () => import('@/views/pro-reced/index.vue'),
+    meta: {
+      title: 'ProReCED - Renforcement des Capacités Entrepreneuriales | CCI Bénin'
+    }
+  },
+  {
+    path: '/pro-reced/about',
+    name: 'proreced.about',
+    component: () => import('@/views/pro-reced/about.vue'),
+    meta: {
+      title: 'À propos du ProReCED | CCI Bénin'
+    }
+  },
+  {
+    path: '/pro-reced/team',
+    name: 'proreced.team',
+    component: () => import('@/views/pro-reced/team.vue'),
+    meta: {
+      title: 'Équipe du ProReCED | CCI Bénin'
+    }
+  },
+  {
+    path: '/pro-reced/beneficiaries',
+    name: 'proreced.beneficiaries',
+    component: () => import('@/views/pro-reced/beneficiaries.vue'),
+    meta: {
+      title: 'Entreprises bénéficiaires du ProReCED | CCI Bénin'
+    }
+  },
+  {
+    path: '/pro-reced/contact',
+    name: 'proreced.contact',
+    component: () => import('@/views/pro-reced/contact.vue'),
+    meta: {
+      title: 'Contacter le ProReCED | CCI Bénin'
+    }
+  },
+  // ── End ProReCED routes ──────────────────────────────────────────
+  // ── PARGeQ route ─────────────────────────────────────────────────
+  {
+    path: '/pargeq',
+    name: 'pargeq',
+    component: () => import('@/views/pargeq.vue'),
+    meta: {
+      title: 'PARGeQ - Appui au Renforcement de la Gestion Qualité | CCI Bénin'
+    }
+  },
+  // ── End PARGeQ route ─────────────────────────────────────────────
   {
     path: '/:pathMatch(.*)*', name: 'not-found',
     component: () => import('@/views/404.vue'),
